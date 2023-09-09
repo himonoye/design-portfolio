@@ -1,0 +1,22 @@
+.menu-line-1 {
+    background-color: var(--green-dark);
+    height: 2px;
+}
+
+.menu-line-2 {
+    background-color: var(--green-dark);
+    height: 2px;
+
+}
+
+.menu-line-3 {
+    background-color: var(--green-dark);
+    height: 2px;
+}
+
+.menu {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

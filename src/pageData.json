@@ -1,0 +1,94 @@
+{
+    "headerData" : [
+        {
+            "linkText":"Portfolio",
+            "url":".."
+        },
+        {
+            "linkText":"Resume",
+            "url":"resume"
+        },
+        {
+            "linkText":"Outside Design",
+            "url":"about"
+        },
+        {
+            "linkText":"Project Example",
+            "url":"projectExample"
+        }
+    ],
+    "root" : {
+        "portfolio" : {
+            "linkText":"Portfolio",
+            "url":"..",
+            "title" : "Portfolio",
+            "description" : "I’m a product-driven Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
+            "buttonText1" : "Continue to my portfolio",
+            "buttonUrl1" : "#projects",
+            "buttonText2" : "Outside Design",
+            "buttonUrl2" : "about"
+        },
+        "resume" : {
+            "linkText":"Resume",
+            "url":"about",
+            "title" : "Resume",
+            "description" : "Download my resume below and don't hesitate to reach out. I'd love to chat!",
+            "buttonText1" : "Download Resume PDF",
+            "buttonUrl1" : "",
+            "buttonText2" : "",
+            "buttonUrl2" : ""
+        },
+        "about" : {
+            "linkText":"Outside Design",
+            "url":"about",
+            "title" : "WHAT'S UP!",
+            "description" : "When I'm not thinking hard on designs, I enjoys audio books, word puzzles and comedy. You can also find me in climbing gyms or tennis court on the weekends",
+            "buttonText1" : "Back to my portfolio",
+            "buttonUrl1" : "/",
+            "buttonText2" : "",
+            "buttonUrl2" : ""
+        }
+    },
+    "projectData" : [ 
+        {
+            "projectName" : "Trane Supply Search Site",
+            "projectObjective" : "Lorem ispum",
+            "projectRequirement" : "Lorem ispum",
+            "projectDescription" : "Lorem ispum",
+            "imgUrl" : "./imgs/projectImage.png"
+        },
+    
+        {
+            "projectName" : "The UPS Store Mircrosite Redesign",
+            "projectObjective" : "",
+            "projectRequirement" : "",
+            "projectDescription" : "Lorem ispum",
+            "projectUrl": "1",
+            "imgUrl" : "./imgs/projectImage.png"
+        },
+    
+        {
+            "projectName" : "Dashboard Template",
+            "projectObjective" : "Lorem ispum",
+            "projectRequirement" : "Lorem ispum",
+            "projectDescription" : "Lorem ispum",
+            "imgUrl" : "./imgs/projectImage.png"
+        },
+
+        {
+            "projectName" : "Organizing App for Non-profit Organizer",
+            "projectObjective" : "Lorem ispum",
+            "projectRequirement" : "Lorem ispum",
+            "projectDescription" : "Lorem ispum",
+            "imgUrl" : "./imgs/projectImage.png"
+        },
+
+        {
+            "projectName" : "Merrill Finacial Advisor Page Redesign",
+            "projectObjective" : "",
+            "projectRequirement" : "",
+            "projectDescription" : "Lorem ispum",
+            "imgUrl" : "./imgs/projectImage.png"
+        }
+    ]
+}   

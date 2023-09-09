@@ -1,0 +1,45 @@
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - var(--gutter))/2);
+    box-shadow: 0px 10px var(--gray-lighter);
+    background-color: var(--white);
+    top: -5px;
+    position: relative;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    -webkit-transition: 50ms ease-out ;
+    -moz-transition: 50ms ease-out;
+    -o-transition: 50ms ease-out;
+    transition: 50ms ease-out;
+}
+
+.project-card:hover {
+    top: 0px;
+    box-shadow: 0px 5px var(--gray-lighter);
+    -webkit-transition: 50ms ease-in ;
+    -moz-transition: 50ms ease-in;
+    -o-transition: 50ms ease-in;
+    transition: 50ms ease-in;
+    cursor: pointer;
+}
+
+.project-card > .image-wrapper{
+    /*delete later*/
+    background-color: var(--gray-light);
+    height: 300px;
+}
+
+.project-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    padding: var(--card-padding);
+}
+
+@media screen and (max-width: 768px){
+    .project-card {
+        width: 100%;
+    }
+}

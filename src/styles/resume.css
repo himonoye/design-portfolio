@@ -1,0 +1,252 @@
+#resume-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--gutter) var(--gutter) var(--gutter);
+    background-color: white;
+    gap: var(--spacing-20);
+}
+
+.resume-heading-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--resume-gutter);
+}
+
+.resume-top-container {
+    display: flex;
+    gap: var(--resume-gutter);
+}
+
+.resume-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--resume-gutter);
+}
+
+.resume-left-container  {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--resume-gutter);
+}
+
+.resume-right-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+    padding-top: var(--spacing-30);
+}
+
+.resume-contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-contact-entry-container {
+    display: flex;
+    gap: var(--spacing-5);
+}
+
+.resume-work-experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--resume-gutter);
+}
+
+.resume-profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--resume-gutter);
+}
+
+.resume-project-container {
+    display: flex;
+    gap: var(--spacing-20);
+}
+
+.resume-project-entry-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.resume-job-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+/*Typography*/
+
+.resume-lead {
+    display: flex;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: var(--gray-dark);
+    text-transform: uppercase;
+    background-color: var(--purple-light);
+    padding: 0 var(--spacing-5);
+    height: 75px;
+    width: fit-content;
+    align-items: end;
+    font-family: var(--heading-font-Family), sans-serif;
+}
+
+.resume-head {
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--gray-dark);
+    background-color: var(--purple-light);
+    width: fit-content;
+    font-family: var(--heading-font-Family), sans-serif;
+}
+
+.resume-sub {
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: var(--gray-dark);
+    font-family: var(--heading-font-Family), sans-serif;
+}
+
+.resume-flag {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--gray-dark);
+    font-family: var(--heading-font-Family), sans-serif;
+    flex-wrap: wrap;
+}
+
+.resume-brow {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--gray-dark);
+    background-color: var(--purple-light);
+    font-family: var(--heading-font-Family), sans-serif;
+}
+
+.resume-base {
+    font-family: var(--base-font-Family), sans-serif;
+}
+
+.resume-divider {
+    margin: 0 var(--spacing-5);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .resume-top-container {
+        flex-direction: column;
+    }
+
+    .resume-left-container {
+        width: 100%;
+    }
+
+    .resume-right-container {
+        width: 100%;
+    }
+
+    .resume-project-container {
+        flex-direction: column;
+    }
+
+    .resume-lead {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .resume-head {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .resume-sub {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .resume-flag {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .resume-divider {
+        margin: 0 var(--spacing-5);
+    }
+}
+
+@media print {
+
+    #resume-container {
+        padding: 0 var(--spacing-30) var(--spacing-30) var(--spacing-30);
+    }
+
+    .container {
+        background-color: var(--white);
+    }
+
+    .body-container {
+        width: 100%;
+    }
+
+    .header-container {
+        display: none;
+    }
+
+    .hero-container {
+        display: none;
+    }
+
+    .content-container {
+        padding: 0;
+    }
+
+    .resume-lead {
+        font-size: 40px;
+        line-height: 40px;
+        font-family: var(--resume-font-Family), sans-serif;
+    }
+
+    .resume-head {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: var(--resume-font-Family), sans-serif;
+    }
+
+    .resume-sub {
+        font-size: 14px;
+        line-height: 22px;
+        font-family: var(--resume-font-Family), sans-serif;
+    }
+
+    .resume-flag {
+        font-size: 12px;
+        line-height: 18px;
+        font-family: var(--resume-font-Family), sans-serif;
+    }
+
+    .resume-brow {
+        font-size: 12px;
+        line-height: 18px;
+        font-family: var(--resume-font-Family), sans-serif;
+    }
+
+    .resume-base {
+        font-size: 12px;
+        line-height: 18px;
+        font-family: var(--resume-font-Family), sans-serif;
+        color: var(--gray-dark);
+        font-weight: 300;
+    }
+
+    .resume-divider {
+        margin: 0 var(--spacing-5);
+    }
+}

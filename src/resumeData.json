@@ -1,0 +1,110 @@
+{
+    "summary":"I’m a product-driven Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
+    "workExperience": [
+        {
+            "jobTitle" : "UI/UX Designer", 
+            "companyName" : "Yext", 
+            "year" : "Aug. 2019 - Present", 
+            "jobSummary": [
+                "Led web-focused researches and design projects for clients such as The UPS Store, Merrill Bank of America, and Swedish Providence Health",
+                "Collaborated with client shareholders, project managers,and engineers to ensure the designs meet all business requirement",
+                "Onboarded into the Engineering team and acted as the lesion between the design and engineering team",
+                "Conducted interviews and improved Yext Professional Services design system",
+                "Assisted the design manager to scope and maintain weekly scrum",
+                "Interviewed designer candidates and onboarded new hires"
+            ]
+        },
+        {
+            "jobTitle" : "Web Designer & developer", 
+            "companyName" : "University of Maryland, College Park", 
+            "year" : "Oct. 2018 - May 2019", 
+            "jobSummary": [
+                "Created website mockups for the UMD Honors College websites",
+                "Transferred the mockups to interactive web pages with CSS, HTML, and Javascript"
+            ]
+        },
+        {
+            "jobTitle" : "Director of Design", 
+            "companyName" : "Technica Hackathon, College Park", 
+            "year" : "Sept. 2017 - Dec. 2017", 
+            "jobSummary": [
+                "Led a design team of 7 to produce marketing materials for the hackathon and its related events",
+                "Coordinated with other organizing teams to provide attendees the best-in-class Hackathon experiences"
+            ]
+        }
+    ],
+    "contact" : {
+        "email" : "mingxinye1128@gmail.com",
+        "Website": "mingxinye.com"
+    },
+    "profileSummary" : [
+        {   "sectionTitle" : "Skills",
+            "sectionDetails" : [
+            {
+                "entryTitle" : "Design",
+                "entryDetails" : "Figma, Sketch, User Research, User Testing, Prototype, Adobe Creative Cloud"
+            },
+            {
+                "entryTitle" : "Programming",
+                "entryDetails" : "React, Webpack, HTML5, CSS, JavaScript"
+            },
+            {
+                "entryTitle" : "Spoken Languages",
+                "entryDetails" : "English, Chinese"
+            }
+        ]},
+        {   "sectionTitle" : "Certifications",
+            "sectionDetails" : [
+            {
+                "entryTitle" : "Nano Degree in Front End Web Developer",
+                "entryDetails" : "Udacity Nanodegree Programs"
+            },
+            {
+                "entryTitle" : "Google UX Design Professional Certificate",
+                "entryDetails" : "Coursera Online Learning Platform"
+            }
+        ]},
+        {   "sectionTitle" : "Education",
+            "sectionDetails" : [
+            {
+                "entryTitle" : "B.S. Computer Science & B.A. Graphic Design",
+                "entryDetails" : "University of Maryland, College Park 2015 - 2019"
+            }
+        ]}
+    ],
+    "projectExperience": [
+        {
+            "projectTitle" : "Providence Doctor Finder", 
+            "companyName" : "Yext", 
+            "year" : "2021", 
+            "projectSummary": [
+                "Researched & Compared Site Features against Competitors",
+                "Designed Wireframes in Figma",
+                "Collaborated with SWEs to build a prototype site based on wireframes",
+                "Conducted User-testing & iterated on the prototype site designs",
+                "Presented testing findings to the client"
+            ]
+        },
+        {
+            "projectTitle" : "The UPS Store Search Experience UX Audit", 
+            "companyName" : "Yext", 
+            "year" : "2022 - 2023", 
+            "projectSummary": [
+                "Examined the UPS Store search site using heuristic evaluation and platform analytics",
+                "Conducted user-testing on UPS Store search site",
+                "Built audit reports",
+                "Built design recommendations based on the report insights"
+            ]
+        },
+        {
+            "projectTitle" : "Trane Supplies Search Experience", 
+            "companyName" : "Yext", 
+            "year" : "2023", 
+            "projectSummary": [
+                "Gathered and finalized design requirements with clients and internal shareholders in a expedited timeline.",
+                "Researched & Compared Site Features against Competitors",
+                "Collaborated with Engineers to rapidly iterate on live prototypes"
+            ]
+        }
+    ]
+}

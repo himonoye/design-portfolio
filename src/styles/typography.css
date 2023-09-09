@@ -1,0 +1,153 @@
+.headline {
+    font-family: var(--headline-font-Family), serif;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: var(--green-dark);
+}
+
+.headline > #hello {
+    color: var(--purple-dark);
+}
+
+.headline > #name {
+    color: inherit;
+}
+
+.lead {
+    font-family: var(--heading-font-Family), sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--green-dark);
+}
+
+
+.head {
+    font-family: var(--heading-font-Family), sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: var(--green-dark);
+}
+
+
+.sub {
+    font-family: var(--heading-font-Family), sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--green-dark);
+}
+
+
+.flag {
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: var(--gray-dark);
+    
+}
+
+.brow {
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--green-dark);
+    
+}
+
+
+.font-larger {
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: var(--gray-dark);
+    max-width: 900px
+}
+
+
+.font-base {
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--gray-dark);
+    max-width: 600px
+}
+
+
+.font-small {
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: var(--gray-dark);
+    max-width: 400px
+}
+
+.tag {
+    color: var(--gray-dark);
+    background-color: var(--beige);
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 600;
+    border: var(--gray-light) solid 1px;
+    border-radius: 50px;
+    margin: 0 8px 8px 0;
+    padding: 8px 16px;
+}
+
+
+.tag:hover {
+    border: var(--green-light) solid 1px;
+}
+
+
+.caption {
+    background-color: RGB(255,255,255,.8);
+    color: var(--gray-dark);
+    padding: 8px 16px;
+    border-radius: 10px;
+    position: absolute;
+    bottom:16px;
+    left: 16px;
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+
+    .headline{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .lead {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+
+    .head {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+
+    .sub {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .flag {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+}
