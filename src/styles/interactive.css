@@ -71,7 +71,7 @@
     display: flex;
     gap: var(--spacing-10);
     color: var(--link-primary-text);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.1rem;
     text-decoration: none;
@@ -89,7 +89,7 @@
     display: flex;
     gap: var(--spacing-10);
     color: var(--link-secondary-text);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.1rem;
     text-decoration: none;
