@@ -1,60 +1,24 @@
-.logo {
-    padding: var(--spacing-80);
-    display: flex;
-    align-items: center;
-}
-
-.logo > .logo-divider {
-    margin: var(--spacing-10) var(--spacing-20);
-    width: 2px;
-    height: 20px;
-    background-color: var(--gray-dark);
-}
-
 .header-menu-container {
     display: none;
 }
 
-.menu {
-    width: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.menu-line-1 {
-    background-color: var(--green-dark);
-    height: 2px;
-}
-
-.menu-line-2 {
-    background-color: var(--green-dark);
-    height: 2px;
-
-}
-
-.menu-line-3 {
-    background-color: var(--green-dark);
-    height: 2px;
-}
-
 .header-link {
     display: flex;
-    gap: 1rem;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: var(--spacing-40) var(--spacing-60);
+    font-family: var(--headline-font-Family), sans-serif;
     font-size: 1.5rem;
     line-height: 2rem;
-    color: var(--gray-dark);
+    letter-spacing: 1.5px;
+    color: var(--surface-secondary-text);
+    padding: var(--spacing-40) var(--spacing-60);
+    gap: 1rem;
 }
 
 .header-link:hover {
-    background-color: var(--cloud-40);
     cursor: pointer;
 }
 
 .header-link.active {
-    background-color: var(--cloud);
+    background-color: var(--surface-primary-background);
 }
 
 .header-link.active > .three-dots-vertical, .header-link:hover > .three-dots-vertical{
@@ -115,6 +79,6 @@
 
     .header-mobile-menu {
         height: 100%;
-        background-color: var(--white);
+        background-color: var(--surface-primary-background);
     }
 }

@@ -2,24 +2,24 @@
     "summary":"I’m a product-driven Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
     "workExperience": [
         {
-            "jobTitle" : "UI/UX Designer", 
+            "jobTitle" : "Senior UI/UX Designer", 
             "companyName" : "Yext", 
             "year" : "Aug. 2019 - Present", 
             "jobSummary": [
-                "Led web-focused researches and design projects for clients such as The UPS Store, Merrill Bank of America, and Swedish Providence Health",
-                "Collaborated with client shareholders, project managers,and engineers to ensure the designs meet all business requirement",
-                "Onboarded into the Engineering team and acted as the lesion between the design and engineering team",
+                "Led web-focused research and design projects for clients such as The UPS Store, Merrill Bank of America, and Swedish Providence Health",
+                "Collaborated with client shareholders, project managers, and engineers to ensure the designs met all business requirements",
+                "Onboarded into the Engineering team to act as the liaison between the design and engineering team",
                 "Conducted interviews and improved Yext Professional Services design system",
-                "Assisted the design manager to scope and maintain weekly scrum",
+                "Assisted the design manager in scoping and maintaining weekly scrum",
                 "Interviewed designer candidates and onboarded new hires"
             ]
         },
         {
-            "jobTitle" : "Web Designer & developer", 
+            "jobTitle" : "Web Designer & Developer", 
             "companyName" : "University of Maryland, College Park", 
             "year" : "Oct. 2018 - May 2019", 
             "jobSummary": [
-                "Created website mockups for the UMD Honors College websites",
+                "Created website mockups for the University of Maryland Honors Colleges",
                 "Transferred the mockups to interactive web pages with CSS, HTML, and Javascript"
             ]
         },
@@ -29,20 +29,19 @@
             "year" : "Sept. 2017 - Dec. 2017", 
             "jobSummary": [
                 "Led a design team of 7 to produce marketing materials for the hackathon and its related events",
-                "Coordinated with other organizing teams to provide attendees the best-in-class Hackathon experiences"
+                "Coordinated with other organizing teams to provide attendees with the best-in-class Hackathon experiences"
             ]
         }
     ],
     "contact" : {
-        "email" : "mingxinye1128@gmail.com",
-        "Website": "mingxinye.com"
+        "email" : "mingxinye1128@gmail.com"
     },
     "profileSummary" : [
         {   "sectionTitle" : "Skills",
             "sectionDetails" : [
             {
                 "entryTitle" : "Design",
-                "entryDetails" : "Figma, Sketch, User Research, User Testing, Prototype, Adobe Creative Cloud"
+                "entryDetails" : "Figma, Sketch, User Research, User Testing, Prototyping, Adobe Creative Cloud"
             },
             {
                 "entryTitle" : "Programming",
@@ -50,7 +49,7 @@
             },
             {
                 "entryTitle" : "Spoken Languages",
-                "entryDetails" : "English, Chinese"
+                "entryDetails" : "English, Mandarin"
             }
         ]},
         {   "sectionTitle" : "Certifications",
@@ -58,10 +57,6 @@
             {
                 "entryTitle" : "Nano Degree in Front End Web Developer",
                 "entryDetails" : "Udacity Nanodegree Programs"
-            },
-            {
-                "entryTitle" : "Google UX Design Professional Certificate",
-                "entryDetails" : "Coursera Online Learning Platform"
             }
         ]},
         {   "sectionTitle" : "Education",
@@ -74,26 +69,26 @@
     ],
     "projectExperience": [
         {
-            "projectTitle" : "Providence Doctor Finder", 
+            "projectTitle" : "Swedish Providence Health Doctor Finder Experience", 
             "companyName" : "Yext", 
             "year" : "2021", 
             "projectSummary": [
-                "Researched & Compared Site Features against Competitors",
-                "Designed Wireframes in Figma",
-                "Collaborated with SWEs to build a prototype site based on wireframes",
-                "Conducted User-testing & iterated on the prototype site designs",
-                "Presented testing findings to the client"
+                "Researched and compared site features against competitors",
+                "Designed wireframes in Figma",
+                "Collaborated with SWEs to build a prototype site based on the wireframes",
+                "Conducted user testing and iterated on the prototype designs",
+                "Presented the test findings to all shareholders"
             ]
         },
         {
-            "projectTitle" : "The UPS Store Search Experience UX Audit", 
+            "projectTitle" : "The UPS Store Microsite Redesign", 
             "companyName" : "Yext", 
             "year" : "2022 - 2023", 
             "projectSummary": [
-                "Examined the UPS Store search site using heuristic evaluation and platform analytics",
-                "Conducted user-testing on UPS Store search site",
-                "Built audit reports",
-                "Built design recommendations based on the report insights"
+                "Examined the UPS Store search site using heuristic evaluation and web analytics",
+                "Conducted user testing on the UPS Store search site",
+                "Built audit reports based on the user testing result",
+                "Provided design recommendations based on the report insights"
             ]
         },
         {
@@ -101,9 +96,9 @@
             "companyName" : "Yext", 
             "year" : "2023", 
             "projectSummary": [
-                "Gathered and finalized design requirements with clients and internal shareholders in a expedited timeline.",
-                "Researched & Compared Site Features against Competitors",
-                "Collaborated with Engineers to rapidly iterate on live prototypes"
+                "Gathered and finalized design requirements with clients and internal shareholders within an expedited timeline",
+                "Researched and compared site features against competitors",
+                "Collaborated with Engineers to rapidly iterate on live site prototypes"
             ]
         }
     ]

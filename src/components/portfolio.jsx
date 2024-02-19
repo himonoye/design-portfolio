@@ -12,11 +12,13 @@ export default function Portfolio({pageData, projectData}) {
                 buttonUrl1={pageData.buttonUrl1}
                 buttonText2={pageData.buttonText2}
                 buttonUrl2={pageData.buttonUrl2}
+                buttonText3={pageData.buttonText3}
+                buttonUrl3={pageData.buttonUrl3}
                 isHome={true}
                 portfolioRef={portfolioRef}
             ></HomePageHero>
             <div className="content-container">
-                <div className="head" ref={portfolioRef}>Projects</div>
+                <div className="heading-head" ref={portfolioRef}>Projects</div>
                 <div className="card-container">
                     {projectData.map((item, i)=> {
                         return <ProjectCard key={i} projectName={item.projectName} projectDescription={item.projectDescription}/*imgUrl={item.imgUrl}*/></ProjectCard>

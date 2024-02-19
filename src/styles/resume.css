@@ -1,7 +1,6 @@
 #resume-container {
     display: flex;
     flex-direction: column;
-    padding: 0 var(--gutter) var(--gutter) var(--gutter);
     background-color: white;
     gap: var(--spacing-20);
 }
@@ -46,6 +45,7 @@
 .resume-contact-entry-container {
     display: flex;
     gap: var(--spacing-5);
+    padding-bottom: var(--spacing-10);
 }
 
 .resume-work-experience-container {
@@ -62,21 +62,21 @@
 
 .resume-project-container {
     display: flex;
-    gap: var(--spacing-20);
+    gap: var(--resume-gutter);
 }
 
 .resume-project-entry-container {
     display: flex;
     flex-direction: column;
-    gap: 5px;
     width: 100%;
+    gap: var(--resume-gutter);
 }
 
 .resume-job-container {
     display: flex;
     flex-direction: column;
-    gap: 5px;
     width: 100%;
+    gap: var(--resume-gutter);
 }
 
 /*Typography*/
@@ -85,54 +85,64 @@
     display: flex;
     font-size: 3rem;
     line-height: 3.5rem;
-    color: var(--gray-dark);
+    letter-spacing: 1px;
+    color: var(--surface-primary-text);
     text-transform: uppercase;
-    background-color: var(--purple-light);
+    background-color: var(--surface-secondary-background);
     padding: 0 var(--spacing-5);
     height: 75px;
     width: fit-content;
     align-items: end;
-    font-family: var(--heading-font-Family), sans-serif;
+    font-family: var(--headline-font-Family), sans-serif;
 }
 
 .resume-head {
     display: flex;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: var(--gray-dark);
-    background-color: var(--purple-light);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    color: var(--surface-primary-text);
+    background-color: var(--surface-secondary-background);
     width: fit-content;
-    font-family: var(--heading-font-Family), sans-serif;
+    font-family: var(--headline-font-Family), sans-serif;
 }
 
 .resume-sub {
     display: flex;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: var(--gray-dark);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: var(--surface-primary-text);
     font-family: var(--heading-font-Family), sans-serif;
 }
 
 .resume-flag {
     display: flex;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
-    color: var(--gray-dark);
-    font-family: var(--heading-font-Family), sans-serif;
+    color: var(--surface-primary-text);
+    font-family: var(--base-font-Family), sans-serif;
+    font-weight: 300;
     flex-wrap: wrap;
 }
 
 .resume-brow {
     display: flex;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: var(--gray-dark);
-    background-color: var(--purple-light);
-    font-family: var(--heading-font-Family), sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    color: var(--surface-primary-text);
+    background-color: var(--surface-secondary-background);
+    font-family: var(--headline-font-Family), sans-serif;
 }
 
 .resume-base {
     font-family: var(--base-font-Family), sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--surface-primary-text);
+    font-weight: 300;
 }
 
 .resume-divider {
@@ -189,7 +199,7 @@
     }
 
     .container {
-        background-color: var(--white);
+        background-color: white;
     }
 
     .body-container {
@@ -206,6 +216,14 @@
 
     .content-container {
         padding: 0;
+    }
+
+    .resume-project-container {
+        gap:0;
+    }
+
+    .resume-project-entry-container{
+        gap:0;
     }
 
     .resume-lead {
@@ -242,7 +260,7 @@
         font-size: 12px;
         line-height: 18px;
         font-family: var(--resume-font-Family), sans-serif;
-        color: var(--gray-dark);
+        color: var(--surface-primary-text);
         font-weight: 300;
     }
 

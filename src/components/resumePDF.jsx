@@ -58,10 +58,10 @@ const ContactSection = () => {
                     <div className="resume-brow">Email:</div>
                     <div className="resume-base">mingxinye1128@gmail.com</div>
                 </div>
-                <div className="resume-contact-entry-container">
+                {/* <div className="resume-contact-entry-container">
                     <div className="resume-brow">Website:</div>
                     <div className="resume-base">mingxinye.com</div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
@@ -73,7 +73,7 @@ export default function ResumePDF({resumeData}) {
             <div className="resume-top-container">
                 <div className="resume-left-container">
                     <div className="resume-heading-container">
-                        <div className="resume-lead">Ming Ye</div>
+                        <div className="resume-lead">Mingxin Ye</div>
                         <p className="resume-base">{resumeData.summary}</p>
                     </div>
                     <div className="resume-work-experience-container">
@@ -98,7 +98,7 @@ export default function ResumePDF({resumeData}) {
                 </div>
             </div>
             <div className="resume-bottom-container">
-                <div className="resume-head">Projects Experience</div>
+                <div className="resume-head">Project Experience</div>
                 <div className="resume-project-container">
                     {resumeData.projectExperience.map((item, i)=>{
                         return <ProjectExperienceEntry 

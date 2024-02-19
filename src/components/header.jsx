@@ -2,12 +2,7 @@ import React, { useState }  from 'react';
 import { NavLink } from "react-router-dom";
 import ThreeDots from './threeDots';
 import Menu from './menu';
-
-const Logo = () => {
-    return (
-        <NavLink to=".." ><div className="logo lead">M<div className="logo-divider"></div>Y</div></NavLink>
-    )
-}
+import Logo from './logo';
 
 const HeaderLink = ({linkText, url})  => {
     return (

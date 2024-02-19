@@ -1,30 +1,30 @@
+.dot-1 {
+    background-color: var(--motif-primary);
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.dot-2 {
+    background-color: var(--motif-secondary);
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.dot-3 {
+    background-color: var(--motif-tertiary);
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
 /* Three Dots Horizontal; 
    Can be found in header links */
 
 .three-dots-horizontal {
     display: flex;
     gap: 5px;
-}
-
-.three-dots-horizontal > .dot-1 {
-    background-color: var(--green-light);
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
-}
-
-.three-dots-horizontal > .dot-2 {
-    background-color: var(--purple);
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
-}
-
-.three-dots-horizontal > .dot-3 {
-    background-color: var(--purple-light);
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
 }
 
 /* Three Dots Vertical
@@ -43,26 +43,11 @@ Can be found on project page in hero container and on project card */
 }
 
 .three-dots-vertical > .dot-1 {
-    background-color: var(--green-light);
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
     top: 5px;
     position: relative;
 }
 
-.three-dots-vertical > .dot-2 {
-    background-color: var(--purple);
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
-}
-
 .three-dots-vertical > .dot-3 {
-    background-color: var(--purple-light);
-    width: 5px;
-    height: 5px;
-    border-radius: 5px;
     top: -5px;
     position: relative;
 }

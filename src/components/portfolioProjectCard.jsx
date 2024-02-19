@@ -9,14 +9,11 @@ export default function ProjectCard({imgUrl,projectName,projectDescription}){
                 <img src={imgUrl}></img>
             </div>
             <div className="project-card-body">
-                <div>
-                    <div className="sub">{projectName}</div>
-                    <p className="font-base">{projectDescription}</p>
-                </div>
+                <div className="heading-sub">{projectName}</div>
+                <p className="body-large">{projectDescription}</p>
                 <ThreeDots className="three-dots-horizontal"></ThreeDots>
-                <Link linkText="See Project" style="primary-link" hasIcon={false}></Link>
+                <Link linkText="See Project" style="link-secondary" hasIcon={false}></Link>
             </div>
         </div>
-
     )
 }

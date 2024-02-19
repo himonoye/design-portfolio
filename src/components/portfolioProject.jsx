@@ -12,7 +12,7 @@ export default function PortfolioProject({projectData}) {
                 isHome={false}
             ></PortfolioProjectHero>
             <div className="content-container">
-                <p className="font-base">{projectData.projectDescription}</p>
+                <p className="body-large">{projectData.projectDescription}</p>
             </div>
         </div>
     )

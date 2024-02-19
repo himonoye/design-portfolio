@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-80) var(--spacing-80) var(--spacing-40) var(--spacing-80);
+    color: var(--brand-purple-300);
+    font-family: var(--headline-font-Family), sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+}
+
+.logo > .logo-divider {
+    margin: var(--spacing-10) var(--spacing-20);
+    width: 1px;
+    height: 30px;
+    background-color: var(--border-divider);
+}

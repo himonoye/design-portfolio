@@ -1,101 +1,104 @@
-.headline {
+.heading-headline {
     font-family: var(--headline-font-Family), serif;
-    font-size: 4rem;
-    line-height: 5rem;
-    color: var(--green-dark);
+    font-size: 6rem;
+    line-height: 6.5rem;
+    letter-spacing: 2.5px;
+    color: var(--brand-purple-300);
 }
 
-.headline > #hello {
-    color: var(--purple-dark);
+.heading-headline > #hello {
+    color: var(--brand-grayscale-400);
+    
 }
 
-.headline > #name {
+.heading-headline > #name {
     color: inherit;
 }
 
-.lead {
-    font-family: var(--heading-font-Family), sans-serif;
+.heading-lead {
+    font-family: var(--headline-font-Family), sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 2.5px;
+    color: var(--surface-primary-heading);
+}
+
+.heading-head {
+    font-family: var(--headline-font-Family), sans-serif;
     font-size: 2rem;
     line-height: 3rem;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: var(--green-dark);
+    color: var(--surface-primary-heading);
 }
 
 
-.head {
-    font-family: var(--heading-font-Family), sans-serif;
-    font-size: 1.5rem;
+.heading-sub {
+    font-family: var(--headline-font-Family), sans-serif;
+    font-size: 1.8rem;
     line-height: 2.5rem;
-    text-transform: uppercase;
-    color: var(--green-dark);
+    letter-spacing: 1.5px;
+    color: var(--surface-secondary-heading);
 }
 
 
-.sub {
-    font-family: var(--heading-font-Family), sans-serif;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    color: var(--green-dark);
-}
-
-
-.flag {
+.heading-flag {
     font-family: var(--base-font-Family), sans-serif;
     font-size: 1.5rem;
     line-height: 2.5rem;
     font-weight: 300;
-    color: var(--gray-dark);
+    color: var(--surface-primary-heading);
     
 }
 
-.brow {
-    font-family: var(--base-font-Family), sans-serif;
-    font-size: 1rem;
+.heading-brow {
+    font-family: var(--heading-font-Family), sans-serif;
+    font-size: 1.2rem;
     line-height: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--green-dark);
+    color: var(--surface-secondary-heading);
     
 }
 
 
-.font-larger {
+.body-large {
     font-family: var(--base-font-Family), sans-serif;
     font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 300;
-    color: var(--gray-dark);
+    color: var(--surface-primary-text);
     max-width: 900px
 }
 
 
-.font-base {
+.body-base {
     font-family: var(--base-font-Family), sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 300;
-    color: var(--gray-dark);
+    color: var(--surface-primary-text);
     max-width: 600px
 }
 
 
-.font-small {
+.body-small {
     font-family: var(--base-font-Family), sans-serif;
     font-size: 14px;
     line-height: 22px;
     font-weight: 300;
-    color: var(--gray-dark);
+    color: var(--surface-primary-text);
     max-width: 400px
 }
 
 .tag {
-    color: var(--gray-dark);
-    background-color: var(--beige);
+    color: var(--surface-primary-text);
+    background-color: var(--surface-secondary-text);
     font-family: var(--base-font-Family), sans-serif;
     font-size: 12px;
     line-height: 12px;
     font-weight: 600;
-    border: var(--gray-light) solid 1px;
+    border: var(--border-divider) solid 1px;
     border-radius: 50px;
     margin: 0 8px 8px 0;
     padding: 8px 16px;
@@ -103,7 +106,7 @@
 
 
 .tag:hover {
-    border: var(--green-light) solid 1px;
+    border: var(--border-divider) solid 1px;
 }
 
 
@@ -123,29 +126,29 @@
 
 @media screen and (max-width: 768px) {
 
-    .headline{
+    .heading-headline{
         font-size: 2.5rem;
-        line-height: 3.5rem;
+        line-height: 3rem;
     }
 
-    .lead {
+    .heading-lead {
         font-size: 1.5rem;
         line-height: 2rem;
     }
     
 
-    .head {
+    .heading-head {
         font-size: 1.5rem;
         line-height: 2rem;
     }
     
 
-    .sub {
+    .heading-sub {
         font-size: 1.5rem;
         line-height: 2rem;
     }
 
-    .flag {
+    .heading-flag {
         font-size: 1.2rem;
         line-height: 2rem;
     }

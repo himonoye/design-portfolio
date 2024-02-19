@@ -4,20 +4,20 @@
     background-color: #666;
 }
 
+.hero-overlay {
+    background-color: var(--overlay);
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+
 .hero-image > .hero-link{
     position: absolute;
     z-index: 1000;
 }
 
 .hero-link {
-    padding: var(--container-padding);
-}
-
-.overlay {
-    position: absolute;
-    height:400px;
-    width: 100%;
-    background-image: linear-gradient(0deg, RGB(255,255,255,0%), RGB(255,255,255,90%) 80%)
+    padding: var(--spacing-80);
 }
 
 .project-summary {

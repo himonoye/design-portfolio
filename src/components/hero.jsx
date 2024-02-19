@@ -3,19 +3,20 @@ import ThreeDots from './threeDots';
 import Button from './button';
 import Link from './link';
 
-const HomePageHero = ({pageDescription, buttonText1, buttonText2, buttonUrl1, buttonUrl2, portfolioRef}) => {
+const HomePageHero = ({pageDescription, buttonText1, buttonUrl1, buttonText2, buttonUrl2, buttonText3, buttonUrl3, portfolioRef}) => {
     return (
         <div className="hero-container">
-            <div className="headline">
-                <span id="hello">Hello! </span>
+            <div className="heading-headline">
+                <span id="hello">Hello </span>
                 <span id="name">I'm Ming Ye!</span>
             </div>
-            <ThreeDots className={"three-dots-horizontal"}/>
-            <p className="flag">I’m a <mark>product-driven Full Stack Designer</mark> who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.</p>
-            {buttonText1 || buttonText2?
+            {/* <ThreeDots className={"three-dots-horizontal"}/> */}
+            <p className="heading-flag"><mark>I’m a Full Stack Designer near Washington DC who creates high-quality digital products to help businesses and their users achieve their goals.</mark> With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.</p>
+            {buttonText1 || buttonText2 || buttonText3?
                 <div className="button-group">
-                    {buttonText1?<Button style="primary-button" buttonText={buttonText1} url={buttonUrl1} type={"scrollTo"} refPointer={portfolioRef}/>:""}
-                    {buttonText2?<Button style="secondary-button" buttonText={buttonText2} url={buttonUrl2}/>:""}
+                    {buttonText1?<Button style="button-primary" buttonText={buttonText1} url={buttonUrl1} type={"scrollTo"} refPointer={portfolioRef}/>:""}
+                    {buttonText2?<Button style="button-secondary" buttonText={buttonText2} url={buttonUrl2}/>:""}
+                    {buttonText3?<Button style="button-secondary" buttonText={buttonText3} url={buttonUrl3}/>:""}
                 </div>:""
             }
         </div>
@@ -25,22 +26,22 @@ const HomePageHero = ({pageDescription, buttonText1, buttonText2, buttonUrl1, bu
 const PortfolioProjectHero = ({pageTitle, pageObjective, pageRequirement, pageDescription, buttonText1, buttonText2, buttonUrl1, buttonUrl2}) => {
     return (
         <div className="hero-container">
-            <div className="lead">{pageTitle}</div>
+            <div className="heading-lead">{pageTitle}</div>
             <ThreeDots className={"three-dots-horizontal"}/>
             <div className="project-summary">
                 <div className="project-objective">
-                    <div className="brow">Objective</div>
-                    <p className="font-larger">{pageObjective}</p>
+                    <div className="heading-brow">Objective</div>
+                    <p className="body-large">{pageObjective}</p>
                 </div>
                 <div className="project-requirement">
-                    <div className="brow">Requirement</div>
-                    <p className="font-larger">{pageRequirement}</p>
+                    <div className="heading-brow">Requirement</div>
+                    <p className="body-large">{pageRequirement}</p>
                 </div>
             </div>
             {buttonText1 || buttonText2?
                 <div className="button-group">
-                    {buttonText1?<Button style="primary-button" buttonText={buttonText1} url={buttonUrl1}/>:""}
-                    {buttonText2?<Button style="secondary-button" buttonText={buttonText2} url={buttonUrl2}/>:""}
+                    {buttonText1?<Button style="button-primary" buttonText={buttonText1} url={buttonUrl1}/>:""}
+                    {buttonText2?<Button style="button-secondary" buttonText={buttonText2} url={buttonUrl2}/>:""}
                 </div>:""
             }
         </div>
@@ -50,13 +51,13 @@ const PortfolioProjectHero = ({pageTitle, pageObjective, pageRequirement, pageDe
 const DefaultHero = ({pageTitle, pageDescription, buttonText1, buttonText2, buttonUrl1, buttonUrl2}) => {
     return (
         <div className="hero-container">
-            <div className="lead">{pageTitle}</div>
+            <div className="heading-lead">{pageTitle}</div>
             <ThreeDots className={"three-dots-horizontal"}/>
-            <p className="font-larger">{pageDescription}</p>
+            <p className="heading-flag">{pageDescription}</p>
             {buttonText1 || buttonText2?
                 <div className="button-group">
-                    {buttonText1?<Button style="primary-button" buttonText={buttonText1} url={buttonUrl1}/>:""}
-                    {buttonText2?<Button style="secondary-button" buttonText={buttonText2} url={buttonUrl2}/>:""}
+                    {buttonText1?<Button style="button-primary" buttonText={buttonText1} url={buttonUrl1}/>:""}
+                    {buttonText2?<Button style="button-secondary" buttonText={buttonText2} url={buttonUrl2}/>:""}
                 </div>:""
             }
         </div>
@@ -67,9 +68,9 @@ const HeroImage = () => {
     return (
         <div className="hero-image">
             <div className="hero-link">
-                <Link linkText="Back to All Projects" style="primary-link" url=".." hasIcon={true}/>
+                <Link linkText="Back to All Projects" style="link-primary" url=".." hasIcon={true}/>
             </div>
-            <div className="overlay"/>
+            <div className="hero-overlay"/>
             <img></img>
         </div>
     )

@@ -2,32 +2,33 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: calc((100% - var(--gutter))/2);
-    box-shadow: 0px 10px var(--gray-lighter);
-    background-color: var(--white);
-    top: -5px;
+    top: 0px;
     position: relative;
+    width: calc((100% - var(--gutter))/2);
+    background-color: var(--surface-primary-background);
     border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
     overflow: hidden;
-    -webkit-transition: 50ms ease-out ;
-    -moz-transition: 50ms ease-out;
-    -o-transition: 50ms ease-out;
-    transition: 50ms ease-out;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
 }
 
 .project-card:hover {
-    top: 0px;
-    box-shadow: 0px 5px var(--gray-lighter);
-    -webkit-transition: 50ms ease-in ;
-    -moz-transition: 50ms ease-in;
-    -o-transition: 50ms ease-in;
-    transition: 50ms ease-in;
+    top: -5px;
+    position: relative;
+    box-shadow: var(--card-shadow-hover);
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
     cursor: pointer;
 }
 
 .project-card > .image-wrapper{
     /*delete later*/
-    background-color: var(--gray-light);
+    background-color: #ddd;
     height: 300px;
 }
 
@@ -36,6 +37,8 @@
     flex-direction: column;
     gap: var(--spacing-20);
     padding: var(--card-padding);
+    border: solid 1px var(--border-divider);
+    border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
 }
 
 @media screen and (max-width: 768px){

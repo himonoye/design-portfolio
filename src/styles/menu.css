@@ -1,16 +1,16 @@
 .menu-line-1 {
-    background-color: var(--green-dark);
+    background-color: var(--link-primary-text);
     height: 2px;
 }
 
 .menu-line-2 {
-    background-color: var(--green-dark);
+    background-color: var(--link-primary-text);
     height: 2px;
 
 }
 
 .menu-line-3 {
-    background-color: var(--green-dark);
+    background-color: var(--link-primary-text);
     height: 2px;
 }
 

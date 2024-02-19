@@ -9,7 +9,9 @@ export default function Button({buttonText, style, url, type, refPointer}) {
             block: 'start',
             inline: 'nearest'})}>
                     <div className={style}>
+                        <div className="button-text-wrapper">
                             {buttonText}
+                        </div>
                     </div>
             </div>
         )
@@ -18,7 +20,9 @@ export default function Button({buttonText, style, url, type, refPointer}) {
             <NavLink to={url}>
                 <div className="button-wrapper">
                     <div className={style}>
+                        <div className="button-text-wrapper">
                             {buttonText}
+                        </div>
                     </div>
                 </div>
             </NavLink>

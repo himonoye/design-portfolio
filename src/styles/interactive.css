@@ -13,83 +13,89 @@
 
 .button-group, .link-group {
     display: flex;
+    align-items: center;
     gap: var(--spacing-20);
 }
 
-.primary-button{
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    font-family: var(--heading-font-Family), sans-serif;
-    font-weight: 600;
-    text-align: center;
-    color: var(--gray-dark);
-    padding: var(--button-spacing);
-    border-radius: var(--button-border-radius);
-    box-shadow: 0px var(--spacing-5) var(--purple);
-    background-color: var(--purple-light);
-    top: -2px;
-    position: relative;
-    -webkit-transition: 50ms ease-out ;
-    -moz-transition: 50ms ease-out;
-    -o-transition: 50ms ease-out;
-    transition: 50ms ease-out;
+.button-primary{
+    padding: 1px;
+    color: var(--button-primary-text);
+    background: var(--brand-gradient-300);
+    -webkit-transition: background 1s ease-out ;
+    -moz-transition: background 1s ease-out;
+    -o-transition: background 1s ease-out;
+    transition: background 1s ease-out;
 }
 
-.primary-button:hover {
-    box-shadow: 0px 3px var(--purple);
-    top: 0px;
-    position: relative;
-    -webkit-transition: 50ms ease-in ;
-    -moz-transition: 50ms ease-in;
-    -o-transition: 50ms ease-in;
-    transition: 50ms ease-in;
+.button-primary:hover {
+    background: var(--brand-gradient-200);
+    -webkit-transition: background 1s ease-in ;
+    -moz-transition: background 1s ease-in;
+    -o-transition: background 1s ease-in;
+    transition: background 1s ease-in;
     cursor: pointer;
 }
 
-.secondary-button{
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    font-family: var(--heading-font-Family), sans-serif;
-    font-weight: 600;
-    text-align: center;
-    color: var(--white);
+.button-secondary{
+    padding: 1px;
+    color: var(--button-secondary-text);
+    background: var(--brand-gradient-300);
     border-radius: var(--button-border-radius);
-    background-color: var(--green-light);
-    box-shadow: 0px var(--spacing-5) var(--green-dark);
-    padding: var(--button-spacing);
-    top: -2px;
-    position: relative;
-    -webkit-transition: 50ms ease-out ;
-    -moz-transition: 50ms ease-out;
-    -o-transition: 50ms ease-out;
-    transition: 50ms ease-out;
+    -webkit-transition: all 1s ease-out ;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
 
-.secondary-button:hover {
-    box-shadow: 0px 3px var(--green-dark);
-    top: 0px;
-    position: relative;
-    -webkit-transition: 50ms ease-in ;
-    -moz-transition: 50ms ease-in;
-    -o-transition: 50ms ease-in;
-    transition: 50ms ease-in;
+.button-secondary:hover {
+    background: var(--brand-gradient-200);
+    -webkit-transition: all 1s ease-in ;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
     cursor: pointer;
 }
 
-.primary-link {
+.button-text-wrapper{
+    font-family: var(--heading-font-Family), sans-serif;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--button-primary-background);
+    padding: var(--button-spacing);
+    border-radius: var(--button-border-radius);
+}
+
+.link-primary {
     display: flex;
     gap: var(--spacing-10);
-    color: var(--green-dark);
+    color: var(--link-primary-text);
     font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
     text-decoration: none;
     font-family: var(--heading-font-Family), sans-serif;
     text-transform: uppercase;
     letter-spacing: .5px;
 }
 
-.primary-link > .arrowIcon {
+.link-primary > .arrowIcon {
     width: 6px;
     height: 10px;
+}
+
+.link-secondary {
+    display: flex;
+    gap: var(--spacing-10);
+    color: var(--link-secondary-text);
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    text-decoration: none;
+    font-family: var(--heading-font-Family), sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5px;
 }
 
 @media screen and (max-width: 480px) {

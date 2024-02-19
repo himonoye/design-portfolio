@@ -22,11 +22,13 @@
             "linkText":"Portfolio",
             "url":"..",
             "title" : "Portfolio",
-            "description" : "I’m a product-driven Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
-            "buttonText1" : "Continue to my portfolio",
+            "description" : "I’m a Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
+            "buttonText1" : "Continue to My Portfolio",
             "buttonUrl1" : "#projects",
-            "buttonText2" : "Outside Design",
-            "buttonUrl2" : "about"
+            "buttonText2" : "See My Resume",
+            "buttonUrl2" : "resume",
+            "buttonText3" : "Outside Design",
+            "buttonUrl3" : "about"
         },
         "resume" : {
             "linkText":"Resume",
@@ -35,13 +37,13 @@
             "description" : "Download my resume below and don't hesitate to reach out. I'd love to chat!",
             "buttonText1" : "Download Resume PDF",
             "buttonUrl1" : "",
-            "buttonText2" : "",
-            "buttonUrl2" : ""
+            "buttonText2" : "Back to My Portfolio",
+            "buttonUrl2" : "/"
         },
         "about" : {
             "linkText":"Outside Design",
             "url":"about",
-            "title" : "WHAT'S UP!",
+            "title" : "Nice to meet you!",
             "description" : "When I'm not thinking hard on designs, I enjoys audio books, word puzzles and comedy. You can also find me in climbing gyms or tennis court on the weekends",
             "buttonText1" : "Back to my portfolio",
             "buttonUrl1" : "/",

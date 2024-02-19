@@ -1,5 +1,7 @@
 @import url(layout.css);
 @import url(threeDots.css);
+@import url(menu.css);
+@import url(logo.css);
 @import url(header.css);
 @import url(interactive.css);
 @import url(typography.css);
@@ -8,22 +10,28 @@
 @import url(resume.css);
 
 :root {
-    /* color */
-    --purple-light: #DFDBE4;
-    --purple: #9A8EA9;
-    --purple-dark: #695E75;
-    --green-light: #4c7487;
-    --green-dark: #1f3d4d;
-    --beige: #f7f4ed;
-    --cloud: #F2F6F7;
-    --cloud-40: rgb(242, 246, 247, .4);
-    --gray-dark: #444;
-    --gray: #666;
-    --gray-light: #ddd;
-    --gray-lighter: #ededed;
-    --black: #000;
-    --white: #fff;
-
+    /* brand colors*/
+    --brand-purple-100: #ebe0e8;
+    --brand-purple-200: #d2c5d3;
+    --brand-purple-300: #7e5172;
+    --brand-green-100: #e6eedd;
+    --brand-green-200: #617246;
+    --brand-green-300: #314021;
+    --brand-beige-100: #f9f8f6;
+    --brand-beige-200: #ebe9e6;
+    --brand-beige-300: #c2bbb0;
+    --brand-gradient-100: linear-gradient(45deg, var(--brand-green-100) 0%, var(--brand-purple-100) 25%, var(--brand-beige-100) 50%, var(--brand-purple-100) 75%, var(--brand-green-100) 100%);
+    --brand-gradient-200: linear-gradient(45deg, var(--brand-green-200) 0%, var(--brand-purple-200) 25%, var(--brand-beige-200) 50%, var(--brand-purple-200) 75%, var(--brand-green-200) 100%);
+    --brand-gradient-300: linear-gradient(45deg, var(--brand-green-300) 0%, var(--brand-purple-300) 25%, var(--brand-beige-300) 50%, var(--brand-purple-300) 75%, var(--brand-green-300) 100%);
+   
+    /* grayscale colors*/
+    --brand-grayscale-400: #444444;
+    --brand-grayscale-300: #555;
+    --brand-grayscale-200: #ddd;
+    --brand-grayscale-100: #ededed;
+    --brand-black: #000;
+    --brand-white: #fff;
+    
     /* breakpoints */
     --desktop: 1960px;
     --laptop: 1440px;
@@ -41,27 +49,70 @@
     --spacing-10: 10px;
     --spacing-5: 5px;
 
-    /* base spacing */
-    --container-padding: var(--spacing-80);
-    --card-padding: var(--spacing-40);
-    --gutter: 40px;
-    --resume-gutter: var(--spacing-10);
-    --card-border-radius: 10px;
-    --button-spacing: var(--spacing-25) var(--spacing-40) var(--spacing-20) var(--spacing-40);
-    --button-border-radius: 5px;
-
     /* fonts */
     --base-font-size: 15px;
-    --base-font-height: 25px;
+    --base-font-height: 20px;
     --base-font-Family: "Jost";
     --heading-font-Family: "Josefin Sans";
-    --headline-font-Family: "Water Brush";
-    --resume-font-Family: "Arial";
+    --headline-font-Family: "Italiana";
 
     /* base font*/
     font-size: var(--base-font-size);
     line-height: var(--base-font-height);
-    color: var(--gray-dark);
+    color: var(--surface-primary-txt);
+
+    /* Semantic colors */
+    --surface-primary-background: var(--brand-white);
+    --surface-primary-text: var(--brand-grayscale-300);
+    --surface-primary-heading: var(--brand-grayscale-400);
+    
+    --surface-secondary-background: var(--brand-beige-100);
+    --surface-secondary-text: var(--brand-grayscale-300);
+    --surface-secondary-heading: var(--brand-grayscale-400);
+
+    --button-primary-background: var(--brand-white);
+    --button-primary-text: var(--brand-purple-300);
+
+    --button-secondary-background: var(--brand-white);
+    --button-secondary-text: var(--brand-green-300);
+
+    --button-primary-shadow: var(--brand-purple-100);
+    --button-secondary-shadow: var(--brand-green-100);
+
+    --link-primary-text: var(--brand-purple-300);
+    --link-secondary-text: var(--brand-green-300);
+
+    /* motif */
+    --motif-primary: var(--brand-purple-300);
+    --motif-secondary: var(--brand-green-300);
+    --motif-tertiary: var(--brand-purple-200);
+
+    /* divider */
+    --border-divider: var(--brand-beige-200);
+    --border-divider-hover: var(--brand-beige-300);
+
+    /* overlay */
+    --overlay: rgb(255, 255, 255,.8);
+
+    /* shadow */
+    --container-shadow: 0px 0px 5px var(--brand-grayscale-200);
+    --card-shadow: 0px 0px 2.5px 0px var(--brand-beige-200);
+    --card-shadow-hover: 0px 5px 5px -2.5px var(--brand-beige-200);
+
+    /* base spacing */
+    --gutter: var(--spacing-40);
+    --container-padding: var(--spacing-80);
+    --button-spacing: var(--spacing-20) var(--spacing-30) var(--spacing-15) var(--spacing-30);
+    --card-padding: var(--spacing-40);
+
+    /* resume */
+    --resume-font-Family: "Arial";
+    --resume-gutter: var(--spacing-20);
+
+    /* border radius */
+    --button-border-radius: 0px;
+    --card-border-radius: 0px;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -76,19 +127,19 @@
 
 @font-face {
     font-family: 'Josefin Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
-    font-weight: 600;
+    src: url('/src/assets/fonts/JosefinSans-VariableFont_wght.ttf');
+    font-weight: 300, 400;
 }
 
 @font-face {
     font-family: 'Jost';
-    src: url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@300;400&display=swap');
+    src: url('/src/assets/fonts/Jost-VariableFont_wght.ttf');
     font-weight: 300 400;
 }
 
 @font-face {
-    font-family: 'Water Brush';
-    src: url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet');
+    font-family: 'Italiana';
+    src: url('/src/assets/fonts/Italiana-Regular.ttf');
 }
 
 html {
@@ -112,7 +163,6 @@ a:visited,
 a:hover,
 a:active {
     text-decoration: none;
-    color: inherit;
 }
 
 
@@ -126,9 +176,8 @@ input {
 }
 
 mark {
-    background-color: var(--purple-light);
-    color: var(--gray-dark);
-    font-weight: 400;
+    background-color: var(--surface-secondary-background);
+    color: var(--surface-secondary-text);
 }
 
 ul {
@@ -137,9 +186,9 @@ ul {
 }
 
 .input-field {
-    background-color: white;
-    border: white;
-    color: var(--gray-dark);
+    background-color: var(--surface-primary-background);
+    border: var(--surface-primary-text);
+    color: var(--surface-primary-text);
     border-radius: 50px;
     padding: 10px 16px;
 }
