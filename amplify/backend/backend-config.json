@@ -52,5 +52,46 @@
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
     }
+  },
+  "parameters": {
+    "AMPLIFY_auth_designportfolio_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "designportfolio"
+        }
+      ]
+    },
+    "AMPLIFY_auth_designportfolio_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "designportfolio"
+        }
+      ]
+    },
+    "AMPLIFY_auth_designportfolio_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "designportfolio"
+        }
+      ]
+    },
+    "AMPLIFY_auth_designportfolio_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "designportfolio"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "s3designportfoliostorage": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
   }
 }

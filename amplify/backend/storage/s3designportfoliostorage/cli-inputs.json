@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3designportfoliostorage",
+  "bucketName": "design-portfolio-storage",
+  "policyUUID": "e35de0ad",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "READ",
+    "CREATE_AND_UPDATE",
+    "DELETE"
+  ]
+}

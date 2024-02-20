@@ -12,8 +12,19 @@
       "AmplifyAppId": "d1alhx1gasv917"
     },
     "categories": {
-      "auth": {
+      "function": {
+        "getData": {}
+      },
+      "api": {
         "designportfolio": {}
+      },
+      "auth": {
+        "designportfolio": {
+          "userPoolId": "us-east-2_EoyRTwtW1",
+          "userPoolName": "designportfolio-staging",
+          "webClientId": "16imtp0h2a9qnjrqqepa5ll5dc",
+          "nativeClientId": "6dk3tepof2u1ldmvfgqenc7ke8"
+        }
       }
     }
   }

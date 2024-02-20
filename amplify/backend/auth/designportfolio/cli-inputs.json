@@ -3,7 +3,7 @@
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "design76ad1f70",
+    "resourceNameTruncated": "design62e05550",
     "userPoolName": "designportfolio",
     "autoVerifiedAttributes": [
       "email"
@@ -30,9 +30,9 @@
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "design76ad1f70_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "design62e05550_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "76ad1f70",
+    "sharedId": "62e05550",
     "resourceName": "designportfolio",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",
