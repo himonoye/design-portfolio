@@ -11,8 +11,8 @@
   }, 
   "runtime": {
     "rest": {
-      "enabled": false,
-      "path": "/api",
+      "enabled": true,
+      "path": "/rest",
       "request-body-strict": true
     },
     "graphql": {
@@ -22,7 +22,7 @@
     },
     "host": {
       "cors": {
-        "origins": [],
+        "origins": ["http://localhost:4280"],
         "allow-credentials": false
       },
       "authentication": {
@@ -36,7 +36,7 @@
       "source": "projects",
       "permissions": [
         {
-          "actions": ["*"],
+          "actions": ["read"],
           "role": "anonymous"
         }
       ]
