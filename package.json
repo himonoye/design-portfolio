@@ -10,20 +10,27 @@
   "author": "Ming Ye",
   "license": "ISC",
   "dependencies": {
+    "@azure/cosmos": "^4.0.0",
+    "crypto-browserify": "^3.12.0",
+    "dotenv": "^16.4.5",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1"
+    "react-router-dom": "^6.14.1",
+    "stream-browserify": "^3.0.0",
+    "vm-browserify": "^1.1.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.7",
     "@babel/preset-react": "^7.22.5",
     "@webpack-cli/generators": "^3.0.2",
     "babel-loader": "^9.1.3",
-    "style-loader": "^3.3.3",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.1",
-    "webpack-dev-server": "^4.13.3",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.13.3"
   }
 }
