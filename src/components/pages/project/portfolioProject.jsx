@@ -3,12 +3,12 @@ import PortfolioProjectHero from './portfolioProjectHero';
 import ThreeDots from '../../icons/threeDots';
 import Link from '../../style_guide/link';
 import BulletPoints from '../../style_guide/bulletPoints';
-import HeroImage from '../general_sections/heroImage';
+import Image from '../general_sections/image';
 
 const InfoBlock = ({blockHeading, blockDescription, blockBulletPoints}) => {
 	return (
 		<div className="project-info-block">
-			{blockHeading && <div className="body-large">{blockHeading}</div>}
+			{blockHeading && <div className="heading-flag">{blockHeading}</div>}
 			{blockDescription && <p className="body-base">{blockDescription}</p>}
 			{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
 		</div>
@@ -22,6 +22,7 @@ const ProjectSection = ({sectionHeading, sectionDescription, infoBlocks}) => {
 				{sectionHeading && <div className="heading-sub">{sectionHeading}</div>}
 				{sectionDescription && <p className="body-base">{sectionDescription}</p>}
 			</div>
+			<Image></Image>
 			{infoBlocks && 
 				<div className="project-info-block-container">
 					{infoBlocks.map((item, i)=>{
@@ -31,8 +32,7 @@ const ProjectSection = ({sectionHeading, sectionDescription, infoBlocks}) => {
 					})}
 				</div>
 			}
-			<HeroImage></HeroImage>
-			{/* <ThreeDots className={"three-dots-horizontal"}/> */}
+			<ThreeDots className={"three-dots-horizontal"}/>
 		</div>
 	)
 }
@@ -66,7 +66,7 @@ export default function PortfolioProject({projectData, nextProjectData, prevProj
 
 			<div className="content-container">
 				<ProjectSummary projectImpact={projectData.projectImpact} myResponsibilities={projectData.myResponsibilities}/>
-				<HeroImage></HeroImage>
+				<Image></Image>
 				{projectData.understandingUsers &&
 					<ProjectSection 
 						sectionHeading={projectData.understandingUsers.sectionHeading}

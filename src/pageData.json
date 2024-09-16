@@ -150,7 +150,7 @@
         },
 
         {
-            "projectName" : "App for Non-profit Organizers",
+            "projectName" : "App for Non-profit Organizers [Write-up Completes]",
             "projectDescription" : "To design a mobile app that helps non-profit organizers more effectively track and manage notes, contacts and to-dos.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
             "projectProblem" : "Non-profit organizers frequently juggle multiple cases simultaneously. They engage with community members through door-to-door interactions, gathering notes and contact details on the spot. Often relying on paper, pen, or simple phone apps for documentation, these methods can quickly become disorganized and inefficient over time, making it difficult to manage and retrieve important information.",
@@ -178,8 +178,8 @@
                         "blockHeading": "User Painpoints",
                         "blockDescription": "", 
                         "blockBulletPoints":  [
-                            "Organizers often feel awkward taking notes while speaking with community members during door-to-door interactions. As a result, note-taking usually happens after the conversation and is rushed.",
-                            "Many community members don't speak fluent English, leading to communication barriers and misunderstandings.",
+                            "Organizers frequently find it challenging to take notes while engaging with community members. As a result, note-taking is often deferred until after the conversation, leading to a rushed and potentially incomplete capture of information.",
+                            "Some community members don't speak fluent English, leading to communication barriers and misunderstandings.",
                             "Organizers frequently manage multiple cases over extended periods, making it difficult to update statuses, organize notes, and track to-dos efficiently.",
                             "When cases are handed off between organizers, disorganized notes can result in a lack of context and delays in service delivery."
                         ]
@@ -222,12 +222,14 @@
                     {
                         "blockHeading": "Next Steps",
                         "blockBulletPoints": [
+                            "Convert digital wireframes into interactive prototypes and conduct usability testing to gather actionable feedback.",
+                            "Shadow organizers for a day to observe real-world user behavior",
+                            "Refine the design based on research findings"
 
                         ]},
                     {
                         "blockHeading": "What I Learned",
-                        "blockBulletPoints": [
-                        ]
+                        "blockDescription": "Initial user research revealed that users could benefit from various app features, such as a built-in calendar for tracking events and translators to facilitate interactions with specific community members. However, as we developed user stories, we realized the importance of focusing on features that deliver the most value and address key gaps in users' daily workflows. This prompted us to prioritize and narrow down a core set of functionalities for the MVP."
                     }
                 ]
             },
@@ -236,7 +238,7 @@
         },
 
         {
-            "projectName" : "Dashboard Template",
+            "projectName" : "Dashboard Template [Write-up Completes]",
             "projectDescription" : "To create a Figma template and component repository that empowers designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
             "projectDuration" : "1 month, April 2022 - May 2022",
             "projectProblem" : "With the influx of dashboard projects, designers frequently start each design file from scratch, leading to inefficiencies, inconsistencies across designs, and maintenance challenges. The goal is to create a Figma template and component repository that empowers designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
@@ -591,7 +593,9 @@
                     {
                         "blockHeading": "What I Learned",
                         "blockBulletPoints": [
-
+                            "Convert mockups to high-fidelity prototypes",
+                            "Test prototype with users",
+                            "Present to clients with research findings and further iterating on the designs"
                         ]
                     }
                 ]

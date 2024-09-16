@@ -31,12 +31,6 @@
     cursor: pointer;
 }
 
-.project-card > .image-wrapper{
-    /*delete later*/
-    background-color: #ddd;
-    height: 300px;
-}
-
 .project-card-body {
     display: flex;
     flex-direction: column;
@@ -47,7 +41,7 @@
 .project-card-body > .heading-sub {
     color: var(--surface-primary-link);
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
     .project-card {
         width: 100%;
     }

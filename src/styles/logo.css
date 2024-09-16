@@ -1,7 +1,6 @@
 .logo {
     display: flex;
     align-items: center;
-    padding: var(--spacing-80) var(--spacing-80) var(--spacing-40) var(--spacing-80);
     color: var(--motif-primary);
     font-family: var(--headline-font-Family), sans-serif;
     font-size: 2.5rem;

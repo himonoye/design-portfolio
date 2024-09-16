@@ -24,9 +24,11 @@ const Footer = ({footerData}) => {
             <div className="social-media-container">
                 {footerData.map((item, i)=>{
                     return (
-                        <a key={i} className="social-media" href={item.url}>
-                            <img src={socialMediaIcons[item.socialMedia]} alt={item.socialMedia+" Mingxin Ye"}></img>
-                        </a>
+                        <div className="social-media">
+                            <a key={i} className="social-media-wrapper" href={item.url}>
+                                <img src={socialMediaIcons[item.socialMedia]} alt={item.socialMedia+" Mingxin Ye"}></img>
+                            </a>
+                        </div>
                     )
                 })}
             </div>
@@ -56,7 +58,9 @@ const GlobalNav = ({headerData, footerData}) => {
     return (
         <div className="header-container">
             <div className="header-links-container">
-                <Logo></Logo>
+                <div className="logo-container">
+                    <Logo></Logo>
+                </div>
                 {headerData.map((item, i)=>{
                     return <HeaderLink key={i} url={item.url} linkText={item.linkText}></HeaderLink>
                 })}

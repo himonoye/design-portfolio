@@ -5,7 +5,7 @@
 @import url(typography.css);
 @import url(layout.css);
 @import url(globalNav.css);
-@import url(home.css);
+@import url(portfolioHome.css);
 @import url(resume.css);
 @import url(outsideWork.css);
 @import url(portfolioProject.css);
@@ -40,6 +40,7 @@
     --mobile: 360px;
 
     /* spacing */
+    --spacing-120: 120px;
     --spacing-100: 100px;
     --spacing-80: 80px;
     --spacing-60: 60px;
@@ -88,7 +89,7 @@
 
     /* motif */
     --motif-primary: var(--brand-purple-300);
-    --motif-secondary: var(--brand-green-300);
+    --motif-secondary: var(--brand-green-200);
     --motif-tertiary: var(--brand-purple-200);
 
     /* divider */
@@ -124,7 +125,7 @@
     :root {
         --container-padding: var(--spacing-40) var(--spacing-30);
         --card-padding: var(--spacing-30) var(--spacing-20);
-        --gutter: var(--spacing-30);
+        --gutter: var(--spacing-40);
         --resume-gutter: var(--spacing-20);
         --button-spacing: var(--spacing-20) var(--spacing-20) var(--spacing-15) var(--spacing-20);
     }
@@ -207,9 +208,10 @@ li::marker {
     padding: 10px 16px;
 }
 
-.image-wrapper{
+.image-wrapper {
+    aspect-ratio: 2/1;
     position: relative;
-    margin: 0;
+    width: 100%;
 }
 
 .profileImage {

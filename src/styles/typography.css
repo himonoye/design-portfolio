@@ -48,7 +48,6 @@
     font-weight: 300;
     letter-spacing: .5px;
     color: var(--surface-primary-subheading);
-    
 }
 
 .heading-brow {
@@ -68,7 +67,7 @@
     letter-spacing: .3px;
     font-weight: 300;
     color: var(--surface-primary-text);
-    max-width:900px
+    max-width:900px;
 }
 
 
@@ -79,7 +78,7 @@
     letter-spacing: .2px;
     font-weight: 300;
     color: var(--surface-primary-text);
-    max-width: 900px
+    max-width: 900px;
 }
 
 
@@ -161,4 +160,13 @@
         line-height: 2rem;
     }
 
+    .body-large {
+        font-family: var(--base-font-Family), sans-serif;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        letter-spacing: .3px;
+        font-weight: 300;
+        color: var(--surface-primary-text);
+        max-width:900px;
+    }
 }

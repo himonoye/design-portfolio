@@ -14,6 +14,7 @@
 .button-group, .link-group {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: var(--spacing-20);
 }
 
@@ -135,9 +136,4 @@
     .button-secondary {
         width: 100%;
     }
-
-    /* [class$="button"] {
-        width: 100%;
-    } */
-
 }
