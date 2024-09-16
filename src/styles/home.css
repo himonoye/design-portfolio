@@ -1,0 +1,54 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: 0px;
+    position: relative;
+    width: calc((100% - var(--gutter))/2);
+    background-color: var(--surface-primary-background);
+    border-radius: var(--card-border-radius);
+    gap: var(--spacing-20);
+    overflow: hidden;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.project-card:hover {
+    top: -2px;
+    position: relative;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+.project-card > .image-wrapper{
+    /*delete later*/
+    background-color: #ddd;
+    height: 300px;
+}
+
+.project-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+    border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+}
+
+.project-card-body > .heading-sub {
+    color: var(--surface-primary-link);
+}
+@media screen and (max-width: 768px){
+    .project-card {
+        width: 100%;
+    }
+}

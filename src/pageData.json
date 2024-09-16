@@ -1,7 +1,7 @@
 {
     "headerData" : [
         {
-            "linkText":"Portfolio",
+            "linkText":"Home",
             "url":".."
         },
         {
@@ -9,12 +9,20 @@
             "url":"resume"
         },
         {
-            "linkText":"Outside Design",
-            "url":"about"
+            "linkText":"Outside Work",
+            "url":"outsideWork"
+        }
+    ],
+    "footerData" : [
+        {
+            "socialMedia":"linkedIn",
+            "url":"https://www.linkedin.com/in/mingxinye",
+            "imgUrl":"../../assets/LinkedIn_logo.png"
         },
         {
-            "linkText":"Project Example",
-            "url":"projectExample"
+            "socialMedia":"instagram",
+            "url":"https://www.instagram.com/mmingaling/",
+            "imgUrl":"../../assets/Instagram_logo.png"
         }
     ],
     "root" : {
@@ -23,74 +31,573 @@
             "url":"..",
             "title" : "Portfolio",
             "description" : "I’m a Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
-            "buttonText1" : "Continue to My Portfolio",
+            "buttonText1" : "Scroll to See My Work",
             "buttonUrl1" : "#projects",
-            "buttonText2" : "See My Resume",
+            "buttonText2" : "Access My Resume",
             "buttonUrl2" : "resume",
-            "buttonText3" : "Outside Design",
-            "buttonUrl3" : "about"
+            "buttonText3" : "Connect with Me Outside Work",
+            "buttonUrl3" : "outsideWork"
         },
         "resume" : {
             "linkText":"Resume",
             "url":"about",
             "title" : "Resume",
-            "description" : "Download my resume below and don't hesitate to reach out. I'd love to chat!",
-            "buttonText1" : "Download Resume PDF",
-            "buttonUrl1" : "",
-            "buttonText2" : "Back to My Portfolio",
-            "buttonUrl2" : "/"
+            "description" : "Read more about my resume below. Whether you are a fellow designer or someone who's looking to hire, I'd love to connect with you!",
+            "buttonText1" : "Connect Via Email",
+            "buttonUrl1" : "mailto:mingxinye1128@gmail.com",
+            "buttonText2" : "Download Resume PDF",
+            "buttonUrl2" : "https://drive.google.com/file/d/1GYN3b7hriNKXAfY-PB87IWnDhkjDGzdt/view?usp=sharing",
+            "buttonText3" : "",
+            "buttonUrl3" : ""
         },
         "about" : {
-            "linkText":"Outside Design",
+            "linkText":"Outside Work",
             "url":"about",
-            "title" : "Nice to meet you!",
-            "description" : "When I'm not thinking hard on designs, I enjoys audio books, word puzzles and comedy. You can also find me in climbing gyms or tennis court on the weekends",
-            "buttonText1" : "Back to my portfolio",
-            "buttonUrl1" : "/",
-            "buttonText2" : "",
-            "buttonUrl2" : ""
+            "title" : "Connect Outside Work",
+            "description" : "When I'm not working, I enjoy listening to audio books, playing word puzzles and going on food adventures. You can also find me on the tennis court during summer, ski slops during winter, or climbing gyms all year round.",
+            "buttonText1" : "CONNECT ON INSTAGRAM",
+            "buttonUrl1" : "https://www.instagram.com/mmingaling/",
+            "buttonText2" : "CONNECT ON LINKEDIN",
+            "buttonUrl2" : "https://www.linkedin.com/in/mingxinye?original_referer=http%3A%2F%2Flocalhost%3A8080%2F",
+            "buttonText3" : "",
+            "buttonUrl3" : ""
         }
     },
     "projectData" : [ 
         {
-            "projectName" : "Trane Supply Search Site",
-            "projectObjective" : "Lorem ispum",
-            "projectRequirement" : "Lorem ispum",
-            "projectDescription" : "Lorem ispum",
-            "imgUrl" : "./imgs/projectImage.png"
-        },
-    
-        {
-            "projectName" : "The UPS Store Mircrosite Redesign",
-            "projectObjective" : "",
-            "projectRequirement" : "",
-            "projectDescription" : "Lorem ispum",
-            "projectUrl": "1",
-            "imgUrl" : "./imgs/projectImage.png"
-        },
-    
-        {
-            "projectName" : "Dashboard Template",
-            "projectObjective" : "Lorem ispum",
-            "projectRequirement" : "Lorem ispum",
-            "projectDescription" : "Lorem ispum",
-            "imgUrl" : "./imgs/projectImage.png"
+            "projectName" : "Trane Supply Products & Parts Search Site",
+            "projectDescription" : "To design an e-commerce search experience that helps business agents and customers find the products or parts they are looking for.",
+            "projectDuration" : "4 month, August 2022 - Dec 2022",
+            "projectProblem" : "To create a versatile component library and a series of templates for branch, team, and individual advisor pages, customized to meet the diverse content requirements of local advisors.",
+            "projectImpact": "",
+            "myRole":"",
+            "myResponsibilities":[
+
+            ],
+            "understandingUsers" : {
+                "sectionHeading" : "Understanding Users",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "I interviewed four other designers on the team to understand their process and identify the pain points they encountered.",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                        ]
+                    },
+                    {
+                        "blockHeading": "The interview was designed to answer the following questions",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                        ]
+                    },
+                    {
+                        "blockHeading": "User Painpoints",
+                        "blockDescription": "",
+                        "blockBulletPoints":  [
+                        ]
+                    }
+                ]
+            },
+            "startDesign":{
+                "sectionHeading" : "Usability Study",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "I asked them to complete the following tasks:",
+                        "blockBulletPoints": [
+
+                        ]
+                    },
+                    {
+                        "blockHeading": "Findings",
+                        "blockBulletPoints": [
+                        ]
+                    }
+                ]
+            },
+            "refineDesign":{
+                "sectionHeading" : "Design Iteration",
+                "sectionDescription": "Based on other designers’ feedback, I incorporated the following changes to the template",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "",
+                        "blockBulletPoints": [
+                            
+                        ]
+                    }
+                ]
+            },
+            "takeaways":{
+                "sectionHeading" : "Takeaways",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Next Steps",
+                        "blockBulletPoints": [
+
+                        ]
+                    },
+                    {
+                        "blockHeading": "What I Learned",
+                        "blockBulletPoints": [
+
+                        ]
+                    }
+                ]
+            },
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageURL" : "trane-supply-search-site"
         },
 
         {
-            "projectName" : "Organizing App for Non-profit Organizer",
-            "projectObjective" : "Lorem ispum",
-            "projectRequirement" : "Lorem ispum",
-            "projectDescription" : "Lorem ispum",
-            "imgUrl" : "./imgs/projectImage.png"
+            "projectName" : "App for Non-profit Organizers",
+            "projectDescription" : "To design a mobile app that helps non-profit organizers more effectively track and manage notes, contacts and to-dos.",
+            "projectDuration" : "4 month, August 2022 - Dec 2022",
+            "projectProblem" : "Non-profit organizers frequently juggle multiple cases simultaneously. They engage with community members through door-to-door interactions, gathering notes and contact details on the spot. Often relying on paper, pen, or simple phone apps for documentation, these methods can quickly become disorganized and inefficient over time, making it difficult to manage and retrieve important information.",
+            "projectImpact": "",
+            "myRole":"My design partner and I collaborated as a team of two to conduct user research and create wireframes that will serve as the blueprint for the app.",
+            "myResponsibilities":[
+                "Conducted user research",
+                "Developed personas, empathy maps, and user stories",
+                "Created wireframes to serve as the blueprint for the app"],
+            "understandingUsers" : {
+                "sectionHeading" : "Understanding Users",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "To better understand our users, we conducted hour-long Zoom interviews with three non-profit organizers. The interview was designed to answer the following questions:",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                            "What does their day-to-day look like?",
+                            "What pain points do they encounter in their job responsibilities?",
+                            "What tools are they currently using?",
+                            "What do they like and dislike about those tools?"
+                        ]
+                    },
+                    {
+                        "blockHeading": "User Painpoints",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                            "Organizers often feel awkward taking notes while speaking with community members during door-to-door interactions. As a result, note-taking usually happens after the conversation and is rushed.",
+                            "Many community members don't speak fluent English, leading to communication barriers and misunderstandings.",
+                            "Organizers frequently manage multiple cases over extended periods, making it difficult to update statuses, organize notes, and track to-dos efficiently.",
+                            "When cases are handed off between organizers, disorganized notes can result in a lack of context and delays in service delivery."
+                        ]
+                    },
+                    {
+                        "blockHeading": "User Persona",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                        ]
+                    },
+                    {
+                        "blockHeading": "Empathy Map",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+
+                        ]
+                    }
+                ]
+            },
+            "startDesign":{
+                "sectionHeading" : "Wireframing",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "",
+                        "blockBulletPoints": [
+                        ]
+                    },
+                    {
+                        "blockHeading": "",
+                        "blockBulletPoints": [
+                        ]
+                    }
+                ]
+            },
+            "takeaways":{
+                "sectionHeading" : "Takeaways",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Next Steps",
+                        "blockBulletPoints": [
+
+                        ]},
+                    {
+                        "blockHeading": "What I Learned",
+                        "blockBulletPoints": [
+                        ]
+                    }
+                ]
+            },
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageURL" : "app-for-non-profit-organizers"
+        },
+
+        {
+            "projectName" : "Dashboard Template",
+            "projectDescription" : "To create a Figma template and component repository that empowers designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
+            "projectDuration" : "1 month, April 2022 - May 2022",
+            "projectProblem" : "With the influx of dashboard projects, designers frequently start each design file from scratch, leading to inefficiencies, inconsistencies across designs, and maintenance challenges. The goal is to create a Figma template and component repository that empowers designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
+            "projectImpact": "The Figma template and component repository significantly reduced the time needed to build custom dashboards. Experienced designers can now focus on creating intuitive in-platform experiences for our customers, rather than building components from scratch, while new hires can get started quickly, relying less on tenured designers for guidance.",
+            "myRole": ["UX researcher", "UX Designer"],
+            "myResponsibilities": [
+                "Conducted user research to gather insights",
+                "Defined problems and used insights to guide design decisions",
+                "Developed and tested the design template and component library"],          
+            "understandingUsers" : {
+                "sectionHeading" : "Understanding Users",
+                "sectionDescription": "To gain deeper insights into the current dashboard building experience and reduce my designer bias",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "I interviewed four other designers:",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                            "2 new hires who has been with the company for less than 1 year",
+                            "2 tenured colleagues who have been with the company for over 1 year"
+                        ]
+                    },
+                    {
+                        "blockHeading": "The interview was designed to answer the following questions",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                            "What is their current workflow when it comes to designing the dashboard?",
+                            "What are their painpoints when it comes to building a dashboard design?",
+                            "What are some examples of dashboard they’ve built recently?"
+                        ]
+                    },
+                    {
+                        "blockHeading": "User Painpoints",
+                        "blockDescription": "",
+                        "blockBulletPoints":  [
+                            "Building from ground zero or relying on previous examples to set up design files",
+                            "Junior designers are often unfamiliar with the platform's capabilities and unsure whether a component is available out-of-the-box or needs to be custom-designed",
+                            "Designers often need to manipulate screenshots by cropping, covering, or combining images to save time."
+                        ]
+                    }
+                ]
+            },
+            "startDesign":{
+                "sectionHeading" : "Design Iteration",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Building a Component Library",
+                        "blockBulletPoints": [
+                            "Audited existing client dashboard examples and compiled a list of common modules used across designs.",
+                            "Improve file organization by grouping components based on the functionality of the modules.",
+                            "Consulted with product designers to identify opportunities for aligning our designs with their design systems",
+                            "Consulted with engineers to understand each module's customizability during development and integrated them into the components."
+                        ]
+                    }
+                ]
+            },
+            "refineDesign":{
+                "sectionHeading" : "Design Refinement",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Once I built out the first draft of the component library, I went on to test the template with the same set of designers. I asked them to complete the following tasks:",
+                        "blockBulletPoints": [
+                            "Review the Entire File: Provide an initial impression based on the overall organization, clarity, and usability of the file.",
+                            "Find a Specific Module: Locate a specific module using only its name to assess ease of navigation",
+                            "Inspect Customizable Modules: Evaluate the customizable modules and provide initial feedback on their flexibility and ease of use."
+                        ]
+                    },
+                    {
+                        "blockHeading": "Userbility Test Findings",
+                        "blockBulletPoints": [
+                            "Participants appreciated that the page layout resembles other files we use.",
+                            "They found the dashboard mockup page overwhelming due to the numerous modules displayed on a single page.",
+                            "Participants requested additional descriptions or annotations next to the components to aid the navigation of the file.",
+                            "They had differing opinions on how to organize and manage modules after a custom dashboard is built, such as whether to delete unused modules or save them for future use."
+                            ]
+                    },
+                    {
+                        "blockHeading": "Based on feedback, I incorporated the following changes to the template",
+                        "blockBulletPoints": [
+                            "Separated the three sets of modules into different Figma pages to reduce information overload.",
+                            "Added descriptions on each page to help designers, particularly new hires, become familiar with the platform's capabilities.",
+                            "Included annotations to explain complex components and how to use them."]
+                    }
+                ]
+            },
+            "takeaways":{
+                "sectionHeading" : "Takeaways",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Next Steps",
+                        "blockBulletPoints": [
+                            "Follow up with designers who have used the template to gather additional user feedback",
+                            "Continue discussions with the team on best practices for maintaining each dashboard file",
+                            "Create a dedicated space for ongoing conversations about maintaining the template and component library as the platform evolves"]
+                    },
+                    {
+                        "blockHeading": "What I Learned",
+                        "blockBulletPoints": [
+                            "Set aside my personal biases and preferences so I can address problems from the perspective of my users",
+                            "Design operations, such as building a template to enhance design efficiency, require long-term commitments to continuous iteration and collaboration across the entire team."
+                        ]
+                    }
+                ]
+            },
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageURL" : "dashboard-template"
+        },
+
+        {
+            "projectName" : "Heartland Dental Office Site Template",
+            "projectDescription" : "To design and refine 6 dental office website templates that seamlessly integrate with the content and branding of more than 100 dental offices.",
+            "projectDuration" : "4 month, August 2022 - Dec 2022",
+            "projectProblem" : "To alleviate the workload of dentists by creating and maintaining dental office website for quick launch",
+            "projectImpact": "",
+            "myRole":"",
+            "myResponsibilities":[
+
+            ],
+            "understandingUsers" : {
+                "sectionHeading" : "Understanding Users",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "I interviewed four other designers on the team to understand their process and identify the pain points they encountered.",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                        ]
+                    },
+                    {
+                        "blockHeading": "The interview was designed to answer the following questions",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                        ]
+                    },
+                    {
+                        "blockHeading": "User Painpoints",
+                        "blockDescription": "",
+                        "blockBulletPoints":  [
+                        ]
+                    }
+                ]
+            },
+            "startDesign":{
+                "sectionHeading" : "Usability Study",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "I asked them to complete the following tasks:",
+                        "blockBulletPoints": [
+
+                        ]
+                    },
+                    {
+                        "blockHeading": "Findings",
+                        "blockBulletPoints": [
+                        ]
+                    }
+                ]
+            },
+            "refineDesign":{
+                "sectionHeading" : "Design Iteration",
+                "sectionDescription": "Based on other designers’ feedback, I incorporated the following changes to the template",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "",
+                        "blockBulletPoints": [
+                            
+                        ]
+                    }
+                ]
+            },
+            "takeaways":{
+                "sectionHeading" : "Takeaways",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Next Steps",
+                        "blockBulletPoints": [
+
+                        ]
+                    },
+                    {
+                        "blockHeading": "What I Learned",
+                        "blockBulletPoints": [
+
+                        ]
+                    }
+                ]
+            },
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageURL" : "heartland-dental-office-site-template"
         },
 
         {
             "projectName" : "Merrill Finacial Advisor Page Redesign",
-            "projectObjective" : "",
-            "projectRequirement" : "",
-            "projectDescription" : "Lorem ispum",
-            "imgUrl" : "./imgs/projectImage.png"
+            "projectDescription" : "To help propective customers to learn more about Bank of America advisors",
+            "projectDuration" : "4 month, August 2022 - Dec 2022",
+            "projectProblem" : "To create a versatile component library and a series of templates for branch, team, and individual advisor pages, customized to meet the diverse content requirements of local advisors.",
+            "projectImpact": "",
+            "myRole":"",
+            "myResponsibilities":[
+
+            ],
+            "understandingUsers" : {
+                "sectionHeading" : "Understanding Users",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "I interviewed four other designers on the team to understand their process and identify the pain points they encountered.",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                        ]
+                    },
+                    {
+                        "blockHeading": "The interview was designed to answer the following questions",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                        ]
+                    },
+                    {
+                        "blockHeading": "User Painpoints",
+                        "blockDescription": "",
+                        "blockBulletPoints":  [
+                        ]
+                    }
+                ]
+            },
+            "startDesign":{
+                "sectionHeading" : "Usability Study",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "I asked them to complete the following tasks:",
+                        "blockBulletPoints": [
+
+                        ]
+                    },
+                    {
+                        "blockHeading": "Findings",
+                        "blockBulletPoints": [
+                        ]
+                    }
+                ]
+            },
+            "refineDesign":{
+                "sectionHeading" : "Design Iteration",
+                "sectionDescription": "Based on other designers’ feedback, I incorporated the following changes to the template",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "",
+                        "blockBulletPoints": [
+                            
+                        ]
+                    }
+                ]
+            },
+            "takeaways":{
+                "sectionHeading" : "Takeaways",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Next Steps",
+                        "blockBulletPoints": [
+
+                        ]
+                    },
+                    {
+                        "blockHeading": "What I Learned",
+                        "blockBulletPoints": [
+
+                        ]
+                    }
+                ]
+            },
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageURL" : "merrill-finacial-advisor-page-redesigntrane-supply-search-site"
+        },
+
+        {
+            "projectName" : "The UPS Store Mircrosite Redesign",
+            "projectDescription" : "To revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation.",
+            "projectDuration" : "4 month, August 2022 - Dec 2022",
+            "projectProblem" : "To provide accurate answers for The UPS Store customers' inquiries",
+            "projectImpact": "",
+            "myRole":"",
+            "myResponsibilities":[
+
+            ],
+            "understandingUsers" : {
+                "sectionHeading" : "Understanding Users",
+                "sectionDescription": "The project team first started by conducting a thorough UX audit of the two sites. ",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "UX Audits & Usability Testing",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                            "For the location microsite, my designer partner and I conducted an in-house competitive analysis. The UPS team also provided us with a third-party heuristic audit.",
+                            "For the search site, our team conducted an in-house site analytics, usability testing, and heuristic audit of the search site."
+                        ]
+                    },
+                    {
+                        "blockHeading": "Location Microsite Findings",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                            "The inbound site navigation is confusing to users. Multiple header links lead to the same page content.",
+                            "The complete list of services offered at each location is buried lower on the page. As a result, customers have difficulties figuring out whether a location offer a specific service.",
+                            "The site branding differs significantly from the brand’s main domain UPS.com"
+                        ]
+                    },
+                    {
+                        "blockHeading": "Search Site Findings",
+                        "blockDescription": "",
+                        "blockBulletPoints":  [
+                            "The search result only returns information about the current UPS store. This scope of the search, however, is not obvious to users. Customers are searching for non-location-specific information such as store finders or career at UPS",
+                            "No-result screens are sometimes unhelpful. Search UI would state that filtering to another topic will return a matching result when we know the database doesn’t contain the relevant content.",
+                            "The lack of search loading indication prompts users to refresh the page, especially at a slower page load speed."
+                        ]
+                    }
+                ]
+            },
+            "refineDesign":{
+                "sectionHeading" : "Design Iteration",
+                "sectionDescription": "Based on other designers’ feedback, I incorporated the following changes to the template",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Header Navigation Restructure:",
+                        "blockDescription": "To minimize confusion, we repositioned the breadcrumbs above the header on desktop and highlighted the current location on mobile, clarifying that the content is specific to the user's current location. Additionally, we added a location label in the header to emphasize that all links are local to the selected location."
+
+                    },
+                    {
+                        "blockHeading": "Location Page Above-the-Fold Redesign:",
+                        "blockDescription": "We revamped the above-the-fold section to make accessing services easier. The core business information is now the first tab in a tabbed layout, with the services list as the second tab. This allows users to quickly find relevant services with a single click, instead of needing to scroll through the page."
+                    },
+                    {
+                        "blockHeading": "Search Scope Adjustment:",
+                        "blockDescription": "Analyzing search data revealed that users typically look for services close to their physical location. To reduce confusion, we broadened the search scope to show results beyond a single location while prioritizing services nearest the user. We also introduced a 'My Store' button, automatically set to the closest location, allowing users to refine their search results based on their chosen store."
+                    }
+                ]
+            },
+            "takeaways":{
+                "sectionHeading" : "Takeaways",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Next Steps",
+                        "blockBulletPoints": [
+
+                        ]
+                    },
+                    {
+                        "blockHeading": "What I Learned",
+                        "blockBulletPoints": [
+
+                        ]
+                    }
+                ]
+            },
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageURL" : "the-ups-store-mircrosite-redesign"
         }
     ]
-}   
+}

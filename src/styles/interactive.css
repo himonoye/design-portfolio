@@ -59,7 +59,7 @@
 .button-text-wrapper{
     font-family: var(--heading-font-Family), sans-serif;
     font-weight: 400;
-    letter-spacing: .5px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     text-align: center;
     background-color: var(--button-primary-background);
@@ -74,15 +74,25 @@
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.1rem;
+    letter-spacing: 1.5px;
     text-decoration: none;
     font-family: var(--heading-font-Family), sans-serif;
     text-transform: uppercase;
-    letter-spacing: .5px;
+}
+
+.link-primary:hover {
+    text-decoration: underline;
+    -webkit-transition: all 1s ease-in ;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    cursor: pointer;
 }
 
 .link-primary > .arrowIcon {
     width: 6px;
     height: 10px;
+    fill: var(--link-primary-text);
 }
 
 .link-secondary {
@@ -92,25 +102,42 @@
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.1rem;
+    letter-spacing: 1.5px;
     text-decoration: none;
     font-family: var(--heading-font-Family), sans-serif;
     text-transform: uppercase;
     letter-spacing: .5px;
 }
 
-@media screen and (max-width: 480px) {
+.link-primary:hover {
+    text-decoration: underline;
+    -webkit-transition: all 1s ease-in ;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
     .button-group, .link-group {
         flex-direction: column;
         gap: var(--spacing-10);
     }
 
     .button-wrapper {
-        justify-content: center;
-        gap: var(--spacing-10);
-    }
-
-    [class$="-button"] {
         width: 100%;
     }
+
+    .button-primary {
+        width: 100%;
+    }
+
+    .button-secondary {
+        width: 100%;
+    }
+
+    /* [class$="button"] {
+        width: 100%;
+    } */
 
 }

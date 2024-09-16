@@ -9,7 +9,7 @@ module.exports = {
     stats: 'verbose',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'src/dist'),
+        path: path.resolve(__dirname, 'dist'),
     },
     module: {
         rules: [
@@ -21,6 +21,10 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.png/,
+                type: 'asset/resource'
             }
         ],
     },

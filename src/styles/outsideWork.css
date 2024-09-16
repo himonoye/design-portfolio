@@ -1,0 +1,15 @@
+.gallery-container {
+    display: flex;
+    gap: var(--spacing-5);
+}
+
+.img-gallery-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--spacing-5);
+}
+.img-gallery-wrapper > img{
+    height: auto;
+    width: 100%;
+}
