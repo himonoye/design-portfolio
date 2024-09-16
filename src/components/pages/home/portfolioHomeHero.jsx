@@ -1,7 +1,6 @@
 import React from 'react';
 import ThreeDots from '../../icons/threeDots';
 import Button from '../../style_guide/button';
-import Link from '../../style_guide/link';
 import profileImage from '../../../assets/imgs/profileImage.png';
 
 export default function PortfolioHomeHero ({buttonText1, buttonUrl1, buttonText2, buttonUrl2, buttonText3, buttonUrl3, portfolioRef}) {
