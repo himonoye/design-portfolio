@@ -1,24 +1,31 @@
-declare namespace SickComponentsLibrary {
-    // Here we can declare some types
-    // that will be used across components later.
-    type Avatar = {
-      src: string;
-    }
-    
-    type buttonStyle = "primary" | "Secondary";
+export declare namespace JSON {
 
-    // Everything that should be accessible outside
-    // can be exported via export keyword.
-    export type UserProp = {
-      id: string;
-      name: string;
-      avatar: Avatar
-    }
+    // type JSONValue =
+    // | string
+    // | number
+    // | boolean
+    // | JSONObject
+    // | JSONArray;
+
+    // export interface JSONObject {
+    //     [x: string]: JSONValue;
+    // }
+
+    // export interface JSONArray extends Array<JSONValue> { }
     
-    // You can also declare interfaces if needed.
-    type SwipeDirection = 'left' | 'right' | 'top' | 'bottom'
+
+
+    // // Everything that should be accessible outside
+    // // can be exported via export keyword.
+    // export type UserProp = {
+    //   id: string;
+    //   name: string;
+    // }
     
-    export interface Swipable {
-      swipe(): SwipeDirection;
-    }
+    // // You can also declare interfaces if needed.
+    // type SwipeDirection = 'left' | 'right' | 'top' | 'bottom'
+    
+    // export interface Swipable {
+    //   swipe(): SwipeDirection;
+    // }
   }

@@ -1,3 +1,9 @@
+.profileImage {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,12 +14,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: var(--card-padding);
+    gap: var(--spacing-40);
     top: 0px;
     position: relative;
-    width: calc((100% - var(--gutter))/2);
-    background-color: var(--surface-primary-background);
+    width: calc((100% - var(--gutter) - 160px)/2);
+    background-color: var(--surface-secondary-background);
     border-radius: var(--card-border-radius);
-    gap: var(--spacing-20);
     overflow: hidden;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
@@ -35,14 +42,16 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-10);
-    border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
 }
 
-.project-card-body > .heading-sub {
-    color: var(--surface-primary-link);
-}
 @media screen and (max-width: 1200px){
     .project-card {
         width: 100%;
+    }
+
+    .profileImage {
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
     }
 }

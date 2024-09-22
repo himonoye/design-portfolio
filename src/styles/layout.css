@@ -13,7 +13,8 @@
     justify-content: space-between;
     width: 20%;
     overflow-y: scroll;
-    box-shadow: var(--container-shadow);
+    /* box-shadow: var(--container-shadow); */
+    border-right: 1px solid var(--border-divider);
     z-index: 10000;
 }
 
@@ -36,7 +37,6 @@
     flex-direction: column;
     padding: var(--container-padding);
     gap: var(--spacing-40);
-    box-shadow: var(--container-shadow);
     z-index: 1000;
     /* border-bottom: 1px solid var(--border-divider); */
 }
@@ -44,8 +44,9 @@
 .content-container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-60);
+    gap: var(--gutter);
     padding: var(--container-padding);
+    padding-top: 0;
 }
 
 .bottom-container{
@@ -69,7 +70,7 @@
     .header-mobile-container {
         display: flex;
         flex-direction: row;
-        box-shadow: 5px 0px 5px 0px rgba(221, 221, 221, 0.60);
+        box-shadow: var(--mobile-header-shadow);
         overflow-y: visible;
         z-index: 10000;
         align-items: center;

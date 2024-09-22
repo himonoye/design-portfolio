@@ -1,7 +1,7 @@
 {
     "headerData" : [
         {
-            "linkText":"Home",
+            "linkText":"My Work",
             "url":".."
         },
         {
@@ -15,46 +15,52 @@
     ],
     "footerData" : [
         {
-            "socialMedia":"linkedIn",
+            "type":"linkedIn",
             "url":"https://www.linkedin.com/in/mingxinye",
-            "imgUrl":"../../assets/LinkedIn_logo.png"
+            "imgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/LinkedIn_logo.png"
         },
         {
-            "socialMedia":"instagram",
+            "type":"instagram",
             "url":"https://www.instagram.com/mmingaling/",
-            "imgUrl":"../../assets/Instagram_logo.png"
+            "imgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Instagram_logo.png"
+        },
+        {
+            "type":"email",
+            "url":"mailto:mingxinye1128@gmail.com",
+            "imgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/email.png"
         }
     ],
-    "root" : {
+    "pageInfo" : {
         "portfolio" : {
-            "linkText":"Portfolio",
             "url":"..",
-            "title" : "Portfolio",
+            "title" : "My Work",
+            "profileImageUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/profileImage.png",
             "description" : "I’m a Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
-            "buttonText1" : "Scroll to See My Work",
-            "buttonUrl1" : "#projects",
-            "buttonText2" : "Access My Resume",
-            "buttonUrl2" : "resume",
-            "buttonText3" : "Connect with Me Outside Work",
-            "buttonUrl3" : "outsideWork"
+            "buttonScrollText": "Scroll to See My Work",
+            "buttonText1" : "Access My Resume",
+            "buttonUrl1" : "resume",
+            "buttonText2" : "Connect with Me Outside Work",
+            "buttonUrl2" : "outsideWork",
+            "buttonText4" : "Scroll to See My Work",
+            "buttonUrl4" : "#projects"
         },
         "resume" : {
-            "linkText":"Resume",
-            "url":"about",
+            "url":"resume",
             "title" : "Resume",
             "description" : "Read more about my resume below. Whether you are a fellow designer or someone who's looking to hire, I'd love to connect with you!",
-            "buttonText1" : "Connect Via Email",
-            "buttonUrl1" : "mailto:mingxinye1128@gmail.com",
-            "buttonText2" : "Download Resume PDF",
-            "buttonUrl2" : "https://drive.google.com/file/d/1GYN3b7hriNKXAfY-PB87IWnDhkjDGzdt/view?usp=sharing",
+            "buttonScrollText": "Scroll to See My Resume",
+            "buttonText1" : "Download Resume PDF",
+            "buttonUrl1" : "https://drive.google.com/file/d/1GYN3b7hriNKXAfY-PB87IWnDhkjDGzdt/view?usp=sharing",
+            "buttonText2" : "Connect Via Email",
+            "buttonUrl2" : "mailto:mingxinye1128@gmail.com",
             "buttonText3" : "",
             "buttonUrl3" : ""
         },
-        "about" : {
-            "linkText":"Outside Work",
-            "url":"about",
+        "outsideWork" : {
+            "url":"outsideWork",
             "title" : "Connect Outside Work",
             "description" : "When I'm not working, I enjoy listening to audio books, playing word puzzles and going on food adventures. You can also find me on the tennis court during summer, ski slops during winter, or climbing gyms all year round.",
+            "buttonScrollText": "Scroll to My Adventures",
             "buttonText1" : "CONNECT ON INSTAGRAM",
             "buttonUrl1" : "https://www.instagram.com/mmingaling/",
             "buttonText2" : "CONNECT ON LINKEDIN",
@@ -68,12 +74,12 @@
             "projectName" : "Trane Supply Products & Parts Search Site",
             "projectDescription" : "To design an e-commerce search experience that helps business agents and customers find the products or parts they are looking for.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
-            "projectProblem" : "To create a versatile component library and a series of templates for branch, team, and individual advisor pages, customized to meet the diverse content requirements of local advisors.",
+            "projectProblem" : "With millions of products offered by the buisiness, accessing product information was a cumbersome process. Agents must have a precise knowledge of where to look and navigate through multiple databases and platforms, manually connecting the dots to find the right information. The goal of the project is to transform its e-commerce site and streamline the part-finding process so it provides a effortless shopping experience for both HVAC agents and customers.",
             "projectImpact": "",
             "myRole":"",
-            "myResponsibilities":[
-
-            ],
+            "myResponsibilities":[],
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/Trane-project-cover.png",
+            "projectPageUrl" : "trane-supply-search-site",
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",
                 "sectionDescription": "",
@@ -118,6 +124,7 @@
             "refineDesign":{
                 "sectionHeading" : "Design Iteration",
                 "sectionDescription": "Based on other designers’ feedback, I incorporated the following changes to the template",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "",
@@ -144,9 +151,7 @@
                         ]
                     }
                 ]
-            },
-            "imgUrl" : "./imgs/projectImage.png",
-            "projectPageURL" : "trane-supply-search-site"
+            }
         },
 
         {
@@ -159,10 +164,14 @@
             "myResponsibilities":[
                 "Conducted user research",
                 "Developed personas, empathy maps, and user stories",
-                "Created wireframes to serve as the blueprint for the app"],
+                "Created wireframes to serve as the blueprint for the app"
+            ],
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageUrl" : "app-for-non-profit-organizers",
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "To better understand our users, we conducted hour-long Zoom interviews with three non-profit organizers. The interview was designed to answer the following questions:",
@@ -232,9 +241,7 @@
                         "blockDescription": "Initial user research revealed that users could benefit from various app features, such as a built-in calendar for tracking events and translators to facilitate interactions with specific community members. However, as we developed user stories, we realized the importance of focusing on features that deliver the most value and address key gaps in users' daily workflows. This prompted us to prioritize and narrow down a core set of functionalities for the MVP."
                     }
                 ]
-            },
-            "imgUrl" : "./imgs/projectImage.png",
-            "projectPageURL" : "app-for-non-profit-organizers"
+            }
         },
 
         {
@@ -247,10 +254,13 @@
             "myResponsibilities": [
                 "Conducted user research to gather insights",
                 "Defined problems and used insights to guide design decisions",
-                "Developed and tested the design template and component library"],          
+                "Developed and tested the design template and component library"],
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageUrl" : "dashboard-template",          
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",
                 "sectionDescription": "To gain deeper insights into the current dashboard building experience and reduce my designer bias",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "I interviewed four other designers:",
@@ -283,6 +293,7 @@
             "startDesign":{
                 "sectionHeading" : "Design Iteration",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "Building a Component Library",
@@ -298,6 +309,7 @@
             "refineDesign":{
                 "sectionHeading" : "Design Refinement",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "Once I built out the first draft of the component library, I went on to test the template with the same set of designers. I asked them to complete the following tasks:",
@@ -314,7 +326,7 @@
                             "They found the dashboard mockup page overwhelming due to the numerous modules displayed on a single page.",
                             "Participants requested additional descriptions or annotations next to the components to aid the navigation of the file.",
                             "They had differing opinions on how to organize and manage modules after a custom dashboard is built, such as whether to delete unused modules or save them for future use."
-                            ]
+                        ]
                     },
                     {
                         "blockHeading": "Based on feedback, I incorporated the following changes to the template",
@@ -328,13 +340,15 @@
             "takeaways":{
                 "sectionHeading" : "Takeaways",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "Next Steps",
                         "blockBulletPoints": [
                             "Follow up with designers who have used the template to gather additional user feedback",
                             "Continue discussions with the team on best practices for maintaining each dashboard file",
-                            "Create a dedicated space for ongoing conversations about maintaining the template and component library as the platform evolves"]
+                            "Create a dedicated space for ongoing conversations about maintaining the template and component library as the platform evolves"
+                        ]
                     },
                     {
                         "blockHeading": "What I Learned",
@@ -344,9 +358,7 @@
                         ]
                     }
                 ]
-            },
-            "imgUrl" : "./imgs/projectImage.png",
-            "projectPageURL" : "dashboard-template"
+            }
         },
 
         {
@@ -359,9 +371,12 @@
             "myResponsibilities":[
 
             ],
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageUrl" : "heartland-dental-office-site-template",
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "I interviewed four other designers on the team to understand their process and identify the pain points they encountered.",
@@ -386,11 +401,11 @@
             "startDesign":{
                 "sectionHeading" : "Usability Study",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "I asked them to complete the following tasks:",
                         "blockBulletPoints": [
-
                         ]
                     },
                     {
@@ -403,11 +418,11 @@
             "refineDesign":{
                 "sectionHeading" : "Design Iteration",
                 "sectionDescription": "Based on other designers’ feedback, I incorporated the following changes to the template",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "",
-                        "blockBulletPoints": [
-                            
+                        "blockBulletPoints": [  
                         ]
                     }
                 ]
@@ -415,23 +430,20 @@
             "takeaways":{
                 "sectionHeading" : "Takeaways",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "Next Steps",
                         "blockBulletPoints": [
-
                         ]
                     },
                     {
                         "blockHeading": "What I Learned",
                         "blockBulletPoints": [
-
                         ]
                     }
                 ]
-            },
-            "imgUrl" : "./imgs/projectImage.png",
-            "projectPageURL" : "heartland-dental-office-site-template"
+            }
         },
 
         {
@@ -444,9 +456,12 @@
             "myResponsibilities":[
 
             ],
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageUrl" : "merrill-finacial-advisor-page-redesigntrane-supply-search-site",
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "I interviewed four other designers on the team to understand their process and identify the pain points they encountered.",
@@ -471,11 +486,11 @@
             "startDesign":{
                 "sectionHeading" : "Usability Study",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "I asked them to complete the following tasks:",
                         "blockBulletPoints": [
-
                         ]
                     },
                     {
@@ -488,11 +503,11 @@
             "refineDesign":{
                 "sectionHeading" : "Design Iteration",
                 "sectionDescription": "Based on other designers’ feedback, I incorporated the following changes to the template",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "",
-                        "blockBulletPoints": [
-                            
+                        "blockBulletPoints": [  
                         ]
                     }
                 ]
@@ -500,23 +515,20 @@
             "takeaways":{
                 "sectionHeading" : "Takeaways",
                 "sectionDescription": "",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "Next Steps",
                         "blockBulletPoints": [
-
                         ]
                     },
                     {
                         "blockHeading": "What I Learned",
                         "blockBulletPoints": [
-
                         ]
                     }
                 ]
-            },
-            "imgUrl" : "./imgs/projectImage.png",
-            "projectPageURL" : "merrill-finacial-advisor-page-redesigntrane-supply-search-site"
+            }
         },
 
         {
@@ -529,9 +541,12 @@
             "myResponsibilities":[
 
             ],
+            "imgUrl" : "./imgs/projectImage.png",
+            "projectPageUrl" : "the-ups-store-mircrosite-redesign",
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",
                 "sectionDescription": "The project team first started by conducting a thorough UX audit of the two sites. ",
+                "imageUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "UX Audits & Usability Testing",
@@ -587,21 +602,33 @@
                     {
                         "blockHeading": "Next Steps",
                         "blockBulletPoints": [
-
-                        ]
-                    },
-                    {
-                        "blockHeading": "What I Learned",
-                        "blockBulletPoints": [
                             "Convert mockups to high-fidelity prototypes",
                             "Test prototype with users",
                             "Present to clients with research findings and further iterating on the designs"
                         ]
+                    },
+                    {
+                        "blockHeading": "What I Learned",
+                        "blockDescription": [
+                            "A scoped search can reduce the amount of information users need to filter through, but it may confuse those unfamiliar with its limitations. By understanding user intent and adjusting the search scope to meet their expectations, we can minimize confusion and help users find what they need more efficiently."
+                        ]
                     }
                 ]
-            },
-            "imgUrl" : "./imgs/projectImage.png",
-            "projectPageURL" : "the-ups-store-mircrosite-redesign"
+            }
         }
+    ],
+    "outsideWorkGallery" : [ 
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-1.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-2.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-3.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-4.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-5.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-6.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-7.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-8.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-9.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-10.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-11.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-12.png"
     ]
 }

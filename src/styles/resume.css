@@ -3,6 +3,10 @@
     flex-direction: column;
     background-color: white;
     gap: var(--spacing-60);
+    padding: var(--container-padding);
+    border-radius: var(--card-border-radius);
+    /* border: 1px solid var(--border-divider); */
+    box-shadow: var(--container-shadow);
 }
 
 .resume-heading-container {

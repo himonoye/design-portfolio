@@ -5,7 +5,7 @@ import Layout from './components/style_guide/layout';
 import PortfolioHome from './components/pages/home/portfolioHome'
 import PortfolioProject from './components/pages/project/portfolioProject';
 import Resume from './components/pages/resume/resume';
-import About from './components/pages/about/about';
+import OutsideWork from './components/pages/outsideWork/outsideWork';
 
 //Import temporary project data
 const pageData = require('./pageData.json');
@@ -20,24 +20,24 @@ let childrenRoutes = [
   {
     //Home
     path: "/",
-    element: <PortfolioHome pageData={pageData.root.portfolio} projectData={pageData.projectData}/>,
+    element: <PortfolioHome pageData={pageData.pageInfo.portfolio} projectData={pageData.projectData}/>,
   },
   {
     //Resume
     path: "/resume",
-    element: <Resume pageData={pageData.root.resume} resumeData={resumeData}/>,
+    element: <Resume pageData={pageData.pageInfo.resume} resumeData={resumeData}/>,
   },
   {
     //Outside wORK
     path: "/outsidework",
-    element: <About pageData={pageData.root.about}/>,
+    element: <OutsideWork pageData={pageData.pageInfo.outsideWork} gallery={pageData.outsideWorkGallery}/>,
   }
 ]
 
 pageData.projectData.map((project, i, projectData)=>{
     childrenRoutes.push(
       {
-        path: "/"+project.projectPageURL,
+        path: "/"+project.projectPageUrl,
         element: <PortfolioProject projectData={project} prevProjectData={projectData[i-1]?projectData[i-1]:projectData[projectData.length-1]} nextProjectData={projectData[i+1]?projectData[i+1]:projectData[0]}/>,
       }
     )

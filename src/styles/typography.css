@@ -24,15 +24,6 @@
 
 .heading-head {
     font-family: var(--headline-font-Family), sans-serif;
-    font-size: 2rem;
-    line-height: 3rem;
-    letter-spacing: 2.5px;
-    color: var(--surface-primary-heading);
-}
-
-
-.heading-sub {
-    font-family: var(--headline-font-Family), sans-serif;
     font-size: 1.8rem;
     line-height: 2.5rem;
     letter-spacing: 1.5px;
@@ -41,9 +32,19 @@
 }
 
 
-.heading-flag {
+.heading-sub {
     font-family: var(--base-font-Family), sans-serif;
     font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    color: var(--surface-primary-heading);
+}
+
+
+.heading-flag {
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 1.5rem;
     line-height: 2.5rem;
     font-weight: 300;
     letter-spacing: .5px;
@@ -84,8 +85,8 @@
 
 .body-small {
     font-family: var(--base-font-Family), sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 300;
     color: var(--surface-primary-text);
     max-width: 600px
@@ -112,7 +113,7 @@
 
 .caption {
     background-color: RGB(255,255,255,.8);
-    color: var(--gray-dark);
+    color: var(--surface-secondary-text);
     padding: 8px 16px;
     border-radius: 10px;
     position: absolute;
@@ -148,7 +149,6 @@
         font-size: 1.8rem;
         line-height: 2rem;
     }
-    
 
     .heading-sub {
         font-size: 1.6rem;

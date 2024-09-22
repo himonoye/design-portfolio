@@ -19,6 +19,11 @@ module.exports = {
                 use: ['babel-loader'],
             },
             {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             },
@@ -29,7 +34,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.*', '.js', '.jsx'],
+        extensions: ['.*', '.js', '.jsx', '.ts', '.tsx'],
         fallback: { 
             "path": require.resolve("path-browserify"),
             "os": require.resolve("os-browserify/browser"),

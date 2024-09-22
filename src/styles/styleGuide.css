@@ -81,9 +81,6 @@
     --button-secondary-background: var(--brand-white);
     --button-secondary-text: var(--brand-green-300);
 
-    --button-primary-shadow: var(--brand-purple-100);
-    --button-secondary-shadow: var(--brand-green-100);
-
     --link-primary-text: var(--brand-purple-300);
     --link-secondary-text: var(--brand-green-300);
 
@@ -101,22 +98,23 @@
 
     /* shadow */
     --container-shadow: 0px 0px 5px var(--brand-grayscale-200);
-    --card-shadow: 0px 0px 2.5px 0px var(--brand-grayscale-200);
-    --card-shadow-hover: 0px 5px 10px -2.5px var(--brand-grayscale-200);
+    --card-shadow: 0px 0px 2.5px 0px var(--brand-grayscale-400);
+    --card-shadow-hover: 0px 5px 10px -2.5px var(--brand-grayscale-400);
+    --mobile-header-shadow: 5px 0px 5px 0px var(--brand-grayscale-200);
 
     /* base spacing */
-    --gutter: var(--spacing-60);
+    --gutter: var(--spacing-20);
     --container-padding: var(--spacing-80);
     --button-spacing: var(--spacing-20) var(--spacing-30) var(--spacing-15) var(--spacing-30);
-    --card-padding: var(--spacing-40);
+    --card-padding: var(--spacing-60) var(--spacing-40);
 
     /* resume */
     --resume-font-Family: "Arial";
     --resume-gutter: var(--spacing-40);
 
     /* border radius */
-    --button-border-radius: 0px;
-    --card-border-radius: 0px;
+    --button-border-radius: 0;
+    --card-border-radius: 0.33rem;
     --icon-border-radius: 50%;
 
 }
@@ -212,10 +210,4 @@ li::marker {
     aspect-ratio: 2/1;
     position: relative;
     width: 100%;
-}
-
-.profileImage {
-    border-radius: 100%;
-    width: 160px;
-    height: 160px;
 }
