@@ -14,22 +14,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|tsx)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader'],
             },
             {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
-                exclude: /node_modules/,
-            },
-            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
-            },
-            {
-                test: /\.png/,
-                type: 'asset/resource'
             }
         ],
     },

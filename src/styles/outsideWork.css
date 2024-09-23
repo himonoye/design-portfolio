@@ -1,6 +1,6 @@
 .gallery-container {
     display: flex;
-    gap: var(--spacing-10);
+    gap: var(--gutter);
 }
 
 .gallery-container-mobile {
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: var(--spacing-10);
+    gap: var(--gutter);
 }
 
 .img-gallery-img {

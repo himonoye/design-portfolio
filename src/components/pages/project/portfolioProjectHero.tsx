@@ -10,15 +10,15 @@ type PortfolioProjectHeroProps = {
 
 export default function PortfolioProjectHero({pageTitle, projectProblem, projectCoverImgUrl}: PortfolioProjectHeroProps){
 	return (
-		<div className="project-hero-container">
-			<div className="hero-container">
+		<div className="hero-container">
 				<Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
 				<div className="project-heading-container">
 					<div className="heading-lead">{pageTitle}</div>
-					<p className="body-large">{projectProblem}</p>
+					<p className="body-base">{projectProblem}</p>
 				</div>
-			</div>
-			<Image url={projectCoverImgUrl}></Image>
-		</div>
+				<div className="hero-image">
+					<Image url={projectCoverImgUrl}></Image>
+				</div>
+			</div>		
 	)
 }

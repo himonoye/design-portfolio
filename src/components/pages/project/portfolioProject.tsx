@@ -22,7 +22,7 @@ export default function PortfolioProject({projectData, nextProjectData, prevProj
 
 			<div className="content-container">
 				<PortfolioProjectSummary projectImpact={projectData.projectImpact} myResponsibilities={projectData.myResponsibilities}/>
-				<Image url={""}></Image>
+
 				{projectData.understandingUsers &&
 					<PortfolioProjectSection 
 						sectionHeading={projectData.understandingUsers.sectionHeading}

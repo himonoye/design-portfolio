@@ -6,6 +6,7 @@ import PortfolioHome from './components/pages/home/portfolioHome'
 import PortfolioProject from './components/pages/project/portfolioProject';
 import Resume from './components/pages/resume/resume';
 import OutsideWork from './components/pages/outsideWork/outsideWork';
+import ErrorPage from './components/pages/404/404';
 
 //Import temporary project data
 const pageData = require('./pageData.json');
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout headerData={pageData.headerData} footerData={pageData.footerData}/>,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: childrenRoutes,
   },
 ]);

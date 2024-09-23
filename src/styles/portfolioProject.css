@@ -1,7 +1,7 @@
-.project-hero-container {
-    display: flex;
-    flex-direction: column;
-    width:100%
+.hero-image {
+    padding: var(--card-padding);
+    background-color: var(--surface-secondary-background);
+    border-radius: var(--card-border-radius);
 }
 
 /* .hero-overlay {

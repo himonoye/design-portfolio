@@ -3,8 +3,6 @@ import { NavLink } from "react-router-dom";
 import ThreeDots from '../../icons/threeDots';
 import {Menu, Close} from '../../icons/menu';
 import Logo from '../../icons/logo';
-// import email from '../../../assets/email.png'
-
 
 type headerLinkProps = {
     linkText: string; 
