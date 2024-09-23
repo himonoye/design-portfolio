@@ -14,22 +14,29 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|tsx)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader'],
             },
             {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"]
-            }
+            },
         ],
     },
     resolve: {
-        extensions: ['.*', '.js', '.jsx'],
+        extensions: ['.*', '.js', '.jsx', '.ts', '.tsx'],
+        fallback: { 
+            "path": require.resolve("path-browserify"),
+            "os": require.resolve("os-browserify/browser"),
+            "crypto": require.resolve("crypto-browserify"),
+            "stream": require.resolve("stream-browserify"),
+            "vm": require.resolve("vm-browserify"),
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./view/index.html",
+            template: "./index.html",
             filename: "./index.html",
         })
     ],

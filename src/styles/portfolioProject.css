@@ -1,41 +1,85 @@
-.hero-image{
-    height: 400px;
-    position: relative;
-    background-color: #666;
+.hero-image {
+    padding: var(--card-padding);
+    background-color: var(--surface-secondary-background);
+    border-radius: var(--card-border-radius);
 }
 
-.hero-overlay {
+/* .hero-overlay {
+    width: 100%;
+    aspect-ratio: 1/1;
     background-color: var(--overlay);
     position: absolute;
-    width: 100%;
-    height: 400px;
-}
-
+} */
+/* 
 .hero-image > .hero-link{
     position: absolute;
     z-index: 1000;
 }
 
 .hero-link {
-    padding: var(--spacing-80);
-}
+    padding: var(--container-padding);
+} */
 
-.project-summary {
-    display: flex;
-    flex-direction: row;
-    gap: var(--spacing-80);
-}
-
-.project-objective {
+.project-heading-container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-10);
-    width: 50%;
+    gap: var(--spacing-30);
+    padding: var(--spacing-40) 0 0 var(--spacing-80);
 }
 
-.project-requirement {
+.project-section-container {
     display: flex;
     flex-direction: column;
+    gap: var(--spacing-40);
+}
+
+.project-info-block-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-40);
+    padding: 0 0 0 var(--spacing-80);
+}
+
+.project-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    color: var(--surface-secondary-text);
+}
+
+.project-section-container > .three-dots-horizontal {
+    justify-content: center;
+}
+
+.project-navigation-prev {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: start;
     gap: var(--spacing-10);
-    width: 50%;
+}
+
+.project-navigation-next {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: end;
+    gap: var(--spacing-10);
+}
+
+.project-navigation-next > .body-large {
+    text-align: end;
+}
+
+/* Mobile, Tablet, Small Laptop*/
+@media screen and (max-width: 1200px) {
+
+    .project-heading-container {
+        padding: 0;
+    }
+
+    .project-info-block-container {
+        padding: 0;
+    }
+
 }

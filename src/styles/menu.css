@@ -15,8 +15,31 @@
 }
 
 .menu {
-    width: 20px;
+    width: 24px;
     display: flex;
     flex-direction: column;
     gap: 6px;
+}
+
+
+.close-line-1 {
+    background-color: var(--link-primary-text);
+    height: 2px;
+    transform: rotate(-45deg) translateY(1px);
+}
+
+.close-line-2 {
+    display: none;
+}
+
+.close-line-3 {
+    background-color: var(--link-primary-text);
+    height: 2px;
+    transform: rotate(45deg) translateY(-1px);
+}
+
+.close {
+    width: 32px;
+    display: flex;
+    flex-direction: column;
 }

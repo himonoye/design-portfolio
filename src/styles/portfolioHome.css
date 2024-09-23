@@ -1,0 +1,57 @@
+.profileImage {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: var(--card-padding);
+    gap: var(--spacing-40);
+    top: 0px;
+    position: relative;
+    width: calc((100% - var(--gutter) - 160px)/2);
+    background-color: var(--surface-secondary-background);
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.project-card:hover {
+    top: -2px;
+    position: relative;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+.project-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+}
+
+@media screen and (max-width: 1200px){
+    .project-card {
+        width: 100%;
+    }
+
+    .profileImage {
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+    }
+}

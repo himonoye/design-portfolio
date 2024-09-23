@@ -1,13 +1,14 @@
-@import url(layout.css);
 @import url(threeDots.css);
 @import url(menu.css);
 @import url(logo.css);
-@import url(header.css);
 @import url(interactive.css);
 @import url(typography.css);
-@import url(portfolioProject.css);
-@import url(projectCard.css);
+@import url(layout.css);
+@import url(globalNav.css);
+@import url(portfolioHome.css);
 @import url(resume.css);
+@import url(outsideWork.css);
+@import url(portfolioProject.css);
 
 :root {
     /* brand colors*/
@@ -39,6 +40,8 @@
     --mobile: 360px;
 
     /* spacing */
+    --spacing-120: 120px;
+    --spacing-100: 100px;
     --spacing-80: 80px;
     --spacing-60: 60px;
     --spacing-40: 40px;
@@ -53,22 +56,24 @@
     --base-font-size: 15px;
     --base-font-height: 20px;
     --base-font-Family: "Jost";
-    --heading-font-Family: "Josefin Sans";
+    --heading-font-Family: "Jost";
     --headline-font-Family: "Italiana";
 
     /* base font*/
     font-size: var(--base-font-size);
     line-height: var(--base-font-height);
-    color: var(--surface-primary-txt);
+    color: var(--surface-primary-text);
 
     /* Semantic colors */
     --surface-primary-background: var(--brand-white);
     --surface-primary-text: var(--brand-grayscale-300);
     --surface-primary-heading: var(--brand-grayscale-400);
+    --surface-primary-subheading: var(--brand-green-300);
+    --surface-primary-link: var(--brand-purple-300);
     
     --surface-secondary-background: var(--brand-beige-100);
     --surface-secondary-text: var(--brand-grayscale-300);
-    --surface-secondary-heading: var(--brand-grayscale-400);
+    --surface-secondary-heading: var(--brand-purple-300);
 
     --button-primary-background: var(--brand-white);
     --button-primary-text: var(--brand-purple-300);
@@ -76,15 +81,12 @@
     --button-secondary-background: var(--brand-white);
     --button-secondary-text: var(--brand-green-300);
 
-    --button-primary-shadow: var(--brand-purple-100);
-    --button-secondary-shadow: var(--brand-green-100);
-
     --link-primary-text: var(--brand-purple-300);
     --link-secondary-text: var(--brand-green-300);
 
     /* motif */
     --motif-primary: var(--brand-purple-300);
-    --motif-secondary: var(--brand-green-300);
+    --motif-secondary: var(--brand-green-200);
     --motif-tertiary: var(--brand-purple-200);
 
     /* divider */
@@ -96,45 +98,41 @@
 
     /* shadow */
     --container-shadow: 0px 0px 5px var(--brand-grayscale-200);
-    --card-shadow: 0px 0px 2.5px 0px var(--brand-beige-200);
-    --card-shadow-hover: 0px 5px 5px -2.5px var(--brand-beige-200);
+    --card-shadow: 0px 0px 2.5px 0px var(--brand-grayscale-400);
+    --card-shadow-hover: 0px 5px 10px -2.5px var(--brand-grayscale-400);
+    --mobile-header-shadow: 5px 0px 5px 0px var(--brand-grayscale-200);
 
     /* base spacing */
-    --gutter: var(--spacing-40);
+    --gutter: var(--spacing-20);
     --container-padding: var(--spacing-80);
     --button-spacing: var(--spacing-20) var(--spacing-30) var(--spacing-15) var(--spacing-30);
-    --card-padding: var(--spacing-40);
+    --card-padding: var(--spacing-60) var(--spacing-40);
 
     /* resume */
     --resume-font-Family: "Arial";
-    --resume-gutter: var(--spacing-20);
+    --resume-gutter: var(--spacing-40);
 
     /* border radius */
-    --button-border-radius: 0px;
-    --card-border-radius: 0px;
+    --button-border-radius: 0;
+    --card-border-radius: 0.33rem;
+    --icon-border-radius: 50%;
 
 }
 
 @media screen and (max-width: 768px) {
     :root {
-        --container-padding: var(--spacing-40) var(--spacing-20);
+        --container-padding: var(--spacing-40) var(--spacing-30);
         --card-padding: var(--spacing-30) var(--spacing-20);
-        --gutter: var(--spacing-30);
+        --gutter: var(--spacing-40);
         --resume-gutter: var(--spacing-20);
         --button-spacing: var(--spacing-20) var(--spacing-20) var(--spacing-15) var(--spacing-20);
     }
 }
 
 @font-face {
-    font-family: 'Josefin Sans';
-    src: url('/src/assets/fonts/JosefinSans-VariableFont_wght.ttf');
-    font-weight: 300, 400;
-}
-
-@font-face {
     font-family: 'Jost';
     src: url('/src/assets/fonts/Jost-VariableFont_wght.ttf');
-    font-weight: 300 400;
+    font-weight: 300 400 600;
 }
 
 @font-face {
@@ -185,6 +183,15 @@ ul {
     margin: 0;
 }
 
+li {
+    margin: 0 0 0 var(--spacing-10);
+    padding: 0 0 0 var(--spacing-5);
+}
+
+li::marker {
+    color: var(--brand-purple-300);
+}
+
 .input-field {
     background-color: var(--surface-primary-background);
     border: var(--surface-primary-text);
@@ -193,7 +200,8 @@ ul {
     padding: 10px 16px;
 }
 
-.image-wrapper{
+.image-wrapper {
+    aspect-ratio: 2/1;
     position: relative;
-    margin: 0;
+    width: 100%;
 }
