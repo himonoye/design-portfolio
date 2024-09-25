@@ -12,14 +12,8 @@ export default function OutsideWork({pageData, gallery}:outsideWorkProps) {
             <DefaultHero 
                 pageTitle={pageData.title}
                 pageDescription={pageData.description}
-                buttonScrollText={pageData.buttonScrollText}
+                buttonGroup={pageData.buttonGroup}
                 scrollRef={pageData.scrollRef}
-                buttonText1={pageData.buttonText1}
-                buttonUrl1={pageData.buttonUrl1}
-                buttonText2={pageData.buttonText2}
-                buttonUrl2={pageData.buttonUrl2}
-                buttonText3={pageData.buttonText3}
-                buttonUrl3={pageData.buttonUrl3}
             ></DefaultHero>
             <div className="content-container">
                 <div className="gallery-container">

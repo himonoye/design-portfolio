@@ -36,37 +36,57 @@
             "title" : "My Work",
             "profileImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/profileImage.png",
             "description" : "I’m a Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
-            "buttonScrollText": "Scroll to See My Work",
-            "buttonText1" : "Access My Resume",
-            "buttonUrl1" : "resume",
-            "buttonText2" : "Connect with Me Outside Work",
-            "buttonUrl2" : "outsideWork",
-            "buttonText4" : "Scroll to See My Work",
-            "buttonUrl4" : "#projects"
+            "buttonGroup":[
+                {
+                    "buttonText": "Scroll to See My Work",
+                    "buttonType" : "scrollTo"
+                },
+                {
+                    "buttonText" : "Access My Resume",
+                    "buttonType" : "link",
+                    "buttonUrl" : "resume"
+                },
+                {
+                    "buttonText" : "Connect with Me Outside Work",
+                    "buttonType" : "link",
+                    "buttonUrl" : "outsideWork"
+                }
+            ]
         },
         "resume" : {
             "url":"resume",
             "title" : "Resume",
             "description" : "Read more about my working experience in my resume below. Whether you are a fellow tech ethusiast or someone who's seeking talent, feel free to reach out. I'd love to connect and explore how we might collaborate!",
-            "buttonScrollText": "Scroll to See My Resume",
-            "buttonText1" : "Download Resume PDF",
-            "buttonUrl1" : "https://drive.google.com/file/d/1GYN3b7hriNKXAfY-PB87IWnDhkjDGzdt/view?usp=sharing",
-            "buttonText2" : "Connect Via Email",
-            "buttonUrl2" : "mailto:mingxinye1128@gmail.com",
-            "buttonText3" : "",
-            "buttonUrl3" : ""
+            "buttonGroup":[
+                {
+                    "buttonText" : "Save Resume as PDF",
+                    "buttonType" : "print",
+                    "buttonUrl" : ""
+                },
+                {
+                    "buttonText" : "Connect Via Email",
+                    "buttonType" : "link",
+                    "buttonUrl" : "mailto:mingxinye1128@gmail.com"
+                }
+            ]
+
         },
         "outsideWork" : {
             "url":"outsideWork",
             "title" : "Connect Outside Work",
             "description" : "When I'm not working, I enjoy listening to audio books, playing word puzzles and going on food adventures. You can also find me on the tennis court during summer, ski slops during winter, or climbing gyms all year round.",
-            "buttonScrollText": "Scroll to My Adventures",
-            "buttonText1" : "CONNECT ON INSTAGRAM",
-            "buttonUrl1" : "https://www.instagram.com/mmingaling/",
-            "buttonText2" : "CONNECT ON LINKEDIN",
-            "buttonUrl2" : "https://www.linkedin.com/in/mingxinye?original_referer=http%3A%2F%2Flocalhost%3A8080%2F",
-            "buttonText3" : "",
-            "buttonUrl3" : ""
+            "buttonGroup":[
+                {
+                    "buttonText" : "CONNECT ON INSTAGRAM",
+                    "buttonType" : "link",
+                    "buttonUrl" : "https://www.instagram.com/mmingaling/"
+                },
+                {
+                    "buttonText" : "CONNECT ON LINKEDIN",
+                    "buttonType" : "link",
+                    "buttonUrl" : "https://www.linkedin.com/in/mingxinye?original_referer=http%3A%2F%2Flocalhost%3A8080%2F"
+                }
+            ]
         }
     },
     "projectData" : [ 
@@ -75,8 +95,7 @@
             "projectDescription" : "To design an e-commerce search experience that helps business agents and customers find the products or parts they are looking for.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
             "projectProblem" : "With millions of products offered by the buisiness, accessing product information was a cumbersome process. Agents must have a precise knowledge of where to look and navigate through multiple databases and platforms, manually connecting the dots to find the right information. The goal of the project is to transform its e-commerce site and streamline the part-finding process so it provides a effortless shopping experience for both HVAC agents and customers.",
-            "projectImpact": "",
-            "myRole":"",
+            "projectImpact": "We streamlined and simplified the part-finding journey by creating a search experience that consolidates related information from multiple databases into a single, cohesive web interface, ultimately reducing the time it takes for agents and customers to find the part.",
             "myResponsibilities":[
                 "Created high-fidelity designs",
                 "Collaborated with the client team and Yext engineers to develop technical solutions",
@@ -88,7 +107,7 @@
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",
                 "sectionDescription": "",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-1.png",  
+                "sectionImgUrl":"",  
                 "infoBlocks": [
                     {
                         "blockHeading": "The client provided a variety of user types at the start of the project. Each group has varying levels of access to existing database, leading to different search behaviors and feature requirements.",
@@ -111,7 +130,8 @@
                         "blockHeading": "Competitive Analysis",
                         "blockDescription": "To gain deeper market insights, we also conducted a competitive analysis of direct competitors, identifying common layouts and design patterns across their competitors.", 
                         "blockBulletPoints":  [
-                        ]
+                        ],
+                        "blockImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-1.png"
                     }
                 ]
             },
@@ -140,7 +160,7 @@
             "refineDesign":{
                 "sectionHeading" : "Usability Study & Design Refinement",
                 "sectionDescription": "Working with client's UX researchers, I've participated in usability study sessions to test out hi-fidelity mockups with end users",
-                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png",
+                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-5.png",
                 "infoBlocks": [
                 ]
             },
@@ -247,6 +267,95 @@
                     {
                         "blockHeading": "What I Learned",
                         "blockDescription": "Initial user research revealed that users could benefit from various app features, such as a built-in calendar for tracking events and translators to facilitate interactions with specific community members. However, as we developed user stories, we realized the importance of focusing on features that deliver the most value and address key gaps in users' daily workflows. This prompted us to prioritize and narrow down a core set of functionalities for the MVP."
+                    }
+                ]
+            }
+        },
+        {
+            "projectName" : "Heartland Dental Office Microsite Platform Solution",
+            "projectDescription" : "To design and refine six dental office website templates that adapt to the branding of 100+ practices, with dark mode integration.",
+            "projectDuration" : "",
+            "projectProblem" : "Managing a dental practice involves numerous responsibilities. Effective marketing is a crucial aspect. However, these non-dental-related tasks can often divert dentists' attention from their primary focus—caring for patients. The project aims to help hundreds of dentists Heartland partners reduce their workload of maintaining their digital presence.",
+            "projectImpact": "We successfully launched over a hundred of dentist websites using five of the six templates, receiving praise from the client team for the execution of the solution. Local dental offices also provided positive feedback on the user-friendly experience we delivered.",
+            "myResponsibilities":[
+                "Led brainstorming sessions with the client team to align on design requirements and explore innovative branding applications for the front-end",
+                "Collaborated with the client to identify practical platform solutions tailored to their marketing team’s workflow",
+                "Developed high-fidelity mockups for six templates, each featuring seven unique pages",
+                "Integrated Figma variables into mockups, ensuring that live pages meet WCAG standards, regardless of branding colors"
+            ],
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-cover.png",
+            "projectPageUrl" : "heartland-dental-office-microsite-platform-solution-template",
+            "understandingUsers" : {
+                "sectionHeading" : "Understanding Users",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "There are multiple stakeholders to consider in the design process, each benefiting from various aspects of the solution package.",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                            "Patients, who are browsing the sites for a new dentist or booking follow-up visits with their existing providers",
+                            "Dentists, who seek greater customization options for content on their sites",
+                            "Heartland teams, who are active managing dentists' listsings and websites"
+                        ]
+                    }
+                ]
+            },
+            "startDesign":{
+                "sectionHeading" : "Team Collaboration & Solution Brainstorm",
+                "sectionDescription": "",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-1.png",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Finding the right solution",
+                        "blockBulletPoints": [
+                            "Led and participated in multiple requirements sessions to gain a deeper understanding of business operations, requirements, and goals.",
+                            "Collaborated with developers to explore various solutions for dynamically mapping content and color variables to the templates.",
+                            "Mapped out user flows to visualize the process of launching a new site within the platform."
+                        ],
+                        "blockImgUrl": ""
+                    },
+                    {
+                        "blockHeading": "Competitive Analysis & Wireframes",
+                        "blockBulletPoints": [
+                            "Led UI competitive analysis sessions to gain insights into market trends.",
+                            "Facilitated wireframing sessions to quickly generate and explore design ideas."
+                        ],
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-2.png"
+                    }
+                ]
+            },
+            "refineDesign":{
+                "sectionHeading" : "Figma Variables & Component Library",
+                "sectionDescription": "",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-3.png",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "",
+                        "blockBulletPoints": [ 
+                            "Created Figma variables to test color application, accessibility, and dark mode functionality.",
+                            "Carefully organized, defined, and reused design components to emphasize data variability while minimizing the creation of excessive new components.",
+                            "Developed high-fidelity mockups that are scalable and easily maintainable in the long term."
+                        ],
+                        "blockImgUrl": ""
+                    }
+                ]
+            },
+            "takeaways":{
+                "sectionHeading" : "Takeaways",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Next Steps",
+                        "blockBulletPoints": [
+                            "Continue monitoring site analytics to extract helpful insight on page performance and iterating on content and designs.",
+                            "Design and develope listing management dashboard to help Heartland team members manage multiple listings more efficiently"
+                        ]
+                    },
+                    {
+                        "blockHeading": "What I Learned",
+                        "blockDescription": "When there are numerous stakeholders and users to consider, clearly defining the needs of each persona allows the team to tailor solutions that effectively address specific pain points. For instance, dentists may prioritize the visibility of their bios on the page, while patients focus on easily finding office information and new patient forms. Additionally, the team responsible for implementing the website may advocate for streamlined site management, whereas marketing personnel and dentists might request more flexibility in customization options. This level of clarity will also assist in prioritizing the next steps in the development process."
                     }
                 ]
             }
@@ -373,99 +482,12 @@
         },
 
         {
-            "projectName" : "Heartland Dental Office Site Template",
-            "projectDescription" : "To design and refine six dental office website templates that adapt to the branding of 100+ practices, with dark mode integration.",
-            "projectDuration" : "",
-            "projectProblem" : "Managing a dental practice involves numerous responsibilities. Effective marketing is a crucial aspect. However, these tasks can often divert dentists' attention from their primary focus—caring for patients. To support the hundreds of dentists Heartland works with, the goal of the project is to alleviate the burden of creating and maintaining their digital presence. This includes managing website content, updating branding, and overseeing social media listings.",
-            "projectImpact": "",
-            "myRole":"",
-            "myResponsibilities":[
-
-            ],
-            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-cover.png",
-            "projectPageUrl" : "heartland-dental-office-site-template",
-            "understandingUsers" : {
-                "sectionHeading" : "Understanding Users",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "I interviewed four other designers on the team to understand their process and identify the pain points they encountered.",
-                        "blockDescription": "", 
-                        "blockBulletPoints":  [
-                        ]
-                    },
-                    {
-                        "blockHeading": "The interview was designed to answer the following questions",
-                        "blockDescription": "", 
-                        "blockBulletPoints":  [
-                        ]
-                    },
-                    {
-                        "blockHeading": "User Painpoints",
-                        "blockDescription": "",
-                        "blockBulletPoints":  [
-                        ]
-                    }
-                ]
-            },
-            "startDesign":{
-                "sectionHeading" : "Usability Study",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "I asked them to complete the following tasks:",
-                        "blockBulletPoints": [
-                        ]
-                    },
-                    {
-                        "blockHeading": "Findings",
-                        "blockBulletPoints": [
-                        ]
-                    }
-                ]
-            },
-            "refineDesign":{
-                "sectionHeading" : "Design Iteration",
-                "sectionDescription": "Based on other designers’ feedback, I incorporated the following changes to the template",
-                "sectionImgUrl":"",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "",
-                        "blockBulletPoints": [  
-                        ]
-                    }
-                ]
-            },
-            "takeaways":{
-                "sectionHeading" : "Takeaways",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "Next Steps",
-                        "blockBulletPoints": [
-                        ]
-                    },
-                    {
-                        "blockHeading": "What I Learned",
-                        "blockBulletPoints": [
-                        ]
-                    }
-                ]
-            }
-        },
-
-        {
             "projectName" : "Merrill Finacial Advisor Page Redesign",
-            "projectDescription" : "The goal is to help prospective customers learn more about Bank of America advisors while enabling bank advisors to efficiently manage the content on their personal pages. Details come soon.",
+            "projectDescription" : "The goal is to help prospective customers learn more about Bank of America advisors while enabling bank advisors to efficiently manage the content on their personal pages. Details are coming soon.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
-            "projectProblem" : "Details coming soon.",
+            "projectProblem" : "Details are coming soon.",
             "projectImpact": "",
-            "myRole":"",
             "myResponsibilities":[
-
             ],
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-cover.png",
             "projectPageUrl" : "merrill-finacial-advisor-page-redesign",
@@ -530,13 +552,11 @@
                 "infoBlocks": [
                     {
                         "blockHeading": "Next Steps",
-                        "blockBulletPoints": [
-                        ]
+                        "blockBulletPoints": []
                     },
                     {
                         "blockHeading": "What I Learned",
-                        "blockBulletPoints": [
-                        ]
+                        "blockDescription": ""
                     }
                 ]
             }
@@ -544,11 +564,10 @@
 
         {
             "projectName" : "The UPS Store Mircrosite Redesign",
-            "projectDescription" : "To revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation. Details come soon.",
+            "projectDescription" : "To revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation. Details are coming soon.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
-            "projectProblem" : "Details coming soon.",
+            "projectProblem" : "Details are coming soon.",
             "projectImpact": "",
-            "myRole":"",
             "myResponsibilities":[
                 "Examined the UPS Store search site using heuristic evaluation and web analytics",
                 "Conducted user testing on the UPS Store search site",

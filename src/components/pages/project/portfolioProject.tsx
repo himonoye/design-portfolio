@@ -20,7 +20,7 @@ export default function PortfolioProject({projectData, nextProjectData, prevProj
 					projectCoverImgUrl={projectData.projectCoverImgUrl}
 			></PortfolioProjectHero>
 
-			{(projectData.projectProblem != "Details coming soon.") && 
+			{(projectData.projectProblem != "Details are coming soon.") && 
 				<div className="content-container">
 					
 					<DividerThreeDots/>

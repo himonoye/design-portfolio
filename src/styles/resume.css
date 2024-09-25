@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--surface-primary-background);
-    gap: var(--spacing-60);
+    gap: var(--resume-gutter-large);
     padding: var(--container-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--container-shadow);
@@ -11,81 +11,81 @@
 .resume-heading-container {
     display: flex;
     flex-direction: column;
-    gap: var(--resume-gutter);
+    gap: var(--resume-gutter-small);
 }
 
 .resume-top-container {
     display: flex;
-    gap: var(--spacing-60);
+    gap: var(--resume-gutter-large);
 }
 
 .resume-bottom-container {
     display: flex;
     flex-direction: column;
-    gap: var(--resume-gutter);
+    gap: var(--resume-gutter-medium);
 }
 
 .resume-left-container  {
     width: 70%;
     display: flex;
     flex-direction: column;
-    gap: var(--resume-gutter);
+    gap: var(--resume-gutter-medium);
 }
 
 .resume-right-container {
     width: 30%;
     display: flex;
     flex-direction: column;
-    gap: var(--resume-gutter);
+    gap: var(--resume-gutter-medium);
     padding-top: var(--spacing-30);
 }
 
 .resume-contact-container {
     display: flex;
     flex-direction: column;
+    gap: var(--resume-gutter-small);
 }
 
 .resume-contact-entry-container {
     display: flex;
-    gap: var(--spacing-5);
-    padding-bottom: var(--spacing-20);
+    gap: var(--resume-gutter-smallest);
 }
 
 .resume-work-experience-container {
     display: flex;
     flex-direction: column;
-    gap: var(--resume-gutter);
+    gap: var(--resume-gutter-medium);
 }
 
 .resume-profile-container {
     display: flex;
     flex-direction: column;
-    gap: var(--resume-gutter);
+    gap: var(--resume-gutter-medium);
 }
 
 .resume-profile-entry-container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-10);
+    gap: var(--resume-gutter-smallest);
 }
 
 .resume-project-container {
     display: flex;
-    gap: var(--resume-gutter);
+    gap: var(--resume-gutter-medium);
 }
 
 .resume-project-entry-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: var(--spacing-20);
+    gap: var(--resume-gutter-small);
 }
 
 .resume-job-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: var(--spacing-10);
+    gap: var(--resume-gutter-small);
 }
 
 /*Typography*/
@@ -188,13 +188,18 @@
     }
 
     .resume-sub {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 1.8rem;
     }
 
     .resume-flag {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+
+    .resume-base {
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 
     .resume-divider {
@@ -203,11 +208,7 @@
 }
 
 @media print {
-
-    #resume-container {
-        padding: 0 var(--spacing-30) var(--spacing-30) var(--spacing-30);
-    }
-
+    /* Page Layouts */
     .container {
         background-color: var(--surface-primary-background);
     }
@@ -228,12 +229,11 @@
         padding: 0;
     }
 
-    .resume-project-container {
-        gap:0;
-    }
+    /* Resume */
 
-    .resume-project-entry-container{
-        gap:0;
+    #resume-container {
+        padding: 0 var(--spacing-30) var(--spacing-30) var(--spacing-30);
+        box-shadow: none;
     }
 
     .resume-lead {
@@ -277,4 +277,5 @@
     .resume-divider {
         margin: 0 var(--spacing-5);
     }
+    
 }

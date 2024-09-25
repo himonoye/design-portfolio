@@ -1,5 +1,5 @@
 {
-    "summary":"I’m a product-driven Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
+    "summary":"I’m a Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
     "workExperience": [
         {
             "jobTitle" : "Senior UI/UX Designer", 
@@ -34,7 +34,8 @@
         }
     ],
     "contact" : {
-        "email" : "mingxinye1128@gmail.com"
+        "email" : "mingxinye1128@gmail.com",
+        "Website" : "mingxinye.com"
     },
     "profileSummary" : [
         {   "sectionTitle" : "Skills",
@@ -73,15 +74,14 @@
     ],
     "projectExperience": [
         {
-            "projectTitle" : "Swedish Providence Health Doctor Finder Experience", 
+            "projectTitle" : "Heartland Dental Office Microsite Platform Solution", 
             "companyName" : "Yext", 
-            "year" : "2021", 
+            "year" : "2023 - 2024", 
             "projectSummary": [
-                "Researched and compared site features against competitors",
-                "Designed wireframes in Figma",
-                "Collaborated with SWEs to build a prototype site based on the wireframes",
-                "Conducted user testing and iterated on the prototype designs",
-                "Presented the test findings to all shareholders"
+                "Built a design component library for each template",
+                "Designed six high-fidelity, interchangeable Figma templates with seven pages each",
+                "Collaborated with engineers and project managers to create innovative platform solutions",
+                "Used Figma variables to enable dynamic branding updates for 100 dental sites without code changes"
             ]
         },
         {

@@ -119,7 +119,10 @@
 
     /* resume */
     --resume-font-Family: "Arial";
-    --resume-gutter: var(--spacing-40);
+    --resume-gutter-smallest: var(--spacing-5);
+    --resume-gutter-small: var(--spacing-20);
+    --resume-gutter-medium: var(--spacing-40);
+    --resume-gutter-large: var(--spacing-60);
 
     /* border radius */
     --button-border-radius: 0;
@@ -175,9 +178,20 @@
     :root {
         --container-padding: var(--spacing-40) var(--spacing-30);
         --card-padding: var(--spacing-30);
-        --gutter: var(--spacing-40);
-        --resume-gutter: var(--spacing-20);
+        --resume-gutter-smallest: 0;
+        --resume-gutter-small: var(--spacing-5);
+        --resume-gutter-medium: var(--spacing-20);
+        --resume-gutter-large: var(--spacing-30);
         --button-spacing: var(--spacing-20) var(--spacing-20) var(--spacing-15) var(--spacing-20);
+    }
+}
+
+@media print {
+    :root {
+        --resume-gutter-smallest: 0;
+        --resume-gutter-small: var(--spacing-5);
+        --resume-gutter-medium: var(--spacing-20);
+        --resume-gutter-large: var(--spacing-30);
     }
 }
 

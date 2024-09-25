@@ -83,13 +83,13 @@ const ContactSection = () => {
             <div className="resume-head">Contact</div>
             <div className="resume-contact-container">
                 <div className="resume-contact-entry-container">
-                    <div className="resume-base">Email:</div>
+                    <div className="resume-brow">Email:</div>
                     <div className="resume-base">mingxinye1128@gmail.com</div>
                 </div>
-                {/* <div className="resume-contact-entry-container">
+                <div className="resume-contact-entry-container">
                     <div className="resume-brow">Website:</div>
                     <div className="resume-base">mingxinye.com</div>
-                </div> */}
+                </div>
             </div>
         </div>
     )
