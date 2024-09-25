@@ -88,6 +88,7 @@
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",
                 "sectionDescription": "",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-1.png",  
                 "infoBlocks": [
                     {
                         "blockHeading": "The client provided a variety of user types at the start of the project. Each group has varying levels of access to existing database, leading to different search behaviors and feature requirements.",
@@ -110,8 +111,7 @@
                         "blockHeading": "Competitive Analysis",
                         "blockDescription": "To gain deeper market insights, we also conducted a competitive analysis of direct competitors, identifying common layouts and design patterns across their competitors.", 
                         "blockBulletPoints":  [
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-1.png"
+                        ]
                     }
                 ]
             },
@@ -215,9 +215,7 @@
                     {
                         "blockHeading": "Empathy Map",
                         "blockDescription": "We also built user empathy maps for different stages of a organizer's work flow.", 
-                        "blockBulletPoints":  [
-
-                        ],
+                        "blockBulletPoints":  [],
                         "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/empathy-map.png"
                     },
                     {
@@ -231,13 +229,8 @@
             "startDesign":{
                 "sectionHeading" : "User Flow",
                 "sectionDescription": "We are currently at the beginning stage of the design phrase. We started drawing out the user flow chart and defining screens for each features.",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "",
-                        "blockDescription": "",
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png"
-                    }
-                ]
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png",
+                "infoBlocks": []
             },
             "takeaways":{
                 "sectionHeading" : "Takeaways",
@@ -272,15 +265,15 @@
                 "Developed a comprehesive design template and component library",
                 "Collected feedback on the update template"
             ],
-            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Dashboard Template/dashboard-template-cover.png",
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-cover.png",
             "projectPageUrl" : "dashboard-template",          
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",
-                "sectionDescription": "To gain deeper insights into the current dashboard building experience and reduce my designer bias",
+                "sectionDescription": "",
                 "sectionImgUrl":"",
                 "infoBlocks": [
                     {
-                        "blockHeading": "I interviewed four other designers:",
+                        "blockHeading": "To gain deeper insights into the current dashboard building experience and reduce my designer bias, I interviewed four other designers:",
                         "blockDescription": "", 
                         "blockBulletPoints":  [
                             "2 new hires who has been with the company for less than 1 year",
@@ -303,14 +296,15 @@
                             "Building from ground zero or relying on previous examples to set up design files",
                             "Junior designers are often unfamiliar with the platform's capabilities and unsure whether a component is available out-of-the-box or needs to be custom-designed",
                             "Designers often need to manipulate screenshots by cropping, covering, or combining images to save time."
-                        ]
+                        ],
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-1.png"
                     }
                 ]
             },
             "startDesign":{
                 "sectionHeading" : "Design Iteration",
                 "sectionDescription": "",
-                "sectionImgUrl":"",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-2.png",
                 "infoBlocks": [
                     {
                         "blockHeading": "Building a Component Library",
@@ -324,9 +318,9 @@
                 ]
             },
             "refineDesign":{
-                "sectionHeading" : "Design Refinement",
+                "sectionHeading" : "Usability Study & Design Refinement",
                 "sectionDescription": "",
-                "sectionImgUrl":"",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-3.png",
                 "infoBlocks": [
                     {
                         "blockHeading": "Once I built out the first draft of the component library, I went on to test the template with the same set of designers. I asked them to complete the following tasks:",
@@ -465,7 +459,7 @@
 
         {
             "projectName" : "Merrill Finacial Advisor Page Redesign",
-            "projectDescription" : "The goal is to help prospective customers learn more about Bank of America advisors while enabling bank advisors to efficiently manage the content on their personal pages. ",
+            "projectDescription" : "The goal is to help prospective customers learn more about Bank of America advisors while enabling bank advisors to efficiently manage the content on their personal pages. Details come soon.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
             "projectProblem" : "Details coming soon.",
             "projectImpact": "",
@@ -550,7 +544,7 @@
 
         {
             "projectName" : "The UPS Store Mircrosite Redesign",
-            "projectDescription" : "To revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation.",
+            "projectDescription" : "To revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation. Details come soon.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
             "projectProblem" : "Details coming soon.",
             "projectImpact": "",
@@ -561,7 +555,7 @@
                 "Built audit reports based on the user testing result",
                 "Provided design recommendations based on the report insights"
             ],
-            "imgUrl" : "./imgs/projectImage.png",
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/TUPSS-cover.png",
             "projectPageUrl" : "the-ups-store-mircrosite-redesign",
             "understandingUsers" : {
                 "sectionHeading" : "Understanding Users",

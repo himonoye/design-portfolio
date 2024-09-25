@@ -31,10 +31,11 @@ const InfoBlock = ({blockHeading, blockDescription, blockBulletPoints, blockImgU
 export default function ProjectSection ({sectionHeading, sectionDescription, sectionImgUrl, infoBlocks,}: projectSectionProps) {
 	return (
 		<div className="project-section-container">
+			<DividerThreeDots/>
 			<div className="project-heading-container">
-				{sectionImgUrl && <Image url={sectionImgUrl}></Image>}
 				{sectionHeading && <div className="heading-sub">{sectionHeading}</div>}
 				{sectionDescription && <p className="body-base">{sectionDescription}</p>}
+				{sectionImgUrl && <Image url={sectionImgUrl}></Image>}
 			</div>
 			{infoBlocks && 
 				<div className="project-info-block-container">
@@ -51,7 +52,6 @@ export default function ProjectSection ({sectionHeading, sectionDescription, sec
 					})}
 				</div>
 			}
-			<DividerThreeDots/>
 		</div>
 	)
 }

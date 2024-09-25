@@ -22,6 +22,7 @@ export default function PortfolioProject({projectData, nextProjectData, prevProj
 
 			{(projectData.projectProblem != "Details coming soon.") && 
 				<div className="content-container">
+					
 					<DividerThreeDots/>
 
 					<PortfolioProjectSummary projectImpact={projectData.projectImpact} myResponsibilities={projectData.myResponsibilities}/>
@@ -39,7 +40,7 @@ export default function PortfolioProject({projectData, nextProjectData, prevProj
 						<PortfolioProjectSection
 							sectionHeading={projectData.startDesign.sectionHeading}
 							sectionDescription={projectData.startDesign.sectionDescription}
-							sectionImgUrl={projectData.understandingUsers.sectionImgUrl}
+							sectionImgUrl={projectData.startDesign.sectionImgUrl}
 							infoBlocks={projectData.startDesign.infoBlocks}>
 						</PortfolioProjectSection>
 					}
