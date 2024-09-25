@@ -10,17 +10,19 @@
     gap: var(--gutter);
 }
 
+.project-card > .image-wrapper {
+    background-color: var(--surface-tertiary-background);
+}
+
 .project-card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: var(--card-padding);
-    gap: var(--spacing-40);
     top: 0px;
     position: relative;
-    width: calc((100% - var(--gutter) - 160px)/2);
-    background-color: var(--surface-secondary-background);
+    width: calc((100% - var(--gutter))/2);
     border-radius: var(--card-border-radius);
+    background-color: var(--surface-secondary-background);
     overflow: hidden;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
@@ -41,6 +43,7 @@
 .project-card-body {
     display: flex;
     flex-direction: column;
+    padding: var(--card-padding);
     gap: var(--spacing-10);
 }
 

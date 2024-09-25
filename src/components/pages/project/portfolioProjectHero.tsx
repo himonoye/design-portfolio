@@ -16,9 +16,7 @@ export default function PortfolioProjectHero({pageTitle, projectProblem, project
 					<div className="heading-lead">{pageTitle}</div>
 					<p className="body-base">{projectProblem}</p>
 				</div>
-				<div className="hero-image">
-					<Image url={projectCoverImgUrl}></Image>
-				</div>
+				<Image url={projectCoverImgUrl}></Image>
 			</div>		
 	)
 }

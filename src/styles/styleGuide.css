@@ -26,6 +26,11 @@
     --brand-gradient-300: linear-gradient(45deg, var(--brand-green-300) 0%, var(--brand-purple-300) 25%, var(--brand-beige-300) 50%, var(--brand-purple-300) 75%, var(--brand-green-300) 100%);
    
     /* grayscale colors*/
+    --brand-grayscale-900: #111111;
+    --brand-grayscale-800: #222222;
+    --brand-grayscale-700: #333333;
+    --brand-grayscale-600: #666666;
+    --brand-grayscale-500: #777777;
     --brand-grayscale-400: #444444;
     --brand-grayscale-300: #555;
     --brand-grayscale-200: #ddd;
@@ -64,6 +69,11 @@
     line-height: var(--base-font-height);
     color: var(--surface-primary-text);
 
+    /* motif */
+    --motif-primary: var(--brand-purple-300);
+    --motif-secondary: var(--brand-green-200);
+    --motif-tertiary: var(--brand-purple-200);
+
     /* Semantic colors */
     --surface-primary-background: var(--brand-white);
     --surface-primary-text: var(--brand-grayscale-300);
@@ -75,6 +85,10 @@
     --surface-secondary-text: var(--brand-grayscale-300);
     --surface-secondary-heading: var(--brand-purple-300);
 
+    --surface-tertiary-background: var(--brand-beige-200);
+    --surface-tertiary-text: var(--brand-grayscale-300);
+    --surface-tertiary-heading: var(--brand-grayscale-300);
+
     --button-primary-background: var(--brand-white);
     --button-primary-text: var(--brand-purple-300);
 
@@ -83,11 +97,6 @@
 
     --link-primary-text: var(--brand-purple-300);
     --link-secondary-text: var(--brand-green-300);
-
-    /* motif */
-    --motif-primary: var(--brand-purple-300);
-    --motif-secondary: var(--brand-green-200);
-    --motif-tertiary: var(--brand-purple-200);
 
     /* divider */
     --border-divider: var(--brand-beige-200);
@@ -103,10 +112,10 @@
     --mobile-header-shadow: 5px 0px 5px 0px var(--brand-grayscale-200);
 
     /* base spacing */
-    --gutter: var(--spacing-20);
+    --gutter: var(--spacing-40);
     --container-padding: var(--spacing-80);
     --button-spacing: var(--spacing-20) var(--spacing-30) var(--spacing-15) var(--spacing-30);
-    --card-padding: var(--spacing-60) var(--spacing-40);
+    --card-padding: var(--spacing-40);
 
     /* resume */
     --resume-font-Family: "Arial";
@@ -117,12 +126,55 @@
     --card-border-radius: 0.33rem;
     --icon-border-radius: 50%;
 
+    @media (prefers-color-scheme: dark) {
+        /* motif */
+        --motif-primary: var(--brand-beige-100);
+        --motif-secondary: var(--brand-green-200);
+        --motif-tertiary: var(--brand-purple-200);
+    
+        /* Semantic colors */
+        --surface-primary-background: var(--brand-grayscale-900);
+        --surface-primary-text: var(--brand-white);
+        --surface-primary-heading: var(--brand-white);
+        --surface-primary-subheading: var(--brand-white);
+        --surface-primary-link: var(--brand-white);
+        
+        --surface-secondary-background: var(--brand-grayscale-800);
+        --surface-secondary-text: var(--brand-white);
+        --surface-secondary-heading: var(--brand-white);
+
+        --surface-tertiary-background: var(--brand-black);
+        --surface-tertiary-text: var(--brand-white);
+        --surface-tertiary-heading: var(--brand-white);
+
+        --button-primary-background: var(--brand-grayscale-900);
+        --button-primary-text: var(--brand-white);
+
+        --button-secondary-background: var(--brand-grayscale-900);
+        --button-secondary-text: var(--brand-white);
+
+        --link-primary-text: var(--brand-white);
+        --link-secondary-text: var(--brand-white);
+    
+        /* divider */
+        --border-divider: var(--brand-grayscale-600);
+        --border-divider-hover: var(--brand-grayscale-600);
+    
+        /* overlay */
+        --overlay: rgb(255, 255, 255,.8);
+    
+        /* shadow */
+        --container-shadow: 0px 0px 5px var(--brand-black);
+        --card-shadow: 0px 0px 2.5px 0px var(--brand-black);
+        --card-shadow-hover: 0px 5px 10px -2.5px var(--brand-black);
+        --mobile-header-shadow: 5px 0px 5px 0px var(--brand-black);
+    }
 }
 
 @media screen and (max-width: 768px) {
     :root {
         --container-padding: var(--spacing-40) var(--spacing-30);
-        --card-padding: var(--spacing-30) var(--spacing-20);
+        --card-padding: var(--spacing-30);
         --gutter: var(--spacing-40);
         --resume-gutter: var(--spacing-20);
         --button-spacing: var(--spacing-20) var(--spacing-20) var(--spacing-15) var(--spacing-20);

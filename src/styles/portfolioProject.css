@@ -1,36 +1,19 @@
-.hero-image {
-    padding: var(--card-padding);
-    background-color: var(--surface-secondary-background);
+.hero-container > .image-wrapper {
+    background-color: var(--surface-tertiary-background);
     border-radius: var(--card-border-radius);
 }
-
-/* .hero-overlay {
-    width: 100%;
-    aspect-ratio: 1/1;
-    background-color: var(--overlay);
-    position: absolute;
-} */
-/* 
-.hero-image > .hero-link{
-    position: absolute;
-    z-index: 1000;
-}
-
-.hero-link {
-    padding: var(--container-padding);
-} */
 
 .project-heading-container {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-30);
-    padding: var(--spacing-40) 0 0 var(--spacing-80);
+    padding: 0 0 0 var(--spacing-80);
 }
 
 .project-section-container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-40);
+    gap: var(--spacing-60);
 }
 
 .project-info-block-container {

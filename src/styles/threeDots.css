@@ -34,6 +34,22 @@
     border-radius: 10px;
 }
 
+/* Three Dots Dividers */
+
+.divider-three-dots {
+    display: flex;
+    gap: var(--spacing-20);
+    align-items: center;
+}
+
+.divider-three-dots::before, .divider-three-dots::after{
+    height: 1px;
+    width: 100%;
+    background: var(--border-divider);
+    content:"";
+}
+
+
 /* Three Dots Horizontal; 
    Can be found on project page in hero container and on project card */
 

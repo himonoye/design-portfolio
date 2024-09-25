@@ -18,7 +18,6 @@ export default function ProjectCard({projectName, projectDescription, projectPag
                 <div className="heading-sub">{projectName}</div>
                 <p className="body-base">{projectDescription}</p>
             </div>
-            <ThreeDots className="three-dots-horizontal"></ThreeDots>
         </NavLink>
     )
 }

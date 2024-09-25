@@ -1,11 +1,10 @@
 #resume-container {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--surface-primary-background);
     gap: var(--spacing-60);
     padding: var(--container-padding);
     border-radius: var(--card-border-radius);
-    /* border: 1px solid var(--border-divider); */
     box-shadow: var(--container-shadow);
 }
 
@@ -210,7 +209,7 @@
     }
 
     .container {
-        background-color: white;
+        background-color: var(--surface-primary-background);
     }
 
     .body-container {

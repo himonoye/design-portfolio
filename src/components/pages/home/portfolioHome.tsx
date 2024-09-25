@@ -12,7 +12,7 @@ export default function PortfolioHome({pageData, projectData}:PortfolioHomeProps
     return (
         <div className="body-container">
             <PortfolioHomeHero
-                profileImageUrl={pageData.profileImageUrl}
+                profileImgUrl={pageData.profileImgUrl}
                 buttonScrollText={pageData.buttonScrollText}
                 buttonText1={pageData.buttonText1}
                 buttonUrl1={pageData.buttonUrl1}
