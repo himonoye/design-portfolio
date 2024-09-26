@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 import Layout from './components/style_guide/layout';
@@ -61,3 +61,13 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+const [data, setData] = useState('');
+
+useEffect(() => {
+  (async function () {
+    const { text } = await( await fetch(`/api/auth`)).json();
+    setData(text);
+  })();
+  console.log(data);
+});
