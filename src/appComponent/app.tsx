@@ -20,12 +20,12 @@ export default function App({pageData, resumeData}:appProps) {
 
   //Contsurct children routes
   let childrenRoutes = [
-    // {
-    //   //Error
-    //   path: "*",
-    //   index: true, 
-    //   element: <ErrorPage/>,
-    // },
+    {
+      //Error
+      path: "*",
+      index: true, 
+      element: <ErrorPage/>,
+    },
     {
       //Home
       path: "/",
