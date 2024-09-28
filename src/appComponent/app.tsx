@@ -20,27 +20,30 @@ export default function App({pageData, resumeData}:appProps) {
 
   //Contsurct children routes
   let childrenRoutes = [
-    {
-      //Home
-      path: "*",
-      index: true, 
-      element: <ErrorPage/>,
-    },
+    // {
+    //   //Error
+    //   path: "*",
+    //   index: true, 
+    //   element: <ErrorPage/>,
+    // },
     {
       //Home
       path: "/",
       index: true, 
       element: <PortfolioHome pageData={pageData.pageInfo.portfolio} projectData={pageData.projectData}/>,
+      errorElement: <ErrorPage/>
     },
     {
       //Resume
       path: "/resume",
       element: <Resume pageData={pageData.pageInfo.resume} resumeData={resumeData}/>,
+      errorElement: <ErrorPage/>
     },
     {
       //Outside work
       path: "/outsidework",
       element: <OutsideWork pageData={pageData.pageInfo.outsideWork} gallery={pageData.outsideWorkGallery}/>,
+      errorElement: <ErrorPage/>
     },
   ]
 
@@ -50,6 +53,7 @@ export default function App({pageData, resumeData}:appProps) {
         {
           path: "/"+project.projectPageUrl,
           element: <PortfolioProject projectData={project} prevProjectData={projectData[i-1]?projectData[i-1]:projectData[projectData.length-1]} nextProjectData={projectData[i+1]?projectData[i+1]:projectData[0]}/>,
+          errorElement: <ErrorPage/>
         }
       )
   })
