@@ -28,20 +28,17 @@ export default function App({pageData, resumeData}:appProps) {
     },
     {
       //Home
-      errorElement: <ErrorPage/>,
       path: "/",
       index: true, 
       element: <PortfolioHome pageData={pageData.pageInfo.portfolio} projectData={pageData.projectData}/>
     },
     {
       //Resume
-      errorElement: <ErrorPage/>,
       path: "/resume",
       element: <Resume pageData={pageData.pageInfo.resume} resumeData={resumeData}/>,
     },
     {
       //Outside work
-      errorElement: <ErrorPage/>,
       path: "/outsidework",
       element: <OutsideWork pageData={pageData.pageInfo.outsideWork} gallery={pageData.outsideWorkGallery}/>
     },
@@ -51,7 +48,6 @@ export default function App({pageData, resumeData}:appProps) {
   pageData.projectData.map((project:any, i:number, projectData:any)=>{
       childrenRoutes.push(
         {
-          errorElement: <ErrorPage/>,
           path: "/"+project.projectPageUrl,
           element: <PortfolioProject projectData={project} prevProjectData={projectData[i-1]?projectData[i-1]:projectData[projectData.length-1]} nextProjectData={projectData[i+1]?projectData[i+1]:projectData[0]}/>
         }
