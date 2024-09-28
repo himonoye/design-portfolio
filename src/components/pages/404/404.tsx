@@ -1,8 +1,10 @@
 import React from 'react';
-import { GlobalNav, GlobalMobileNav} from '../general_sections/globalNav';
+import { useRouteError } from 'react-router-dom'
 
 export default function ErrorPage() {
-	return (  
+  const error: unknown = useRouteError();
+  console.error(error);
+  return (  
       <div className="body-container">
         <div className="project-hero-container">
           <div className="hero-container">
@@ -13,5 +15,5 @@ export default function ErrorPage() {
           </div>
         </div>
       </div>
-	)
-} 
+  )
+}

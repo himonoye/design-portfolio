@@ -1,7 +1,0 @@
-type Project {
-  id: ID
-  projectName: String
-  projectObjective: String
-  projectRequirement: String
-  projectDescription: String
-}

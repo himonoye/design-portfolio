@@ -74,7 +74,7 @@
         "outsideWork" : {
             "url":"outsideWork",
             "title" : "Connect Outside Work",
-            "description" : "When I'm not working, I enjoy listening to audio books, playing word puzzles and going on food adventures. You can also find me on the tennis court during summer, ski slops during winter, or climbing gyms all year round.",
+            "description" : "When I'm not working, I enjoy listening to audio books, playing word puzzles and going on food adventures. You can also find me on the tennis court during summer, ski slopes during winter, or climbing gyms all year round.",
             "buttonGroup":[
                 {
                     "buttonText" : "CONNECT ON INSTAGRAM",
@@ -482,7 +482,7 @@
         },
 
         {
-            "projectName" : "Merrill Finacial Advisor Page Redesign",
+            "projectName" : "Merrill Financial Advisor Page Redesign",
             "projectDescription" : "The goal is to help prospective customers learn more about Bank of America advisors while enabling bank advisors to efficiently manage the content on their personal pages. Details are coming soon.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
             "projectProblem" : "Details are coming soon.",
