@@ -3,7 +3,9 @@ import { useRouteError } from 'react-router-dom'
 
 export default function ErrorPage() {
   const error: unknown = useRouteError();
+
   console.error(error);
+  
   return (  
       <div className="body-container">
         <div className="project-hero-container">
