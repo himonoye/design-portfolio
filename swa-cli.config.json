@@ -1,0 +1,16 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "design-portfolio": {
+      "appLocation": ".",
+      "apiLocation": "api",
+      "outputLocation": "build",
+      "apiLanguage": "node",
+      "apiVersion": "16",
+      "appBuildCommand": "npm run build",
+      "apiBuildCommand": "npm run build --if-present",
+      "run": "npm start",
+      "appDevserverUrl": "http://127.0.0.1:3000"
+    }
+  }
+}

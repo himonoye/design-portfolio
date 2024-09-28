@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { createBrowserRouter, RouterProvider, useRouteError } from "react-router-dom";
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Layout from '../components/style_guide/layout';
 import PortfolioHome from '../components/pages/home/portfolioHome'
 import PortfolioProject from '../components/pages/project/portfolioProject';
 import Resume from '../components/pages/resume/resume';
 import OutsideWork from '../components/pages/outsideWork/outsideWork';
 import ErrorPage from '../components/pages/404/404';
-
-//Import temporary project data
-// const pageData = require('./pageData.json');
-// const resumeData = require('./resumeData.json');
 
 type appProps = {
   pageData: any;
