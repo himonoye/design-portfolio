@@ -24,7 +24,7 @@ export async function authSitePassword(request: HttpRequest, context: Invocation
 };
 
 app.http('authSitePasscode', {
-    methods: ['GET', 'POST'],
+    methods: ['POST'],
     authLevel: 'anonymous',
     handler: authSitePassword
 });

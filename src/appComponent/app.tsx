@@ -68,18 +68,3 @@ export default function App({pageData, resumeData}:appProps) {
   )
 
 }
-
-
-
-
-
-
-// const [data, setData] = useState('');
-
-// useEffect(() => {
-//   (async function () {
-//     const { text } = await( await fetch(`/api/auth`)).json();
-//     setData(text);
-//   })();
-//   console.log(data);
-// });
