@@ -2,57 +2,80 @@ import React, { FormEventHandler, useState } from 'react';
 import Button from '../../style_guide/button';
 
 
-type passcodeFormProps = {
-  userInput: string;
+type passwordFormProps = {
   setShowPortfolio: Function;
 }
 
-export default function PasscodeForm({userInput, setShowPortfolio}:passcodeFormProps) {
-  //Temporary isPasscodeValid state
-  const [isPasscodeValid, setIsPasscodeValid] = useState(false);
-  if(isPasscodeValid) {
-    setShowPortfolio(true);
-  }
+export default function PasswordForm({setShowPortfolio}:passwordFormProps) {
 
-  //Init passcode state. this is where user input lives
-  const [userPasscord, setUserPasscord] = useState("");
+  //Init password state. this is where user input lives
+  const [userPassword, setUserPassword] = useState("");
 
   //Init error state. This is where error message lives
-  const [erroMsg, seterroMsg] = useState("No password yet.");
+  const [erroMsg, setErroMsg] = useState("");
+  
+  // Send user input to back end
+  async function sendPassword(userPassword:string){
+    try{
+
+      const postData = new FormData();
+      postData.append('userPassword', userPassword);
+
+      //Post Request
+      const response = await fetch('/api/authSitePasscode', {
+        method: "POST",
+        body: userPassword,
+      })
+
+      //Check for non-200 response
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`);
+      }
+
+      //Parse data
+      const data = await response.json()
+
+      //return the isPasswordValid boolean
+      return data.isPasswordValid;
+
+      //catch any error
+    } catch(error) {
+      console.log('Error occurred:', error);
+    }
+}
   
   //Function triggered when "Submit" button is clicked
   async function handleSubmit(event:React.FormEvent<HTMLFormElement>){
     event.preventDefault();
+      
+    //Call sendPassword funtion to send a HTTP request
+    const isValid = await sendPassword(userPassword);
 
-    let truePasscode = "1234";
+    console.log(isValid);
 
-    // Send user input to back end
-
-    try{
-      // If passcode matched then render
-      if (truePasscode == userPasscord) {
-        setShowPortfolio(true);
-      } else {
-        setIsPasscodeValid(false)
-        seterroMsg("Incorrect password. Please try again.")
-      }
-    } catch(error) {
-      console.error('Error occurred:', error);
+    // If user password and the site password matches
+    // then render the home page
+    // Otherwise show error messa
+    if (isValid) {
+      setShowPortfolio(true);
+    } else {
+      setErroMsg("Password incorrect. Please try again.")
     }
+
   }
 
-  //Render Passcode collection form
+  //Render password collection form
   return (
     <div className="container">
       <div className="form-container">
-        <form className="passcode-form" onSubmit={(event: React.FormEvent<HTMLFormElement>):void => {handleSubmit(event)}}>
+        <form className="password-form" onSubmit={(event: React.FormEvent<HTMLFormElement>):void => {handleSubmit(event)}}>
           <div className="heading-lead">Password protected content</div>
           <div className="form-Inputs">
             <input
               className="body-large"
               type="password"
-              value={userPasscord}
-              onChange = {(event:React.ChangeEvent<HTMLInputElement>)=>{setUserPasscord(event.target.value);}}>
+              value={userPassword}
+              onChange={(event:React.ChangeEvent<HTMLInputElement>)=>{setUserPassword(event.target.value);}}>
             </input>
             <div className="body-base">{erroMsg}</div>
             <button type="submit">

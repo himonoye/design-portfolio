@@ -64,7 +64,7 @@ export default function App({pageData, resumeData}:appProps) {
   ]);
 
   return (
-    showPortfolio ? <RouterProvider router={router} /> : <PasscodeForm userInput = "12345" setShowPortfolio={setShowPortfolio}/> 
+    showPortfolio ? <RouterProvider router={router} /> : <PasscodeForm setShowPortfolio={setShowPortfolio}/> 
   )
 
 }
