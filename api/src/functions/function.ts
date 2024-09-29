@@ -6,7 +6,7 @@ export async function authSitePassword(request: HttpRequest, context: Invocation
     let isValid = false;
     const password = await request.text();
 
-    const truePasscode = process.env.WEBSITE_PASSWORD
+    const truePasscode = process.env.ENTRY_PASSWORD
     context.log(`Http function processed request for url "${truePasscode}"`)
 
     if (password.toString() == truePasscode){
