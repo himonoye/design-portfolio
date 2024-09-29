@@ -46,6 +46,13 @@
         gap: var(--spacing-10);
     }
 
+    .img-gallery-col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: var(--spacing-10);
+    }
+
     .img-gallery-img {
         opacity: 1;
     }

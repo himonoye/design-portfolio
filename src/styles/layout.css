@@ -57,6 +57,13 @@
     border-top: 1px solid var(--border-divider);
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: var(--container-padding);
+    gap: var(--gutter);
+}
+
 @media screen and (max-width: 1200px) {
     .container {
         width: 100%;

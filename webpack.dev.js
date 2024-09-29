@@ -8,7 +8,7 @@ module.exports = {
     devtool: 'source-map',
     stats: 'verbose',
     output: {
-        filename: 'bundle.js',
+        filename: 'bundle.min.js',
         path: path.resolve(__dirname, 'dist'),
     },
     module: {
@@ -39,5 +39,6 @@ module.exports = {
             template: "./index.html",
             filename: "./index.html",
         })
-    ],
+    ]
+    
 }

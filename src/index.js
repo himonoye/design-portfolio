@@ -12,7 +12,8 @@ const root = createRoot(domNode);
 
 root.render(
   <React.StrictMode>
-    <App pageData={pageData} resumeData={resumeData}></App>
+
+      <App pageData={pageData} resumeData={resumeData}></App>
   </React.StrictMode>
 );
 

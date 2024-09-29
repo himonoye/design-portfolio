@@ -4,8 +4,9 @@ import Layout from '../components/style_guide/layout';
 import PortfolioHome from '../components/pages/home/portfolioHome'
 import PortfolioProject from '../components/pages/project/portfolioProject';
 import Resume from '../components/pages/resume/resume';
-import OutsideWork from '../components/pages/outsideWork/outsideWork';
+import OutsideWork from '../components/pages/outside_work/outsideWork';
 import ErrorPage from '../components/pages/404/404';
+import PasscodeForm from '../components/pages/passcode_form/passcodeForm';
 
 type appProps = {
   pageData: any;
@@ -13,6 +14,9 @@ type appProps = {
 }
 
 export default function App({pageData, resumeData}:appProps) {
+
+  const [showPortfolio, setShowPortfolio] = useState(false);
+
 
   //Contsurct children routes
   let childrenRoutes = [
@@ -40,7 +44,6 @@ export default function App({pageData, resumeData}:appProps) {
     },
   ]
 
-
   pageData.projectData.map((project:any, i:number, projectData:any)=>{
       childrenRoutes.push(
         {
@@ -61,7 +64,7 @@ export default function App({pageData, resumeData}:appProps) {
   ]);
 
   return (
-    <RouterProvider router={router} />
+    showPortfolio ? <RouterProvider router={router} /> : <PasscodeForm setShowPortfolio={setShowPortfolio}/> 
   )
 
 }
