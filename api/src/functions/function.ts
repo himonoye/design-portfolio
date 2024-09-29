@@ -5,7 +5,7 @@ export async function authSitePasscode(request: HttpRequest, context: Invocation
 
     const name = request.query.get('name') || await request.text() || 'world';
 
-    return { body: `Hello, ${name}!` };
+    return { body: `The response that is being send back from the serverless function` };
 };
 
 app.http('authSitePasscode', {
@@ -13,6 +13,9 @@ app.http('authSitePasscode', {
     authLevel: 'anonymous',
     handler: authSitePasscode
 });
+
+
+//Send back password
 
 // type functionProps = {
 //     context: any;

@@ -4,17 +4,15 @@ import { NavLink } from "react-router-dom";
 export type buttonProps = {
     buttonText: string;
     style: "button-primary" | "button-secondary"
-    type: "scrollTo" | "link" | "print";
+    buttonType: "scrollTo" | "link" | "print" | "event";
     url?: string;
     refPointer?: any;
+    onClick?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-export default function Button({buttonText, style, url, type, refPointer}: buttonProps) {
+export default function Button({buttonText, style, url, buttonType, refPointer, onClick}: buttonProps) {
 
-    console.log(type);
-    console.log(url);
-
-    if (type == "scrollTo" && refPointer) {
+    if (buttonType == "scrollTo" && refPointer) {
         return (
             <div className="button-wrapper" onClick={() => refPointer.current.scrollIntoView({behavior: 'smooth',
             block: 'start',
@@ -26,7 +24,7 @@ export default function Button({buttonText, style, url, type, refPointer}: butto
                     </div>
             </div>
         )
-    } else if ((type == "link") && url){
+    } else if ((buttonType == "link") && url){
         return (
             <NavLink to={url} className="button-wrapper">
                     <div className={style}>
@@ -36,9 +34,19 @@ export default function Button({buttonText, style, url, type, refPointer}: butto
                     </div>
             </NavLink>
         )
-    } else if (type == "print"){
+    } else if (buttonType == "print"){
         return (
             <div className="button-wrapper" onClick={()=>{window.print();}}>
+                    <div className={style}>
+                        <div className="button-text-wrapper">
+                            {buttonText}
+                        </div>
+                    </div>
+            </div>
+        )
+    } else if (buttonType== "event"){
+        return (
+            <div className="button-wrapper">
                     <div className={style}>
                         <div className="button-text-wrapper">
                             {buttonText}

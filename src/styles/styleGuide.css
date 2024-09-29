@@ -235,10 +235,6 @@ img {
     height: 100%;
 }
 
-input {
-    font-family: var(--base-font-Family), sans-serif;
-}
-
 mark {
     background-color: var(--surface-secondary-background);
     color: var(--surface-secondary-text);
@@ -258,12 +254,26 @@ li::marker {
     color: var(--brand-purple-300);
 }
 
-.input-field {
-    background-color: var(--surface-primary-background);
-    border: var(--surface-primary-text);
+input {
+    background-color: var(--surface-secondary-background);
+    border: solid 1px var(--surface-primary-text);
+    border-radius: var(--button-border-radius);
     color: var(--surface-primary-text);
-    border-radius: 50px;
-    padding: 10px 16px;
+    padding: var(--spacing-15) var(--spacing-20) var(--spacing-10) var(--spacing-20);
+}
+
+input:active, input:focus, input:focus-visible {
+    border: solid 0px var(--surface-primary-text);
+}
+
+input:focus-visible {
+    outline: var(--surface-primary-text) auto 1px;
+}
+
+button{
+    border: none;
+    padding-block: 0px;
+    padding-inline: 0px;
 }
 
 .image-wrapper {
