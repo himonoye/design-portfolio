@@ -9,6 +9,7 @@
 @import url(resume.css);
 @import url(outsideWork.css);
 @import url(portfolioProject.css);
+@import url(passwordForm.css);
 
 :root {
     /* brand colors*/
@@ -120,9 +121,9 @@
     /* resume */
     --resume-font-Family: "Arial";
     --resume-gutter-smallest: var(--spacing-5);
-    --resume-gutter-small: var(--spacing-20);
-    --resume-gutter-medium: var(--spacing-40);
-    --resume-gutter-large: var(--spacing-60);
+    --resume-gutter-small: var(--spacing-15);
+    --resume-gutter-medium: var(--spacing-30);
+    --resume-gutter-large: var(--spacing-40);
 
     /* border radius */
     --button-border-radius: 0;
@@ -254,23 +255,22 @@ li::marker {
     color: var(--brand-purple-300);
 }
 
-input {
-    background-color: var(--surface-secondary-background);
-    border: solid 1px var(--surface-primary-text);
-    border-radius: var(--button-border-radius);
-    color: var(--surface-primary-text);
-    padding: var(--spacing-15) var(--spacing-20) var(--spacing-10) var(--spacing-20);
+input{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: .3px;
 }
 
 input:active, input:focus, input:focus-visible {
-    border: solid 0px var(--surface-primary-text);
+    border: solid 1px var(--surface-primary-text);
 }
 
-input:focus-visible {
-    outline: var(--surface-primary-text) auto 1px;
+*:focus-visible {
+    outline: var(--motif-primary) auto 1.5px;
 }
 
 button{
+    background: none;
     border: none;
     padding-block: 0px;
     padding-inline: 0px;

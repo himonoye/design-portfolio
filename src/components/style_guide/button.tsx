@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export type buttonProps = {
     buttonText: string;
     style: "button-primary" | "button-secondary"
-    buttonType: "scrollTo" | "link" | "print" | "event";
+    buttonType: "scrollTo" | "link" | "print" | "other";
     url?: string;
     refPointer?: any;
     onClick?: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -44,7 +44,7 @@ export default function Button({buttonText, style, url, buttonType, refPointer, 
                     </div>
             </div>
         )
-    } else if (buttonType== "event"){
+    } else {
         return (
             <div className="button-wrapper">
                     <div className={style}>

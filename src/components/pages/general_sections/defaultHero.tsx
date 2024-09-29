@@ -19,7 +19,7 @@ export default function DefaultHero ({pageTitle, pageDescription, buttonGroup}:D
                 <div className="button-group">
                     {buttonGroup.map((item:any,i)=>{
                         return(
-                            <Button key = {i} style="button-primary" buttonText={item.buttonText} type={item.buttonType} url={item.buttonUrl} refPointer={item.scrollTo}/>
+                            <Button key = {i} style="button-primary" buttonText={item.buttonText} buttonType={item.buttonType} url={item.buttonUrl} refPointer={item.scrollTo}/>
                         )
                     })}     
                 </div>

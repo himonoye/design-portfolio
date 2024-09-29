@@ -15,7 +15,7 @@ export default function PasswordForm({setShowPortfolio}:passwordFormProps) {
   const [erroMsg, setErroMsg] = useState("");
   
   // Send user input to back end
-  async function sendPassword(userPassword:string){
+  async function sendPassword(){
     try{
 
       const postData = new FormData();
@@ -42,16 +42,19 @@ export default function PasswordForm({setShowPortfolio}:passwordFormProps) {
     } catch(error) {
       console.log('Error occurred:', error);
     }
-}
-  
+  }
+
+  //Clear error message after user start typing again
+  function clearErroMsg(){
+    setErroMsg("");
+  }
+
   //Function triggered when "Submit" button is clicked
   async function handleSubmit(event:React.FormEvent<HTMLFormElement>){
     event.preventDefault();
       
     //Call sendPassword funtion to send a HTTP request
-    const isValid = await sendPassword(userPassword);
-
-    console.log(isValid);
+    const isValid = await sendPassword();
 
     // If user password and the site password matches
     // then render the home page
@@ -68,25 +71,27 @@ export default function PasswordForm({setShowPortfolio}:passwordFormProps) {
   return (
     <div className="container">
       <div className="form-container">
+        <div className="heading-lead">Welcome! Please enter password to view my portfolio site.</div>
         <form className="password-form" onSubmit={(event: React.FormEvent<HTMLFormElement>):void => {handleSubmit(event)}}>
-          <div className="heading-lead">Password protected content</div>
           <div className="form-Inputs">
             <input
-              className="body-large"
+              className="input-field"
               type="password"
               value={userPassword}
-              onChange={(event:React.ChangeEvent<HTMLInputElement>)=>{setUserPassword(event.target.value);}}>
+              onChange={(event:React.ChangeEvent<HTMLInputElement>)=>{
+                setUserPassword(event.target.value);
+                clearErroMsg();}}>
             </input>
-            <div className="body-base">{erroMsg}</div>
             <button type="submit">
               <Button
-                buttonText="Submit"
+                buttonText="Enter"
                 style="button-primary"
                 buttonType="event"
-              >  
+              > 
               </Button>
             </button>
           </div>  
+          <div className="body-base">{erroMsg}</div>
         </form>
       </div>
     </div>
