@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import Layout from '../components/style_guide/layout';
 import PortfolioHome from '../components/pages/home/portfolioHome'
-import PortfolioProject from '../components/pages/project/portfolioProject';
+import ShowPortfolioProject from '../components/pages/project/portfolioProject';
 import Resume from '../components/pages/resume/resume';
 import OutsideWork from '../components/pages/outside_work/outsideWork';
 import ErrorPage from '../components/pages/404/404';
@@ -48,7 +48,12 @@ export default function App({pageData, resumeData}:appProps) {
       childrenRoutes.push(
         {
           path: "/"+project.projectPageUrl,
-          element: <PortfolioProject projectData={project} prevProjectData={projectData[i-1]?projectData[i-1]:projectData[projectData.length-1]} nextProjectData={projectData[i+1]?projectData[i+1]:projectData[0]}/>
+          element: <ShowPortfolioProject
+                    showPortfolio={showPortfolio}
+                    setShowPortfolio={setShowPortfolio}
+                    projectData={project}
+                    prevProjectData={projectData[i-1]?projectData[i-1]:projectData[projectData.length-1]}
+                    nextProjectData={projectData[i+1]?projectData[i+1]:projectData[0]}/> 
         }
       )
   })
@@ -64,7 +69,7 @@ export default function App({pageData, resumeData}:appProps) {
   ]);
 
   return (
-    showPortfolio ? <RouterProvider router={router} /> : <PasscodeForm setShowPortfolio={setShowPortfolio}/> 
+    <RouterProvider router={router} />
   )
 
 }

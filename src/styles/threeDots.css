@@ -85,3 +85,12 @@
         right: 0px;
     }
 }
+
+/* Three Dots Horizontal; 
+   Can be found on project page in hero container and on project card */
+   .three-dots-horizontal {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
