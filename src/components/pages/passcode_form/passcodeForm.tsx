@@ -78,7 +78,7 @@ export default function PasswordForm({formHeading, setShowPortfolio}:passwordFor
       } else {
         setErroMsg("Password incorrect. Please try again.")
       } 
-      
+
     } else {
       setErroMsg("Please enter a password.")
     }
@@ -88,9 +88,11 @@ export default function PasswordForm({formHeading, setShowPortfolio}:passwordFor
   return (
     <div className="body-container">
       <div className="form-container">
-      <Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
-        <div className="heading-lead">{formHeading}</div>
-        <div className="body-large">Enter password to view portfolio projects. To acquire the password, please reach out to me directly at mingxinye1128@gmail.com. I'd love to connect.</div>
+        <Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
+        <div className="hero-heading-container">
+          <div className="heading-lead">{formHeading + " (Password Required)"}</div>
+          <div className="body-large">To view my portfolio projects, please enter the password below. If you don’t have the password yet, feel free to reach out to me directly at mingxinye1128@gmail.com or on LinkedIn. I look forward to connecting with you!</div>
+        </div>
         <form className="form-body" 
               onSubmit={(event: React.FormEvent<HTMLFormElement>):void => {
                 handleSubmit(event);

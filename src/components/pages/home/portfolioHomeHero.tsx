@@ -19,12 +19,13 @@ export default function PortfolioHomeHero ({profileImgUrl,buttonScrollText, port
     return (
         <div className="hero-container">
             <img className="profileImage" src={profileImgUrl}></img>
-            <div className="heading-headline">
-                <span id="hello">Hello, </span>
-                <span id="name">I'm Ming Ye!</span>
+                <div className="hero-heading-container">
+                    <div className="heading-headline">
+                        <span id="hello">Hello, </span>
+                        <span id="name">I'm Ming Ye!</span>
+                    </div>
+                <p className="body-large"><mark>I’m a Full Stack Designer near Washington DC who creates high-quality digital products to help businesses and their users achieve their goals.</mark> With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.</p>
             </div>
-            <ThreeDots className={"three-dots-horizontal"}/>
-            <p className="body-large"><mark>I’m a Full Stack Designer near Washington DC who creates high-quality digital products to help businesses and their users achieve their goals.</mark> With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.</p>
         </div>
     )
 }

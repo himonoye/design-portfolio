@@ -137,4 +137,8 @@
         align-items: center;
         padding: var(--spacing-40) 0;
     }
+
+    .header-link > .three-dots-vertical {
+        display: none;
+    }
 }
