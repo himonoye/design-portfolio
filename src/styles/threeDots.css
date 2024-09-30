@@ -80,8 +80,7 @@
 /* Mobile, Tablet, Small Laptop*/
 @media screen and (max-width: 1200px) {
     .three-dots-vertical {
-        left: 0px;
-        right: 0px;
+        display: none;
     }
 }
 
