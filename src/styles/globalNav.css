@@ -54,8 +54,13 @@
     gap: 2rem;
 }
 
-.social-media-container {
+.social-media-container-dark {
     display: flex;
+    gap: 1rem;
+}
+
+.social-media-container-light {
+    display: none;
     gap: 1rem;
 }
 
@@ -140,5 +145,15 @@
 
     .header-link > .three-dots-vertical {
         display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .social-media-container-dark {
+        display: none;
+    }
+
+    .social-media-container-light {
+        display: flex;
     }
 }

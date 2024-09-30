@@ -17,17 +17,20 @@
         {
             "type":"linkedIn",
             "url":"https://www.linkedin.com/in/mingxinye",
-            "imgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/LinkedIn_logo.png"
+            "imgUrlDarkMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-LinkedIn-dark.svg",
+            "imgUrlLightMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-LinkedIn-light.svg"
         },
         {
             "type":"instagram",
             "url":"https://www.instagram.com/mmingaling/",
-            "imgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Instagram_logo.png"
+            "imgUrlDarkMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-Instagram-dark.svg",
+            "imgUrlLightMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-Instagram-light.svg"
         },
         {
             "type":"email",
             "url":"mailto:mingxinye1128@gmail.com",
-            "imgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/email.png"
+            "imgUrlDarkMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-email-dark.svg",
+            "imgUrlLightMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-email-light.svg"
         }
     ],
     "pageInfo" : {

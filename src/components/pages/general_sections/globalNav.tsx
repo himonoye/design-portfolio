@@ -40,12 +40,23 @@ const HeaderLink = ({linkText, url}:headerLinkProps)  => {
 const Footer = ({footerData}:footerProps) => {
     return (
         <div className="footer-container">
-            <div className="social-media-container">
+            <div className="social-media-container-light">
                 {footerData.map((item:any, i:number)=>{
                     return (
                         <div key={i} className="social-media">
                             <a className="social-media-wrapper" href={item.url}>
-                                <img src={item.imgUrl} alt={item.type + " Mingxin Ye"}></img>
+                                <img src={item.imgUrlDarkMode} alt={item.type + " Mingxin Ye"}></img>
+                            </a>
+                        </div>
+                    )
+                })}
+            </div>
+            <div className="social-media-container-dark">
+                {footerData.map((item:any, i:number)=>{
+                    return (
+                        <div key={i} className="social-media">
+                            <a className="social-media-wrapper" href={item.url}>
+                                <img src={item.imgUrlLightMode} alt={item.type + " Mingxin Ye"}></img>
                             </a>
                         </div>
                     )
