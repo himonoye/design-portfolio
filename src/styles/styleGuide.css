@@ -16,6 +16,7 @@
     --brand-purple-100: #ebe0e8;
     --brand-purple-200: #d2c5d3;
     --brand-purple-300: #7e5172;
+    --brand-purple-400: #573848;
     --brand-green-100: #e6eedd;
     --brand-green-200: #617246;
     --brand-green-300: #314021;
@@ -99,6 +100,10 @@
     --link-primary-text: var(--brand-purple-300);
     --link-secondary-text: var(--brand-green-300);
 
+    /* Notification Banner */
+    --notification-background: var(--brand-purple-400);
+    --notification-text: var(--brand-white);
+
     /* divider */
     --border-divider: var(--brand-beige-200);
     --border-divider-hover: var(--brand-beige-300);
@@ -160,6 +165,10 @@
         --link-primary-text: var(--brand-white);
         --link-secondary-text: var(--brand-white);
     
+        /* Notification Banner */
+        --notification-background: var(--brand-purple-400);
+        --notification-text: var(--brand-white);
+
         /* divider */
         --border-divider: var(--brand-grayscale-700);
         --border-divider-hover: var(--brand-grayscale-700);

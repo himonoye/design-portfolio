@@ -56,7 +56,6 @@
 .three-dots-horizontal {
     display: flex;
     gap: 8px;
-    align-items: center;
 }
 
 /* Three Dots Vertical
@@ -83,4 +82,13 @@
     .three-dots-vertical {
         display: none;
     }
+}
+
+/* Three Dots Horizontal; 
+   Can be found on project page in hero container and on project card */
+   .three-dots-horizontal {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
 }

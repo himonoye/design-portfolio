@@ -67,7 +67,6 @@
     line-height: 2.4rem;
     letter-spacing: .3px;
     font-weight: 300;
-    color: var(--surface-primary-text);
     max-width:900px;
 }
 
@@ -78,7 +77,6 @@
     line-height: 2rem;
     letter-spacing: .2px;
     font-weight: 300;
-    color: var(--surface-primary-text);
     max-width: 900px;
 }
 
@@ -88,7 +86,6 @@
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 300;
-    color: var(--surface-primary-text);
     max-width: 600px
 }
 
