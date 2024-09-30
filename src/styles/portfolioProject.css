@@ -7,7 +7,7 @@
 .project-heading-container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-20);
+    gap: var(--spacing-30);
     padding: 0 0 0 var(--spacing-80);
 }
 
