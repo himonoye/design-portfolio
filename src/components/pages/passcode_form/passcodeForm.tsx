@@ -22,9 +22,6 @@ export default function PasswordForm({formHeading, setShowPortfolio}:passwordFor
 
   //Init error state. This is where error message lives
   const [erroMsg, setErroMsg] = useState("");
-
-  //Init loading icon state. This is where loading icon will be showne or hidden
-  const [showLoadingIcons, setShowLoadingIcons] = useState(false);
   
   // Send user input to back end
   async function sendPassword(){
@@ -65,27 +62,26 @@ export default function PasswordForm({formHeading, setShowPortfolio}:passwordFor
   async function handleSubmit(event:React.FormEvent<HTMLFormElement>){
     event.preventDefault();
 
-    //Show that http request is sent and waiting on a response in UI
-    setErroMsg("Validating...")
-      
-    //Call sendPassword funtion to send a HTTP request
-    const isValid = await sendPassword();
-
-    // If user password and the site password matches
-    // then render the home page
-    // Otherwise show error messa
     if (userPassword){
+    
+      //Show that http request is sent and waiting on a response in UI
+      setErroMsg("Validating...")
+        
+      //Call sendPassword funtion to send a HTTP request
+      const isValid = await sendPassword();
+
+      // If user password and the site password matches
+      // then render the home page
+      // Otherwise show error messa
       if (isValid) {
         setShowPortfolio(true);
       } else {
-        setShowLoadingIcons(false)
         setErroMsg("Password incorrect. Please try again.")
-      }
+      } 
+      
     } else {
-      setShowLoadingIcons(false)
       setErroMsg("Please enter a password.")
     }
-
   }
 
   //Render password collection form
