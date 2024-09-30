@@ -104,11 +104,11 @@ const GlobalMobileNav = ({headerData, footerData}:globalMobileNavProps) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     return (
         <div className="header-mobile-container">
+             <Logo></Logo>
             <div className="header-mobile-icon-container" onClick={() => {setMobileMenuOpen(!mobileMenuOpen)}}>
                 {mobileMenuOpen?(<Close></Close>):(<Menu></Menu>)}
                 {mobileMenuOpen && (<MobileMenu headerData = {headerData} footerData = {footerData}/>)}
             </div>
-            <Logo></Logo>
             {/* <a className="header-mobile-icon-container" href="mailto:mingxinye1128@gmail.com">
                 <img src={imgUrl} alt='email Mingxin Ye'></img>
             </a> */}
