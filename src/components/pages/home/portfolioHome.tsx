@@ -29,6 +29,7 @@ export default function PortfolioHome({pageData, projectData}:PortfolioHomeProps
                     })}
                 </div>
             </div>
+            
         </div>
     )
 }

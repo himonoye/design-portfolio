@@ -44,7 +44,7 @@ const Footer = ({footerData}:footerProps) => {
                 {footerData.map((item:any, i:number)=>{
                     return (
                         <div key={i} className="social-media">
-                            <a className="social-media-wrapper" href={item.url}>
+                            <a className="social-media-wrapper" href={item.url} target="_blank" >
                                 <img src={item.imgUrlDarkMode} alt={item.type + " Mingxin Ye"}></img>
                             </a>
                         </div>
@@ -55,7 +55,7 @@ const Footer = ({footerData}:footerProps) => {
                 {footerData.map((item:any, i:number)=>{
                     return (
                         <div key={i} className="social-media">
-                            <a className="social-media-wrapper" href={item.url}>
+                            <a className="social-media-wrapper" href={item.url} target="_blank">
                                 <img src={item.imgUrlLightMode} alt={item.type + " Mingxin Ye"}></img>
                             </a>
                         </div>
