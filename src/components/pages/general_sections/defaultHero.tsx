@@ -16,16 +16,16 @@ export default function DefaultHero ({pageTitle, pageDescription, buttonGroup}:D
             <div className="hero-heading-container">
                 <div className="heading-lead">{pageTitle}</div>
                 <p className="body-large">{pageDescription}</p>
+                {buttonGroup &&
+                    <div className="button-group">
+                        {buttonGroup.map((item:any,i)=>{
+                            return(
+                                <Button key = {i} style="button-primary" buttonText={item.buttonText} buttonType={item.buttonType} url={item.buttonUrl} refPointer={item.scrollTo}/>
+                            )
+                        })}     
+                    </div>
+                }
             </div>
-            {buttonGroup &&
-                <div className="button-group">
-                    {buttonGroup.map((item:any,i)=>{
-                        return(
-                            <Button key = {i} style="button-primary" buttonText={item.buttonText} buttonType={item.buttonType} url={item.buttonUrl} refPointer={item.scrollTo}/>
-                        )
-                    })}     
-                </div>
-            }
         </div>
     )
 }

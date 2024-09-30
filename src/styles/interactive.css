@@ -1,3 +1,7 @@
+*:focus-visible {
+    outline: var(--motif-primary) solid 1.5px;
+}
+
 .button-wrapper {
     display: flex;
     justify-content: center;
@@ -118,6 +122,17 @@
     transition: all 1s ease-in;
     cursor: pointer;
 }
+
+input{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: .3px;
+}
+
+input:hover, input:active, input:focus, input:focus-visible {
+    outline: var(--border-input-hover) solid 1.5px;
+}
+
 
 @media screen and (max-width: 768px) {
 

@@ -24,8 +24,8 @@ export default function PortfolioHomeHero ({profileImgUrl,buttonScrollText, port
                         <span id="hello">Hello, </span>
                         <span id="name">I'm Ming Ye!</span>
                     </div>
-                <p className="body-large"><mark>I’m a Full Stack Designer near Washington DC who creates high-quality digital products to help businesses and their users achieve their goals.</mark> With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.</p>
-            </div>
+                    <p className="body-large"><mark>I’m a Full Stack Designer near Washington DC who creates high-quality digital products to help businesses and their users achieve their goals.</mark> With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.</p>
+                </div>
         </div>
     )
 }

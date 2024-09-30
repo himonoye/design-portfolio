@@ -33,10 +33,10 @@
     --brand-grayscale-700: #333333;
     --brand-grayscale-600: #666666;
     --brand-grayscale-500: #777777;
-    --brand-grayscale-400: #444444;
-    --brand-grayscale-300: #555;
-    --brand-grayscale-200: #ddd;
-    --brand-grayscale-100: #ededed;
+    --brand-grayscale-400: #888888;
+    --brand-grayscale-300: #dddddd;
+    --brand-grayscale-200: #efefef;
+    --brand-grayscale-100: #f2f2f2;
     --brand-black: #121212;
     --brand-white: #fff;
     
@@ -78,18 +78,18 @@
 
     /* Semantic colors */
     --surface-primary-background: var(--brand-white);
-    --surface-primary-text: var(--brand-grayscale-300);
-    --surface-primary-heading: var(--brand-grayscale-400);
+    --surface-primary-text: var(--brand-grayscale-700);
+    --surface-primary-heading: var(--brand-grayscale-700);
     --surface-primary-subheading: var(--brand-green-300);
     --surface-primary-link: var(--brand-purple-300);
     
     --surface-secondary-background: var(--brand-beige-100);
-    --surface-secondary-text: var(--brand-grayscale-300);
+    --surface-secondary-text: var(--brand-grayscale-700);
     --surface-secondary-heading: var(--brand-purple-300);
 
     --surface-tertiary-background: var(--brand-beige-200);
-    --surface-tertiary-text: var(--brand-grayscale-300);
-    --surface-tertiary-heading: var(--brand-grayscale-300);
+    --surface-tertiary-text: var(--brand-grayscale-700);
+    --surface-tertiary-heading: var(--brand-grayscale-700);
 
     --button-primary-background: var(--brand-white);
     --button-primary-text: var(--brand-purple-300);
@@ -104,9 +104,11 @@
     --notification-background: var(--brand-purple-400);
     --notification-text: var(--brand-white);
 
-    /* divider */
+    /* border & divider */
     --border-divider: var(--brand-beige-200);
     --border-divider-hover: var(--brand-beige-300);
+    --border-input: var(--brand-grayscale-400);
+    --border-input-hover: var(--brand-grayscale-300);
 
     /* overlay */
     --overlay: rgb(255, 255, 255,.8);
@@ -169,9 +171,11 @@
         --notification-background: var(--brand-purple-400);
         --notification-text: var(--brand-white);
 
-        /* divider */
+        /* border & divider */
         --border-divider: var(--brand-grayscale-700);
         --border-divider-hover: var(--brand-grayscale-700);
+        --border-input: var(--brand-grayscale-400);
+        --border-input-hover: var(--brand-grayscale-300);
     
         /* overlay */
         --overlay: rgb(255, 255, 255,.8);
@@ -262,20 +266,6 @@ li {
 
 li::marker {
     color: var(--brand-purple-300);
-}
-
-input{
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-    letter-spacing: .3px;
-}
-
-input:active, input:focus, input:focus-visible {
-    border: solid 1px var(--surface-primary-text);
-}
-
-*:focus-visible {
-    outline: var(--motif-primary) auto 1.5px;
 }
 
 button{
