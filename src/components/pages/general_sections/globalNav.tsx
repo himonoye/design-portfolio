@@ -1,7 +1,7 @@
 import React, { useState }  from 'react';
 import { NavLink } from "react-router-dom";
 import ThreeDots from '../../icons/threeDots';
-import {Menu, Close} from '../../icons/menu';
+import {Menu, Close, ArrowMenuClosed, ArrowMenuOpened} from '../../icons/utilityIcons';
 import Logo from '../../icons/logo';
 
 type headerLinkProps = {
@@ -84,18 +84,22 @@ const MobileMenu = ({headerData, footerData}:mobileMenuProps) => {
 
 const GlobalNav = ({headerData, footerData}:globalNavProps) => {
     const [HeaderOpen, setHeaderOpen] = useState(false);
-    // onClick={() => {setHeaderOpen(!HeaderOpen)}}
     return (
         <div className="header-container">
-            <div className="header-links-container">
-                <div className="logo-container">
-                    <Logo></Logo>
+            <div className={HeaderOpen?"header-expandable-container":"header-expandable-container-shrunk"}>
+                <div className="header-links-container">
+                    <div className="logo-container">
+                        <Logo></Logo>
+                    </div>
+                    {headerData.map((item:any, i:number)=>{
+                        return <HeaderLink key={i} url={item.url} linkText={item.linkText}></HeaderLink>
+                    })}
                 </div>
-                {headerData.map((item:any, i:number)=>{
-                    return <HeaderLink key={i} url={item.url} linkText={item.linkText}></HeaderLink>
-                })}
+                <Footer footerData={footerData}></Footer>
             </div>
-            <Footer footerData={footerData}></Footer>
+            <div className="header-expandable-icon" onClick={()=>{setHeaderOpen(!HeaderOpen)}}>
+                {HeaderOpen?<ArrowMenuClosed></ArrowMenuClosed>:<ArrowMenuOpened></ArrowMenuOpened>}
+            </div>
         </div>
     )
 }
@@ -109,9 +113,6 @@ const GlobalMobileNav = ({headerData, footerData}:globalMobileNavProps) => {
                 {mobileMenuOpen?(<Close></Close>):(<Menu></Menu>)}
                 {mobileMenuOpen && (<MobileMenu headerData = {headerData} footerData = {footerData}/>)}
             </div>
-            {/* <a className="header-mobile-icon-container" href="mailto:mingxinye1128@gmail.com">
-                <img src={imgUrl} alt='email Mingxin Ye'></img>
-            </a> */}
         </div>
     )
 }

@@ -14,26 +14,12 @@
 
 .header-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20%;
-    overflow-y: scroll;
-    /* box-shadow: var(--container-shadow); */
-    border-right: 1px solid var(--border-divider);
+    flex-direction: row;
     z-index: 10000;
 }
 
-.header-mobile-container {
-    display: none;
-}
-
-.header-links-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .body-container {
-    width:80%;
+    width: 100%;
     overflow-y: scroll;
 }
 

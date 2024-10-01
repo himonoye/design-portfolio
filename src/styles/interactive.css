@@ -95,8 +95,6 @@
 }
 
 .link-primary > .arrowIcon {
-    width: 6px;
-    height: 10px;
     fill: var(--link-primary-text);
 }
 

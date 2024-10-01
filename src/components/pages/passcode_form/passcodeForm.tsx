@@ -65,7 +65,7 @@ export default function PasswordForm({formHeading, setShowPortfolio}:passwordFor
     if (userPassword){
     
       //Show that http request is sent and waiting on a response in UI
-      setErroMsg("Validating...This may take up to 10 seconds as the site connect to the backend services. Thank you for your patience!")
+      setErroMsg("Validating...This may take up to 10 seconds as the site connects to the backend services. Thank you for your patience!")
         
       //Call sendPassword funtion to send a HTTP request
       const isValid = await sendPassword();

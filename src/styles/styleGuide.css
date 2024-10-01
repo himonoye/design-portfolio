@@ -91,6 +91,7 @@
     --surface-tertiary-text: var(--brand-grayscale-700);
     --surface-tertiary-heading: var(--brand-grayscale-700);
 
+    /* Button colors */
     --button-primary-background: var(--brand-white);
     --button-primary-text: var(--brand-purple-300);
 
@@ -158,6 +159,7 @@
         --surface-tertiary-text: var(--brand-white);
         --surface-tertiary-heading: var(--brand-white);
 
+        /* Button colors */
         --button-primary-background: var(--brand-grayscale-900);
         --button-primary-text: var(--brand-white);
 
