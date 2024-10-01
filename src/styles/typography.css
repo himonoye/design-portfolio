@@ -133,18 +133,18 @@
 
     .heading-headline{
         font-size: 2.5rem;
-        line-height: 3rem;
+        line-height: 3.5rem;
     }
 
     .heading-lead {
         font-size: 2rem;
-        line-height: 2.5rem;
+        line-height: 3rem;
     }
     
 
     .heading-head {
         font-size: 1.8rem;
-        line-height: 2rem;
+        line-height: 2.8rem;
     }
 
     .heading-sub {
@@ -154,16 +154,11 @@
 
     .heading-flag {
         font-size: 1.5rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
     }
 
-    .body-large {
-        font-family: var(--base-font-Family), sans-serif;
-        font-size: 1.2rem;
-        line-height: 2rem;
-        letter-spacing: .3px;
-        font-weight: 300;
-        color: var(--surface-primary-text);
-        max-width:900px;
+    .body-base {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
     }
 }

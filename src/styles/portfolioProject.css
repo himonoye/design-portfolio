@@ -70,7 +70,11 @@
 /* Mobile, Tablet, Small Laptop*/
 @media screen and (max-width: 1200px) {
 
-    .project-heading-container {
+    .project-hero-heading-container {
+        padding: 0;
+    }
+
+    .project-section-heading-container {
         padding: 0;
     }
 
