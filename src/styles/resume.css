@@ -1,11 +1,11 @@
 #resume-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--surface-primary-background);
+    background-color: var(--surface-secondary-background);
+    color: var(--surface-secondary-text);
     gap: var(--resume-gutter-large);
     padding: var(--container-padding);
     border-radius: var(--card-border-radius);
-    box-shadow: var(--container-shadow);
 }
 
 .resume-heading-container {

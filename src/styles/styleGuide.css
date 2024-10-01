@@ -29,7 +29,7 @@
    
     /* grayscale colors*/
     --brand-grayscale-900: #212121;
-    --brand-grayscale-800: #2f2f2f;
+    --brand-grayscale-800: #2a2a2a;
     --brand-grayscale-700: #333333;
     --brand-grayscale-600: #666666;
     --brand-grayscale-500: #777777;
@@ -124,7 +124,7 @@
     --gutter: var(--spacing-40);
     --container-padding: var(--spacing-80);
     --button-spacing: var(--spacing-20) var(--spacing-30) var(--spacing-15) var(--spacing-30);
-    --card-padding: var(--spacing-40);
+    --card-padding: var(--spacing-60) var(--spacing-60) var(--spacing-80) var(--spacing-60);
 
     /* resume */
     --resume-font-Family: "Arial";
@@ -135,7 +135,7 @@
 
     /* border radius */
     --button-border-radius: 0;
-    --card-border-radius: 0.5rem;
+    --card-border-radius: 0;
     --icon-border-radius: 50%;
 
     @media (prefers-color-scheme: dark) {
@@ -193,7 +193,7 @@
 @media screen and (max-width: 768px) {
     :root {
         --container-padding: var(--spacing-40) var(--spacing-30);
-        --card-padding: var(--spacing-30);
+        --card-padding: var(--spacing-40);
         --resume-gutter-smallest: 0;
         --resume-gutter-small: var(--spacing-5);
         --resume-gutter-medium: var(--spacing-20);

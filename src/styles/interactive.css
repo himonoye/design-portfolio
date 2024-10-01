@@ -94,7 +94,7 @@
     cursor: pointer;
 }
 
-.link-primary > .arrowIcon {
+.link-primary > .arrow-icon {
     fill: var(--link-primary-text);
 }
 

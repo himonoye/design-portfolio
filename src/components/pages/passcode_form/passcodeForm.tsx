@@ -89,38 +89,38 @@ export default function PasswordForm({formHeading, setShowPortfolio}:passwordFor
     <div className="body-container">
       <div className="form-container">
         <Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
-        <div className="hero-heading-container">
+        <div className="project-heading-container">
           <div className="heading-lead">{formHeading + " (Password Required)"}</div>
-          <div className="body-large">To view my portfolio projects, please enter the password below. If you don’t have the password yet, feel free to reach out to me directly at mingxinye1128@gmail.com or on LinkedIn. I look forward to connecting with you!</div>
+          <div className="body-large">To view details of this project, please enter the password below. If you don’t have the password yet, feel free to reach out to me directly at mingxinye1128@gmail.com or on LinkedIn. I look forward to connecting with you!</div>
+          <form className="form-body" 
+                onSubmit={(event: React.FormEvent<HTMLFormElement>):void => {
+                  handleSubmit(event);
+                  }}>
+            <div className="form-Inputs">
+              <input
+                className="form-input-field"
+                type="password"
+                value={userPassword}
+                onChange={(event:React.ChangeEvent<HTMLInputElement>)=>{
+                  setUserPassword(event.target.value);
+                  clearErroMsg();
+                  }}>
+              </input>
+            {erroMsg?
+            <div className="form-feedback-container">
+              <div className="form-error-message"><InfoIcon/><div className="body-small">{erroMsg}</div></div>
+            </div>:""}
+            </div>
+            <button type="submit">
+              <Button
+                buttonText="Enter"
+                style="button-primary"
+                buttonType="other"
+              > 
+              </Button>
+            </button> 
+          </form>
         </div>
-        <form className="form-body" 
-              onSubmit={(event: React.FormEvent<HTMLFormElement>):void => {
-                handleSubmit(event);
-                }}>
-          <div className="form-Inputs">
-            <input
-              className="form-input-field"
-              type="password"
-              value={userPassword}
-              onChange={(event:React.ChangeEvent<HTMLInputElement>)=>{
-                setUserPassword(event.target.value);
-                clearErroMsg();
-                }}>
-            </input>
-          {erroMsg?
-          <div className="form-feedback-container">
-            <div className="form-error-message"><InfoIcon/><div className="body-small">{erroMsg}</div></div>
-          </div>:""}
-          </div>
-          <button type="submit">
-            <Button
-              buttonText="Enter"
-              style="button-primary"
-              buttonType="other"
-            > 
-            </Button>
-          </button> 
-        </form>
       </div>
     </div>
   )

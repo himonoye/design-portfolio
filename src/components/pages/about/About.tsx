@@ -1,12 +1,12 @@
 import React from 'react';
 import DefaultHero from '../general_sections/defaultHero';
 
-type outsideWorkProps = {
+type aboutProps = {
     pageData: any;
     gallery: [];
 }
 
-export default function OutsideWork({pageData, gallery}:outsideWorkProps) {
+export default function About({pageData, gallery}:aboutProps) {
     return (
         <div className="body-container">
             <DefaultHero 

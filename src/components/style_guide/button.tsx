@@ -6,7 +6,7 @@ export type buttonProps = {
     style: "button-primary" | "button-secondary"
     buttonType: "scrollTo" | "link" | "print" | "other";
     url?: string;
-    refPointer?: any;
+    refPointer?: React.MutableRefObject<HTMLInputElement>;
     onClick?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 

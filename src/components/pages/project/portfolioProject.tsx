@@ -7,6 +7,7 @@ import PortfolioProjectSection from './portfolioProjectSection';
 import PasscodeForm from '../passcode_form/passcodeForm';
 
 type showPortfolioProjectProps = {
+	needPassword: boolean;
 	showPortfolio: boolean;
 	setShowPortfolio: Function;
 	projectData: any;
@@ -20,7 +21,7 @@ type portfolioProjectProps = {
 	prevProjectData: any;
 }
 
-export default function ShowPortfolioProject({showPortfolio, setShowPortfolio, projectData, nextProjectData, prevProjectData}:showPortfolioProjectProps) {
+export default function ShowPortfolioProject({needPassword, showPortfolio, setShowPortfolio, projectData, nextProjectData, prevProjectData}:showPortfolioProjectProps) {
 
 	function PortfolioProject({projectData, nextProjectData, prevProjectData}:portfolioProjectProps) {
 		return (
@@ -94,11 +95,20 @@ export default function ShowPortfolioProject({showPortfolio, setShowPortfolio, p
 		)
 	}
 
+	if (needPassword) {
 
-	return(
-		showPortfolio?
-		<PortfolioProject projectData={projectData} prevProjectData={prevProjectData} nextProjectData={nextProjectData}/>
-		:
-		<PasscodeForm formHeading={projectData.projectName} setShowPortfolio={setShowPortfolio}></PasscodeForm>
-	)
+		return(
+			showPortfolio?
+			<PortfolioProject projectData={projectData} prevProjectData={prevProjectData} nextProjectData={nextProjectData}/>
+			:
+			<PasscodeForm formHeading={projectData.projectName} setShowPortfolio={setShowPortfolio}></PasscodeForm>
+		)
+
+	} else {
+
+		return(
+			<PortfolioProject projectData={projectData} prevProjectData={prevProjectData} nextProjectData={nextProjectData}/>
+		)
+
+	}
 } 

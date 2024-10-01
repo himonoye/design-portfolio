@@ -16,7 +16,7 @@ export default function ProjectCard({projectName, projectDescription, projectPag
             <Image url={projectCoverImgUrl}></Image>
             <div className="project-card-body">
                 <div className="heading-sub">{projectName}</div>
-                <p className="body-base">{projectDescription}</p>
+                <p className="body-large">{projectDescription}</p>
             </div>
         </NavLink>
     )

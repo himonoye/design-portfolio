@@ -37,7 +37,6 @@
     flex-direction: column;
     gap: var(--gutter);
     padding: var(--container-padding);
-    padding-top: 0;
 }
 
 .bottom-container{
@@ -60,20 +59,6 @@
     .container {
         width: 100%;
         flex-direction: column;
-    }
-    
-    .header-container {
-        display: none;
-    }
-
-    .header-mobile-container {
-        display: flex;
-        flex-direction: row;
-        box-shadow: var(--mobile-header-shadow);
-        overflow-y: visible;
-        z-index: 10000;
-        align-items: center;
-        justify-content: space-between;
     }
 
     .body-container{

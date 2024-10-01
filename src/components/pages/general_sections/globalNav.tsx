@@ -1,7 +1,7 @@
 import React, { useState }  from 'react';
 import { NavLink } from "react-router-dom";
 import ThreeDots from '../../icons/threeDots';
-import {Menu, Close, ArrowMenuClosed, ArrowMenuOpened} from '../../icons/utilityIcons';
+import {Menu, Close, ArrowLongRight, ArrowLongLeft} from '../../icons/utilityIcons';
 import Logo from '../../icons/logo';
 
 type headerLinkProps = {
@@ -83,7 +83,26 @@ const MobileMenu = ({headerData, footerData}:mobileMenuProps) => {
 }
 
 const GlobalNav = ({headerData, footerData}:globalNavProps) => {
-    const [HeaderOpen, setHeaderOpen] = useState(false);
+    const [HeaderOpen, setHeaderOpen] = useState(true);
+
+    const ExpandableClosed = () => {
+        return (
+            <div className="header-arrow-menu">
+                <ArrowLongLeft></ArrowLongLeft>
+                <div className="header-expandable-text">Collapse Menu</div>
+            </div>
+        )
+    }
+
+    const ExpandableOpened = () => {
+        return (
+            <div className="header-arrow-menu">
+                <ArrowLongRight></ArrowLongRight>
+                <div className="header-expandable-text">Expand Menu</div>
+            </div>
+        )
+    }
+
     return (
         <div className="header-container">
             <div className={HeaderOpen?"header-expandable-container":"header-expandable-container-shrunk"}>
@@ -98,7 +117,7 @@ const GlobalNav = ({headerData, footerData}:globalNavProps) => {
                 <Footer footerData={footerData}></Footer>
             </div>
             <div className="header-expandable-icon" onClick={()=>{setHeaderOpen(!HeaderOpen)}}>
-                {HeaderOpen?<ArrowMenuClosed></ArrowMenuClosed>:<ArrowMenuOpened></ArrowMenuOpened>}
+                {HeaderOpen?<ExpandableClosed></ExpandableClosed>:<ExpandableOpened></ExpandableOpened>}
             </div>
         </div>
     )

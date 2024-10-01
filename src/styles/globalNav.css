@@ -1,13 +1,22 @@
 /* Header */
 
 .logo-container {
-    padding: var(--spacing-80) var(--spacing-40) var(--spacing-40) var(--spacing-100);
+    padding: var(--spacing-80) 0 var(--spacing-40) var(--spacing-100);
+}
+
+.header-arrow-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10)
+}
+
+.header-arrow-menu > .arrow-icon {
+    fill: var(--link-primary-text);
 }
 
 .header-expandable-icon {
     display: flex;
-    padding: var(--spacing-20) var(--spacing-15);
-    border-right: 1px solid var(--border-divider);
+    padding: var(--spacing-80) var(--spacing-15);
     fill: var(--surface-primary-text)
 }
 
@@ -16,12 +25,24 @@
     cursor: pointer;
 }
 
+.header-expandable-text {
+    writing-mode: vertical-lr;
+    font-family: var(--heading-font-Family), sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: .8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-left: var(--spacing-5);
+}
+
 .header-expandable-container {
     width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    border-right: 1px solid var(--border-divider);
     -webkit-transition: all .5s ease-out ;
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
@@ -34,6 +55,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    border-right: 1px solid var(--border-divider);
     -webkit-transition: all .5s ease-in ;
     -moz-transition: all .5s ease-in;
     -o-transition: all .5s ease-in;
@@ -41,7 +63,7 @@
 }
 
 .header-links-container {
-    width: 20vw;
+    width: 15vw;
     display: flex;
     flex-direction: column;
 }
@@ -57,7 +79,7 @@
     line-height: 2rem;
     letter-spacing: 1.5px;
     color: var(--surface-secondary-text);
-    padding: var(--spacing-20) var(--spacing-40) var(--spacing-20) var(--spacing-100);
+    padding: var(--spacing-20) 0 var(--spacing-20) var(--spacing-100);
 }
 
 .header-link > .three-dots-vertical {
@@ -161,6 +183,20 @@
 
     .header-links-container {
         display: none;
+    }
+    
+    .header-container {
+        display: none;
+    }
+
+    .header-mobile-container {
+        display: flex;
+        flex-direction: row;
+        box-shadow: var(--mobile-header-shadow);
+        overflow-y: visible;
+        z-index: 10000;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .header-link {

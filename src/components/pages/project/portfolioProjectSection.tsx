@@ -20,7 +20,7 @@ type projectSectionProps = {
 const InfoBlock = ({blockHeading, blockDescription, blockBulletPoints, blockImgUrl}: infoBlockProps) => {
 	return (
 		<div className="project-info-block">
-			{blockHeading && <div className="heading-flag">{blockHeading}</div>}
+			{blockHeading && <div className="heading-sub">{blockHeading}</div>}
 			{blockDescription && <p className="body-base">{blockDescription}</p>}
 			{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
 			{blockImgUrl && <Image url={blockImgUrl}></Image>}
@@ -33,8 +33,8 @@ export default function ProjectSection ({sectionHeading, sectionDescription, sec
 		<div className="project-section-container">
 			<DividerThreeDots/>
 			<div className="project-heading-container">
-				{sectionHeading && <div className="heading-sub">{sectionHeading}</div>}
-				{sectionDescription && <p className="body-base">{sectionDescription}</p>}
+				{sectionHeading && <div className="heading-head">{sectionHeading}</div>}
+				{sectionDescription && <p className="body-large">{sectionDescription}</p>}
 				{sectionImgUrl && <Image url={sectionImgUrl}></Image>}
 			</div>
 			{infoBlocks && 

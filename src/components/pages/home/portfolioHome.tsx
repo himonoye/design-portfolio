@@ -13,14 +13,8 @@ export default function PortfolioHome({pageData, projectData}:PortfolioHomeProps
         <div className="body-container">
             <PortfolioHomeHero
                 profileImgUrl={pageData.profileImgUrl}
-                buttonScrollText={pageData.buttonScrollText}
-                buttonText1={pageData.buttonText1}
-                buttonUrl1={pageData.buttonUrl1}
-                buttonText2={pageData.buttonText2}
-                buttonUrl2={pageData.buttonUrl2}
-                buttonText3={pageData.buttonText3}
-                buttonUrl3={pageData.buttonUrl3}
-                portfolioRef={portfolioRef}
+                buttonGroup={pageData.buttonGroup}
+                refPointer={portfolioRef}
             ></PortfolioHomeHero>
             <div className="content-container">
                 <div className="card-container" ref={portfolioRef}>

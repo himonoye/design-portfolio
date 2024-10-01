@@ -14,7 +14,7 @@ export default function PortfolioProjectHero({pageTitle, projectProblem, project
 				<Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
 				<div className="project-heading-container">
 					<div className="heading-lead">{pageTitle}</div>
-					<p className="body-base">{projectProblem}</p>
+					<p className="body-large">{projectProblem}</p>
 				</div>
 				<Image url={projectCoverImgUrl}></Image>
 			</div>		

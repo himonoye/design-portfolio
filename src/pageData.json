@@ -9,8 +9,8 @@
             "url":"resume"
         },
         {
-            "linkText":"Outside Work",
-            "url":"outsideWork"
+            "linkText":"About Me",
+            "url":"about"
         }
     ],
     "footerData" : [
@@ -45,14 +45,9 @@
                     "buttonType" : "scrollTo"
                 },
                 {
-                    "buttonText" : "Access My Resume",
+                    "buttonText": "Access My Resume",
                     "buttonType" : "link",
-                    "buttonUrl" : "resume"
-                },
-                {
-                    "buttonText" : "Connect with Me Outside Work",
-                    "buttonType" : "link",
-                    "buttonUrl" : "outsideWork"
+                    "buttonUrl" : "/resume"
                 }
             ]
         },
@@ -74,9 +69,9 @@
             ]
 
         },
-        "outsideWork" : {
-            "url":"outsideWork",
-            "title" : "Connect Outside Work",
+        "about" : {
+            "url":"about",
+            "title" : "Connect with Me",
             "description" : "When I'm not working, I enjoy listening to audio books, playing word puzzles and going on food adventures. You can also find me on the tennis court during summer, ski slopes during winter, or climbing gyms all year round.",
             "buttonGroup":[
                 {
@@ -94,6 +89,7 @@
     },
     "projectData" : [ 
         {
+            "needPassword" : false,
             "projectName" : "Trane Supply Products & Parts Search Site",
             "projectDescription" : "To design an e-commerce search experience that helps business agents and customers find the products or parts they are looking for.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
@@ -191,6 +187,7 @@
         },
 
         {
+            "needPassword" : false,
             "projectName" : "App for Non-profit Organizers UX Research",
             "projectDescription" : "To design a mobile app that helps non-profit organizers more effectively track and manage notes, contacts and to-dos.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
@@ -275,6 +272,7 @@
             }
         },
         {
+            "needPassword" : false,
             "projectName" : "Heartland Dental Office Microsite Platform Solution",
             "projectDescription" : "To design and refine six dental office website templates that adapt to the branding of 100+ practices, with dark mode integration.",
             "projectDuration" : "",
@@ -365,6 +363,7 @@
         },
 
         {
+            "needPassword" : true,
             "projectName" : "Dashboard Template",
             "projectDescription" : "To create a Figma template and component repository that empowers designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
             "projectDuration" : "1 month, April 2022 - May 2022",
@@ -485,6 +484,7 @@
         },
 
         {
+            "needPassword" : true,
             "projectName" : "Merrill Financial Advisor Page Redesign",
             "projectDescription" : "The goal is to help prospective customers learn more about Bank of America advisors while enabling bank advisors to efficiently manage the content on their personal pages. Details are coming soon.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
@@ -566,6 +566,7 @@
         },
 
         {
+            "needPassword" : true,
             "projectName" : "The UPS Store Mircrosite Redesign",
             "projectDescription" : "To revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation. Details are coming soon.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
@@ -657,7 +658,7 @@
             }
         }
     ],
-    "outsideWorkGallery" : [ 
+    "aboutGallery" : [ 
         "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-1.png",
         "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-2.png",
         "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-3.png",

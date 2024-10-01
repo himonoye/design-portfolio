@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { ArrowIconLeft, ArrowIconRight } from '../icons/utilityIcons';
+import { ArrowLeft, ArrowRight } from '../icons/utilityIcons';
 
 type linkProps = {
     linkText: string
@@ -14,9 +14,9 @@ export default function Link({linkText, style, url, hasRightIcon, hasLeftIcon}:l
     return (
         <NavLink to={url} className="link-wrapper">
                 <div className={style}>
-                        {hasLeftIcon?<ArrowIconLeft/>:""}
+                        {hasLeftIcon?<ArrowLeft/>:""}
                         {linkText?linkText:""}
-                        {hasRightIcon?<ArrowIconRight/>:""}
+                        {hasRightIcon?<ArrowRight/>:""}
                 </div>
         </NavLink>
     )

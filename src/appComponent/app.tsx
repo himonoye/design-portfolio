@@ -4,9 +4,8 @@ import Layout from '../components/style_guide/layout';
 import PortfolioHome from '../components/pages/home/portfolioHome'
 import ShowPortfolioProject from '../components/pages/project/portfolioProject';
 import Resume from '../components/pages/resume/resume';
-import OutsideWork from '../components/pages/outside_work/outsideWork';
+import About from '../components/pages/about/About';
 import ErrorPage from '../components/pages/404/404';
-import PasscodeForm from '../components/pages/passcode_form/passcodeForm';
 
 type appProps = {
   pageData: any;
@@ -38,9 +37,9 @@ export default function App({pageData, resumeData}:appProps) {
       element: <Resume pageData={pageData.pageInfo.resume} resumeData={resumeData}/>,
     },
     {
-      //Outside work
-      path: "/outsidework",
-      element: <OutsideWork pageData={pageData.pageInfo.outsideWork} gallery={pageData.outsideWorkGallery}/>
+      //About
+      path: "/about",
+      element: <About pageData={pageData.pageInfo.about} gallery={pageData.aboutGallery}/>
     },
   ]
 
@@ -49,6 +48,7 @@ export default function App({pageData, resumeData}:appProps) {
         {
           path: "/"+project.projectPageUrl,
           element: <ShowPortfolioProject
+                    needPassword={projectData[i].needPassword}
                     showPortfolio={showPortfolio}
                     setShowPortfolio={setShowPortfolio}
                     projectData={project}
