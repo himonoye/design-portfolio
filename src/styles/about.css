@@ -1,6 +1,6 @@
 .gallery-container {
     display: flex;
-    gap: var(--gutter);
+    gap: var(--spacing-20);
 }
 
 .gallery-container-mobile {
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: var(--gutter);
+    gap: var(--spacing-20);
 }
 
 .img-gallery-img {
@@ -25,7 +25,7 @@
 }
 
 .img-gallery-img:hover {
-    scale: 1.1;
+    scale: 1.2;
     opacity: 1;
     z-index: 1000;
     box-shadow: var(--card-shadow-hover);

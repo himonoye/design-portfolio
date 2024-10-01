@@ -7,7 +7,7 @@
 @import url(globalNav.css);
 @import url(portfolioHome.css);
 @import url(resume.css);
-@import url(outsideWork.css);
+@import url(about.css);
 @import url(portfolioProject.css);
 @import url(passwordForm.css);
 
@@ -121,7 +121,7 @@
     --mobile-header-shadow: 5px 0px 5px 0px var(--brand-grayscale-200);
 
     /* base spacing */
-    --gutter: var(--spacing-40);
+    --gutter: var(--spacing-60);
     --container-padding: var(--spacing-80);
     --button-spacing: var(--spacing-20) var(--spacing-30) var(--spacing-15) var(--spacing-30);
     --card-padding: var(--spacing-60) var(--spacing-60) var(--spacing-80) var(--spacing-60);
@@ -192,6 +192,7 @@
 
 @media screen and (max-width: 768px) {
     :root {
+        --gutter: var(--spacing-40);
         --container-padding: var(--spacing-40) var(--spacing-30);
         --card-padding: var(--spacing-40);
         --resume-gutter-smallest: 0;

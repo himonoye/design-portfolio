@@ -32,7 +32,7 @@ export default function ProjectSection ({sectionHeading, sectionDescription, sec
 	return (
 		<div className="project-section-container">
 			<DividerThreeDots/>
-			<div className="project-heading-container">
+			<div className="project-section-heading-container">
 				{sectionHeading && <div className="heading-head">{sectionHeading}</div>}
 				{sectionDescription && <p className="body-large">{sectionDescription}</p>}
 				{sectionImgUrl && <Image url={sectionImgUrl}></Image>}

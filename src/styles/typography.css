@@ -73,8 +73,8 @@
 
 .body-base {
     font-family: var(--base-font-Family), sans-serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 2.8rem;
     letter-spacing: .2px;
     font-weight: 300;
     max-width: 900px;

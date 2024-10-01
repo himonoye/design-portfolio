@@ -83,6 +83,7 @@
     text-decoration: none;
     font-family: var(--heading-font-Family), sans-serif;
     text-transform: uppercase;
+    align-items: center;
 }
 
 .link-primary:hover {
