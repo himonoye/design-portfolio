@@ -58,8 +58,8 @@
             "buttonGroup":[
                 {
                     "buttonText" : "Save Resume as PDF",
-                    "buttonType" : "print",
-                    "buttonUrl" : ""
+                    "buttonType" : "link",
+                    "buttonUrl" : "https://portfoliocontent.blob.core.windows.net/resume/MingxinYe-Resume.pdf"
                 },
                 {
                     "buttonText" : "Connect Via Email",
