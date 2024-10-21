@@ -99,11 +99,6 @@
             "projectDescription" : "Design an e-commerce search experience that helps business agents and customers efficiently find the products or parts and put together orders across Salesforce and Yext platform.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
             "projectProblem" : "With millions of products offered by the buisiness, accessing product information was a cumbersome process. Agents must have a precise knowledge of where to look and navigate through multiple databases and platforms, manually connecting the dots to find the right information. The goal of the project is to transform its e-commerce site and streamline the part-finding process so it provides a effortless shopping experience for both HVAC agents and customers.",
-            "projectImpact": [
-                "In 2024, our enhanced search platform handled over 9.4 million searches.",
-                "To streamline and simplify the product-finding journey, we created a search experience that consolidates related information from multiple databases into a single, cohesive web interface.",
-                "Reduced the time it takes for agents and customers to find products parts."
-            ],
             "myResponsibilities":[
                 "Created high-fidelity designs",
                 "Collaborated with the client team and Yext engineers to develop technical solutions",
@@ -199,20 +194,13 @@
                 "sectionDescription": "",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Project Milestones",
+                        "blockHeading": "The Impact",
                         "blockBulletPoints": [
-                            "Three rapid product releases",
-                            "Features were rolled out to the production environment in stages, tailored to user types",
-                            "Continuous iterations and improvements occur simultaneously with the development of new features."
+                            "In 2024, our enhanced search platform handled over 9.4 million searches.",
+                            "To streamline and simplify the product-finding journey, we created a search experience that consolidates related information from multiple databases into a single, cohesive web interface.",
+                            "Reduced the time it takes for agents and customers to find products parts."
                         ],
                         "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-6.png"
-                    },
-                    {   "blockHeading": "What I Learned",
-                        "blockBulletPoints": [
-                            "In a rapid product development process, UX designers and engineers must collaborate closely.",
-                            "When each role understands the other's language, ideas can flow more swiftly between teams.",
-                            "Many projects can benefit from an additional role, such as UX engineers, that helps bridge the gap between designers and engineers."
-                        ]
                     }
                 ]
             }
@@ -226,11 +214,6 @@
             ],
             "projectDescription" : "Create 6 website templates that help hundreds of dentists partners maintain their digital presence and create analytics dashboard to help Heartland marketing team improve site and listing performances.",
             "projectProblem" : "Managing a dental practice involves numerous responsibilities. Effective marketing is a crucial aspect. However, these non-dental-related tasks can often divert dentists' attention from their primary focus—caring for patients. The project aims to help hundreds of dentists Heartland partners reduce their workload of maintaining their digital presence.",
-            "projectImpact": [
-                "We successfully launched over 1,700 dentist websites using five of the six available templates.",
-                "In 2024, the dental office sites collectively garnered 3.94 million views.",
-                "In the same year, the websites generated over 172,000 appointment bookings, indicating that 4.3% of users chose to book an appointment through the site."
-            ],
             "myResponsibilities":[
                 "Led brainstorming sessions with the client team to align on design requirements and explore innovative branding applications for the front-end",
                 "Collaborated with the client to identify practical platform solutions tailored to their marketing team’s workflow",
@@ -310,25 +293,19 @@
                 "sectionImgUrl":"",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Next Steps",
+                        "blockHeading": "The Impact",
                         "blockBulletPoints": [
-                            "Continue monitoring site analytics to extract helpful insight on page performance and iterating on content and designs.",
-                            "Design and develop a listing management dashboard to help Heartland team members efficiently manage multiple listings."
-                        ]
-                    },
-                    {
-                        "blockHeading": "What I Learned",
-                        "blockBulletPoints": [
-                            "When there are numerous stakeholders and users to consider, clearly defining the needs of each persona allows the team to tailor solutions that effectively address specific pain points. For instance, dentists may prioritize the visibility of their bios on the page, while patients focus on easily finding office information and new patient forms.",
-                            "Additionally, the team responsible for implementing the website may advocate for streamlined site management, whereas marketing personnel and dentists might request more flexibility in customization options. This level of clarity will also assist in prioritizing the next steps in the development process."
+                            "We successfully launched over 1,700 dentist websites using five of the six available templates.",
+                            "In 2024, the dental office sites collectively garnered 3.94 million views.",
+                            "In the same year, the websites generated over 172,000 appointment bookings, indicating that 4.3% of users chose to book an appointment through the site."
                         ]
                     }
-                ]
+            ]
             }
         },
 
         {
-            "needPassword" : true,
+            "needPassword" : false,
             "projectName" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard",
             "projectSkills": [
                 "Site Traffic Analytics",
@@ -338,11 +315,6 @@
             ],
             "projectDescription" : "Revamp Merrill Bank of America's advisor pages to help prospective customers learn more about Bank of America advisors while creating platform solution that enables bank advisors to efficiently manage the content on their personal pages.",
             "projectProblem" : "Merrill leverages the Yext platform to efficiently manage thousands of financial advisor listings and web pages. With three distinct lines of business, each requiring tailored branding and specifications, the team is developing a series of page templates and a content management dashboard. This solution will showcase each advisor’s financial services while empowering them to effortlessly manage their website content.",
-            "projectImpact": [
-                "Our team successfully launched 15000+ advisors sites.",
-                "Reduced page length by over 50%, optimizing content through efficient UI patterns and minimizing scroll.",
-                "Increased 'Contact Us' form completion rate by 50%."
-            ],
             "myResponsibilities":[
                 "Analyzed website traffic data to identify user patterns and optimize design decisions.",
                 "Developed a scalable design system adaptable for multiple brands.",
@@ -473,17 +445,18 @@
                 "sectionImgUrl":"",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Next Steps",
+                        "blockHeading": "The Impact",
                         "blockBulletPoints": [
-                            "Continue collaborating with the client team to launch the team creation wizard.",
-                            "Ongoing iteration on the advisor site to enhance performance and user experience."
+                            "Our team successfully launched 15000+ advisors sites.",
+                            "Reduced page length by over 50%, optimizing content through efficient UI patterns and minimizing scroll.",
+                            "Increased 'Contact Us' form completion rate by 50%."
                         ]
                     }
                 ]
             }
         },
         {
-            "needPassword" : true,
+            "needPassword" : false,
             "projectName" : "The UPS Store Mircrosite & Search Redesign",
             "projectSkills": [
                 "Heuristic Audit",
@@ -494,10 +467,6 @@
             "projectDescription" : "Revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
             "projectProblem" : "The UPS Store currently hosts its locatiomn microsites on Yext Platform. Each location includes a homepage and a set of location-specific service pages. Although the site has performed steadily over the past few years, The UPS Store is now looking for opportunities to enhance the site and improve the user experience.",
-            "projectImpact": [
-                "Identified key areas for UX improvement on the page.",
-                "Built trust with the client by understanding their business needs and design requirements."
-            ],
             "myResponsibilities":[
                 "Examined the UPS Store search site using heuristic evaluation and web analytics",
                 "Conducted user testing on the UPS Store search site",
@@ -569,16 +538,10 @@
                 "sectionDescription": "",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Next Steps",
+                        "blockHeading": "The Impact",
                         "blockBulletPoints": [
-                            "Continue iteracting on the mocksups",
-                            "Conduct userbility test with users to validate design improvement"
-                        ]
-                    },
-                    {
-                        "blockHeading": "What I Learned",
-                        "blockDescription": [
-                            "A scoped search can reduce the amount of information users need to filter through, but it may confuse those unfamiliar with its limitations. By understanding user intent and adjusting the search scope to meet their expectations, we can minimize confusion and help users find what they need more efficiently."
+                            "Identified key areas for UX improvement on the page.",
+                            "Built trust with the client by understanding their business needs and design requirements."
                         ]
                     }
                 ]
@@ -594,11 +557,6 @@
             "projectDescription" : "Create Figma templates and component repository that empower designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
             "projectDuration" : "1 month, April 2022 - May 2022",
             "projectProblem" : "With the influx of dashboard projects, designers frequently start each design file from scratch, leading to inefficiencies, inconsistencies across designs, and maintenance challenges. The goal is to create a Figma template and component repository that empowers designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
-            "projectImpact": [
-                "The Figma template and component repository significantly reduced the time needed to build custom dashboards.",
-                "Experienced designers can now focus on creating intuitive in-platform experiences for our customers, rather than building components from scratch",
-                "New hires can get started quickly, relying less on tenured designers for guidance."
-            ],
             "myResponsibilities": [
                 "Conducted user research to gather insights",
                 "Turned user insights into design actions",
@@ -697,18 +655,11 @@
                 "sectionImgUrl":"",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Next Steps",
-                        "blockBulletPoints": [
-                            "Follow up with designers who have used the template to gather additional user feedback",
-                            "Continue discussions with the team on best practices for maintaining each dashboard file",
-                            "Create a dedicated space for ongoing conversations about maintaining the template and component library as the platform evolves"
-                        ]
-                    },
-                    {
-                        "blockHeading": "What I Learned",
-                        "blockBulletPoints": [
-                            "Set aside my personal biases and preferences so I can address problems from the perspective of my users",
-                            "Design operations, such as building a template to enhance design efficiency, require long-term commitments to continuous iteration and collaboration across the entire team."
+                        "blockHeading": "The Impact",
+                        "blockBulletPoints":[
+                            "The Figma template and component repository significantly reduced the time needed to build custom dashboards.",
+                            "Experienced designers can now focus on creating intuitive in-platform experiences for our customers, rather than building components from scratch",
+                            "New hires can get started quickly, relying less on tenured designers for guidance."
                         ]
                     }
                 ]
@@ -724,10 +675,6 @@
             ],
             "projectDescription" : "Design a mobile app that helps non-profit organizers more effectively track and manage notes, contacts and to-dos.",
             "projectProblem" : "Non-profit organizers frequently juggle multiple cases simultaneously. They engage with community members through door-to-door interactions, gathering notes and contact details on the spot. Often relying on paper, pen, or simple phone apps for documentation, these methods can quickly become disorganized and inefficient over time, making it difficult to manage and retrieve important information.",
-            "projectImpact": [
-                "The research gave us valuable insights into organizers' processes and pain points.",
-                "It directly shaped how we prioritized app features to create an effective MVP."
-            ],
             "myResponsibilities":[
                 "Conducted user research",
                 "Developed personas and empathy maps, user stories",
@@ -802,19 +749,10 @@
                 "sectionDescription": "",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Next Steps",
+                        "blockHeading": "The Impact",
                         "blockBulletPoints": [
-                            "Convert digital wireframes into interactive prototypes and conduct usability testing to gather actionable feedback.",
-                            "Shadow organizers for a day to observe real-world user behavior",
-                            "Refine the design based on research findings"
-
-                        ]},
-                    {
-                        "blockHeading": "What I Learned",
-                        "blockBulletPoints": [
-                            "Initial user research revealed that users could benefit from various app features, such as a built-in calendar for tracking events and translators to facilitate interactions with specific community members.",
-                            "As we developed user stories, we realized the importance of focusing on features that deliver the most value and address key gaps in users' daily workflows.",
-                            "We decided to prioritized and narrowed down a core set of functionalities for the App MVP."
+                            "The research gave us valuable insights into organizers' processes and pain points.",
+                            "It directly shaped how we prioritized app features to create an effective MVP."
                         ]
                     }
                 ]

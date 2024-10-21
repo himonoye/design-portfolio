@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '../../style_guide/link';
 import DividerThreeDots from '../../style_guide/dividerThreeDots';
 import PortfolioProjectHero from './portfolioProjectHero';
+import PortfolioProjectIntro from './portfolioProjectIntro';
 import PortfolioProjectSummary from './portfolioProjectSummary';
 import PortfolioProjectSection from './portfolioProjectSection';
 import PasscodeForm from '../passcode_form/passcodeForm';
@@ -38,7 +39,7 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 						
 							<DividerThreeDots/>
 		
-							<PortfolioProjectSummary projectImpact={projectData.projectImpact} myResponsibilities={projectData.myResponsibilities}/>
+							<PortfolioProjectIntro myResponsibilities={projectData.myResponsibilities}/>
 		
 							<DividerThreeDots/>
 							
@@ -83,6 +84,7 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 								infoBlocks={projectData.takeaways.infoBlocks}>
 								</PortfolioProjectSection>
 							}
+							
 						</div>
 					</div>
 				}
