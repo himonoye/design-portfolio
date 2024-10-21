@@ -74,25 +74,25 @@
     ],
     "projectExperience": [
         {
-            "projectTitle" : "Heartland Dental Office Microsite Platform Solution", 
+            "projectTitle" : "Heartland Dental Office Microsite", 
             "companyName" : "Yext", 
             "year" : "2023 - 2024", 
             "projectSummary": [
-                "Built a design component library for each template",
-                "Designed six high-fidelity, interchangeable Figma templates with seven pages each",
-                "Collaborated with engineers and project managers to create innovative platform solutions",
-                "Used Figma variables to enable dynamic branding updates for 100 dental sites without code changes"
+                "Led brainstorming sessions with the client team to align on design requirements and explore innovative branding applications for the front-end",
+                "Collaborated with the client to identify practical platform solutions tailored to their marketing team’s workflow",
+                "Developed high-fidelity mockups for six templates",
+                "Integrated Figma variables into mockups, ensuring that live pages meet WCAG standards, regardless of branding colors"
             ]
         },
         {
-            "projectTitle" : "The UPS Store Microsite Redesign", 
+            "projectTitle" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard", 
             "companyName" : "Yext", 
             "year" : "2022 - 2023", 
             "projectSummary": [
-                "Examined the UPS Store search site using heuristic evaluation and web analytics",
-                "Conducted user testing on the UPS Store search site",
-                "Built audit reports based on the user testing results",
-                "Provided design recommendations based on the report insights"
+                "Analyzed website traffic data to identify user patterns and optimize design decisions.",
+                "Developed a scalable component library adaptable for multiple brands.",
+                "Designed high-fidelity page templates for 3 distinct lines of business.",
+                "Improved upon an existing custom dashboard solution for efficient site content management"
             ]
         },
         {
@@ -100,9 +100,10 @@
             "companyName" : "Yext", 
             "year" : "2023", 
             "projectSummary": [
-                "Gathered and finalized design requirements with clients and internal stakeholders within an expedited timeline",
-                "Researched and compared site features against competitors",
-                "Collaborated with Engineers to rapidly iterate on live site prototypes"
+                "Created high-fidelity designs",
+                "Collaborated with the client team and engineers to develop technical solutions",
+                "Worked with client UX researchers to conduct usability testing",
+                "Led internal design brainstorming sessions"
             ]
         }
     ]

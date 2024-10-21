@@ -160,7 +160,7 @@
                         "blockDescription": "",
                         "blockBulletPoints":  [
                             "Collaborated closely with engineers and project managers to define the scope, discuss technical solutions, and identify potential challenges.",
-                            "As more design mocks ups are designed, I have regular check-ups with engineers to seek alignment"
+                            "As more design mockups are designed, I have regular check-ups with engineers to seek alignment"
                         ],
                         "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-3.png"
                     },
@@ -317,10 +317,10 @@
             "projectProblem" : "Merrill leverages the Yext platform to efficiently manage thousands of financial advisor listings and web pages. With three distinct lines of business, each requiring tailored branding and specifications, the team is developing a series of page templates and a content management dashboard. This solution will showcase each advisor’s financial services while empowering them to effortlessly manage their website content.",
             "myResponsibilities":[
                 "Analyzed website traffic data to identify user patterns and optimize design decisions.",
-                "Developed a scalable design system adaptable for multiple brands.",
+                "Developed a scalable component library adaptable for multiple brands.",
+                "Designed high-fidelity page templates for 3 distinct lines of business.",
                 "Collaborated with project managers and developers to scope projects and brainstorm platform solutions.",
-                "Improved upon an existing custom dashboard solution for efficient site content management",
-                "Designed high-fidelity page templates for 3 distinct lines of business."
+                "Improved upon an existing custom dashboard solution for efficient site content management"
             ],
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-cover.png",
             "projectPageUrl" : "merrill-finacial-advisor-page-redesign",
