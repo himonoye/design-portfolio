@@ -34,46 +34,56 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 	
 				{(projectData.projectProblem != "Details are coming soon.") && 
 					<div className="content-container">
+						<div className="project-section-list-container">
 						
-						<DividerThreeDots/>
-	
-						<PortfolioProjectSummary projectImpact={projectData.projectImpact} myResponsibilities={projectData.myResponsibilities}/>
-	
-						{projectData.understandingUsers &&
-							<PortfolioProjectSection 
-								sectionHeading={projectData.understandingUsers.sectionHeading}
-								sectionDescription={projectData.understandingUsers.sectionDescription}
-								sectionImgUrl={projectData.understandingUsers.sectionImgUrl}
-								infoBlocks={projectData.understandingUsers.infoBlocks}>
-							</PortfolioProjectSection>
-						}
-	
-						{projectData.startDesign &&
-							<PortfolioProjectSection
-								sectionHeading={projectData.startDesign.sectionHeading}
-								sectionDescription={projectData.startDesign.sectionDescription}
-								sectionImgUrl={projectData.startDesign.sectionImgUrl}
-								infoBlocks={projectData.startDesign.infoBlocks}>
-							</PortfolioProjectSection>
-						}
-	
-						{projectData.refineDesign && 
-							<PortfolioProjectSection
-							sectionHeading={projectData.refineDesign.sectionHeading}
-							sectionDescription={projectData.refineDesign.sectionDescription}
-							sectionImgUrl={projectData.refineDesign.sectionImgUrl}
-							infoBlocks={projectData.refineDesign.infoBlocks}>
-							</PortfolioProjectSection>
-						}
-	
-						{projectData.takeaways &&
-							<PortfolioProjectSection
-							sectionHeading={projectData.takeaways.sectionHeading}
-							sectionDescription={projectData.takeaways.sectionDescription}
-							sectionImgUrl={projectData.takeaways.sectionImgUrl}
-							infoBlocks={projectData.takeaways.infoBlocks}>
-							</PortfolioProjectSection>
-						}
+							<DividerThreeDots/>
+		
+							<PortfolioProjectSummary projectImpact={projectData.projectImpact} myResponsibilities={projectData.myResponsibilities}/>
+		
+							<DividerThreeDots/>
+							
+							{projectData.understandingUsers &&
+								<PortfolioProjectSection 
+									sectionHeading={projectData.understandingUsers.sectionHeading}
+									sectionDescription={projectData.understandingUsers.sectionDescription}
+									sectionImgUrl={projectData.understandingUsers.sectionImgUrl}
+									infoBlocks={projectData.understandingUsers.infoBlocks}>
+								</PortfolioProjectSection>
+							}
+		
+							{projectData.understandingUsers && <DividerThreeDots/>}
+
+							{projectData.startDesign &&
+								<PortfolioProjectSection
+									sectionHeading={projectData.startDesign.sectionHeading}
+									sectionDescription={projectData.startDesign.sectionDescription}
+									sectionImgUrl={projectData.startDesign.sectionImgUrl}
+									infoBlocks={projectData.startDesign.infoBlocks}>
+								</PortfolioProjectSection>
+							}
+		
+							{projectData.startDesign && <DividerThreeDots/>}
+
+							{projectData.refineDesign && 
+								<PortfolioProjectSection
+								sectionHeading={projectData.refineDesign.sectionHeading}
+								sectionDescription={projectData.refineDesign.sectionDescription}
+								sectionImgUrl={projectData.refineDesign.sectionImgUrl}
+								infoBlocks={projectData.refineDesign.infoBlocks}>
+								</PortfolioProjectSection>
+							}
+
+							{projectData.refineDesign && <DividerThreeDots/>}
+
+							{projectData.takeaways &&
+								<PortfolioProjectSection
+								sectionHeading={projectData.takeaways.sectionHeading}
+								sectionDescription={projectData.takeaways.sectionDescription}
+								sectionImgUrl={projectData.takeaways.sectionImgUrl}
+								infoBlocks={projectData.takeaways.infoBlocks}>
+								</PortfolioProjectSection>
+							}
+						</div>
 					</div>
 				}
 	

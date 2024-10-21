@@ -83,6 +83,14 @@
 
 .body-small {
     font-family: var(--base-font-Family), sans-serif;
+    font-size: 1.15rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    max-width: 600px
+}
+
+.body-smallest {
+    font-family: var(--base-font-Family), sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 300;

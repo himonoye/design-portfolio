@@ -26,7 +26,7 @@
 .hero-container {
     display: flex;
     flex-direction: column;
-    padding: var(--container-padding);
+    padding: var(--container-padding-small);
     gap: var(--gutter);
     z-index: 1000;
     /* border-bottom: 1px solid var(--border-divider); */
@@ -35,22 +35,22 @@
 .content-container {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter);
-    padding: var(--container-padding);
+    gap: var(--gutter-large);
+    padding: var(--container-padding-small);
 }
 
 .bottom-container{
     display: flex;
     flex-direction: row;
     gap: var(--gutter);
-    padding: var(--container-padding);
+    padding: var(--container-padding-small);
     border-top: 1px solid var(--border-divider);
 }
 
 .form-container {
     display: flex;
     flex-direction: column;
-    padding: var(--container-padding);
+    padding: var(--container-padding-small);
     margin: 0 auto;
     gap: var(--gutter);
 }

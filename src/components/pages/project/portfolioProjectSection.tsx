@@ -20,9 +20,11 @@ type projectSectionProps = {
 const InfoBlock = ({blockHeading, blockDescription, blockBulletPoints, blockImgUrl}: infoBlockProps) => {
 	return (
 		<div className="project-info-block">
-			{blockHeading && <div className="heading-sub">{blockHeading}</div>}
-			{blockDescription && <p className="body-base">{blockDescription}</p>}
-			{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
+			<div className="project-info-block-text">
+				{blockHeading && <div className="heading-sub">{blockHeading}</div>}
+				{blockDescription && <p className="body-large">{blockDescription}</p>}
+				{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
+			</div>
 			{blockImgUrl && <Image url={blockImgUrl}></Image>}
 		</div>
 	)
@@ -31,14 +33,14 @@ const InfoBlock = ({blockHeading, blockDescription, blockBulletPoints, blockImgU
 export default function ProjectSection ({sectionHeading, sectionDescription, sectionImgUrl, infoBlocks,}: projectSectionProps) {
 	return (
 		<div className="project-section-container">
-			<DividerThreeDots/>
-			<div className="project-section-heading-container">
+			{sectionHeading && <div className="project-section-heading-container">
 				{sectionHeading && <div className="heading-head">{sectionHeading}</div>}
 				{sectionDescription && <p className="body-large">{sectionDescription}</p>}
 				{sectionImgUrl && <Image url={sectionImgUrl}></Image>}
 			</div>
+			}
 			{infoBlocks && 
-				<div className="project-info-block-container">
+				<div className="project-info-block-list-container">
 					{infoBlocks.map((item:any, i:number)=>{
 							return (
 								<InfoBlock

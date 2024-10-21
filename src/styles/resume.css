@@ -4,7 +4,7 @@
     background-color: var(--surface-secondary-background);
     color: var(--surface-secondary-text);
     gap: var(--resume-gutter-large);
-    padding: var(--container-padding);
+    padding: var(--container-padding-medium);
     border-radius: var(--card-border-radius);
 }
 

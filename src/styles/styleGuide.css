@@ -47,6 +47,7 @@
     --mobile: 360px;
 
     /* spacing */
+    --spacing-140: 140px;
     --spacing-120: 120px;
     --spacing-100: 100px;
     --spacing-80: 80px;
@@ -121,8 +122,11 @@
     --mobile-header-shadow: 5px 0px 5px 0px var(--brand-grayscale-200);
 
     /* base spacing */
-    --gutter: var(--spacing-60);
-    --container-padding: var(--spacing-80);
+    --gutter: var(--spacing-40);
+    --gutter-medium: var(--spacing-80);
+    --container-padding-small: var(--spacing-40);
+    --container-padding-medium: var(--spacing-80);
+    --container-padding-large: var(--spacing-120);
     --button-spacing: var(--spacing-20) var(--spacing-30) var(--spacing-15) var(--spacing-30);
     --card-padding: var(--spacing-60) var(--spacing-60) var(--spacing-80) var(--spacing-60);
 

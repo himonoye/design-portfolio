@@ -91,10 +91,19 @@
         {
             "needPassword" : false,
             "projectName" : "Trane Supply Products & Parts Search Site",
-            "projectDescription" : "To design an e-commerce search experience that helps business agents and customers find the products or parts they are looking for.",
+            "projectSkills": [
+                "Competitive Analysis",
+                "Usability Testing",
+                "Cross-functional Collaboration"
+            ],
+            "projectDescription" : "Design an e-commerce search experience that helps business agents and customers efficiently find the products or parts and put together orders across Salesforce and Yext platform.",
             "projectDuration" : "4 month, August 2022 - Dec 2022",
             "projectProblem" : "With millions of products offered by the buisiness, accessing product information was a cumbersome process. Agents must have a precise knowledge of where to look and navigate through multiple databases and platforms, manually connecting the dots to find the right information. The goal of the project is to transform its e-commerce site and streamline the part-finding process so it provides a effortless shopping experience for both HVAC agents and customers.",
-            "projectImpact": "We streamlined and simplified the part-finding journey by creating a search experience that consolidates related information from multiple databases into a single, cohesive web interface, ultimately reducing the time it takes for agents and customers to find the part.",
+            "projectImpact": [
+                "In 2024, our enhanced search platform handled over 9.4 million searches.",
+                "To streamline and simplify the product-finding journey, we created a search experience that consolidates related information from multiple databases into a single, cohesive web interface.",
+                "Reduced the time it takes for agents and customers to find products parts."
+            ],
             "myResponsibilities":[
                 "Created high-fidelity designs",
                 "Collaborated with the client team and Yext engineers to develop technical solutions",
@@ -104,21 +113,22 @@
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-project-cover.png",
             "projectPageUrl" : "trane-supply-search-site",
             "understandingUsers" : {
-                "sectionHeading" : "Understanding Users",
-                "sectionDescription": "The client provided a variety of user types at the start of the project. Each group has varying levels of access to existing database, leading to different search behaviors and feature requirements.",
+                "sectionHeading" : "",
+                "sectionDescription": "",
                 "sectionImgUrl":"",  
                 "infoBlocks": [
                     {
-                        "blockHeading": "Who are our users?",
+                        "blockHeading": "Trane has a variety of user types, with different goals that lead to different product needs.",
+                        "blockDescription": "",
                         "blockBulletPoints":  [ 
                             "Remote agents who interact with customers over the phone",
                             "Storefront agents who engage with customers in person",
-                            "HVAC professionals who purchase parts from Trane.",
+                            "HVAC professionals or companies who purchase parts from Trane.",
                             "Unauthenticated customers interested in purchasing parts from Trane"
                         ]
                     },
                     {
-                        "blockHeading": "What are users' current painpoints?",
+                        "blockHeading": "Users' Current Painpoints",
                         "blockDescription": "",
                         "blockBulletPoints":  [
                             "Product information was hosted in separate databases and on different platforms. Agents had to log into multiple platforms and connect the dots manually to find the product they are looking for.",
@@ -137,13 +147,14 @@
                 ]
             },
             "startDesign":{
-                "sectionHeading" : "Design Iterations",
-                "sectionDescription": "Starting with user stories, the entire project team met to gather business requirements, discuss user needs, business goals, and define the technical details for upcoming features.",
+                "sectionHeading" : "",
+                "sectionDescription": "",
                 "infoBlocks": [
                     {
                         "blockHeading": "Collaboration with Client's Team",
                         "blockDescription": "",
                         "blockBulletPoints":  [
+                            "Starting with user stories, the entire project team met to gather business requirements, discuss user needs, business goals, and define the technical details for upcoming features.",
                             "Outlined and crafted user flows chart for each user story.",
                             "Presented user flows with hifi mockups to shareholders"
                         ],
@@ -170,11 +181,11 @@
                 ]
             },
             "refineDesign":{
-                "sectionHeading" : "Design Refinement",
+                "sectionHeading" : "",
                 "sectionDescription": "",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Usability Study",
+                        "blockHeading": "Usability Study & Design Refinement",
                         "blockBulletPoints":  [
                             "Worked with client's UX researchers to design user feedback questions",
                             "Participated in usability study sessions to test out hi-fidelity mockups with end users"
@@ -184,7 +195,7 @@
                 ]
             },
             "takeaways":{
-                "sectionHeading" : "Takeaways",
+                "sectionHeading" : "",
                 "sectionDescription": "",
                 "infoBlocks": [
                     {
@@ -193,7 +204,8 @@
                             "Three rapid product releases",
                             "Features were rolled out to the production environment in stages, tailored to user types",
                             "Continuous iterations and improvements occur simultaneously with the development of new features."
-                        ]
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-6.png"
                     },
                     {   "blockHeading": "What I Learned",
                         "blockBulletPoints": [
@@ -205,117 +217,20 @@
                 ]
             }
         },
-
         {
             "needPassword" : false,
-            "projectName" : "App for Non-profit Organizers UX Research",
-            "projectDescription" : "To design a mobile app that helps non-profit organizers more effectively track and manage notes, contacts and to-dos.",
-            "projectDuration" : "4 month, August 2022 - Dec 2022",
-            "projectProblem" : "Non-profit organizers frequently juggle multiple cases simultaneously. They engage with community members through door-to-door interactions, gathering notes and contact details on the spot. Often relying on paper, pen, or simple phone apps for documentation, these methods can quickly become disorganized and inefficient over time, making it difficult to manage and retrieve important information.",
-            "projectImpact": "The research gave us valuable insights into organizers' processes and pain points, directly shaping how we prioritized app features to create an effective MVP.",
-            "myRole":"My design partner and I collaborated as a team of two to conduct user research and create wireframes that will serve as the blueprint for the app.",
-            "myResponsibilities":[
-                "Conducted user research",
-                "Developed personas and empathy maps, user stories",
-                "Proritized MVP app features and created initial userflow"
+            "projectName" : "Heartland Dental Office Microsite",
+            "projectSkills": [
+                "Design Token with Figma Variables",
+                "Cross-functional Collaboration"
             ],
-            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/OrganizingApp-project-cover.png",
-            "projectPageUrl" : "app-for-non-profit-organizers",
-            "understandingUsers" : {
-                "sectionHeading" : "Understanding Users",
-                "sectionDescription": "To better understand our users, we conducted Zoom interviews with three non-profit organizers to better understand their current workflow.",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "The interview was designed to answer the following questions:",
-                        "blockDescription": "", 
-                        "blockBulletPoints":  [
-                            "What does their day-to-day look like?",
-                            "What pain points do they encounter in their job responsibilities?",
-                            "What tools are they currently using?",
-                            "What do they like and dislike about those tools?"
-                        ]
-                    },
-                    {
-                        "blockHeading": "User Painpoints",
-                        "blockDescription": "", 
-                        "blockBulletPoints":  [
-                            "Organizers frequently find it challenging to take notes while engaging with community members. As a result, note-taking is often deferred until after the conversation, leading to a rushed and potentially incomplete capture of information.",
-                            "Some community members don't speak fluent English, leading to communication barriers and misunderstandings.",
-                            "Organizers frequently manage multiple cases over extended periods, making it difficult to update statuses, organize notes, and track to-dos efficiently.",
-                            "When cases are handed off between organizers, disorganized notes can result in a lack of context and delays in service delivery."
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/interview-notes.png"
-
-                    },
-                    {
-                        "blockHeading": "User Persona",
-                        "blockDescription": "", 
-                        "blockBulletPoints":  [
-                            "Based on the interview, we created 3 user persona to help empathize with our users.",
-                            "Each persona represents a unique sets of user needs."
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-persona.png"
-                    },
-                    {
-                        "blockHeading": "Empathy Map",
-                        "blockDescription": "", 
-                        "blockBulletPoints":  [
-                            "We also built user empathy maps for different stages of a organizer's work flow.",
-                            "This helped us separate user painpoints into themes."
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/empathy-map.png"
-                    },
-                    {
-                        "blockHeading": "User Story & Feature Planning",
-                        "blockDescription": "",
-                        "blockBulletPoints": [
-                            "Based on the insights we gathered, we developed user stories using Ad-lib.",
-                            "We discussed and ranked user stories to prioritize the app features for the MVP."
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/feature-planning.png"
-                    }
-                ]
-            },
-            "startDesign":{
-                "sectionHeading" : "Design Iterations",
-                "sectionDescription": "With insight from the research, we moved into the beginning stage of the design phrase. ",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "Breadboarding",
-                        "blockBulletPoints": [
-                            "We outlined essential user flow through breadboarding",
-                            "The breadboard helped define necessary screens for each features."
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png"
-                    }
-                ]
-            },
-            "takeaways":{
-                "sectionHeading" : "Takeaways",
-                "sectionDescription": "",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "Next Steps",
-                        "blockBulletPoints": [
-                            "Convert digital wireframes into interactive prototypes and conduct usability testing to gather actionable feedback.",
-                            "Shadow organizers for a day to observe real-world user behavior",
-                            "Refine the design based on research findings"
-
-                        ]},
-                    {
-                        "blockHeading": "What I Learned",
-                        "blockDescription": "Initial user research revealed that users could benefit from various app features, such as a built-in calendar for tracking events and translators to facilitate interactions with specific community members. However, as we developed user stories, we realized the importance of focusing on features that deliver the most value and address key gaps in users' daily workflows. This prompted us to prioritize and narrow down a core set of functionalities for the MVP."
-                    }
-                ]
-            }
-        },
-        {
-            "needPassword" : false,
-            "projectName" : "Heartland Dental Office Microsite Platform Solution",
-            "projectDescription" : "To design and refine six dental office website templates that adapt to the branding of 100+ practices, with dark mode integration.",
-            "projectDuration" : "",
+            "projectDescription" : "Create 6 website templates that help hundreds of dentists partners maintain their digital presence and create analytics dashboard to help Heartland marketing team improve site and listing performances.",
             "projectProblem" : "Managing a dental practice involves numerous responsibilities. Effective marketing is a crucial aspect. However, these non-dental-related tasks can often divert dentists' attention from their primary focus—caring for patients. The project aims to help hundreds of dentists Heartland partners reduce their workload of maintaining their digital presence.",
-            "projectImpact": "We successfully launched over a hundred of dentist websites using five of the six templates, receiving praise from the client team for the execution of the solution. Local dental offices also provided positive feedback on the user-friendly experience we delivered.",
+            "projectImpact": [
+                "We successfully launched over 1,700 dentist websites using five of the six available templates.",
+                "In 2024, the dental office sites collectively garnered 3.94 million views.",
+                "In the same year, the websites generated over 172,000 appointment bookings, indicating that 4.3% of users chose to book an appointment through the site."
+            ],
             "myResponsibilities":[
                 "Led brainstorming sessions with the client team to align on design requirements and explore innovative branding applications for the front-end",
                 "Collaborated with the client to identify practical platform solutions tailored to their marketing team’s workflow",
@@ -325,13 +240,13 @@
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-cover.png",
             "projectPageUrl" : "heartland-dental-office-microsite-platform-solution-template",
             "understandingUsers" : {
-                "sectionHeading" : "Understanding Users",
-                "sectionDescription": "There are multiple stakeholders to consider in the design process, each benefiting from various aspects of the solution package.",
+                "sectionHeading" : "",
+                "sectionDescription": "",
                 "sectionImgUrl":"",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Who are our users?",
-                        "blockDescription": "", 
+                        "blockHeading": "Our Users",
+                        "blockDescription": "There are multiple stakeholders to consider in the design process, each benefiting from various aspects of the solution:", 
                         "blockBulletPoints":  [
                             "Patients, who are browsing the sites for a new dentist or booking follow-up visits with their existing providers",
                             "Dentists, who seek greater customization options for content on their sites",
@@ -341,39 +256,48 @@
                 ]
             },
             "startDesign":{
-                "sectionHeading" : "Solution Brainstorm",
+                "sectionHeading" : "",
                 "sectionDescription": "",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Finding the right solution",
+                        "blockHeading": "Requirement Gathering & Collaboration with Client",
                         "blockBulletPoints": [
-                            "Led and participated in multiple requirements sessions to gain a deeper understanding of business operations, requirements, and goals.",
-                            "Collaborated with developers to explore various solutions for dynamically mapping content and color variables to the templates.",
-                            "Mapped out user flows to visualize the process of launching a new site within the platform."
+                            "To gain a deeper understanding of business operations, requirements, and goals, participated in multiple requirements sessions with the client team.",
+                            "I led brainstorming sessions with the client's key contacts to clearly define the problem, identify technical challenges, and develop a comprehensive solution.",
+                            "I mapped out user flows to visualize the process of launching a new site within the platform."
                         ],
                         "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-1.png"
                 
                     },
                     {
-                        "blockHeading": "Competitive Analysis & Wireframes",
+                        "blockHeading": "Template Creation & Branding Application",
                         "blockBulletPoints": [
-                            "Led UI competitive analysis sessions to gain insights into market trends.",
-                            "Facilitated wireframing sessions to quickly generate and explore design ideas."
+                            "Using the client-provided design brief, the design team and I created distinct style guides for each template, defining typography and color usage.",
+                            "I collaborated with developers to dynamically mapping content and color variables to the templates, customizing them for each dental office's branding." 
+                        ],
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-1.png"
+                
+                    },
+                    {
+                        "blockHeading": "Template Enhancement with Blog Content",
+                        "blockBulletPoints": [
+                            "I led design competitive analysis sessions to gain insights into market trends.",
+                            "To quickly generate and explore design ideas, I facilitated wireframing sessions with other designers"
                         ],
                         "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-2.png"
                     }
                 ]
             },
             "refineDesign":{
-                "sectionHeading" : "Figma Variables & Component Library",
+                "sectionHeading" : "",
                 "sectionDescription": "",
                 "infoBlocks": [
                     {
-                        "blockHeading": "",
+                        "blockHeading": "Figma Variables & Component Library",
                         "blockBulletPoints": [ 
-                            "Created Figma variables to test color application, accessibility, and dark mode functionality.",
-                            "Carefully organized, defined, and reused design components to emphasize data variability while minimizing the creation of excessive new components.",
-                            "Developed high-fidelity mockups that are scalable and easily maintainable in the long term."
+                            "To ensure the templates can work with various branding colors without code change, I created Figma variables to test color application, accessibility, and dark mode functionality.",
+                            "To highlight data variability to developers while minimizing the number of components, I carefully organized, defined, and reused design components",
+                            "Developed high-fidelity mockups and implemented a scalable file structure for long-term maintainability."
                         ],
                         "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-3.png"
                 
@@ -381,7 +305,7 @@
                 ]
             },
             "takeaways":{
-                "sectionHeading" : "Takeaways",
+                "sectionHeading" : "",
                 "sectionDescription": "",
                 "sectionImgUrl":"",
                 "infoBlocks": [
@@ -389,12 +313,15 @@
                         "blockHeading": "Next Steps",
                         "blockBulletPoints": [
                             "Continue monitoring site analytics to extract helpful insight on page performance and iterating on content and designs.",
-                            "Design and develope listing management dashboard to help Heartland team members manage multiple listings more efficiently"
+                            "Design and develop a listing management dashboard to help Heartland team members efficiently manage multiple listings."
                         ]
                     },
                     {
                         "blockHeading": "What I Learned",
-                        "blockDescription": "When there are numerous stakeholders and users to consider, clearly defining the needs of each persona allows the team to tailor solutions that effectively address specific pain points. For instance, dentists may prioritize the visibility of their bios on the page, while patients focus on easily finding office information and new patient forms. Additionally, the team responsible for implementing the website may advocate for streamlined site management, whereas marketing personnel and dentists might request more flexibility in customization options. This level of clarity will also assist in prioritizing the next steps in the development process."
+                        "blockBulletPoints": [
+                            "When there are numerous stakeholders and users to consider, clearly defining the needs of each persona allows the team to tailor solutions that effectively address specific pain points. For instance, dentists may prioritize the visibility of their bios on the page, while patients focus on easily finding office information and new patient forms.",
+                            "Additionally, the team responsible for implementing the website may advocate for streamlined site management, whereas marketing personnel and dentists might request more flexibility in customization options. This level of clarity will also assist in prioritizing the next steps in the development process."
+                        ]
                     }
                 ]
             }
@@ -402,12 +329,276 @@
 
         {
             "needPassword" : true,
+            "projectName" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard",
+            "projectSkills": [
+                "Site Traffic Analytics",
+                "Component Library",
+                "User Flow Mapping",
+                "Cross-functional Collaboration"
+            ],
+            "projectDescription" : "Revamp Merrill Bank of America's advisor pages to help prospective customers learn more about Bank of America advisors while creating platform solution that enables bank advisors to efficiently manage the content on their personal pages.",
+            "projectProblem" : "Merrill leverages the Yext platform to efficiently manage thousands of financial advisor listings and web pages. With three distinct lines of business, each requiring tailored branding and specifications, the team is developing a series of page templates and a content management dashboard. This solution will showcase each advisor’s financial services while empowering them to effortlessly manage their website content.",
+            "projectImpact": [
+                "Our team successfully launched 15000+ advisors sites.",
+                "Reduced page length by over 50%, optimizing content through efficient UI patterns and minimizing scroll.",
+                "Increased 'Contact Us' form completion rate by 50%."
+            ],
+            "myResponsibilities":[
+                "Analyzed website traffic data to identify user patterns and optimize design decisions.",
+                "Developed a scalable design system adaptable for multiple brands.",
+                "Collaborated with project managers and developers to scope projects and brainstorm platform solutions.",
+                "Improved upon an existing custom dashboard solution for efficient site content management",
+                "Designed high-fidelity page templates for 3 distinct lines of business."
+            ],
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-cover.png",
+            "projectPageUrl" : "merrill-finacial-advisor-page-redesign",
+            "understandingUsers" : {
+                "sectionHeading" : "",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Our Users",
+                        "blockDescription": "There are multiple stakeholders to consider in the design process:", 
+                        "blockBulletPoints":  [
+                            "Customers, who are browsing the sites for a perspective advisors or contacting their existing advisors",
+                            "Advisors who want to market themselves to prospective customers and manage the content on their personal or team sites."
+                        ]
+                    }
+                ]
+            },
+            "startDesign" : {
+                "sectionHeading" : "Financial Advisor Pages",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Website Traffic Analysis & Google PageSpeed Insights",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                            "Scroll analysis revealed that over 60% of visitors don’t reach 25% of the advisor page, making above-the-fold content critical.",
+                            "Jumplink navigation drives the most traffic.",
+                            "'Contact Us' and 'Request Appointment' CTAs, which lead to similar forms, are the most frequently used.",
+                            "Customers are especially drawn to advisors with awards and accolades."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-3.png"
+            
+                    },
+                    {
+                        "blockHeading": "UX Audit Findings",
+                        "blockDescription": "I conducted a UX audit of the advisor page and identified several issues:", 
+                        "blockBulletPoints":  [
+                            "Users experienced a few seconds of a blank screen during their first visit. Google PageSpeed Insights confirmed high First Contentful Paint times on both desktop and mobile.",
+                            "It takes 8-10 scrolls to reach the bottom of the page. Several text-heavy sections  are making the page longer, contributing to low engagement at the bottom.",
+                            "Hero designs feature large images that push advisor names and addresses below the fold.",
+                            "Background images with overlaid text or additional images in multiple sections reduced readability and sometimes obscured advisors' headshots."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png"
+                    },
+                    {
+                        "blockHeading": "Insights from Merrill’s Advisors:",
+                        "blockDescription": "",
+                        "blockBulletPoints":  [
+                            "Many advisors have busy schedules and prefer a mix of well-written boilerplate content and customizable sections on their pages",
+                            "Team portraits can vary in size and aspect ratio, so advisors want several hero design options to accommodate these differences.",
+                            "Some accolades are awarded to individual advisors, while others are given to the entire team. Advisors want to showcase both types of recognition on their pages."
+                        ]
+                    },
+                    {
+                        "blockHeading": "Redesign Strategy",
+                        "blockDescription": "Based on the data insight, we devised a redesign plan with the following improvement:",
+                        "blockBulletPoints": [
+                            "Condense content by uitilizing tabbed section and carousel on the page to reduce page length. ",
+                            "Combine the “Contact Us” and “Request Appointment” calls-to-action into a single, prominent CTA to enhance user engagement.",
+                            "Update the section showcasing advisors' accolades for better visibility.",
+                            "Apply web development best practices, such as reducing image sizes, to improve page speed."
+                        ]
+                    },
+                    {
+                        "blockHeading": "Wireframes",
+                        "blockBulletPoints": [
+                            "I developed and presented wireframes to the client to confirm content placement and user experience for the advisor pages.",
+                            "To ensure the content customization is feasible within the platform, I collaborated closely with project managers and engineers throughout this process."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-1.png"
+                    },
+                    {
+                        "blockHeading": "High-Fidelity Mockups & Feedback Gathering",
+                        "blockBulletPoints": [
+                            "To manage complex data variations and minimize redundancy in development, I curated reusable design components for different templates and breakpoints.",
+                            "I regularly referenced the client’s branding guideline to ensure the new pages can integrate seamlessly into their existing ecosystem.",
+                            "Throughout the process, our project team met with the client every week to gather feedback and improve the designs."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-2.png"
+                    }
+                ]
+            },
+            "refineDesign":{
+                "sectionHeading" : "Content Management Dashboard",
+                "sectionDescription": "When I joined the project, the dashboard was already in use by advisors. Some advisors needed to create new teams with colleagues to serve customers collaboratively. Previously, this required contacting Yext to set up a new team site. To streamline this process, the project team decided to implement a site creation wizard, allowing advisors to easily create their own sites",
+                "sectionImgUrl":"",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Requirements Gathering",
+                        "blockDescription": "I met with project manager to clarify any outstanding questions regarding the user goals and established business processes:",
+                        "blockBulletPoints": [
+                            "To create a site, the team owner has to find and add other advisor.",
+                            "They need to provide a profile information for the new team",
+                            "After submiting the request, the team creation goes through an approval process.",
+                            "Once a team is created, advisors cannot delete the team."
+                        ]
+                    },
+                    {
+                        "blockHeading": "User Flow",
+                        "blockDescription": "Based on the requirements, I drafted a user flow to serve as a foundation for the high-fidelity mockups.",
+                        "blockBulletPoints": [
+                            "Using the user flow, I created high-fidelity mockups and interactive prototypes in Figma. The project team then walked the client through the prototype to gather feedback and identify further opportunities for design improvement.",
+                            "After submiting the request, the team creation goes through an approval process.",
+                            "Once a team is created, advisors cannot delete the team."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-5.png"
+
+                    },
+                    {
+                        "blockHeading": "High-Fidelity Prototype & Feedback Gathering",
+                        "blockDescription": "Using the user flow, I created high-fidelity mockups and interactive prototypes in Figma. The project team then walked the client through the prototype to gather feedback and identify further opportunities for design improvement.",
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-6.png"
+                    }
+                    
+                ]
+            },
+            "takeaways":{
+                "sectionHeading" : "",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Next Steps",
+                        "blockBulletPoints": [
+                            "Continue collaborating with the client team to launch the team creation wizard.",
+                            "Ongoing iteration on the advisor site to enhance performance and user experience."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "needPassword" : true,
+            "projectName" : "The UPS Store Mircrosite & Search Redesign",
+            "projectSkills": [
+                "Heuristic Audit",
+                "Search Traffic Analytics",
+                "Usability Testing",
+                "Cross-functional Collaboration"
+            ],
+            "projectDescription" : "Revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation.",
+            "projectDuration" : "4 month, August 2022 - Dec 2022",
+            "projectProblem" : "The UPS Store currently hosts its locatiomn microsites on Yext Platform. Each location includes a homepage and a set of location-specific service pages. Although the site has performed steadily over the past few years, The UPS Store is now looking for opportunities to enhance the site and improve the user experience.",
+            "projectImpact": [
+                "Identified key areas for UX improvement on the page.",
+                "Built trust with the client by understanding their business needs and design requirements."
+            ],
+            "myResponsibilities":[
+                "Examined the UPS Store search site using heuristic evaluation and web analytics",
+                "Conducted user testing on the UPS Store search site",
+                "Built audit reports based on the user testing result",
+                "Provided design recommendations based on the report insights"
+            ],
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-cover.png",
+            "projectPageUrl" : "the-ups-store-mircrosite-redesign",
+            "understandingUsers" : {
+                "sectionHeading" : "",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Location Microsite UX Audits & Competitive Analysis",
+                        "blockDescription": "For the location microsite, our team conducted an in-house competitive analysis. The UPS team also provided us with a third-party heuristic audit.",
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-1.png"
+                    },
+                    {
+                        "blockHeading": "Search Site UX Audits & Usability Testing",
+                        "blockDescription": "For the search site, our team conducted an in-house site analytics, usability testing, and heuristic audit of the search site.", 
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-2.png"
+                    },
+                    {
+                        "blockHeading": "Location Microsite UX Audit Findings",
+                        "blockDescription": "", 
+                        "blockBulletPoints":  [
+                            "The inbound site navigation is confusing to users. Multiple header links lead to the same page content.",
+                            "The complete list of services offered at each location is buried lower on the page. As a result, customers have difficulties figuring out whether a location offer a specific service.",
+                            "The site branding differs significantly from the brand’s main domain UPS.com"
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-3.png"
+                    },
+                    {
+                        "blockHeading": "Search Site Usability Test Findings",
+                        "blockDescription": "",
+                        "blockBulletPoints":  [
+                            "The search result only returns information about the current UPS store. This scope of the search, however, is not obvious to users. Customers are searching for non-location-specific information such as store finders or career at UPS",
+                            "No-result screens are sometimes unhelpful. Search UI would state that filtering to another topic will return a matching result when we know the database doesn’t contain the relevant content.",
+                            "The lack of search loading indication prompts users to refresh the page, especially at a slower page load speed."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-4.png"
+                    }
+                ]
+            },
+            "refineDesign":{
+                "sectionHeading" : "",
+                "sectionDescription": "",
+                "sectionImgUrl":"",  
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Redesign Strategy",
+                        "blockDescription": "Based on the data insight, I worked with another designer to devise a redesign plan with the following improvement:",
+                        "blockBulletPoints":  [
+                            "Analyzing search data showed that users typically seek services near their physical location. To accommodate this behavior, we expanded the search scope to display results beyond a single location, prioritizing services closest to the user. We also introduced a 'My Store' button, automatically set to the nearest location, enabling users to refine search results based on their preferred store.",
+                            "To improve site navigation, we repositioned the breadcrumbs above the header, clearly indicating that the content on the site is specific to the current UPS office.",
+                            "We revamped the above-the-fold desig  to make accessing services easier. Users can now quickly find relevant services with a single click on the 'Services' Tab without needing to scroll through the entire page."
+                        ]
+                    },
+                    {
+                        "blockHeading": "High-Fidelity Mockups & Feedback Gathering",
+                        "blockDescription": "I updated the design based on our insights. Our project team then met with the client every week to gather feedback and improve the designs.",
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-5.png"
+                    }
+                ]
+            },
+            "takeaways":{
+                "sectionHeading" : "",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Next Steps",
+                        "blockBulletPoints": [
+                            "Continue iteracting on the mocksups",
+                            "Conduct userbility test with users to validate design improvement"
+                        ]
+                    },
+                    {
+                        "blockHeading": "What I Learned",
+                        "blockDescription": [
+                            "A scoped search can reduce the amount of information users need to filter through, but it may confuse those unfamiliar with its limitations. By understanding user intent and adjusting the search scope to meet their expectations, we can minimize confusion and help users find what they need more efficiently."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "needPassword" : false,
             "projectName" : "Dashboard Template",
-            "projectDescription" : "To create a Figma template and component repository that empowers designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
+            "projectSkills": [
+                "Design Ops",
+                "User Interview"
+            ],
+            "projectDescription" : "Create Figma templates and component repository that empower designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
             "projectDuration" : "1 month, April 2022 - May 2022",
             "projectProblem" : "With the influx of dashboard projects, designers frequently start each design file from scratch, leading to inefficiencies, inconsistencies across designs, and maintenance challenges. The goal is to create a Figma template and component repository that empowers designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
-            "projectImpact": "The Figma template and component repository significantly reduced the time needed to build custom dashboards. Experienced designers can now focus on creating intuitive in-platform experiences for our customers, rather than building components from scratch, while new hires can get started quickly, relying less on tenured designers for guidance.",
-            "myRole": ["UX researcher", "UX Designer"],
+            "projectImpact": [
+                "The Figma template and component repository significantly reduced the time needed to build custom dashboards.",
+                "Experienced designers can now focus on creating intuitive in-platform experiences for our customers, rather than building components from scratch",
+                "New hires can get started quickly, relying less on tenured designers for guidance."
+            ],
             "myResponsibilities": [
                 "Conducted user research to gather insights",
                 "Turned user insights into design actions",
@@ -417,13 +608,13 @@
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-cover.png",
             "projectPageUrl" : "dashboard-template",          
             "understandingUsers" : {
-                "sectionHeading" : "Understanding Users",
+                "sectionHeading" : "",
                 "sectionDescription": "",
                 "sectionImgUrl":"",
                 "infoBlocks": [
                     {
-                        "blockHeading": "To gain deeper insights into the current dashboard building experience and reduce my designer bias, I interviewed four other designers:",
-                        "blockDescription": "", 
+                        "blockHeading": "User Interview",
+                        "blockDescription": "To gain deeper insights into the current dashboard building experience and reduce my designer bias, I interviewed four other designers:", 
                         "blockBulletPoints":  [
                             "2 new hires who has been with the company for less than 1 year",
                             "2 tenured colleagues who have been with the company for over 1 year"
@@ -439,7 +630,7 @@
                         ]
                     },
                     {
-                        "blockHeading": "User Painpoints",
+                        "blockHeading": "Findings & User Painpoints",
                         "blockDescription": "",
                         "blockBulletPoints":  [
                             "Building from ground zero or relying on previous examples to set up design files",
@@ -451,33 +642,36 @@
                 ]
             },
             "startDesign":{
-                "sectionHeading" : "Design Iteration",
+                "sectionHeading" : "",
                 "sectionDescription": "",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-2.png",
+                "sectionImgUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "Building a Component Library",
                         "blockBulletPoints": [
                             "Audited existing client dashboard examples and compiled a list of common modules used across designs.",
                             "Improve file organization by grouping components based on the functionality of the modules.",
-                            "Consulted with product designers to identify opportunities for aligning our designs with their design systems",
+                            "Consulted with the product team to identify opportunities for aligning our designs with their design systems",
                             "Consulted with engineers to understand each module's customizability during development and integrated them into the components."
-                        ]
+                        ],
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-2.png"
                     }
                 ]
             },
             "refineDesign":{
-                "sectionHeading" : "Usability Study & Design Refinement",
+                "sectionHeading" : "",
                 "sectionDescription": "",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-3.png",
+                "sectionImgUrl":"",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Once I built out the first draft of the component library, I went on to test the template with the same set of designers. I asked them to complete the following tasks:",
+                        "blockHeading": "Usability Study & Design Refinement",
+                        "blockDescription" : "Once I built out the first draft of the component library, I went on to test the template with the same set of designers. I asked them to complete the following tasks:",
                         "blockBulletPoints": [
                             "Review the Entire File: Provide an initial impression based on the overall organization, clarity, and usability of the file.",
                             "Find a Specific Module: Locate a specific module using only its name to assess ease of navigation",
                             "Inspect Customizable Modules: Evaluate the customizable modules and provide initial feedback on their flexibility and ease of use."
-                        ]
+                        ],
+                        "blockImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-3.png"
                     },
                     {
                         "blockHeading": "Userbility Test Findings",
@@ -498,7 +692,7 @@
                 ]
             },
             "takeaways":{
-                "sectionHeading" : "Takeaways",
+                "sectionHeading" : "",
                 "sectionDescription": "",
                 "sectionImgUrl":"",
                 "infoBlocks": [
@@ -520,179 +714,143 @@
                 ]
             }
         },
-
         {
-            "needPassword" : true,
-            "projectName" : "Merrill Financial Advisor Page Redesign",
-            "projectDescription" : "The goal is to help prospective customers learn more about Bank of America advisors while enabling bank advisors to efficiently manage the content on their personal pages. Details are coming soon.",
-            "projectDuration" : "4 month, August 2022 - Dec 2022",
-            "projectProblem" : "Details are coming soon.",
-            "projectImpact": "",
-            "myResponsibilities":[
+            "needPassword" : false,
+            "projectName" : "Non-profit Organizers App",
+            "projectSkills": [
+                "User Interview",
+                "User Flow Mapping",
+                "Competitive Analysis"
             ],
-            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-cover.png",
-            "projectPageUrl" : "merrill-finacial-advisor-page-redesign",
+            "projectDescription" : "Design a mobile app that helps non-profit organizers more effectively track and manage notes, contacts and to-dos.",
+            "projectProblem" : "Non-profit organizers frequently juggle multiple cases simultaneously. They engage with community members through door-to-door interactions, gathering notes and contact details on the spot. Often relying on paper, pen, or simple phone apps for documentation, these methods can quickly become disorganized and inefficient over time, making it difficult to manage and retrieve important information.",
+            "projectImpact": [
+                "The research gave us valuable insights into organizers' processes and pain points.",
+                "It directly shaped how we prioritized app features to create an effective MVP."
+            ],
+            "myResponsibilities":[
+                "Conducted user research",
+                "Developed personas and empathy maps, user stories",
+                "Proritized MVP app features and created initial userflow"
+            ],
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/OrganizingApp-project-cover.png",
+            "projectPageUrl" : "app-for-non-profit-organizers",
             "understandingUsers" : {
                 "sectionHeading" : "",
                 "sectionDescription": "",
-                "sectionImgUrl":"",
                 "infoBlocks": [
                     {
-                        "blockHeading": "",
-                        "blockDescription": "", 
+                        "blockHeading": "User Interview",
+                        "blockDescription": "To better understand our users, we conducted Zoom interviews with three non-profit organizers to better understand their current workflow. The interview was designed to answer the following questions:", 
                         "blockBulletPoints":  [
+                            "What does their day-to-day look like?",
+                            "What pain points do they encounter in their job responsibilities?",
+                            "What tools are they currently using?",
+                            "What do they like and dislike about those tools?"
                         ]
                     },
                     {
-                        "blockHeading": "",
+                        "blockHeading": "Findings & User Painpoints",
                         "blockDescription": "", 
                         "blockBulletPoints":  [
-                        ]
+                            "Organizers frequently find it challenging to take notes while engaging with community members. As a result, note-taking is often deferred until after the conversation, leading to a rushed and potentially incomplete capture of information.",
+                            "Some community members don't speak fluent English, leading to communication barriers and misunderstandings.",
+                            "Organizers frequently manage multiple cases over extended periods, making it difficult to update statuses, organize notes, and track to-dos efficiently.",
+                            "When cases are handed off between organizers, disorganized notes can result in a lack of context and delays in service delivery."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/interview-notes.png"
+
                     },
                     {
-                        "blockHeading": "",
+                        "blockHeading": "User Persona",
+                        "blockDescription": "Based on the interview, we created 3 user persona to help empathize with our users.Each persona represents a unique sets of user needs.", 
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-persona.png"
+                    },
+                    {
+                        "blockHeading": "Empathy Map",
+                        "blockDescription": "We also built user empathy maps for different stages of a organizer's work flow. This helped us separate user painpoints into themes.", 
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/empathy-map.png"
+                    },
+                    {
+                        "blockHeading": "User Story & Feature Planning",
                         "blockDescription": "",
-                        "blockBulletPoints":  [
-                        ]
+                        "blockBulletPoints": [
+                            "Based on the insights we gathered, we developed user stories using Ad-lib.",
+                            "We discussed and ranked user stories to prioritize the app features for the MVP."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/feature-planning.png"
                     }
                 ]
             },
             "startDesign":{
                 "sectionHeading" : "",
                 "sectionDescription": "",
-                "sectionImgUrl":"",
                 "infoBlocks": [
                     {
-                        "blockHeading": "",
+                        "blockHeading": "Breadboarding",
+                        "blockDescription":"With insight from the research, we moved into the beginning stage of the design phrase.",
                         "blockBulletPoints": [
-                        ]
-                    },
-                    {
-                        "blockHeading": "",
-                        "blockBulletPoints": [
-                        ]
-                    }
-                ]
-            },
-            "refineDesign":{
-                "sectionHeading" : "",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "",
-                        "blockBulletPoints": [  
-                        ]
+                            "We outlined essential user flow through breadboarding",
+                            "The breadboard helped define necessary screens for each features."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png"
                     }
                 ]
             },
             "takeaways":{
-                "sectionHeading" : "Takeaways",
+                "sectionHeading" : "",
                 "sectionDescription": "",
-                "sectionImgUrl":"",
                 "infoBlocks": [
                     {
                         "blockHeading": "Next Steps",
-                        "blockBulletPoints": []
-                    },
+                        "blockBulletPoints": [
+                            "Convert digital wireframes into interactive prototypes and conduct usability testing to gather actionable feedback.",
+                            "Shadow organizers for a day to observe real-world user behavior",
+                            "Refine the design based on research findings"
+
+                        ]},
                     {
                         "blockHeading": "What I Learned",
-                        "blockDescription": ""
+                        "blockBulletPoints": [
+                            "Initial user research revealed that users could benefit from various app features, such as a built-in calendar for tracking events and translators to facilitate interactions with specific community members.",
+                            "As we developed user stories, we realized the importance of focusing on features that deliver the most value and address key gaps in users' daily workflows.",
+                            "We decided to prioritized and narrowed down a core set of functionalities for the App MVP."
+                        ]
                     }
                 ]
             }
         },
-
         {
-            "needPassword" : true,
-            "projectName" : "The UPS Store Mircrosite Redesign",
-            "projectDescription" : "To revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation. Details are coming soon.",
-            "projectDuration" : "4 month, August 2022 - Dec 2022",
-            "projectProblem" : "Details are coming soon.",
-            "projectImpact": "",
-            "myResponsibilities":[
-                "Examined the UPS Store search site using heuristic evaluation and web analytics",
-                "Conducted user testing on the UPS Store search site",
-                "Built audit reports based on the user testing result",
-                "Provided design recommendations based on the report insights"
+            "needPassword" : false,
+            "projectName" : "Allstate Agency Review Generation Template",
+            "projectSkills": [
+                "User Flow Mapping",
+                "Figma Variable Prototyping"
             ],
-            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/TUPSS-cover.png",
-            "projectPageUrl" : "the-ups-store-mircrosite-redesign",
+            "projectDescription" : "Built custom review generation email & landing page templates based on multiple user scenarios.",
+            "projectProblem" : "",
+            "projectImpact": [
+                ""
+            ],
+            "myResponsibilities":[
+                ""
+            ],
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/AllstateEmail/allstate-cover.png",
+            "projectPageUrl" : "https://www.figma.com/deck/qgSsaMKHFdPmxqbhy1WtfA/Allstate-Review-Generation%3A-Templates?node-id=25-52&node-type=slide&viewport=-121%2C-17%2C0.57&t=2hxyfZZwtnDwUpQ5-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
             "understandingUsers" : {
-                "sectionHeading" : "Understanding Users",
-                "sectionDescription": "The project team first started by conducting a thorough UX audit of the two sites. ",
-                "sectionImgUrl":"",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "UX Audits & Usability Testing",
-                        "blockDescription": "", 
-                        "blockBulletPoints":  [
-                            "For the location microsite, our team conducted an in-house competitive analysis. The UPS team also provided us with a third-party heuristic audit.",
-                            "For the search site, our team conducted an in-house site analytics, usability testing, and heuristic audit of the search site."
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png"
-                    },
-                    {
-                        "blockHeading": "Location Microsite Findings",
-                        "blockDescription": "", 
-                        "blockBulletPoints":  [
-                            "The inbound site navigation is confusing to users. Multiple header links lead to the same page content.",
-                            "The complete list of services offered at each location is buried lower on the page. As a result, customers have difficulties figuring out whether a location offer a specific service.",
-                            "The site branding differs significantly from the brand’s main domain UPS.com"
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png"
-                    },
-                    {
-                        "blockHeading": "Search Site Findings",
-                        "blockDescription": "",
-                        "blockBulletPoints":  [
-                            "The search result only returns information about the current UPS store. This scope of the search, however, is not obvious to users. Customers are searching for non-location-specific information such as store finders or career at UPS",
-                            "No-result screens are sometimes unhelpful. Search UI would state that filtering to another topic will return a matching result when we know the database doesn’t contain the relevant content.",
-                            "The lack of search loading indication prompts users to refresh the page, especially at a slower page load speed."
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png"
-                    }
-                ]
+                "sectionHeading" : "",
+                "sectionDescription": "",
+                "infoBlocks": []
             },
-            "refineDesign":{
-                "sectionHeading" : "Design Iteration",
-                "sectionDescription": "Based on the insight from the research, I incorporated the following changes to the template",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png",  
-                "infoBlocks": [
-                    {
-                        "blockHeading": "Header Navigation Restructure:",
-                        "blockDescription": "To minimize confusion, we repositioned the breadcrumbs above the header on desktop and highlighted the current location on mobile, clarifying that the content is specific to the user's current location. Additionally, we added a location label in the header to emphasize that all links are local to the selected location."
-
-                    },
-                    {
-                        "blockHeading": "Location Page Above-the-Fold Redesign:",
-                        "blockDescription": "We revamped the above-the-fold section to make accessing services easier. The core business information is now the first tab in a tabbed layout, with the services list as the second tab. This allows users to quickly find relevant services with a single click, instead of needing to scroll through the page."
-                    },
-                    {
-                        "blockHeading": "Search Scope Adjustment:",
-                        "blockDescription": "Analyzing search data revealed that users typically look for services close to their physical location. To reduce confusion, we broadened the search scope to show results beyond a single location while prioritizing services nearest the user. We also introduced a 'My Store' button, automatically set to the closest location, allowing users to refine their search results based on their chosen store."
-                    }
-                ]
+            "startDesign":{
+                "sectionHeading" : "",
+                "sectionDescription": "",
+                "infoBlocks": []
             },
             "takeaways":{
-                "sectionHeading" : "Takeaways",
+                "sectionHeading" : "",
                 "sectionDescription": "",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "Next Steps",
-                        "blockBulletPoints": [
-                            "Convert mockups to high-fidelity prototypes",
-                            "Test prototype with users",
-                            "Present to clients with research findings and further iterating on the designs"
-                        ]
-                    },
-                    {
-                        "blockHeading": "What I Learned",
-                        "blockDescription": [
-                            "A scoped search can reduce the amount of information users need to filter through, but it may confuse those unfamiliar with its limitations. By understanding user intent and adjusting the search scope to meet their expectations, we can minimize confusion and help users find what they need more efficiently."
-                        ]
-                    }
-                ]
+                "infoBlocks": []
             }
         }
     ],

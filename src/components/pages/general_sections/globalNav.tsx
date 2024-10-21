@@ -62,7 +62,7 @@ const Footer = ({footerData}:footerProps) => {
                     )
                 })}
             </div>
-            <div className="body-small">
+            <div className="body-smallest">
                 ©2024 Built with Azure & React
             </div>
         </div>

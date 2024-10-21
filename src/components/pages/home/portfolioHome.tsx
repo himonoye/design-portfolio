@@ -19,7 +19,7 @@ export default function PortfolioHome({pageData, projectData}:PortfolioHomeProps
             <div className="content-container">
                 <div className="card-container" ref={portfolioRef}>
                     {projectData.map((item:any, i:number)=> {
-                        return <ProjectCard key={i} projectName={item.projectName} projectDescription={item.projectDescription} projectPageUrl={item.projectPageUrl} projectCoverImgUrl={item.projectCoverImgUrl}></ProjectCard>
+                        return <ProjectCard key={i} projectName={item.projectName} projectSkills={item.projectSkills} projectDescription={item.projectDescription} projectPageUrl={item.projectPageUrl} projectCoverImgUrl={item.projectCoverImgUrl}></ProjectCard>
                     })}
                 </div>
             </div>
