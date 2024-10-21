@@ -305,7 +305,7 @@
         },
 
         {
-            "needPassword" : false,
+            "needPassword" : true,
             "projectName" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard",
             "projectSkills": [
                 "Site Traffic Analytics",
@@ -456,7 +456,7 @@
             }
         },
         {
-            "needPassword" : false,
+            "needPassword" : true,
             "projectName" : "The UPS Store Mircrosite & Search Redesign",
             "projectSkills": [
                 "Heuristic Audit",
