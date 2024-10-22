@@ -123,6 +123,7 @@
 
     /* base spacing */
     --gutter: var(--spacing-40);
+    --gutter-small: var(--spacing-20);
     --gutter-medium: var(--spacing-80);
     --container-padding-small: var(--spacing-40);
     --container-padding-medium: var(--spacing-80);
@@ -133,9 +134,9 @@
     /* resume */
     --resume-font-Family: "Arial";
     --resume-gutter-smallest: var(--spacing-5);
-    --resume-gutter-small: var(--spacing-15);
-    --resume-gutter-medium: var(--spacing-30);
-    --resume-gutter-large: var(--spacing-40);
+    --resume-gutter-small: var(--spacing-10);
+    --resume-gutter-medium: var(--spacing-20);
+    --resume-gutter-large: var(--spacing-60);
 
     /* border radius */
     --button-border-radius: 0;
@@ -209,9 +210,9 @@
 
 @media print {
     :root {
-        --resume-gutter-smallest: 0;
-        --resume-gutter-small: var(--spacing-5);
-        --resume-gutter-medium: var(--spacing-20);
+        --resume-gutter-smallest: var(--spacing-5);
+        --resume-gutter-small: var(--spacing-10);
+        --resume-gutter-medium: var(--spacing-15);
         --resume-gutter-large: var(--spacing-30);
     }
 }
@@ -262,13 +263,16 @@ mark {
 }
 
 ul {
-    padding: 0 var(--spacing-10);
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+    padding: 0;
+    margin: 0 var(--spacing-10);
 }
 
 li {
+    padding: 0;
     margin: 0 0 0 var(--spacing-10);
-    padding: 0 0 0 var(--spacing-5);
 }
 
 li::marker {

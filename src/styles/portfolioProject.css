@@ -46,7 +46,7 @@
 .project-info-block-text {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-10);
+    gap: var(--gutter-small);
     padding: 0 var(--container-padding-large);
 }
 

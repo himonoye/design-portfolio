@@ -1,18 +1,22 @@
 {
-    "summary":"I’m a Full Stack Designer who creates high-quality digital products to help businesses and their users achieve their goals. With my background in design and programming, I serve as a bridge between users, designers, and developers. I approach every problem with empathy, curiosity, and positivity to find a win-win solution.",
     "workExperience": [
         {
-            "jobTitle" : "Senior UI/UX Designer", 
+            "jobTitle" : "Senior UX / UI Designer", 
             "companyName" : "Yext", 
-            "year" : "Aug. 2019 - Present", 
+            "year" : "May. 2023 - Present", 
             "jobSummary": [
                 "Led web-focused research and design projects for clients such as The UPS Store, Merrill Lynch Bank of America, and Heartland Dental",
                 "Collaborated with client shareholders, project managers, and engineers to ensure the designs met all business requirements",
-                "Onboarded into the Engineering team to act as the liaison between the design and engineering teams",
+                "Onboarded into the Engineering team",
                 "Conducted interviews and improved Yext Professional Services design system",
                 "Assisted the design manager in scoping and maintaining weekly scrum",
                 "Interviewed designer candidates and onboarded new hires"
             ]
+        },
+        {
+            "jobTitle" : "UX / UI Designer", 
+            "companyName" : "Yext", 
+            "year" : "Aug. 2019 - May 2023"
         },
         {
             "jobTitle" : "Web Designer & Developer", 
@@ -21,15 +25,6 @@
             "jobSummary": [
                 "Created website mockups for the University of Maryland Honors College",
                 "Transferred the mockups to interactive web pages using CSS, HTML, and Javascript"
-            ]
-        },
-        {
-            "jobTitle" : "Director of Design", 
-            "companyName" : "Technica Hackathon, College Park", 
-            "year" : "Sept. 2017 - Dec. 2017", 
-            "jobSummary": [
-                "Led a design team of 7 to produce marketing materials for the hackathon and its related events",
-                "Coordinated with other organizing teams to provide attendees with the best-in-class Hackathon experiences"
             ]
         }
     ],
@@ -47,63 +42,54 @@
             {
                 "entryTitle" : "Programming",
                 "entryDetails" : "React, Webpack, HTML5, CSS, JavaScript"
-            },
-            {
-                "entryTitle" : "Spoken Languages",
-                "entryDetails" : "English, Mandarin"
             }
         ]},
         {   "sectionTitle" : "Certifications",
             "sectionDetails" : [
             {
                 "entryTitle" : "Nano Degree in Front End Web Developer",
-                "entryDetails" : "Udacity Nanodegree Programs"
-            },
-            {
-                "entryTitle" : "Google UX Certificate",
-                "entryDetails" : "7-course UX Certificate with Coursera "
+                "entryDetails" : "Udacity Nanodegree Program 2023"
             }
         ]},
         {   "sectionTitle" : "Education",
             "sectionDetails" : [
             {
                 "entryTitle" : "B.S. Computer Science & B.A. Graphic Design",
-                "entryDetails" : "University of Maryland, College Park 2015 - 2019"
+                "entryDetails" : "University of Maryland, College Park 2019"
             }
         ]}
     ],
     "projectExperience": [
         {
-            "projectTitle" : "Heartland Dental Office Microsite", 
-            "companyName" : "Yext", 
-            "year" : "2023 - 2024", 
-            "projectSummary": [
-                "Led brainstorming sessions with the client team to align on design requirements and explore innovative branding applications for the front-end",
-                "Collaborated with the client to identify practical platform solutions tailored to their marketing team’s workflow",
-                "Developed high-fidelity mockups for six templates",
-                "Integrated Figma variables into mockups, ensuring that live pages meet WCAG standards, regardless of branding colors"
-            ]
-        },
-        {
             "projectTitle" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard", 
             "companyName" : "Yext", 
             "year" : "2022 - 2023", 
             "projectSummary": [
-                "Analyzed website traffic data to identify user patterns and optimize design decisions.",
-                "Developed a scalable component library adaptable for multiple brands.",
-                "Designed high-fidelity page templates for 3 distinct lines of business.",
+                "Analyzed website traffic data to identify user patterns and optimize design decisions",
+                "Developed a scalable component library adaptable for multiple brands",
+                "Designed high-fidelity page templates for 3 distinct lines of business",
                 "Improved upon an existing custom dashboard solution for efficient site content management"
             ]
         },
         {
-            "projectTitle" : "Trane Supplies Search Experience", 
+            "projectTitle" : "Trane Supply Products & Parts Search Site", 
             "companyName" : "Yext", 
             "year" : "2023", 
             "projectSummary": [
-                "Created high-fidelity designs",
+                "Developed userflow for user stories and built high-fidelity designs for over 10 product features",
                 "Collaborated with the client team and engineers to develop technical solutions",
                 "Worked with client UX researchers to conduct usability testing",
                 "Led internal design brainstorming sessions"
+            ]
+        },{
+            "projectTitle" : "Heartland Dental Office Microsite", 
+            "companyName" : "Yext", 
+            "year" : "2023 - 2024", 
+            "projectSummary": [
+                "Led brainstorming sessions with the client team to align on design requirements and explore branding applications for the front-end",
+                "Collaborated with the client to identify platform solutions tailored to their marketing team’s workflow",
+                "Developed high-fidelity mockups for six templates",
+                "Integrated Figma variables to ensure the designs meet WCAG standards regardless of branding colors"
             ]
         }
     ]

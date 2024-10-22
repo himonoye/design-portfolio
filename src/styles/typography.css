@@ -63,9 +63,9 @@
 
 .body-large {
     font-family: var(--base-font-Family), sans-serif;
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    letter-spacing: .3px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: .8px;
     font-weight: 300;
     max-width:900px;
 }
@@ -74,8 +74,8 @@
 .body-base {
     font-family: var(--base-font-Family), sans-serif;
     font-size: 1.3rem;
-    line-height: 2.8rem;
-    letter-spacing: .2px;
+    line-height: 2.3rem;
+    letter-spacing: .4px;
     font-weight: 300;
     max-width: 900px;
 }
@@ -83,8 +83,9 @@
 
 .body-small {
     font-family: var(--base-font-Family), sans-serif;
-    font-size: 1.15rem;
-    line-height: 2.5rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    letter-spacing: .5px;
     font-weight: 300;
     max-width: 600px
 }

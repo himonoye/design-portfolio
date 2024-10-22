@@ -14,9 +14,9 @@ export default function Link({linkText, style, url, hasRightIcon, hasLeftIcon}:l
     return (
         <NavLink to={url} className="link-wrapper">
                 <div className={style}>
-                        {hasLeftIcon?<ArrowLeft/>:""}
-                        {linkText?linkText:""}
-                        {hasRightIcon?<ArrowRight/>:""}
+                    {hasLeftIcon?<ArrowLeft/>:""}
+                    {linkText?linkText:""}
+                    {hasRightIcon?<ArrowRight/>:""}
                 </div>
         </NavLink>
     )

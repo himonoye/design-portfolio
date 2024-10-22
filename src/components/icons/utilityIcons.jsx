@@ -1,5 +1,17 @@
 import React from 'react';
 
+const LogoBox = () => {
+    return (
+        <div id="logoBox">
+        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="72" height="72" fill="#333333"/>
+<path d="M13.6498 48.5H13.1875L16.2817 23.5H17.4553L24.924 46.6071L32.3572 23.5H33.5308L36.625 48.5H33.6731L31.2191 28.5L24.7818 48.5H22.5412L16.0327 28.75L13.6498 48.5Z" fill="white"/>
+<path d="M58.1221 23.5C58.5824 23.9524 58.8125 24.5357 58.8125 25.25C58.8125 25.8452 58.6793 26.4524 58.4128 27.0714L51.9084 40.0357V48.5H48.8924V40.8214L41.625 23.5H44.7137L51.6541 39.6071L57.9767 27.0714C58.2432 26.4762 58.3765 25.8571 58.3765 25.2143C58.3765 24.5714 58.1948 24.0714 57.8314 23.7143L58.1221 23.5Z" fill="white"/>
+</svg>
+        </div>
+    )
+} 
+
 const Menu = () => {
     return(
         <div className="menu">
@@ -58,5 +70,6 @@ export {
     ArrowLeft,
     ArrowRight,
     ArrowLongLeft,
-    ArrowLongRight
+    ArrowLongRight,
+    LogoBox
 }
