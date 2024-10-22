@@ -316,7 +316,7 @@
         },
 
         {
-            "needPassword" : false,
+            "needPassword" : true,
             "projectName" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard",
             "projectSkills": [
                 "Site Traffic Analytics",
@@ -372,7 +372,7 @@
                             "Customers are especially drawn to advisors with awards and accolades."
                         ],
                         "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-1.png",
-                        "blockImgNeedsOverlay": true
+                        "blockImgNeedsOverlay": false
             
                     },
                     {
@@ -480,7 +480,7 @@
             }
         },
         {
-            "needPassword" : false,
+            "needPassword" : true,
             "projectName" : "The UPS Store Mircrosite & Search Redesign",
             "projectSkills": [
                 "Heuristic Audit",
