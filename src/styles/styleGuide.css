@@ -132,7 +132,7 @@
     --card-padding: var(--spacing-60) var(--spacing-60) var(--spacing-80) var(--spacing-60);
 
     /* resume */
-    --resume-font-Family: "Arial";
+    --resume-font-Family: "Jost";
     --resume-gutter-smallest: var(--spacing-5);
     --resume-gutter-small: var(--spacing-10);
     --resume-gutter-medium: var(--spacing-20);
@@ -210,6 +210,7 @@
 
 @media print {
     :root {
+        --resume-font-Family: "Arial";
         --resume-gutter-smallest: var(--spacing-5);
         --resume-gutter-small: var(--spacing-10);
         --resume-gutter-medium: var(--spacing-15);

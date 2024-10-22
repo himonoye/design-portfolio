@@ -46,7 +46,7 @@
                 },
                 {
                     "buttonText": "Access My Resume",
-                    "buttonType" : "link",
+                    "buttonType" : "navLink",
                     "buttonUrl" : "/resume"
                 }
             ]
@@ -58,12 +58,12 @@
             "buttonGroup":[
                 {
                     "buttonText" : "View Resume as PDF",
-                    "buttonType" : "link",
+                    "buttonType" : "externalLink",
                     "buttonUrl" : "https://portfoliocontent.blob.core.windows.net/resume/MingxinYe-Resume.pdf"
                 },
                 {
                     "buttonText" : "Connect Via Email",
-                    "buttonType" : "link",
+                    "buttonType" : "navLink",
                     "buttonUrl" : "mailto:mingxinye1128@gmail.com"
                 }
             ]
@@ -76,12 +76,12 @@
             "buttonGroup":[
                 {
                     "buttonText" : "CONNECT ON INSTAGRAM",
-                    "buttonType" : "link",
+                    "buttonType" : "externalLink",
                     "buttonUrl" : "https://www.instagram.com/mmingaling/"
                 },
                 {
                     "buttonText" : "CONNECT ON LINKEDIN",
-                    "buttonType" : "link",
+                    "buttonType" : "externalLink",
                     "buttonUrl" : "https://www.linkedin.com/in/mingxinye?original_referer=http%3A%2F%2Flocalhost%3A8080%2F"
                 }
             ]
@@ -107,6 +107,13 @@
             ],
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-project-cover.png",
             "projectPageUrl" : "trane-supply-search-site",
+            "buttonGroup":[
+                {
+                    "buttonText": "See Live Experience",
+                    "buttonUrl" : "https://www.tranesupply.com/psearch/?category=0ZG4w000000g2urGAA",
+                    "buttonType" : "externalLink"
+                }
+            ],
             "understandingUsers" : {
                 "sectionHeading" : "",
                 "sectionDescription": "",
@@ -324,6 +331,13 @@
             ],
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-cover.png",
             "projectPageUrl" : "merrill-finacial-advisor-page-redesign",
+            "buttonGroup":[
+                {
+                    "buttonText": "See Live Advisor Pages",
+                    "buttonUrl" : "https://advisor.ml.com/sites/nj/princeton-nj/kentmollogroup",
+                    "buttonType" : "externalLink"
+                }
+            ],
             "understandingUsers" : {
                 "sectionHeading" : "",
                 "sectionDescription": "",
@@ -766,30 +780,19 @@
                 "Figma Variable Prototyping"
             ],
             "projectDescription" : "Built custom review generation email & landing page templates based on multiple user scenarios.",
-            "projectProblem" : "",
+            "projectProblem" : "Allstate seeks to boost agent review generation through an email campaign. Our design team was tasked with creating a Custom Reviews solution by designing and building Review Generation Email templates and Collection Landing Page templates.",
             "projectImpact": [
                 ""
             ],
-            "myResponsibilities":[
-                ""
-            ],
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/AllstateEmail/allstate-cover.png",
-            "projectPageUrl" : "https://www.figma.com/deck/qgSsaMKHFdPmxqbhy1WtfA/Allstate-Review-Generation%3A-Templates?node-id=25-52&node-type=slide&viewport=-121%2C-17%2C0.57&t=2hxyfZZwtnDwUpQ5-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
-            "understandingUsers" : {
-                "sectionHeading" : "",
-                "sectionDescription": "",
-                "infoBlocks": []
-            },
-            "startDesign":{
-                "sectionHeading" : "",
-                "sectionDescription": "",
-                "infoBlocks": []
-            },
-            "takeaways":{
-                "sectionHeading" : "",
-                "sectionDescription": "",
-                "infoBlocks": []
-            }
+            "projectPageUrl" : "allstate-agency-review-generation-template",
+            "buttonGroup":[
+                {
+                    "buttonText": "See Case Study Presentation",
+                    "buttonUrl" : "https://www.figma.com/deck/qgSsaMKHFdPmxqbhy1WtfA/Allstate-Review-Generation%3A-Templates?node-id=25-52&node-type=slide&viewport=-121%2C-17%2C0.57&t=2hxyfZZwtnDwUpQ5-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+                    "buttonType" : "externalLink"
+                }
+            ]
         }
     ],
     "aboutGallery" : [ 

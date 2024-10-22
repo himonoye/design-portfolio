@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export type buttonProps = {
     buttonText: string;
     style: "button-primary" | "button-secondary"
-    buttonType: "scrollTo" | "link" | "print" | "other";
+    buttonType: "scrollTo" | "navLink" | "externalLink" | "print" | "other";
     url?: string;
     refPointer?: React.MutableRefObject<HTMLInputElement>;
     onClick?: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -24,7 +24,7 @@ export default function Button({buttonText, style, url, buttonType, refPointer, 
                     </div>
             </div>
         )
-    } else if ((buttonType == "link") && url){
+    } else if ((buttonType == "navLink") && url){
         return (
             <NavLink to={url} className="button-wrapper">
                     <div className={style}>
@@ -33,6 +33,16 @@ export default function Button({buttonText, style, url, buttonType, refPointer, 
                         </div>
                     </div>
             </NavLink>
+        )
+    } else if ((buttonType == "externalLink") && url){
+        return (
+            <a href={url} target="_blank" className="button-wrapper">
+                    <div className={style}>
+                        <div className="button-text-wrapper">
+                            {buttonText}
+                        </div>
+                    </div>
+            </a>
         )
     } else if (buttonType == "print"){
         return (
