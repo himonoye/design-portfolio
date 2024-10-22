@@ -266,25 +266,10 @@
                             "Using the client-provided design brief, the design team and I created distinct style guides for each template, defining typography and color usage.",
                             "I collaborated with developers to dynamically mapping content and color variables to the templates, customizing them for each dental office's branding." 
                         ],
-                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-1.png",
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-2.png",
                         "blockImgNeedsOverlay": false
                 
                     },
-                    {
-                        "blockHeading": "Template Enhancement with Blog Content",
-                        "blockBulletPoints": [
-                            "I led design competitive analysis sessions to gain insights into market trends.",
-                            "To quickly generate and explore design ideas, I facilitated wireframing sessions with other designers"
-                        ],
-                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-2.png",
-                        "blockImgNeedsOverlay": false
-                    }
-                ]
-            },
-            "refineDesign":{
-                "sectionHeading" : "",
-                "sectionDescription": "",
-                "infoBlocks": [
                     {
                         "blockHeading": "Figma Variables & Component Library",
                         "blockBulletPoints": [ 
@@ -295,6 +280,21 @@
                         "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-3.png",
                         "blockImgNeedsOverlay": false
                 
+                    }
+                ]
+            },
+            "refineDesign":{
+                "sectionHeading" : "",
+                "sectionDescription": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Template Enhancement with Blog Content",
+                        "blockBulletPoints": [
+                            "I led design competitive analysis sessions to gain insights into market trends.",
+                            "To quickly generate and explore design ideas, I facilitated wireframing sessions with other designers"
+                        ],
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-4.png",
+                        "blockImgNeedsOverlay": false
                     }
                 ]
             },
