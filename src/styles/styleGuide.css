@@ -113,7 +113,7 @@
     --border-input-hover: var(--brand-grayscale-300);
 
     /* overlay */
-    --overlay: rgb(255, 255, 255,.8);
+    --overlay: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 
     /* shadow */
     --container-shadow: 0px 0px 5px var(--brand-grayscale-200);
@@ -185,7 +185,7 @@
         --border-input-hover: var(--brand-grayscale-300);
     
         /* overlay */
-        --overlay: rgb(255, 255, 255,.8);
+        --overlay: linear-gradient(0deg, rgba(33,33,33,1) 5%, rgba(33,33,33,0) 100%);
     
         /* shadow */
         --container-shadow: 0px 0px 5px var(--brand-black);
@@ -292,4 +292,12 @@ button{
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    background: var(--overlay);
+    width: 100%;
+    height: 200px;
+    bottom: 0;
 }

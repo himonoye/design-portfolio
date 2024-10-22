@@ -1,5 +1,4 @@
 import React from 'react';
-import DividerThreeDots from '../../style_guide/dividerThreeDots';
 import BulletPoints from '../../style_guide/bulletPoints';
 import Image from '../../style_guide/image';
 
@@ -8,6 +7,7 @@ type infoBlockProps = {
 	blockDescription: string; 
 	blockBulletPoints: string[];
 	blockImgUrl: string;
+	blockImgNeedsOverlay: boolean;
 }
 
 type projectSectionProps = {
@@ -17,7 +17,7 @@ type projectSectionProps = {
 	infoBlocks: [];
 }
 
-const InfoBlock = ({blockHeading, blockDescription, blockBulletPoints, blockImgUrl}: infoBlockProps) => {
+const InfoBlock = ({blockHeading, blockDescription, blockBulletPoints, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
 	return (
 		<div className="project-info-block">
 			<div className="project-info-block-text">
@@ -25,7 +25,7 @@ const InfoBlock = ({blockHeading, blockDescription, blockBulletPoints, blockImgU
 				{blockDescription && <p className="body-large">{blockDescription}</p>}
 				{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
 			</div>
-			{blockImgUrl && <Image url={blockImgUrl}></Image>}
+			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
 		</div>
 	)
 }
@@ -36,7 +36,7 @@ export default function ProjectSection ({sectionHeading, sectionDescription, sec
 			{sectionHeading && <div className="project-section-heading-container">
 				{sectionHeading && <div className="heading-head">{sectionHeading}</div>}
 				{sectionDescription && <p className="body-large">{sectionDescription}</p>}
-				{sectionImgUrl && <Image url={sectionImgUrl}></Image>}
+				{sectionImgUrl && <Image url={sectionImgUrl} needsOverlay={false}></Image>}
 			</div>
 			}
 			{infoBlocks && 
@@ -49,6 +49,7 @@ export default function ProjectSection ({sectionHeading, sectionDescription, sec
 									blockDescription={item.blockDescription}
 									blockBulletPoints={item.blockBulletPoints}
 									blockImgUrl={item.blockImgUrl}
+									blockImgNeedsOverlay={item.blockImgNeedsOverlay}
 								></InfoBlock>
 							)
 					})}
