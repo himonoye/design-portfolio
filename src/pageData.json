@@ -444,11 +444,8 @@
                     },
                     {
                         "blockHeading": "User Flow",
-                        "blockDescription": "Based on the requirements, I drafted a user flow to serve as a foundation for the high-fidelity mockups.",
+                        "blockDescription": "Based on the requirements, I drafted users flow to serve as a foundation for the high-fidelity mockups.",
                         "blockBulletPoints": [
-                            "Using the user flow, I created high-fidelity mockups and interactive prototypes in Figma. The project team then walked the client through the prototype to gather feedback and identify further opportunities for design improvement.",
-                            "After submiting the request, the team creation goes through an approval process.",
-                            "Once a team is created, advisors cannot delete the team."
                         ],
                         "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-5.png",
                         "blockImgNeedsOverlay": false
