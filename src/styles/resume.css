@@ -204,6 +204,13 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    #logoBox {
+        display: none;
+    }
+}
+
 @media print {
     /* Page Layouts */
 
