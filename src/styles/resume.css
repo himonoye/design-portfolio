@@ -191,6 +191,10 @@
         width: 100%;
     }
 
+    .resume-projects-list-container {
+        flex-direction: column;
+    }
+
     .resume-projects-container {
         flex-direction: column;
     }

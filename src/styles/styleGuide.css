@@ -129,7 +129,6 @@
     --container-padding-medium: var(--spacing-80);
     --container-padding-large: var(--spacing-120);
     --button-spacing: var(--spacing-20) var(--spacing-30) var(--spacing-15) var(--spacing-30);
-    --card-padding: var(--spacing-60) var(--spacing-60) var(--spacing-80) var(--spacing-60);
 
     /* resume */
     --resume-font-Family: "Jost";
@@ -197,9 +196,13 @@
 
 @media screen and (max-width: 768px) {
     :root {
-        --gutter: var(--spacing-40);
-        --container-padding: var(--spacing-40) var(--spacing-30);
-        --card-padding: var(--spacing-40);
+        --gutter: var(--spacing-30);
+        --gutter-small: var(--spacing-15);
+        --gutter-medium: var(--spacing-40);
+        --container-padding-small: var(--spacing-30);
+        --container-padding-medium: var(--spacing-40);
+        --container-padding-large: var(--spacing-80);
+
         --resume-gutter-smallest: 0;
         --resume-gutter-small: var(--spacing-5);
         --resume-gutter-medium: var(--spacing-20);

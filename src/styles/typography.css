@@ -63,8 +63,8 @@
 
 .body-large {
     font-family: var(--base-font-Family), sans-serif;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
     letter-spacing: .8px;
     font-weight: 300;
     max-width:900px;
@@ -141,23 +141,23 @@
 @media screen and (max-width: 1200px) {
 
     .heading-headline{
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 3.5rem;
     }
 
     .heading-lead {
-        font-size: 2rem;
+        font-size: 2.2rem;
         line-height: 3rem;
     }
     
 
     .heading-head {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 2.8rem;
     }
 
     .heading-sub {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 2.6rem;
     }
 

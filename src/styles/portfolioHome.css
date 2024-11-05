@@ -7,7 +7,8 @@
 .hero-heading-container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-40);
+    gap: var(--gutter);
+    padding: var(--container-padding-medium) var(--container-padding-large);
     align-items: center;
 }
 
@@ -55,14 +56,14 @@
 .project-card-body {
     display: flex;
     flex-direction: column;
-    padding: var(--card-padding);
-    gap: var(--spacing-40);
+    padding: var(--container-padding-medium);
+    gap: var(--gutter);
 }
 
 .project-card-heading {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-20);
+    gap: var(--gutter-small);
 }
 
 .project-skills {
@@ -105,6 +106,7 @@
     }
 
     .hero-heading-container {
+        padding: 0;
         align-items: stretch;
     }
 }
