@@ -26,17 +26,17 @@
 .hero-container {
     display: flex;
     flex-direction: column;
-    padding: var(--container-padding-small);
     gap: var(--gutter);
-    z-index: 1000;
-    /* border-bottom: 1px solid var(--border-divider); */
+    padding: var(--container-padding-medium) var(--container-padding-small);
+    align-items: center;
 }
 
 .content-container {
     display: flex;
     flex-direction: column;
     gap: var(--gutter-large);
-    padding: var(--container-padding-small);
+    padding: var(--container-padding-medium) var(--container-padding-small);
+    align-items: center;
 }
 
 .bottom-container{

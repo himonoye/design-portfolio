@@ -47,7 +47,7 @@
     --mobile: 360px;
 
     /* spacing */
-    --spacing-140: 140px;
+    --spacing-160: 160px;
     --spacing-120: 120px;
     --spacing-100: 100px;
     --spacing-80: 80px;
@@ -67,10 +67,14 @@
     --heading-font-Family: "Jost";
     --headline-font-Family: "Italiana";
 
-    /* base font*/
+    /* base font */
     font-size: var(--base-font-size);
     line-height: var(--base-font-height);
     color: var(--surface-primary-text);
+
+    /* content */
+    --content-max-width-narrow: 800px;
+    --content-max-width-wide: 1200px;
 
     /* motif */
     --motif-primary: var(--brand-purple-300);
@@ -127,7 +131,7 @@
     --gutter-medium: var(--spacing-80);
     --container-padding-small: var(--spacing-40);
     --container-padding-medium: var(--spacing-80);
-    --container-padding-large: var(--spacing-120);
+    --container-padding-large: var(--spacing-160);
     --button-spacing: var(--spacing-20) var(--spacing-30) var(--spacing-15) var(--spacing-30);
 
     /* resume */
@@ -138,7 +142,7 @@
     --resume-gutter-large: var(--spacing-60);
 
     /* border radius */
-    --button-border-radius: 0;
+    --button-border-radius: 50px;
     --card-border-radius: 0;
     --icon-border-radius: 50%;
 
@@ -242,7 +246,7 @@ body {
 }
 
 p {
-    max-width: 860px;
+    max-width: 800px;
     padding: 0;
     margin: 0;
 }
@@ -259,6 +263,7 @@ a:active {
 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 mark {
@@ -269,18 +274,6 @@ mark {
 ul {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-5);
-    padding: 0;
-    margin: 0 var(--spacing-10);
-}
-
-li {
-    padding: 0;
-    margin: 0 0 0 var(--spacing-10);
-}
-
-li::marker {
-    color: var(--brand-purple-300);
 }
 
 button{

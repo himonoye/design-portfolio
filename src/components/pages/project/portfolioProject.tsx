@@ -2,9 +2,9 @@ import React from 'react';
 import Link from '../../style_guide/link';
 import DividerThreeDots from '../../style_guide/dividerThreeDots';
 import PortfolioProjectHero from './portfolioProjectHero';
-import PortfolioProjectIntro from './portfolioProjectIntro';
-import PortfolioProjectSection from './portfolioProjectSection';
+import {ProjectInfoBlocks} from './portfolioProjectSection';
 import PasscodeForm from '../passcode_form/passcodeForm';
+import Image from '../../style_guide/image';
 
 type showPortfolioProjectProps = {
 	needPassword: boolean;
@@ -20,57 +20,61 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 	function PortfolioProjectBody() {
 		return (
 			<div className="content-container">
-				<div className="project-section-list-container">
-				
-					{projectData.myResponsibilities && <DividerThreeDots/>}
-
-					{projectData.myResponsibilities && <PortfolioProjectIntro myResponsibilities={projectData.myResponsibilities}/>}
-
-					{projectData.myResponsibilities && <DividerThreeDots/>}
-					
-					{projectData.understandingUsers &&
-						<PortfolioProjectSection 
-							sectionHeading={projectData.understandingUsers.sectionHeading}
-							sectionDescription={projectData.understandingUsers.sectionDescription}
-							sectionImgUrl={projectData.understandingUsers.sectionImgUrl}
-							infoBlocks={projectData.understandingUsers.infoBlocks}>
-						</PortfolioProjectSection>
-					}
-
-					{projectData.understandingUsers && <DividerThreeDots/>}
-
-					{projectData.startDesign &&
-						<PortfolioProjectSection
-							sectionHeading={projectData.startDesign.sectionHeading}
-							sectionDescription={projectData.startDesign.sectionDescription}
-							sectionImgUrl={projectData.startDesign.sectionImgUrl}
-							infoBlocks={projectData.startDesign.infoBlocks}>
-						</PortfolioProjectSection>
-					}
-
-					{projectData.startDesign && <DividerThreeDots/>}
-
-					{projectData.refineDesign && 
-						<PortfolioProjectSection
-						sectionHeading={projectData.refineDesign.sectionHeading}
-						sectionDescription={projectData.refineDesign.sectionDescription}
-						sectionImgUrl={projectData.refineDesign.sectionImgUrl}
-						infoBlocks={projectData.refineDesign.infoBlocks}>
-						</PortfolioProjectSection>
-					}
-
-					{projectData.refineDesign && <DividerThreeDots/>}
-
-					{projectData.takeaways &&
-						<PortfolioProjectSection
-						sectionHeading={projectData.takeaways.sectionHeading}
-						sectionDescription={projectData.takeaways.sectionDescription}
-						sectionImgUrl={projectData.takeaways.sectionImgUrl}
-						infoBlocks={projectData.takeaways.infoBlocks}>
-						</PortfolioProjectSection>
-					}
-					
-				</div>
+					{projectData.projectContent.map((item:any,i:number)=>{
+							switch(item.sectionStyle) {
+								case 'Cols': return (
+									<div className="project-section-container-cols">
+										<div className="project-section-content-container">
+											<div className="project-section-heading-container">
+												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
+												{item.sectionHeading && <div className="heading-sub">{item.sectionHeading}</div>}
+												{item.sectionDescription && <p className="body-large">{item.sectionDescription}</p>}
+											</div>
+											{item.infoBlocks && <ProjectInfoBlocks 
+																									key={i}
+																									infoBlocks={item.infoBlocks}
+																									blockStyle={item.blockStyle}>
+																								</ProjectInfoBlocks>}
+											</div>
+										{item.sectionImgUrl && <Image url={item.sectionImgUrl} needsOverlay={false}></Image>}
+									</div>
+								);
+								case 'Cols-Rev': return (
+									<div className="project-section-container-cols">
+										{item.sectionImgUrl && <Image url={item.sectionImgUrl} needsOverlay={false}></Image>}
+										<div className="project-section-content-container">
+											<div className="project-section-heading-container">
+												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
+												{item.sectionHeading && <div className="heading-sub">{item.sectionHeading}</div>}
+												{item.sectionDescription && <p className="body-large">{item.sectionDescription}</p>}
+											</div>
+											{item.infoBlocks && <ProjectInfoBlocks 
+																									key={i}
+																									infoBlocks={item.infoBlocks}
+																									blockStyle={item.blockStyle}>
+																								</ProjectInfoBlocks>}
+											</div>
+									</div>
+								);
+								default: return(
+									<div className="project-section-container">
+										<div className="project-section-content-container">
+											<div className="project-section-heading-container">
+												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
+												{item.sectionHeading && <div className="heading-sub">{item.sectionHeading}</div>}
+												{item.sectionDescription && <p className="body-large">{item.sectionDescription}</p>}
+											</div>
+											{item.infoBlocks && <ProjectInfoBlocks 
+																									key={i}
+																									infoBlocks={item.infoBlocks}
+																									blockStyle={item.blockStyle}>
+																								</ProjectInfoBlocks>}
+											</div>
+										{item.sectionImgUrl && <Image url={item.sectionImgUrl} needsOverlay={false}></Image>}
+									</div>
+								);
+							}
+					})}
 			</div>
 		)
 	}
@@ -94,7 +98,9 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 		<div className="body-container">
 			<PortfolioProjectHero 
 					pageTitle={projectData.projectName}
-					projectProblem={projectData.projectProblem}
+					pageDescription={projectData.projectDescription}
+					projectDuration={projectData.projectDuration}
+					projectRole={projectData.projectRole}
 					projectCoverImgUrl={projectData.projectCoverImgUrl}
 					buttonGroup={projectData.buttonGroup}
 			></PortfolioProjectHero>

@@ -14,6 +14,7 @@ export default function PortfolioHome({pageData, projectData}:PortfolioHomeProps
             <PortfolioHomeHero
                 profileImgUrl={pageData.profileImgUrl}
                 buttonGroup={pageData.buttonGroup}
+                pageDescription={pageData.description}
                 refPointer={portfolioRef}
             ></PortfolioHomeHero>
             <div className="content-container">

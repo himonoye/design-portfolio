@@ -83,7 +83,7 @@ const MobileMenu = ({headerData, footerData}:mobileMenuProps) => {
 }
 
 const GlobalNav = ({headerData, footerData}:globalNavProps) => {
-    const [HeaderOpen, setHeaderOpen] = useState(true);
+    const [HeaderOpen, setHeaderOpen] = useState(false);
 
     const ExpandableClosed = () => {
         return (

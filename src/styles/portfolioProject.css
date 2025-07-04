@@ -4,50 +4,93 @@
     box-shadow: var(--card-shadow);
 }
 
-.project-hero-heading-container {
+.hero-container > .link-wrapper {
+    width: 100%;
+}
+
+.hero-intro-container > .body-large {
+    text-align: center;
+}
+
+.project-hero-intro-container {
     display: flex;
     flex-direction: column;
     gap: var(--gutter);
-    padding: var(--container-padding-medium) var(--container-padding-large);
+    max-width: var(--content-max-width-narrow);
 }
 
-.project-section-list-container {
+.project-hero-heading-container {
     display: flex;
     flex-direction: column;
+    gap: var(--gutter-small);
 }
 
 .project-section-container {
     display: flex;
     flex-direction: column;
-    padding: var(--container-padding-large) 0;
+    padding: var(--container-padding-medium) 0;
     gap: var(--gutter-medium);
+    max-width: var(--content-max-width-wide);
+    width: 100%;
+}
+
+.project-section-container-cols {
+    display: flex;
+    flex-direction: row;
+    padding: var(--container-padding-medium) 0;
+    gap: var(--gutter-medium);
+    max-width: var(--content-max-width-wide);
+    width: 100%;
 }
 
 .project-section-heading-container {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-20);
-    padding: 0 var(--container-padding-large);
+    width: 100%;
+}
+
+.project-section-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-40);
+    width: 100%;
 }
 
 .project-info-block-list-container {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter-medium);
+    gap: var(--gutter-small);
+    width: 100%;
 }
 
-.project-info-block {
+.project-info-block-list-container-cols{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gutter-small);
+}
+
+.project-info-block-default {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter-medium);
+    gap: var(--gutter-small);
+    width: 100%;
+}
+
+.project-info-block-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-small);
     color: var(--surface-secondary-text);
+    padding: var(--container-padding-small);
+    border: 1px solid var( --border-divider);
+    width: 100%;
 }
 
 .project-info-block-text {
     display: flex;
     flex-direction: column;
     gap: var(--gutter-small);
-    padding: 0 var(--container-padding-large);
 }
 
 .project-section-container > .three-dots-horizontal {
@@ -86,10 +129,6 @@
     }
 
     .project-section-list-container {
-        padding: 0;
-    }
-
-    .project-info-block-text {
         padding: 0;
     }
 

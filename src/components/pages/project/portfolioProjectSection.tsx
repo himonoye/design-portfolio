@@ -11,50 +11,69 @@ type infoBlockProps = {
 }
 
 type projectSectionProps = {
-	sectionHeading: string;
-	sectionDescription: string;
-	sectionImgUrl: string;
 	infoBlocks: [];
+	blockStyle: string;
 }
 
-const InfoBlock = ({blockHeading, blockDescription, blockBulletPoints, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
+const InfoBlockDefault = ({blockHeading, blockDescription, blockBulletPoints, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
 	return (
-		<div className="project-info-block">
+		<div className="project-info-block-default">
+			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
 			<div className="project-info-block-text">
-				{blockHeading && <div className="heading-sub">{blockHeading}</div>}
-				{blockDescription && <p className="body-large">{blockDescription}</p>}
+				{blockHeading && <div className="heading-flag">{blockHeading}</div>}
+				{blockDescription && <p className="body-base">{blockDescription}</p>}
 				{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
 			</div>
-			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
 		</div>
 	)
 }
 
-export default function ProjectSection ({sectionHeading, sectionDescription, sectionImgUrl, infoBlocks,}: projectSectionProps) {
+const InfoBlockCards = ({blockHeading, blockDescription, blockBulletPoints, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
 	return (
-		<div className="project-section-container">
-			{sectionHeading && <div className="project-section-heading-container">
-				{sectionHeading && <div className="heading-head">{sectionHeading}</div>}
-				{sectionDescription && <p className="body-large">{sectionDescription}</p>}
-				{sectionImgUrl && <Image url={sectionImgUrl} needsOverlay={false}></Image>}
+		<div className="project-info-block-card">
+			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
+			<div className="project-info-block-text">
+				{blockHeading && <div className="heading-flag">{blockHeading}</div>}
+				{blockDescription && <p className="body-base">{blockDescription}</p>}
+				{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
 			</div>
-			}
-			{infoBlocks && 
-				<div className="project-info-block-list-container">
+		</div>
+	)
+}
+
+export function ProjectInfoBlocks ({infoBlocks, blockStyle}: projectSectionProps) {
+	switch(blockStyle) {
+		case 'Cols': return (
+			<div className="project-info-block-list-container-cols">
 					{infoBlocks.map((item:any, i:number)=>{
 							return (
-								<InfoBlock
+								<InfoBlockCards
 									key={i}
 									blockHeading={item.blockHeading}
 									blockDescription={item.blockDescription}
 									blockBulletPoints={item.blockBulletPoints}
 									blockImgUrl={item.blockImgUrl}
 									blockImgNeedsOverlay={item.blockImgNeedsOverlay}
-								></InfoBlock>
-							)
+								></InfoBlockCards>
+							);
 					})}
-				</div>
-			}
-		</div>
-	)
+			</div>
+		)
+		default: return (
+			<div className="project-info-block-list-container">
+					{infoBlocks.map((item:any, i:number)=>{
+							return (
+								<InfoBlockDefault
+									key={i}
+									blockHeading={item.blockHeading}
+									blockDescription={item.blockDescription}
+									blockBulletPoints={item.blockBulletPoints}
+									blockImgUrl={item.blockImgUrl}
+									blockImgNeedsOverlay={item.blockImgNeedsOverlay}
+								></InfoBlockDefault>
+							);
+					})}
+			</div>
+		)
+	}
 }

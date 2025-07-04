@@ -15,7 +15,7 @@ export default function About({pageData, gallery}:aboutProps) {
                 buttonGroup={pageData.buttonGroup}
                 scrollRef={pageData.scrollRef}
             ></DefaultHero>
-            <div className="content-container">
+            {/* <div className="content-container">
                 <div className="gallery-container">
                     {gallery.map((item, k)=>{
                         if (k % 3 == 0){
@@ -29,7 +29,7 @@ export default function About({pageData, gallery}:aboutProps) {
                         }
                     })}
                 </div>
-                <div className="gallery-container-mobile">
+                 <div className="gallery-container-mobile">
                     {gallery.map((item, k)=>{
                         if (k % 6 == 0){
                             return (
@@ -45,7 +45,7 @@ export default function About({pageData, gallery}:aboutProps) {
                         }
                     })}
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

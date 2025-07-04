@@ -1,0 +1,403 @@
+
+{
+    "needPassword" : true,
+    "projectName" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard",
+    "projectSkills": [
+        "Site Traffic Analytics",
+        "Component Library",
+        "User Flow Mapping",
+        "Cross-functional Collaboration"
+    ],
+    "projectDescription" : "Revamp Merrill Bank of America's advisor pages to help prospective customers learn more about Bank of America advisors while creating platform solution that enables bank advisors to efficiently manage the content on their personal pages.",
+    "projectProblem" : "Merrill leverages the Yext platform to efficiently manage thousands of financial advisor listings and web pages. With three distinct lines of business, each requiring tailored branding and specifications, the team is developing a series of page templates and a content management dashboard. This solution will showcase each advisor’s financial services while empowering them to effortlessly manage their website content.",
+    "myResponsibilities":[
+        "Analyzed website traffic data to identify user patterns and optimize design decisions.",
+        "Developed a scalable component library adaptable for multiple brands.",
+        "Designed high-fidelity page templates for 3 distinct lines of business.",
+        "Collaborated with project managers and developers to scope projects and brainstorm platform solutions.",
+        "Improved upon an existing custom dashboard solution for efficient site content management"
+    ],
+    "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-cover.png",
+    "projectPageUrl" : "merrill-finacial-advisor-page-redesign",
+    "buttonGroup":[
+        {
+            "buttonText": "See Live Advisor Pages",
+            "buttonUrl" : "https://advisor.ml.com/sites/nj/princeton-nj/kentmollogroup",
+            "buttonType" : "externalLink"
+        }
+    ],
+    "understandingUsers" : {
+        "sectionHeading" : "",
+        "sectionDescription": "",
+        "sectionImgUrl":"",
+        "infoBlocks": [
+            {
+                "blockHeading": "Our Users",
+                "blockDescription": "There are multiple stakeholders to consider in the design process:", 
+                "blockBulletPoints":  [
+                    "Customers, who are browsing the sites for a perspective advisors or contacting their existing advisors",
+                    "Advisors who want to market themselves to prospective customers and manage the content on their personal or team sites."
+                ]
+            }
+        ]
+    },
+    "startDesign" : {
+        "sectionHeading" : "Financial Advisor Pages",
+        "sectionDescription": "",
+        "sectionImgUrl":"",
+        "infoBlocks": [
+            {
+                "blockHeading": "Website Traffic Analysis",
+                "blockDescription": "", 
+                "blockBulletPoints":  [
+                    "Scroll analysis revealed that over 60% of visitors don’t reach 25% of the advisor page, making above-the-fold content critical.",
+                    "Jumplink navigation drives the most traffic.",
+                    "'Contact Us' and 'Request Appointment' CTAs, which lead to similar forms, are the most frequently used.",
+                    "Customers are especially drawn to advisors with awards and accolades."
+                ],
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-1.png",
+                "blockImgNeedsOverlay": false
+    
+            },
+            {
+                "blockHeading": "UX Audit Findings",
+                "blockDescription": "I conducted a UX audit of the advisor page and identified several issues:", 
+                "blockBulletPoints":  [
+                    "Users experienced a few seconds of a blank screen during their first visit. Google PageSpeed Insights confirmed high First Contentful Paint times on both desktop and mobile.",
+                    "It takes 8-10 scrolls to reach the bottom of the page. Several text-heavy sections  are making the page longer, contributing to low engagement at the bottom.",
+                    "Hero designs feature large images that push advisor names and addresses below the fold.",
+                    "Background images with overlaid text or additional images in multiple sections reduced readability and sometimes obscured advisors' headshots."
+                ],
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-2.png",
+                "blockImgNeedsOverlay": true
+            },
+            {
+                "blockHeading": "Insights from Merrill’s Advisors:",
+                "blockDescription": "",
+                "blockBulletPoints":  [
+                    "Many advisors have busy schedules and prefer a mix of well-written boilerplate content and customizable sections on their pages",
+                    "Team portraits can vary in size and aspect ratio, so advisors want several hero design options to accommodate these differences.",
+                    "Some accolades are awarded to individual advisors, while others are given to the entire team. Advisors want to showcase both types of recognition on their pages."
+                ]
+            },
+            {
+                "blockHeading": "Redesign Strategy",
+                "blockDescription": "Based on the data insight, we devised a redesign plan with the following improvement:",
+                "blockBulletPoints": [
+                    "Condense content by uitilizing tabbed section and carousel on the page to reduce page length. ",
+                    "Combine the “Contact Us” and “Request Appointment” calls-to-action into a single, prominent CTA to enhance user engagement.",
+                    "Update the section showcasing advisors' accolades for better visibility.",
+                    "Apply web development best practices, such as reducing image sizes, to improve page speed."
+                ]
+            },
+            {
+                "blockHeading": "Wireframes",
+                "blockBulletPoints": [
+                    "I developed and presented wireframes to the client to confirm content placement and user experience for the advisor pages.",
+                    "To ensure the content customization is feasible within the platform, I collaborated closely with project managers and engineers throughout this process."
+                ],
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-3.png",
+                "blockImgNeedsOverlay": true
+            },
+            {
+                "blockHeading": "High-Fidelity Mockups & Feedback Gathering",
+                "blockBulletPoints": [
+                    "To manage complex data variations and minimize redundancy in development, I curated reusable design components for different templates and breakpoints.",
+                    "I regularly referenced the client’s branding guideline to ensure the new pages can integrate seamlessly into their existing ecosystem.",
+                    "Throughout the process, our project team met with the client every week to gather feedback and improve the designs."
+                ],
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png",
+                "blockImgNeedsOverlay": true
+            }
+        ]
+    },
+    "refineDesign":{
+        "sectionHeading" : "Content Management Dashboard",
+        "sectionDescription": "When I joined the project, the dashboard was already in use by advisors. Some advisors needed to create new teams with colleagues to serve customers collaboratively. Previously, this required contacting Yext to set up a new team site. To streamline this process, the project team decided to implement a site creation wizard, allowing advisors to easily create their own sites",
+        "sectionImgUrl":"",
+        "infoBlocks": [
+            {
+                "blockHeading": "Requirements Gathering",
+                "blockDescription": "I met with project manager to clarify any outstanding questions regarding the user goals and established business processes:",
+                "blockBulletPoints": [
+                    "To create a site, the team owner has to find and add other advisor.",
+                    "They need to provide a profile information for the new team",
+                    "After submitting the request, the team creation goes through an approval process.",
+                    "Once a team is created, advisors cannot delete the team."
+                ]
+            },
+            {
+                "blockHeading": "User Flow",
+                "blockDescription": "Based on the requirements, I drafted users flow to serve as a foundation for the high-fidelity mockups.",
+                "blockBulletPoints": [
+                ],
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-5.png",
+                "blockImgNeedsOverlay": false
+
+            },
+            {
+                "blockHeading": "High-Fidelity Prototype & Feedback Gathering",
+                "blockDescription": "Using the user flow, I created high-fidelity mockups and interactive prototypes in Figma. The project team then walked the client through the prototype to gather feedback and identify further opportunities for design improvement.",
+                "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-6.png",
+                "blockImgNeedsOverlay": false
+            }
+            
+        ]
+    },
+    "takeaways":{
+        "sectionHeading" : "",
+        "sectionDescription": "",
+        "sectionImgUrl":"",
+        "infoBlocks": [
+            {
+                "blockHeading": "The Impact",
+                "blockBulletPoints": [
+                    "Our team successfully launched 15000+ advisors sites.",
+                    "Reduced page length by over 50%, optimizing content through efficient UI patterns and minimizing scroll.",
+                    "Increased 'Contact Us' form completion rate by 50%."
+                ]
+            }
+        ]
+    }
+},
+{
+    "needPassword" : false,
+    "projectName" : "Dashboard Template",
+    "projectSkills": [
+        "Design Ops",
+        "User Interview"
+    ],
+    "projectDescription" : "Create Figma templates and component repository that empower designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
+    "projectDuration" : "1 month, April 2022 - May 2022",
+    "projectProblem" : "With the influx of dashboard projects, designers frequently start each design file from scratch, leading to inefficiencies, inconsistencies across designs, and maintenance challenges. The goal is to create a Figma template and component repository that empowers designers to efficiently craft custom dashboard designs while ensuring consistency and standardization across the board.",
+    "myResponsibilities": [
+        "Conducted user research to gather insights",
+        "Turned user insights into design actions",
+        "Developed a comprehesive design template and component library",
+        "Collected feedback on the update template"
+    ],
+    "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-cover.png",
+    "projectPageUrl" : "dashboard-template",          
+    "understandingUsers" : {
+        "sectionHeading" : "",
+        "sectionDescription": "",
+        "sectionImgUrl":"",
+        "infoBlocks": [
+            {
+                "blockHeading": "User Interview",
+                "blockDescription": "To gain deeper insights into the current dashboard building experience and reduce my designer bias, I interviewed four other designers:", 
+                "blockBulletPoints":  [
+                    "2 new hires who has been with the company for less than 1 year",
+                    "2 tenured colleagues who have been with the company for over 1 year"
+                ]
+            },
+            {
+                "blockHeading": "The interview was designed to answer the following questions",
+                "blockDescription": "", 
+                "blockBulletPoints":  [
+                    "What is their current workflow when it comes to designing the dashboard?",
+                    "What are their painpoints when it comes to building a dashboard design?",
+                    "What are some examples of dashboard they’ve built recently?"
+                ]
+            },
+            {
+                "blockHeading": "Findings & User Painpoints",
+                "blockDescription": "",
+                "blockBulletPoints":  [
+                    "Building from ground zero or relying on previous examples to set up design files",
+                    "Junior designers are often unfamiliar with the platform's capabilities and unsure whether a component is available out-of-the-box or needs to be custom-designed",
+                    "Designers often need to manipulate screenshots by cropping, covering, or combining images to save time."
+                ],
+                "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-1.png",
+                "blockImgNeedsOverlay": false
+            }
+        ]
+    },
+    "startDesign":{
+        "sectionHeading" : "",
+        "sectionDescription": "",
+        "sectionImgUrl":"",
+        "infoBlocks": [
+            {
+                "blockHeading": "Building a Component Library",
+                "blockBulletPoints": [
+                    "Audited existing client dashboard examples and compiled a list of common modules used across designs.",
+                    "Improve file organization by grouping components based on the functionality of the modules.",
+                    "Consulted with the product team to identify opportunities for aligning our designs with their design systems",
+                    "Consulted with engineers to understand each module's customizability during development and integrated them into the components."
+                ],
+                "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-2.png",
+                "blockImgNeedsOverlay": false
+            }
+        ]
+    },
+    "refineDesign":{
+        "sectionHeading" : "",
+        "sectionDescription": "",
+        "sectionImgUrl":"",
+        "infoBlocks": [
+            {
+                "blockHeading": "Usability Study & Design Refinement",
+                "blockDescription" : "Once I built out the first draft of the component library, I went on to test the template with the same set of designers. I asked them to complete the following tasks:",
+                "blockBulletPoints": [
+                    "Review the Entire File: Provide an initial impression based on the overall organization, clarity, and usability of the file.",
+                    "Find a Specific Module: Locate a specific module using only its name to assess ease of navigation",
+                    "Inspect Customizable Modules: Evaluate the customizable modules and provide initial feedback on their flexibility and ease of use."
+                ],
+                "blockImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/DashboardTemplate/dashboard-template-3.png",
+                "blockImgNeedsOverlay": false
+            },
+            {
+                "blockHeading": "Userbility Test Findings",
+                "blockBulletPoints": [
+                    "Participants appreciated that the page layout resembles other files we use.",
+                    "They found the dashboard mockup page overwhelming due to the numerous modules displayed on a single page.",
+                    "Participants requested additional descriptions or annotations next to the components to aid the navigation of the file.",
+                    "They had differing opinions on how to organize and manage modules after a custom dashboard is built, such as whether to delete unused modules or save them for future use."
+                ]
+            },
+            {
+                "blockHeading": "Based on feedback, I incorporated the following changes to the template",
+                "blockBulletPoints": [
+                    "Separated the three sets of modules into different Figma pages to reduce information overload.",
+                    "Added descriptions on each page to help designers, particularly new hires, become familiar with the platform's capabilities.",
+                    "Included annotations to explain complex components and how to use them."]
+            }
+        ]
+    },
+    "takeaways":{
+        "sectionHeading" : "",
+        "sectionDescription": "",
+        "sectionImgUrl":"",
+        "infoBlocks": [
+            {
+                "blockHeading": "The Impact",
+                "blockBulletPoints":[
+                    "The Figma template and component repository significantly reduced the time needed to build custom dashboards.",
+                    "Experienced designers can now focus on creating intuitive in-platform experiences for our customers, rather than building components from scratch",
+                    "New hires can get started quickly, relying less on tenured designers for guidance."
+                ]
+            }
+        ]
+    }
+},
+{
+    "needPassword" : false,
+    "projectName" : "Non-profit Organizers App",
+    "projectSkills": [
+        "User Interview",
+        "User Flow Mapping",
+        "Competitive Analysis"
+    ],
+    "projectDescription" : "Design a mobile app that helps non-profit organizers more effectively track and manage notes, contacts and to-dos.",
+    "projectProblem" : "Non-profit organizers frequently juggle multiple cases simultaneously. They engage with community members through door-to-door interactions, gathering notes and contact details on the spot. Often relying on paper, pen, or simple phone apps for documentation, these methods can quickly become disorganized and inefficient over time, making it difficult to manage and retrieve important information.",
+    "myResponsibilities":[
+        "Conducted user research",
+        "Developed personas and empathy maps, user stories",
+        "Proritized MVP app features and created initial userflow"
+    ],
+    "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/OrganizingApp-project-cover.png",
+    "projectPageUrl" : "app-for-non-profit-organizers",
+    "understandingUsers" : {
+        "sectionHeading" : "",
+        "sectionDescription": "",
+        "infoBlocks": [
+            {
+                "blockHeading": "User Interview",
+                "blockDescription": "To better understand our users, we conducted Zoom interviews with three non-profit organizers to better understand their current workflow. The interview was designed to answer the following questions:", 
+                "blockBulletPoints":  [
+                    "What does their day-to-day look like?",
+                    "What pain points do they encounter in their job responsibilities?",
+                    "What tools are they currently using?",
+                    "What do they like and dislike about those tools?"
+                ]
+            },
+            {
+                "blockHeading": "Findings & User Painpoints",
+                "blockDescription": "", 
+                "blockBulletPoints":  [
+                    "Organizers frequently find it challenging to take notes while engaging with community members. As a result, note-taking is often deferred until after the conversation, leading to a rushed and potentially incomplete capture of information.",
+                    "Some community members don't speak fluent English, leading to communication barriers and misunderstandings.",
+                    "Organizers frequently manage multiple cases over extended periods, making it difficult to update statuses, organize notes, and track to-dos efficiently.",
+                    "When cases are handed off between organizers, disorganized notes can result in a lack of context and delays in service delivery."
+                ],
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/interview-notes.png",
+                "blockImgNeedsOverlay": false
+
+            },
+            {
+                "blockHeading": "User Persona",
+                "blockDescription": "Based on the interview, we created 3 user persona to help empathize with our users.Each persona represents a unique sets of user needs.", 
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-persona.png",
+                "blockImgNeedsOverlay": false
+            },
+            {
+                "blockHeading": "Empathy Map",
+                "blockDescription": "We also built user empathy maps for different stages of a organizer's work flow. This helped us separate user painpoints into themes.", 
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/empathy-map.png",
+                "blockImgNeedsOverlay": false
+            },
+            {
+                "blockHeading": "User Story & Feature Planning",
+                "blockDescription": "",
+                "blockBulletPoints": [
+                    "Based on the insights we gathered, we developed user stories using Ad-lib.",
+                    "We discussed and ranked user stories to prioritize the app features for the MVP."
+                ],
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/feature-planning.png",
+                "blockImgNeedsOverlay": false
+            }
+        ]
+    },
+    "startDesign":{
+        "sectionHeading" : "",
+        "sectionDescription": "",
+        "infoBlocks": [
+            {
+                "blockHeading": "Breadboarding",
+                "blockDescription":"With insight from the research, we moved into the beginning stage of the design phrase.",
+                "blockBulletPoints": [
+                    "We outlined essential user flow through breadboarding",
+                    "The breadboard helped define necessary screens for each features."
+                ],
+                "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/OrganzingApp/user-flow.png",
+                "blockImgNeedsOverlay": false
+            }
+        ]
+    },
+    "takeaways":{
+        "sectionHeading" : "",
+        "sectionDescription": "",
+        "infoBlocks": [
+            {
+                "blockHeading": "The Impact",
+                "blockBulletPoints": [
+                    "The research gave us valuable insights into organizers' processes and pain points.",
+                    "It directly shaped how we prioritized app features to create an effective MVP."
+                ]
+            }
+        ]
+    }
+},
+{
+    "needPassword" : false,
+    "projectName" : "Allstate Agency Review Generation Template",
+    "projectSkills": [
+        "User Flow Mapping",
+        "Figma Variable Prototyping"
+    ],
+    "projectDescription" : "Built custom review generation email & landing page templates based on multiple user scenarios.",
+    "projectProblem" : "Allstate seeks to boost agent review generation through an email campaign. Our design team was tasked with creating a Custom Reviews solution by designing and building Review Generation Email templates and Collection Landing Page templates.",
+    "projectImpact": [
+        ""
+    ],
+    "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/AllstateEmail/allstate-cover.png",
+    "projectPageUrl" : "allstate-agency-review-generation-template",
+    "buttonGroup":[
+        {
+            "buttonText": "See Case Study Presentation",
+            "buttonUrl" : "https://www.figma.com/deck/qgSsaMKHFdPmxqbhy1WtfA/Allstate-Review-Generation%3A-Templates?node-id=25-52&node-type=slide&viewport=-121%2C-17%2C0.57&t=2hxyfZZwtnDwUpQ5-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+            "buttonType" : "externalLink"
+        }
+    ]
+}

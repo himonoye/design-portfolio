@@ -13,10 +13,11 @@ export default function DefaultHero ({pageTitle, pageDescription, buttonGroup}:D
     return (
         <div className="hero-container">
             <Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
-            <div className="hero-heading-container">
+            <div className="hero-intro-container">
                 <div className="heading-lead">{pageTitle}</div>
                 <p className="body-large">{pageDescription}</p>
-                {buttonGroup &&
+            </div>
+            {buttonGroup &&
                     <div className="button-group">
                         {buttonGroup.map((item:any,i)=>{
                             return(
@@ -25,7 +26,6 @@ export default function DefaultHero ({pageTitle, pageDescription, buttonGroup}:D
                         })}     
                     </div>
                 }
-            </div>
         </div>
     )
 }

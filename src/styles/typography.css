@@ -19,16 +19,19 @@
     font-size: 3rem;
     line-height: 3.5rem;
     letter-spacing: 2.5px;
+    font-weight: 500;
     color: var(--surface-primary-heading);
+    
 }
 
 .heading-head {
-    font-family: var(--headline-font-Family), sans-serif;
+    font-family: var(--base-font-Family), sans-serif;
     font-size: 2.5rem;
     line-height: 3rem;
     letter-spacing: 1.5px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--surface-primary-subheading);
+    
 }
 
 
@@ -36,48 +39,50 @@
     font-family: var(--base-font-Family), sans-serif;
     font-size: 2rem;
     line-height: 3rem;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: .5px;
     color: var(--surface-primary-heading);
+    
 }
 
 
 .heading-flag {
     font-family: var(--base-font-Family), sans-serif;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 400;
     letter-spacing: .5px;
     color: var(--surface-primary-subheading);
+    max-width: var(--content-max-width);
 }
 
 .heading-brow {
     font-family: var(--heading-font-Family), sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.2rem;
+    font-size: 1rem;
+    line-height: 1rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--surface-secondary-subheading);
+    
 }
 
 
 .body-large {
     font-family: var(--base-font-Family), sans-serif;
-    font-size: 1.4rem;
-    line-height: 2.8rem;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
     letter-spacing: .8px;
     font-weight: 300;
-    max-width:900px;
 }
 
 
 .body-base {
     font-family: var(--base-font-Family), sans-serif;
-    font-size: 1.3rem;
-    line-height: 2.3rem;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
     letter-spacing: .4px;
     font-weight: 300;
-    max-width: 900px;
+    
 }
 
 
@@ -87,7 +92,7 @@
     line-height: 2rem;
     letter-spacing: .5px;
     font-weight: 300;
-    max-width: 600px
+    
 }
 
 .body-smallest {
@@ -95,7 +100,7 @@
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 300;
-    max-width: 600px
+    
 }
 
 .tag {
@@ -131,12 +136,26 @@
     font-weight: 400;
 }
 
-.bulletPoints {
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    gap: var(--spacing-10);
+.content-container ul{
+    gap: var(--spacing-30);
+    padding: 0;
+    margin: 0;
 }
+
+.content-container li {
+    list-style-type: none;
+    padding: 0 0 0 var(--spacing-30);
+    border-left: 5px solid var(--border-divider);
+    font-weight: 400;
+}
+
+/* .content-container li::marker {
+    color: var(--surface-secondary-text);
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+} */
 
 @media screen and (max-width: 1200px) {
 
@@ -168,6 +187,6 @@
 
     .body-base {
         font-size: 1.3rem;
-        line-height: 2.5rem;
+        line-height: 2rem;
     }
 }
