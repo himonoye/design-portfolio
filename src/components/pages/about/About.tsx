@@ -3,7 +3,7 @@ import DefaultHero from '../general_sections/defaultHero';
 
 type aboutProps = {
     pageData: any;
-    gallery: [];
+    gallery: string[];
 }
 
 export default function About({pageData, gallery}:aboutProps) {
@@ -15,8 +15,15 @@ export default function About({pageData, gallery}:aboutProps) {
                 buttonGroup={pageData.buttonGroup}
                 scrollRef={pageData.scrollRef}
             ></DefaultHero>
-            {/* <div className="content-container">
+            <div className="content-container">
                 <div className="gallery-container">
+                {gallery.map((item, k)=>{
+                        return (
+                            <img className="img-gallery-img" key={k} src={item}/>
+                        )
+                    })}
+                </div>
+                {/* <div className="gallery-container">
                     {gallery.map((item, k)=>{
                         if (k % 3 == 0){
                             return (
@@ -44,8 +51,8 @@ export default function About({pageData, gallery}:aboutProps) {
                             )
                         }
                     })}
-                </div>
-            </div> */}
+                </div> */}
+            </div>
         </div>
     )
 }

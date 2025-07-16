@@ -12,24 +12,39 @@
     text-align: center;
 }
 
-.project-hero-intro-container {
+.project-hero-container {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter);
+    gap: var(--gap-md);
     max-width: var(--content-max-width-narrow);
 }
 
 .project-hero-heading-container {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter-small);
+    gap: var(--gap-sm);
+    width: 100%;
 }
 
-.project-section-container {
+.project-hero-overview-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-sm);
+    max-width: var(--content-max-width-narrow);
+}
+
+.project-hero-overview-heading-container {
     display: flex;
     flex-direction: column;
-    padding: var(--container-padding-medium) 0;
-    gap: var(--gutter-medium);
+    gap: var(--gap-sm);
+    width: 100%
+}
+
+.project-section-container-rows {
+    display: flex;
+    flex-direction: column;
+    padding: var(--container-padding-small) 0 var(--container-padding-small) 0;
+    gap: var(--gap-xl);
     max-width: var(--content-max-width-wide);
     width: 100%;
 }
@@ -37,60 +52,99 @@
 .project-section-container-cols {
     display: flex;
     flex-direction: row;
-    padding: var(--container-padding-medium) 0;
-    gap: var(--gutter-medium);
+    padding: var(--container-padding-small) 0 var(--container-padding-small) 0;
+    gap: var(--gap-xl);
     max-width: var(--content-max-width-wide);
     width: 100%;
+}
+
+.project-section-container-cols > .image-wrapper{
+    min-width: 700px;
 }
 
 .project-section-heading-container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-20);
+    gap: var(--gap-sm);
     width: 100%;
 }
 
 .project-section-content-container {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-40);
+    gap: var(--gap-md);
     width: 100%;
 }
 
 .project-info-block-list-container {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter-small);
+    gap: var(--gap-sm);
     width: 100%;
 }
 
 .project-info-block-list-container-cols{
     display: flex;
     flex-direction: row;
-    gap: var(--gutter-small);
+    gap: var(--gap-sm);
+}
+
+.project-info-block-list-container-rows{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
 }
 
 .project-info-block-default {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter-small);
-    width: 100%;
-}
-
-.project-info-block-card {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gutter-small);
-    color: var(--surface-secondary-text);
-    padding: var(--container-padding-small);
-    border: 1px solid var( --border-divider);
+    gap: var(--gap-sm);
     width: 100%;
 }
 
 .project-info-block-text {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter-small);
+    gap: var(--gap-sm);
+}
+
+.project-info-block-text-intro{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xs);
+}
+
+.project-info-block-text-heading {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-xs);
+}
+
+.project-info-block-card-rows {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-sm);
+    color: var(--surface-secondary-text);
+    padding: var(--container-padding-small);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.project-info-block-card-cols {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
+    color: var(--surface-secondary-text);
+    padding: var(--container-padding-small);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+    width: 100%;
+}
+
+.project-info-block-bulletPoints {
+    gap: var(--gap-sm);
+    padding: 0;
+    margin: 0 0 var(--container-padding-small) 0;
 }
 
 .project-section-container > .three-dots-horizontal {
@@ -102,7 +156,7 @@
     width:100%;
     flex-direction: column;
     align-items: start;
-    gap: var(--spacing-10);
+    gap: var(--gap-xs);
 }
 
 .project-navigation-next {
@@ -110,7 +164,7 @@
     width:100%;
     flex-direction: column;
     align-items: end;
-    gap: var(--spacing-10);
+    gap: var(--gap-xs);
 }
 
 .project-navigation-next > .body-large {

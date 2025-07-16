@@ -9,7 +9,7 @@
 }
 
 .logo > .logo-divider {
-    margin: var(--spacing-10) var(--spacing-20);
+    margin: var(--gap-xs) var(--gap-sm);
     width: 1px;
     height: 30px;
     background-color: var(--border-divider);
@@ -18,13 +18,13 @@
 /* Mobile, Tablet, Small Laptop*/
 @media screen and (max-width: 1200px) {
     .logo {
-        padding: var(--spacing-20);
+        padding: var(--gap-sm);
         font-size: 2rem;
         line-height: 2.5rem;
     }
     
     .logo > .logo-divider {
-        margin: var(--spacing-10) var(--spacing-10);
+        margin: var(--gap-xs);
         width: 1px;
         height: 20px;
         background-color: var(--border-divider);

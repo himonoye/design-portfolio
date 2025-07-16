@@ -1,13 +1,13 @@
 /* Header */
 
 .logo-container {
-    padding: var(--spacing-80) 0 var(--spacing-40) var(--spacing-80);
+    padding: var(--gap-xl) 0 var(--gap-md) var(--gap-xl);
 }
 
 .header-arrow-menu {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-10)
+    gap: var(--gap-sm);
 }
 
 .header-arrow-menu > .arrow-icon {
@@ -16,7 +16,7 @@
 
 .header-expandable-icon {
     display: flex;
-    padding: var(--spacing-80) var(--spacing-15);
+    padding: var(--gap-l) var(--gap-xs);;
     fill: var(--surface-primary-text)
 }
 
@@ -33,7 +33,7 @@
     line-height: .8rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    padding-left: var(--spacing-5);
+    padding-left: var(--gap-xxs);
 }
 
 .header-expandable-container {
@@ -79,7 +79,7 @@
     line-height: 2rem;
     letter-spacing: 1.5px;
     color: var(--surface-secondary-text);
-    padding: var(--spacing-20) 0 var(--spacing-20) var(--spacing-80);
+    padding: var(--gap-sm) 0 var(--gap-sm) var(--gap-xl);
 }
 
 .header-link > .three-dots-vertical {
@@ -133,7 +133,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: var(--surface-primary-background);
-    padding: var(--spacing-40) var(--spacing-60);
+    padding: var(--gap-md) var(--gap-xl);
     gap: 2rem;
 }
 
@@ -172,7 +172,7 @@
     width: 16px;
     height: 16px;
     background-color: var(--surface-primary-background);
-    padding: var(--spacing-10) var(--spacing-10);
+    padding: var(--gap-xs);
     border-radius: var(--icon-border-radius);
 }
 
@@ -208,7 +208,7 @@
     }
 
     .header-link {
-        padding: var(--spacing-30) var(--spacing-60) var(--spacing-30) var(--spacing-30);
+        padding: var(--gap-sm) var(--gap-l) var(--gap-sm) var(--gap-sm);
         font-size: 1.5rem;
         line-height: 2rem;
         border-bottom: solid 1px var(--border-divider);
@@ -221,7 +221,7 @@
     .header-mobile-icon-container {
         display: flex;
         max-width: 24px;
-        padding: var(--spacing-20) var(--spacing-30);
+        padding: var(--gap-sm) var(--gap-sm);
     }
 
     .header-mobile-links-container{
@@ -235,7 +235,7 @@
         z-index: 1000;
         height: calc(100% - 80px);
         background-color: rgb(0, 0, 0, .5);
-        margin: var(--spacing-80) 0 0 0;
+        margin: var(--gap-xl) 0 0 0;
     }
 
     .header-mobile-links {
@@ -248,7 +248,7 @@
     .footer-container {
         width: 80%;
         align-items: center;
-        padding: var(--spacing-40) 0;
+        padding: var(--gap-md) 0;
     }
 
     .header-link > .three-dots-vertical {

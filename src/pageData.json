@@ -62,10 +62,658 @@
         "about" : {
             "url":"about",
             "title" : "Let's connect!",
-            "description" : "Whether you are a fellow tech ethusiast or recruiter, I'd love to connect and explore how we might collaborate!"
+            "description" : "Hi, I’m Ming. I believe designers are the dot-connectors of the world. We can zoom out to spot patterns in the big picture, while also zooming in to shape small moments that spark joy. We unify not just digital experiences, but also the people behind them to focus on real user needs on the other side of the screen. Whether you are a fellow tech ethusiast or recruiter, I'd love to connect and explore how we might collaborate!"
         }
     },
     "projectData" : [
+        {
+            "needPassword" : true,
+            "projectName" : "Accor Hotel Digital Presence Dashboard",
+            "projectSkills": [
+                "Informational Architecture",
+                "User Research",
+                "System Thinking"
+            ],
+            "projectDescription" : "Help hoteliers of luxuery resorts manage their Hotels' Digital Presence via a custom data editing and analytics dashboard",
+            "projectDuration" : "6 weeks",
+            "projectRole" : "Lead Designer",
+            "projectProblem" : "",
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-cover.png",
+            "projectPageUrl" : "accor-digital-presence-dashboard",
+            "projectContent": [
+            {
+                "browHeading" : "Overview", 
+                "sectionHeading" : "What was the product?",
+                "sectionDescription": "Accor is a hospitality group with over 45 brands and 5,600 hotels.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-the-product.png",
+                "sectionStyle": "Cols",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints":  [
+                            "Accor uses Yext’s content management system to manage their hotels’ digital presence.",
+                            "Hotel managers input hotel-specific information to their Yext-powered dashboard.",
+                            "Next, Yext distributes the information to listing publishers such as Google, Bing, and Apple."
+                        ]
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Overview", 
+                "sectionHeading" : "What was the goal?",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-the-goal.png",
+                "sectionStyle": "Cols-Rev",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints":  [
+                            "The existing dashboard was built to launch quickly. The project team utilized out-of-the-box UI components without any enhancement it to meet Accor’s user needs.",
+                            "Stakeholders voiced that part of the existing dashboard isn't as intuitive as it could be.",
+                            "With the goal of improving clarity and increasing user engagement, the project team set out to build a new dashboard."
+                        ]
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Overview", 
+                "sectionHeading" : "Who are our users?",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "sectionStyle": "Cols",
+                "blockStyle": "CardCols",
+                "infoBlocks": [
+                    {
+                        "blockStyle": "",
+                        "blockHeading": "Hotel Managers",
+                        "blockDescription": "Users who manage individual hotels.", 
+                        "blockBulletPoints":  [
+                            "Knows all of the ins and outs of a specific hotel, including services and amenities offered.",
+                            "Oversees the hotel restaurants and spas and want to manage the listings of these additional amenities."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-user-manager.png",
+                        "blockImgNeedsOverlay": false
+                    },
+                    {
+                        "blockStyle": "",
+                        "blockHeading": "Regional Managers",
+                        "blockDescription": "Users who oversee the performance of multiple hotels that fall under the same brand or region. ", 
+                        "blockBulletPoints":  [
+                            "Prioritizes seeing aggregated performance across regions",
+                            "Cares about the performance of individual hotels."
+                        ],
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-user-regional.png",
+                        "blockImgNeedsOverlay": false
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Research", 
+                "sectionHeading" : "What was the problem with existing solution?",
+                "sectionDescription": "We collected user feedback via a short survey to discover existing user pain points. I also conducted a heuristic audit with the goal of simplifying the dashboard for low-tech users. Based on the research, we discovered the following painpoints:"
+            },
+            {
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-old-design.png",
+                "sectionStyle": "Cols",
+                "blockStyle": "CardRows",
+                "blockNum": true,
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Cluttered Navigation",
+                        "blockDescription": "Some hotel managers, especially those less familiar with technology, found the dashboard difficult to navigate. Their feedback revealed confusion about where to look and how to complete key actions."
+                    },
+                    {
+                        "blockHeading": "Scattered Filtering Functionality",
+                        "blockDescription": "The ability to filter the dashboard view was scattered across different modules. Each module had its own filtering dropdown (Hotel vs. country vs. brand), navigating the scope of data was extremely difficult."
+                    },
+                    {
+                        "blockHeading": "Not All Fields Are Created Equal",
+                        "blockDescription": "There are over hundreds of fields that positively impact a hotel’s ranking in search engines. A field can be as specific as whether a hotel has vending machines. Since some fields are more impactful than others (private beach vs. vending machines), users wanted to know which ones to prioritize."
+                    },
+                    {
+                        "blockHeading": "One View Doesn't Fit All",
+                        "blockDescription": "In the older dashboard, all users, regardless of responsibilities shared the same view. However, not all metrics were equally important to different types of users."
+                    },
+                    {
+                        "blockHeading": "Lacking SEO Guidance",
+                        "blockDescription": "End users were hotel experts but are not SEO experts. They wanted to know how to interpret the information and how it impacted their hotel’s performance."
+                    },
+                    {
+                        "blockHeading": "Confusing Field Organization",
+                        "blockDescription": "The field grouping offered a high-level overview of fields. Within each category, user still needed to scan a long list of seemingly-random fields."
+                    }
+                ]
+            },
+            {
+                "browHeading" : "The Redesign: Improving Information Architecture", 
+                "sectionHeading" : "Restructure Metrics Grouping",
+                "sectionDescription": "For users to access the information they needed quickly, we explore alternative ways to group and filter metrics on the dashboard.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-metric-table.png",
+                "sectionStyle": "Cols-Rev",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints": [
+                            "The types of metrics that are available vary at hotel, country, and brand level.",
+                            "I conducted whiteboarding session to explore different information architecture for displaying the data: grouping modules by hotel level or by metric type."
+                        ]
+                    }
+                ]
+            },
+            {
+                "browHeading" : "The Redesign: Improving Information Architecture", 
+                "sectionHeading" : "Rework the Field Groupings",
+                "sectionDescription": "To help users skip some fields and find the desired ones more quickly, we reorganized the field grouping and introduced additional sub-categories to support clearer mental models.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-field-table.png",
+                "sectionStyle": "Cols",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints": [
+                            "When I dove into reorganizing the listing field group, a card-sorting exercise immediately came to mind. However, to ask Hotel managers to take time out of their busy schedules and sort though hundreds of fields seemed unrealistic, so I settled on secondary research.",
+                            "I compared Accor’s corporate domain, other large hotel chains, and Google My Business listing views to identify ways that other chains categorized hotel and room services",
+                            "I researched field definitions to master industry terminology and created tooltips to help hoteliers better map each field to their hotels' amentities"
+                        ]
+                    }
+                ]
+            },
+            {
+                "browHeading" : "The Redesign: Educating the Users", 
+                "sectionHeading" : "Add “Next Step” Module",
+                "sectionDescription": "To promote further actions by the hotel managers to improve hotel's digital performance, we added a net-new \"Next Step\" module.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-nextstep-table.png",
+                "sectionStyle": "Cols-Rev",
+                "blockStyle": "",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints":  [
+                            "I identified 5 distinct next steps and crafted specific UX copies to highlight and distinguish the different messagings.",
+                            "To ensure each call-to-action is intutive and fitting into the context that it is displayed, I defined the displaying logic behind each message so they only appear in the dashboard view where the related metrics are displayed."
+                        ]
+                    }
+                ]
+            },
+            {
+                "browHeading" : "The Redesign: Educating the Users", 
+                "sectionHeading" : "Add Impact Indicators for Fields",
+                "sectionDescription": "To help users know which fields will have the most impact on their hotel performance, we developed a visual system to communicate different impact levels. We explored three concepts and ultimately chose the second option for its clear messaging, best use of colors, and conciseness.",
+                "sectionStyle": "",
+                "blockStyle": "CardCols",
+                "blockNum": true,
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Number with Text Labels",
+                        "blockDescription": "The option is straightforward but doesn't visually distinguish the levels from each other.",
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-impact-level-1.png"
+                    },
+                    {
+                        "blockHeading": "Color-coded Text Labels",
+                        "blockDescription": "We picked this option for its clear messaging, best use of colors, and conciseness.",
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-impact-level-2.png"
+                    },
+                    {
+                        "blockHeading": "Dots with Text Labels",
+                        "blockDescription": "Dots alone don’t convey enough meaning, but adding text labels introduces visual clutter.",
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-impact-level-3.png"
+                    }
+                ]
+            },
+            {
+                "browHeading" : "The Redesign: Educating the Users", 
+                "sectionHeading" : "Add Completion Rate Tooltips",
+                "sectionDescription": "To help hoteliers better understand how their completion rate, we added a tooltip to establish benchmarks for hotel managers.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-completion-rate.png",
+                "sectionStyle": "Cols",
+                "blockStyle": "",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints":  [
+                            "Color indicators were used to convey urgency.",
+                            "The tooltip is embeded alongside every occurrence of the completion rate metric to educate users at every opportunity."
+                        ]
+                    }
+                ]
+            },
+            {
+                "browHeading" : "The Redesign", 
+                "sectionHeading" : "The Final Product",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-the-redesign.png",
+                "sectionStyle": "Cols-Rev",
+                "blockStyle": "CardRows",
+                "blockNum": true,
+                "infoBlocks": [
+                    {
+                        
+                        "blockHeading": "Enhanced Metrics Groupings",
+                        "blockDescription": "Dedicated a module are created for each distinct type of metric. Filters are consolidated at the top of the dashboard. Users can customize their dashboard view using the filters based on their role and goals all at once."
+                    },
+                    {
+                        "blockHeading": "Educational Tooltips",
+                        "blockDescription": "Carefully crafted tooltips are seen throughout the dashboard to help educate users on what they are looking at and why it is important for them."
+                    },
+                    {
+                        "blockHeading": "Actionable Next Steps",
+                        "blockDescription": "Next-step suggestions are provided to guide the users towards impactful actions and improve hotels' online presence."
+                    },
+                    {
+                        "blockHeading": "Digestiable Field Groupings",
+                        "blockDescription": "Fields reorganized and meticulously grouped into sub-categories to help users quickly find what they need."
+                    },
+                    {
+                        "blockHeading": "Informative Impact Indicators",
+                        "blockDescription": "The impact level of each field on their digital performance is added. The color-coded labels help users prioritize which fields to complete."
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Positive Feedback",
+                "sectionHeading" : "The Impact",
+                "sectionDescription": "The initial phase of the project is complete, with encouraging feedback from end users highlighting its value.",
+                "sectionImgUrl":"",
+                "sectionStyle":"",
+                "blockStyle":"CardCols", 
+                "infoBlocks": [
+                    {
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-quote.png",
+                        "blockImgNeedsOverlay": false,
+                        "blockHeading": "Putting aggregated data under the All tab is a very good idea and much more readable.",
+                        "blockDescription": "— Laurance"
+                    },
+                    {
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-quote.png",
+                        "blockImgNeedsOverlay": false,
+                        "blockHeading": "Being able to filter by countries and brand is very useful. It would be great to filter by city as well.",
+                        "blockDescription": "— Maamar"
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Next Steps",
+                "sectionHeading" : "Future Enhancement",
+                "sectionDescription": "Among the feedback, however, we also recieved request to further enhance the dashboard. These feedback will be addressed in the upcoming product iteractions.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-next-step.png",
+                "sectionStyle":"Cols",
+                "blockStyle":"CardRows", 
+                "blockNum": true,
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Enhancing Analytic Modules",
+                        "blockDescription": "User feedback revealed that they want to understand the data in the analytic modules, interpret visualizations, and know what actions to take next. Users also expressed interest in seeing more dynamic data and being able to compare changes across longer time periods."
+                    },
+                    {
+                        "blockHeading": "Other Ideas to Improve Filters",
+                        "blockDescription": "With the improved filtering experience, users are now requesting even more flexibility, such as the ability to manually select a custom subset of hotels to view aggregated performance."
+                    }
+                ]
+            }
+            ]
+        },
+        {
+            "needPassword" : false,
+            "projectName" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard",
+            "projectSkills": [
+                "Site Traffic Analytics",
+                "Component Library",
+                "User Flow Mapping",
+                "Cross-functional Collaboration"
+            ],
+            "projectDuration" : "2022 - Present",
+            "projectRole" : "Lead Designer",
+            "projectDescription" : "Revamp Merrill's advisor marketing pages while enhancing platform solution that enables advisors to efficiently manage the content on their pages.",
+            "projectProblem" : "",
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-cover.png",
+            "projectPageUrl" : "merrill-finacial-advisor-page-redesign",
+            "buttonGroup":[
+                {
+                    "buttonText": "See Live Advisor Pages",
+                    "buttonUrl" : "https://advisor.ml.com/sites/nj/princeton-nj/kentmollogroup",
+                    "buttonType" : "externalLink"
+                }
+            ],
+            "projectContent": [
+            {
+                "browHeading" : "Overview",
+                "sectionHeading" : "Financial Advisor Pages",
+                "sectionDescription": "Merrill leverages the Yext platform to efficiently manage thousands of financial advisor listings and web pages.",
+                "sectionImgUrl":"",
+                "sectionStyle":"",
+                "blockStyle":"",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints":  [
+                            "Three distinct lines of business, each requiring tailored branding and specifications.",
+                            "The team is developing a series of page templates and a content management dashboard, including advisor, teams, and branch pages.",
+                            "This solution will showcase each advisor’s financial services while empowering them to effortlessly manage their website content."
+                        ]
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Overview",
+                "sectionHeading" : "Who are the users?",
+                "sectionImgUrl":"",
+                "sectionStyle":"",
+                "blockStyle":"Cols",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Customers",
+                        "blockDescription": "who are browsing the sites for a perspective advisors or contacting their existing advisors"
+                    },
+                    {
+                        "blockHeading": "Advisors",
+                        "blockDescription": "who want to market themselves to prospective customers and manage the content on their personal or team sites."
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Research", 
+                "sectionHeading" : "How are users currently interacting with the site, according to traffic data?",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "sectionStyle":"",
+                "blockStyle":"Cols",
+                "blockNum":"true", 
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Scroll Pattern",
+                        "blockDescription": "Scroll analysis revealed that visitors don’t reach 25% of the advisor page, making above-the-fold content critical."
+            
+                    },
+                    {
+                        "blockHeading": "Navigation Pattern",
+                        "blockDescription": "Jumplink navigation recieves the most clicks acorss all interactive elements on the page, indicating that they are a preferred way to navigate the page."
+            
+                    },
+                    {
+                        "blockHeading": "Primary CTAs Engagement",
+                        "blockDescription": "'Contact Us' and 'Request Appointment' buttons are the most clicked CTAs, though both lead to similar forms that contain identical fields."
+            
+                    },
+                    {
+                        "blockHeading": "Missing Content",
+                        "blockDescription": "Perspectives are drawn to advisors with awards and accolades. These sites get more clicks and views of their website."
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Research", 
+                "sectionHeading" : "UX issues we identified from the existing experience",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-2.png",
+                "sectionStyle":"Cols",
+                "blockStyle":"", 
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints":  [
+                            "Users experienced a few seconds of a blank screen during their first visit. Google PageSpeed Insights confirmed high First Contentful Paint times on both desktop and mobile.",
+                            "It takes 8-10 scrolls to reach the bottom of the page. Several text-heavy sections  are making the page longer, contributing to low engagement at the bottom.",
+                            "Hero designs feature large images that push advisor names and addresses below the fold.",
+                            "Background images with overlaid text or additional images in multiple sections reduced readability and sometimes obscured advisors' headshots."
+                        ]
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Research", 
+                "sectionHeading" : "Insights shared by Merrill’s Advisors",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "sectionStyle":"",
+                "blockStyle":"Cols", 
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Wants boilerplate and customizable content",
+                        "blockDescription": "Many advisors have busy schedules and prefer a mix of well-written boilerplate content and customizable sections on their pages"
+                    },
+                    {
+                        "blockHeading": "Requires multiple hero options",
+                        "blockDescription": "Team portraits can vary in size and aspect ratio, so advisors want several hero design options to accommodate these differences."
+                    },
+                    {
+                        "blockHeading": "Needs multiple ways to feature awards",
+                        "blockDescription": "Some accolades are awarded to individual advisors, while others are given to the entire team. Advisors want to showcase both types of recognition on their pages."
+                    }
+                ]
+            },
+            {
+                "browHeading" : "The Design: Scannable", 
+                "sectionHeading" : "Shortern Page Length",
+                "sectionDescription": "Condensed content by uitilizing tabbed section and carousel on the page to reduce page length. ",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png",
+                "sectionStyle":"Cols",
+                "blockStyle":""
+            },
+            {
+                "browHeading" : "The Design: Measurable", 
+                "sectionHeading" : "Unified Primary CTA",
+                "sectionDescription": "Combined the “Contact Us” and “Request Appointment” calls-to-action into a single, prominent CTA to enhance user engagement.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png",
+                "sectionStyle":"Cols-Rev",
+                "blockStyle":""
+            },
+            {
+                "browHeading" : "The Design: Attractive", 
+                "sectionHeading" : "Customizable Award Sections",
+                "sectionDescription": "Updated the section showcasing advisors' accolades for better visibility.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png",
+                "sectionStyle":"Cols",
+                "blockStyle":""
+            },
+            {
+                "browHeading" : "The Design: Flexible", 
+                "sectionHeading" : "Reusable Components Across Different Templates",
+                "sectionDescription": "Curated reusable design components for different templates and breakpoints.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png",
+                "sectionStyle":"Cols-Rev",
+                "blockStyle":""
+            },
+            {
+                "browHeading" : "Financial Advisor Pages", 
+                "sectionHeading" : "The Impact",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "sectionStyle":"",
+                "blockStyle":"Cols", 
+                "infoBlocks": [
+                    {
+                        "blockHeading": "15000+",
+                        "blockDescription": "Our team successfully launched 15000+ advisors sites."
+                    },
+                    {
+                        "blockHeading": "60%",
+                        "blockDescription": "Reduced page length by 60%, optimizing content through efficient UI patterns and minimizing scroll."
+                    },
+                    {
+                        "blockHeading": "50%",
+                        "blockDescription": "Increased 'Contact Us' form completion rate by 50%"
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Overview", 
+                "sectionHeading" : "Content Management Dashboard",
+                "sectionDescription": "The team wants to implement a site creation wizard, allowing advisors to easily create their own sites. Previously, this required contacting Yext to set up a new team site.",
+                "sectionImgUrl":"",
+                "sectionStyle":"Cols",
+                "blockStyle":""
+            },
+            {
+                "browHeading" : "Research", 
+                "sectionHeading" : "What's the desired site creation process and approval flow?",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "sectionStyle":"",
+                "blockStyle":"Cols", 
+                "infoBlocks": [
+                    {
+                        "blockHeading": "1. Search",
+                        "blockDescription": "To create a site, the team owner has to first find and add other advisor to create a new team."
+                    },
+                    {
+                        "blockHeading": "2. Creation",
+                        "blockDescription": "They then need to provide profile information for that new team."
+                    },
+                    {
+                        "blockHeading": "2. Approval",
+                        "blockDescription": "After the team creation request is submitted, it goes through an approval process."
+                    },
+                    {
+                        "blockHeading": "4. Deletion",
+                        "blockDescription": "Once a team is created, advisors cannot delete the team. They need to contect Yext support team to make the request"
+                    }
+                ]
+            },
+            {
+                "browHeading" : "Research", 
+                "sectionHeading" : "Requirements to User Flow",
+                "sectionDescription": "",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-5.png",
+                "sectionStyle":"",
+                "blockStyle":""
+            },
+            {
+                "browHeading" : "The Design", 
+                "sectionHeading" : "High-Fidelity Prototypes",
+                "sectionDescription": "",
+                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-6.png",
+                "sectionStyle":"",
+                "blockStyle":"Cols"
+            },
+            {
+                "browHeading" : "Content Management Dashboard", 
+                "sectionHeading" : "The Impact",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "sectionStyle":"",
+                "blockStyle":"Cols"
+            }
+        ]
+        }
+    ],
+    "aboutGallery" : [ 
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-3.png",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-13.jpg",
+        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-14.jpg"
+
+    ],
+    "UnusedProjects" : [
+        {
+            "needPassword" : false,
+            "projectName" : "Heartland Dental Office Microsites",
+            "projectSkills": [
+                "Design System with Figma Variables",
+                "System Thinking",
+                "Cross-functional Collaboration"
+            ],
+            "projectDescription" : "Create 6 website templates that help hundreds of dentists partners maintain their digital presence and create analytics dashboard to help Heartland marketing team improve site and listing performances.",
+            "projectProblem" : "",
+            "projectDuration" : "12 weeks",
+            "projectRole" : "Lead Designer",
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-cover.png",
+            "projectPageUrl" : "heartland-dental-office-microsite-platform-solution-template",
+            "projectContent":[{
+                "browHeading" : "", 
+                "sectionHeading" : "",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "My role",
+                        "blockDescription": "Managing a dental practice involves numerous responsibilities. Effective marketing is a crucial aspect. However, these non-dental-related tasks can often divert dentists' attention from their primary focus—caring for patients. The project aims to help hundreds of dentists Heartland partners reduce their workload of maintaining their digital presence.",
+                        "blockBulletPoints":  [],
+                        "blockImgNeedsOverlay": false
+                    }
+                ]
+            },
+            {
+                "browHeading" : "", 
+                "sectionHeading" : "Our Users",
+                "sectionDescription": "There are multiple stakeholders to consider in the design process, each benefiting from various aspects of the solution:",
+                "sectionStyle":"",
+                "blockStyle":"Cols",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Patients, ",
+                        "blockDescription": "who are browsing the sites for a new dentist or booking follow-up visits with their existing providers" 
+                    },
+                    {
+                        "blockHeading": "Dentists",
+                        "blockDescription": "who seek greater customization options for content on their sites" 
+                    },
+                    {
+                        "blockHeading": "Heartland teams",
+                        "blockDescription": "who are active managing dentists' listsings and websites"
+                    }
+                ]
+            },
+            {
+                "browHeading" : "", 
+                "sectionHeading" : "Requirement Gathering & Collaboration with Client",
+                "sectionDescription": "",
+                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-1.png",
+                "sectionStyle": "Cols",
+                "blockStyle": "",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints": [
+                            "To gain a deeper understanding of business operations, requirements, and goals, participated in multiple requirements sessions with the client team.",
+                            "I led brainstorming sessions with the client's key contacts to clearly define the problem, identify technical challenges, and develop a comprehensive solution.",
+                            "I mapped out user flows to visualize the process of launching a new site within the platform."
+                        ],
+                        "blockImgNeedsOverlay": false
+                
+                    }
+                ]
+            },
+            {
+                "browHeading" : "", 
+                "sectionHeading" : "Template Creation & Branding Application",
+                "sectionDescription": "",
+                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-2.png",
+                "sectionStyle": "Cols-Rev",
+                "blockStyle": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Template Creation & Branding Application",
+                        "blockBulletPoints": [
+                            "Using the client-provided design brief, the design team and I created distinct style guides for each template, defining typography and color usage.",
+                            "I collaborated with developers to dynamically mapping content and color variables to the templates, customizing them for each dental office's branding." 
+                        ],
+                        "blockImgNeedsOverlay": false
+                
+                    }
+                ]
+            },
+            {
+                "browHeading" : "", 
+                "sectionHeading" : "Figma Variables & Component Library",
+                "sectionDescription": "",
+                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-3.png",
+                "sectionStyle": "Cols",
+                "blockStyle": "",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "",
+                        "blockBulletPoints": [ 
+                            "To ensure the templates can work with various branding colors without code change, I created Figma variables to test color application, accessibility, and dark mode functionality.",
+                            "To highlight data variability to developers while minimizing the number of components, I carefully organized, defined, and reused design components",
+                            "Developed high-fidelity mockups and implemented a scalable file structure for long-term maintainability."
+                        ],
+                        "blockImgNeedsOverlay": false
+                    }
+                ]
+            },
+            {
+                "browHeading" : "", 
+                "sectionHeading" : "The Impact",
+                "sectionDescription": "",
+                "sectionImgUrl":"",
+                "infoBlocks": [
+                    {
+                        "blockHeading": "",
+                        "blockBulletPoints": [
+                            "We successfully launched over 1,700 dentist websites using five of the six available templates.",
+                            "In 2024, the dental office sites collectively garnered 3.94 million views.",
+                            "In the same year, the websites generated over 172,000 appointment bookings, indicating that 4.3% of users chose to book an appointment through the site."
+                        ]
+                    }
+                ]
+            }]
+        },
         {
             "needPassword" : false,
             "projectName" : "Trane Supply Products & Parts Search Site",
@@ -74,9 +722,10 @@
                 "System Thinking",
                 "Cross-functional Collaboration"
             ],
-            "projectDescription" : "Design an e-commerce search experience that helps business agents and customers efficiently find and place the products or parts and place orders",
-            "projectDuration" : "4 month, August 2022 - Dec 2022",
-            "projectProblem" : "With millions of products, accessing information was cumbersome. Agents had to navigate multiple databases, manually connecting dots to find details. This project aims to transform the e-commerce site, streamlining part-finding for a seamless shopping experience for HVAC agents and customers.",
+            "projectDescription" : "Design an e-commerce search experience that helps field agents and customers efficiently find products or parts to place orders",
+            "projectDuration" : "12 weeks",
+            "projectRole" : "Lead Designer",
+            "projectProblem" : "",
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-project-cover.png",
             "projectPageUrl" : "trane-supply-search-site",
             "buttonGroup":[
@@ -88,21 +737,16 @@
             ],
             "projectContent":[
                 {
-                "browHeading" : "", 
-                "sectionHeading" : "",
-                "sectionDescription": "",
+                "browHeading" : "Overview", 
+                "sectionHeading" : "The Product",
+                "sectionDescription": "With millions of products, accessing information was cumbersome. Agents had to navigate multiple databases, manually connecting dots to find details. This project aims to transform the e-commerce site, streamlining part-finding for a seamless shopping experience for HVAC agents and customers.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-1.png",
                 "sectionStyle": "Cols",
                 "infoBlocks": [
                     {
-                        "blockHeading": "My role",
+                        "blockHeading": "",
                         "blockDescription": "",
-                        "blockBulletPoints":  [
-                            "Developed userflow for user stories and built high-fidelity designs for over 10 product features",
-                "Collaborated with the client team and Yext engineers to develop technical solutions",
-                "Worked with Trane UX researchers to conduct usability testing",
-                "Led internal design brainstorming sessions"
-                        ],
+                        "blockBulletPoints":  [],
                         "blockImgUrl":"",
                         "blockImgNeedsOverlay": false
                     }
@@ -156,7 +800,7 @@
                 ]
             },
             {
-                "browHeading" : "Overview", 
+                "browHeading" : "Research", 
                 "sectionHeading" : "Competitive Analysis",
                 "sectionDescription": "",
                 "sectionImgUrl":"",
@@ -174,11 +818,11 @@
                 ]
             },
             {
-                "browHeading" : "Overview", 
+                "browHeading" : "Research", 
                 "sectionHeading" : "",
                 "sectionDescription": "",
                 "sectionStyle": "Cols",
-                "blockStyle": "Cols",
+                "blockStyle": "CardCols",
                 "infoBlocks": [
                     {
                         "blockHeading": "Collaboration with Client's Team",
@@ -211,7 +855,7 @@
                 ]
             },
             {
-                "browHeading" : "", 
+                "browHeading" : "Research", 
                 "sectionHeading" : "",
                 "sectionDescription": "",
                 "sectionStyle": "Cols",
@@ -229,11 +873,11 @@
             },
             {
                 "browHeading" : "", 
- "sectionHeading" : "The Impact",
+                "sectionHeading" : "The Impact",
                 "sectionDescription": "",
                 "sectionStyle": "",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-6.png",
-                "blockStyle": "Cols",
+                "blockStyle": "CardCols",
                 "infoBlocks": [
                     {
                         "blockDescription": "In 2024, our enhanced search platform handled over 9.4 million searches."
@@ -250,325 +894,6 @@
         },
         {
             "needPassword" : false,
-            "projectName" : "Accor Hotel Digital Presence Dashboard",
-            "projectSkills": [
-                "Informational Architecture",
-                "User Research",
-                "System Thinking"
-            ],
-            "projectDescription" : "Help hoteliers of luxuery resorts manage their Hotels' Digital Presence via a custom data editing and analytics dashboard",
-            "projectDuration" : "6 weeks, January 2024 - February 2022",
-            "projectRole" : "UX Designer",
-            "projectProblem" : "",
-            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/Cover-Accor.png",
-            "projectPageUrl" : "accor-digital-presence-dashboard",
-            "projectContent": [
-            {
-                "browHeading" : "Overview", 
-                "sectionHeading" : "What was the product?",
-                "sectionDescription": "Accor is a hospitality group with over 45 hotel brands and 5,600 hotels.",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-1.png",
-                "sectionStyle": "Cols",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "",
-                        "blockDescription": "",
-                        "blockBulletPoints":  [
-                            "Accor uses Yext’s content management system to manage their hotels’ digital presence.",
-                            "Hotel managers input hotel-specific information to a single Yext-powered dashboard.",
-                            "Next, Yext distributes the information to listing publishers such as Google, Bing, and Apple."
-                        ],
-                        "blockImgUrl":"",
-                        "blockImgNeedsOverlay": false
-                    }
-                ]
-            },
-            {
-                "browHeading" : "Overview", 
-                "sectionHeading" : "What was the problem we were trying to solve?",
-                "sectionDescription": "",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-2.png",
-                "sectionStyle": "Cols-Rev",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "",
-                        "blockBulletPoints":  [
-                            "The existing dashboard was built to launch quickly. The project team utilized out-of-the-box UI components without adjusting it to the extent possible to meet Accor’s user needs.",
-                            "With the goal of improving clarity and increasing user engagement, the project team set out to redesign the dashboard."
-                        ],
-                        "blockImgUrl":"",
-                        "blockImgNeedsOverlay": true
-                    }
-                ]
-            },
-            {
-                "browHeading" : "Overview", 
-                "sectionHeading" : "Who are our users?",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "sectionStyle": "Cols",
-                "blockStyle": "Cols",
-                "infoBlocks": [
-                    {
-                        "blockStyle": "",
-                        "blockHeading": "Hotel Managers",
-                        "blockDescription": "Users who manage individual hotels.", 
-                        "blockBulletPoints":  [
-                            "knows all of the ins and outs of a specific hotel, including services and amenities offered.",
-                            "oversees the hotel restaurants and spas and want to manage the listings of these additional amenities."
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-3.png",
-                        "blockImgNeedsOverlay": true
-                    },
-                    {
-                        "blockStyle": "",
-                        "blockHeading": "Regional Managers",
-                        "blockDescription": "Users who oversee the performance of multiple hotels that fall under the same brand or region. ", 
-                        "blockBulletPoints":  [
-                            "prioritizes seeing aggregated performance across regions",
-                            "cares about the performance of individual hotels."
-                        ],
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-3.png",
-                        "blockImgNeedsOverlay": true
-                    }
-                ]
-            },
-            {
-                "browHeading" : "Research", 
-                "sectionHeading" : "What did we find from the User Survey & heuristic audit?",
-                "sectionDescription": "We collected user feedback via a short survey to discover existing user pain points. We also conducted a heuristic audit with the goal of simplifying the dashboard for low-tech users. Based on the research, we discovered the following painpoints:",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-3.png",
-                "sectionStyle": "",
-                "blockStyle": "Cols",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "What were the users looking at?",
-                        "blockDescription": "Some hotel managers were low-tech users and voiced how challenging it was to navigate the dashboard.",
-                        "blockBulletPoints": []
-                    },
-                    {
-                        "blockHeading": "How do the filters work?",
-                        "blockDescription": "The ability to filter the dashboard view was scattered across different modules. Hotel-specific metrics were separated into 3 different modules; regional-level metrics (country vs. brand) were separated into 2. Since the modules weren’t grouped by hierarchy and each module had its own filtering dropdown, navigating the scope of data was extremely difficult."
-                    },
-                    {
-                        "blockHeading": "Do users need to fill all of these fields out?",
-                        "blockDescription": "There are over hundreds of fields that positively impact a hotel’s ranking in search engines. A field can be as specific as whether a hotel has vending machines. Since some fields are more impactful than others (private beach vs. vending machines), users wanted to know which ones to prioritize.",
-                        "blockBulletPoints": []
-                    }
-                ]
-            },
-            {
-                "browHeading" : "", 
-                "sectionHeading" : "",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "sectionStyle": "",
-                "blockStyle": "Cols",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "Did one size meet all users’ needs?",
-                        "blockDescription": "In the older dashboard, all users, regardless of responsibilities shared the same view. However, not all metrics were equally important to different types of users. For users to access the information they needed quickly, we recommended building in logic to customize the landing page view so the metrics were tailored towards the active user.",
-                        "blockBulletPoints": []
-                    },
-                    {
-                        "blockHeading": "How does it impact a hotel’s performance?",
-                        "blockDescription": "End users were hotel experts but are not SEO experts. They wanted to know how to interpret the information and how it impacted their hotel’s performance.",
-                        "blockBulletPoints": []
-                    },
-                    {
-                        "blockHeading": "Did the groupings help them find their desired fields more quickly?",
-                        "blockDescription": "The field grouping offered a high-level overview of fields. Within each category, user still needed to scan a long list of seemingly-random fields. We recommended creating sub-categories to help users skip some fields and find the desired ones more quickly.",
-                        "blockBulletPoints": []
-                    }
-                ]
-            },
-            {
-                "browHeading" : "Improving Information Architecture", 
-                "sectionHeading" : "Enhance Metrics Grouping",
-                "sectionDescription": "I hosted a whiteboarding session with design peers to explore a different IA. It focused on grouping related metrics together, reducing clicks in the filtering experiene. We explored two options to group the metrics.",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-3.png",
-                "sectionStyle": "Cols",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "",
-                        "blockBulletPoints": []
-                    }
-                ]
-            },
-            {
-                "browHeading" : "Improving Information Architecture", 
-                "sectionHeading" : "Rework the Field Groupings",
-                "sectionDescription": "",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-3.png",
-                "sectionStyle": "Cols-Rev",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "",
-                        "blockBulletPoints": [
-                            "When I dove into reorganizing the listing field group, a card-sorting or tree-sorting exercise immediately came to mind. However, to ask Hotel managers to take time out of their busy schedules and sort though hundreds of fields seemed unrealistic, so I settled on secondary research.",
-                            "I compared Accor’s corporate domain, other large hotel chains, and Google My Business listing views to identify ways that other chains categorized hotel and room services for end customers.",
-                            "I researched field definitions to master industry terminology and created tooltips to help hoteliers better understand each field"
-                        ]
-                    }
-                ]
-            },
-            {
-                "browHeading" : "Educating the Users", 
-                "sectionHeading" : "Add “Next Step” Module",
-                "sectionDescription": "The team identified a few new steps to promote further actions by the hotel managers. For example, a “Your Google listing is out of sync” error would only appear when the Google listing module was visible on the page.",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-3.png",
-                "sectionStyle": "Cols",
-                "blockStyle": "",
-                "infoBlocks": []
-            },
-            {
-                "browHeading" : "Educating the Users", 
-                "sectionHeading" : "Add Impact Indicators",
-                "sectionDescription": "I led a brainstorm session to develop a visual system using 5 different UX copies and colors to communicate different impact levels. We also workshopped a comprehensive tooltip to help hoteliers better understand how their completion rate was evaluated against industry standards.",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-3.png",
-                "sectionStyle": "Cols-Rev",
-                "blockStyle": "",
-                "infoBlocks": []
-            },
-            {
-                "browHeading" : "Educating the Users", 
-                "sectionHeading" : "Add Tool Tips",
-                "sectionDescription": "In the same sessions, we designed a comprehensive tooltip to help hoteliers better understand how their completion rate was evaluated against industry standards.",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-3.png",
-                "sectionStyle": "Cols",
-                "blockStyle": "",
-                "infoBlocks": []
-            }
-            ]
-        },
-        {
-            "needPassword" : false,
-            "projectName" : "Heartland Dental Office Microsites",
-            "projectSkills": [
-                "Design System with Figma Variables",
-                "System Thinking",
-                "Cross-functional Collaboration"
-            ],
-            "projectDescription" : "Create 6 website templates that help hundreds of dentists partners maintain their digital presence and create analytics dashboard to help Heartland marketing team improve site and listing performances.",
-            "projectProblem" : "Managing a dental practice involves numerous responsibilities. Effective marketing is a crucial aspect. However, these non-dental-related tasks can often divert dentists' attention from their primary focus—caring for patients. The project aims to help hundreds of dentists Heartland partners reduce their workload of maintaining their digital presence.",
-            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-cover.png",
-            "projectPageUrl" : "heartland-dental-office-microsite-platform-solution-template",
-            "projectContent":[{
-                "browHeading" : "", 
-                "sectionHeading" : "",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "My role",
-                        "blockDescription": "",
-                        "blockBulletPoints":  [
-                            "Led brainstorming sessions with the client team to align on design requirements and explore branding applications for the front-end",
-                            "Collaborated with the client to identify practical platform solutions tailored to their marketing team’s workflow",
-                            "Developed high-fidelity mockups for six templates, each featuring seven unique pages",
-                            "Integrated Figma variables into mockups, ensuring that live pages meet WCAG standards, regardless of branding colors"
-                        ],
-                        "blockImgNeedsOverlay": false
-                    }
-                ]
-            },
-            {
-                "browHeading" : "", 
- "sectionHeading" : "Our Users",
-                "sectionDescription": "There are multiple stakeholders to consider in the design process, each benefiting from various aspects of the solution:",
-                "sectionStyle":"",
-                "blockStyle":"Cols",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "Patients, ",
-                        "blockDescription": "who are browsing the sites for a new dentist or booking follow-up visits with their existing providers" 
-                    },
-                    {
-                        "blockHeading": "Dentists",
-                        "blockDescription": "who seek greater customization options for content on their sites" 
-                    },
-                    {
-                        "blockHeading": "Heartland teams",
-                        "blockDescription": "who are active managing dentists' listsings and websites"
-                    }
-                ]
-            },
-            {
-                "browHeading" : "", 
- "sectionHeading" : "Requirement Gathering & Collaboration with Client",
-                "sectionDescription": "",
-                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-1.png",
-                "sectionStyle": "Cols",
-                "blockStyle": "",
-                "infoBlocks": [
-                    {
-                        "blockBulletPoints": [
-                            "To gain a deeper understanding of business operations, requirements, and goals, participated in multiple requirements sessions with the client team.",
-                            "I led brainstorming sessions with the client's key contacts to clearly define the problem, identify technical challenges, and develop a comprehensive solution.",
-                            "I mapped out user flows to visualize the process of launching a new site within the platform."
-                        ],
-                        "blockImgNeedsOverlay": false
-                
-                    }
-                ]
-            },
-            {
-                "browHeading" : "", 
- "sectionHeading" : "Template Creation & Branding Application",
-                "sectionDescription": "",
-                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-2.png",
-                "sectionStyle": "Cols-Rev",
-                "blockStyle": "",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "Template Creation & Branding Application",
-                        "blockBulletPoints": [
-                            "Using the client-provided design brief, the design team and I created distinct style guides for each template, defining typography and color usage.",
-                            "I collaborated with developers to dynamically mapping content and color variables to the templates, customizing them for each dental office's branding." 
-                        ],
-                        "blockImgNeedsOverlay": false
-                
-                    }
-                ]
-            },
-            {
-                "browHeading" : "", 
- "sectionHeading" : "Figma Variables & Component Library",
-                "sectionDescription": "",
-                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Heartland/heartland-project-3.png",
-                "sectionStyle": "Cols",
-                "blockStyle": "",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "",
-                        "blockBulletPoints": [ 
-                            "To ensure the templates can work with various branding colors without code change, I created Figma variables to test color application, accessibility, and dark mode functionality.",
-                            "To highlight data variability to developers while minimizing the number of components, I carefully organized, defined, and reused design components",
-                            "Developed high-fidelity mockups and implemented a scalable file structure for long-term maintainability."
-                        ],
-                        "blockImgNeedsOverlay": false
-                    }
-                ]
-            },
-            {
-                "browHeading" : "", 
- "sectionHeading" : "The Impact",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "infoBlocks": [
-                    {
-                        "blockHeading": "",
-                        "blockBulletPoints": [
-                            "We successfully launched over 1,700 dentist websites using five of the six available templates.",
-                            "In 2024, the dental office sites collectively garnered 3.94 million views.",
-                            "In the same year, the websites generated over 172,000 appointment bookings, indicating that 4.3% of users chose to book an appointment through the site."
-                        ]
-                    }
-                ]
-            }]
-        },
-        {
-            "needPassword" : false,
             "projectName" : "The UPS Store Mircrosite & Search Redesign",
             "projectSkills": [
                 "Heuristic Audit",
@@ -576,7 +901,8 @@
                 "Usability Testing"
             ],
             "projectDescription" : "Revamp the UPS Store Microsite template including the location page, service page and search site to streamline the user experience, minimizing friction in the UI and enhancing navigation.",
-            "projectDuration" : "4 month, August 2022 - Dec 2022",
+            "projectDuration" : "12 weeks",
+            "projectRole" : "Lead Designer",
             "projectProblem" : "The UPS Store currently hosts its locatiomn microsites on Yext Platform. Each location includes a homepage and a set of location-specific service pages. Although the site has performed steadily over the past few years, The UPS Store is now looking for opportunities to enhance the site and improve the user experience.",
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/TUPSS/tupss-cover.png",
             "projectPageUrl" : "the-ups-store-mircrosite-redesign",
@@ -688,19 +1014,5 @@
                 ]
             }]
         }
-    ],
-    "aboutGallery" : [ 
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-1.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-2.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-3.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-4.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-5.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-6.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-7.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-8.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-9.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-10.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-11.png",
-        "https://portfoliocontent.blob.core.windows.net/portolioimages/outside-design-image-12.png"
     ]
 }

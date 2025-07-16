@@ -7,7 +7,7 @@
 .hero-intro-container {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter-small);
+    gap: var(--gap-sm);
     align-items: center;
     max-width: var(--content-max-width);
 }
@@ -15,7 +15,7 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter);
+    gap: var(--gap-md);
     align-items: center;
 }
 
@@ -28,7 +28,6 @@
     top: 0px;
     position: relative;
     max-width: 1400px;
-    /* width: calc((100% - var(--gutter))/2); */
     background-color: var(--surface-secondary-background);
     color: var(--surface-secondary-text);
     box-shadow: var(--card-shadow);
@@ -53,31 +52,31 @@
     display: flex;
     flex-direction: column;
     padding: var(--container-padding-medium);
-    gap: var(--gutter);
+    gap: var(--gap-md);
 }
 
 .project-card-heading {
     display: flex;
     flex-direction: column;
-    gap: var(--gutter-small);
+    gap: var(--gap-sm);
 }
 
 .project-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-10);
+    gap: var(--gap-xs);
 }
 
 .project-skills-entry {
     display: flex;
     align-items: center;
-    padding: 0 var(--spacing-15);
+    padding: 0 var(--gap-xs);
     background-color: var(--surface-tertiary-background);
     color: var(--surface-tertiary-text);
 }
 
 .project-skills-divider {
-    margin: 0 var(--spacing-20);
+    margin: 0 var(--gap-sm);
     width: 1px;
     height: 1.3rem;
     background-color: var(--surface-primary-text);

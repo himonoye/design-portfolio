@@ -48,8 +48,8 @@
 
 .heading-flag {
     font-family: var(--base-font-Family), sans-serif;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 400;
     letter-spacing: .5px;
     color: var(--surface-primary-subheading);
@@ -136,17 +136,27 @@
     font-weight: 400;
 }
 
-.content-container ul{
-    gap: var(--spacing-30);
-    padding: 0;
-    margin: 0;
-}
-
 .content-container li {
     list-style-type: none;
-    padding: 0 0 0 var(--spacing-30);
+    padding: 0 0 0 var(--gap-sm);
     border-left: 5px solid var(--border-divider);
     font-weight: 400;
+    max-width: 800px;
+}
+
+.circled-number {
+    display: inline-block;
+    padding: var(--gap-xxs);
+    min-width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--brand-grayscale-900);
+    color: var(--brand-white);
+    border-radius: 50px;
+    font-family: var(--base-font-Family), sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 /* .content-container li::marker {

@@ -3,9 +3,12 @@ import BulletPoints from '../../style_guide/bulletPoints';
 import Image from '../../style_guide/image';
 
 type infoBlockProps = {
+	key: number;
 	blockHeading: string;
 	blockDescription: string; 
 	blockBulletPoints: string[];
+	blockNum: string;
+	blockNumCount: number;
 	blockImgUrl: string;
 	blockImgNeedsOverlay: boolean;
 }
@@ -13,48 +16,97 @@ type infoBlockProps = {
 type projectSectionProps = {
 	infoBlocks: [];
 	blockStyle: string;
+	blockNum: string;
 }
 
-const InfoBlockDefault = ({blockHeading, blockDescription, blockBulletPoints, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
+const InfoBlockDefault = ({blockHeading, blockDescription, blockBulletPoints, blockNum, blockNumCount, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
 	return (
 		<div className="project-info-block-default">
 			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
 			<div className="project-info-block-text">
-				{blockHeading && <div className="heading-flag">{blockHeading}</div>}
-				{blockDescription && <p className="body-base">{blockDescription}</p>}
+				{blockHeading && <div className="project-info-block-text-intro">
+					{(blockHeading || blockNum) && <div className="project-info-block-text-heading">
+							{blockNum && <div className="circled-number">{blockNumCount+1}</div>}
+							{blockHeading && <div className="heading-flag">{blockHeading}</div>}
+					</div>}
+					{blockDescription && <p className="body-base">{blockDescription}</p>}
+				</div>}
 				{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
 			</div>
 		</div>
 	)
 }
 
-const InfoBlockCards = ({blockHeading, blockDescription, blockBulletPoints, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
+const InfoBlockCardsCols = ({blockHeading, blockDescription, blockBulletPoints, blockNum, blockNumCount, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
 	return (
-		<div className="project-info-block-card">
+		<div className="project-info-block-card-cols">
 			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
 			<div className="project-info-block-text">
-				{blockHeading && <div className="heading-flag">{blockHeading}</div>}
-				{blockDescription && <p className="body-base">{blockDescription}</p>}
+				{blockHeading && <div className="project-info-block-text-intro">
+					{(blockHeading || blockNum) && <div className="project-info-block-text-heading">
+							{blockNum && <div className="circled-number">{blockNumCount+1}</div>}
+							{blockHeading && <div className="heading-flag">{blockHeading}</div>}
+					</div>}
+					{blockDescription && <p className="body-base">{blockDescription}</p>}
+				</div>}
 				{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
 			</div>
 		</div>
 	)
 }
 
-export function ProjectInfoBlocks ({infoBlocks, blockStyle}: projectSectionProps) {
+const InfoBlockCardsRows = ({blockHeading, blockDescription, blockBulletPoints, blockNum, blockNumCount, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
+	return (
+		<div className="project-info-block-card-rows">
+			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
+			<div className="project-info-block-text">
+				{blockHeading && <div className="project-info-block-text-intro">
+					{(blockHeading || blockNum) && <div className="project-info-block-text-heading">
+							{blockNum && <div className="circled-number">{blockNumCount+1}</div>}
+							{blockHeading && <div className="heading-flag">{blockHeading}</div>}
+					</div>}
+					{blockDescription && <p className="body-base">{blockDescription}</p>}
+				</div>}
+				{blockBulletPoints && <BulletPoints bulletPoints={blockBulletPoints}/>}
+			</div>
+		</div>
+	)
+}
+
+export function ProjectInfoBlocks ({infoBlocks, blockStyle, blockNum}: projectSectionProps) {
 	switch(blockStyle) {
-		case 'Cols': return (
+		case 'CardCols': return (
 			<div className="project-info-block-list-container-cols">
 					{infoBlocks.map((item:any, i:number)=>{
 							return (
-								<InfoBlockCards
+								<InfoBlockCardsCols
 									key={i}
 									blockHeading={item.blockHeading}
 									blockDescription={item.blockDescription}
 									blockBulletPoints={item.blockBulletPoints}
+									blockNum={blockNum}
+									blockNumCount={i}
 									blockImgUrl={item.blockImgUrl}
 									blockImgNeedsOverlay={item.blockImgNeedsOverlay}
-								></InfoBlockCards>
+								></InfoBlockCardsCols>
+							);
+					})}
+			</div>
+		)
+		case 'CardRows': return (
+			<div className="project-info-block-list-container-rows">
+					{infoBlocks.map((item:any, i:number)=>{
+							return (
+								<InfoBlockCardsRows
+									key={i}
+									blockHeading={item.blockHeading}
+									blockDescription={item.blockDescription}
+									blockBulletPoints={item.blockBulletPoints}
+									blockNum={blockNum}
+									blockNumCount={i}
+									blockImgUrl={item.blockImgUrl}
+									blockImgNeedsOverlay={item.blockImgNeedsOverlay}
+								></InfoBlockCardsRows>
 							);
 					})}
 			</div>
@@ -68,6 +120,8 @@ export function ProjectInfoBlocks ({infoBlocks, blockStyle}: projectSectionProps
 									blockHeading={item.blockHeading}
 									blockDescription={item.blockDescription}
 									blockBulletPoints={item.blockBulletPoints}
+									blockNum={blockNum}
+									blockNumCount={i}
 									blockImgUrl={item.blockImgUrl}
 									blockImgNeedsOverlay={item.blockImgNeedsOverlay}
 								></InfoBlockDefault>

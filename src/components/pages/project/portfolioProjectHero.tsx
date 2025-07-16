@@ -15,23 +15,24 @@ type PortfolioProjectHeroProps = {
 export default function PortfolioProjectHero({pageTitle, pageDescription, projectDuration, projectRole, projectCoverImgUrl, buttonGroup}: PortfolioProjectHeroProps){
 	return (
 		<div className="hero-container">
-				<Link linkText="Back" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
-				<div className="project-hero-intro-container">
+				<Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
+				<div className="project-hero-container">
 					<div className="project-hero-heading-container">
 						<div className="heading-brow">{pageTitle}</div>
 						<div className="heading-head">{pageDescription}</div>
 					</div>
-					<div className="project-info-block">
-					<div className="project-info-block-text">
-						<div className="heading-brow">My Role</div>
-						<div className="heading-sub">{projectRole}</div>
-					</div>
-					<div className="project-info-block-text">
-						<div className="heading-brow">Timeline</div>
-						<div className="heading-sub">{projectDuration}</div>
+					<div className="project-hero-overview-container">
+						<div className="project-hero-overview-heading-container">
+							<div className="heading-brow">My Role</div>
+							<div className="heading-flag">{projectRole}</div>
+						</div>
+						<div className="project-hero-overview-heading-container">
+							<div className="heading-brow">Timeline</div>
+							<div className="heading-flag">{projectDuration}</div>
+						</div>
 					</div>
 				</div>
-		</div>
+				<Image url={projectCoverImgUrl} needsOverlay={false}></Image>
 				{buttonGroup &&
 							<div className="button-group">
 									{buttonGroup.map((item:any,i)=>{
@@ -41,7 +42,6 @@ export default function PortfolioProjectHero({pageTitle, pageDescription, projec
 									})}     
 							</div>
           }
-				{/* <Image url={projectCoverImgUrl} needsOverlay={false}></Image> */}
 			</div>		
 	)
 }

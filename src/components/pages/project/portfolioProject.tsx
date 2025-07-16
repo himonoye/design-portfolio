@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from '../../style_guide/link';
-import DividerThreeDots from '../../style_guide/dividerThreeDots';
 import PortfolioProjectHero from './portfolioProjectHero';
 import {ProjectInfoBlocks} from './portfolioProjectSection';
 import PasscodeForm from '../passcode_form/passcodeForm';
@@ -25,15 +24,16 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 								case 'Cols': return (
 									<div className="project-section-container-cols">
 										<div className="project-section-content-container">
-											<div className="project-section-heading-container">
+											{item.sectionHeading && <div className="project-section-heading-container">
 												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
 												{item.sectionHeading && <div className="heading-sub">{item.sectionHeading}</div>}
 												{item.sectionDescription && <p className="body-large">{item.sectionDescription}</p>}
-											</div>
+											</div>}
 											{item.infoBlocks && <ProjectInfoBlocks 
 																									key={i}
 																									infoBlocks={item.infoBlocks}
-																									blockStyle={item.blockStyle}>
+																									blockStyle={item.blockStyle}
+																									blockNum={item.blockNum}>
 																								</ProjectInfoBlocks>}
 											</div>
 										{item.sectionImgUrl && <Image url={item.sectionImgUrl} needsOverlay={false}></Image>}
@@ -43,31 +43,33 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 									<div className="project-section-container-cols">
 										{item.sectionImgUrl && <Image url={item.sectionImgUrl} needsOverlay={false}></Image>}
 										<div className="project-section-content-container">
-											<div className="project-section-heading-container">
+											{item.sectionHeading && <div className="project-section-heading-container">
 												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
 												{item.sectionHeading && <div className="heading-sub">{item.sectionHeading}</div>}
 												{item.sectionDescription && <p className="body-large">{item.sectionDescription}</p>}
-											</div>
+											</div>}
 											{item.infoBlocks && <ProjectInfoBlocks 
 																									key={i}
 																									infoBlocks={item.infoBlocks}
-																									blockStyle={item.blockStyle}>
+																									blockStyle={item.blockStyle}
+																									blockNum={item.blockNum}>
 																								</ProjectInfoBlocks>}
 											</div>
 									</div>
 								);
 								default: return(
-									<div className="project-section-container">
+									<div className="project-section-container-rows">
 										<div className="project-section-content-container">
-											<div className="project-section-heading-container">
+											{item.sectionHeading && <div className="project-section-heading-container">
 												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
 												{item.sectionHeading && <div className="heading-sub">{item.sectionHeading}</div>}
 												{item.sectionDescription && <p className="body-large">{item.sectionDescription}</p>}
-											</div>
+											</div>}
 											{item.infoBlocks && <ProjectInfoBlocks 
 																									key={i}
 																									infoBlocks={item.infoBlocks}
-																									blockStyle={item.blockStyle}>
+																									blockStyle={item.blockStyle}
+																									blockNum={item.blockNum}>
 																								</ProjectInfoBlocks>}
 											</div>
 										{item.sectionImgUrl && <Image url={item.sectionImgUrl} needsOverlay={false}></Image>}

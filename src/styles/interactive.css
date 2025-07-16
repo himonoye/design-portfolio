@@ -5,21 +5,21 @@
 .button-wrapper {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-10);
+    gap: var(--gap-xs);
 }
 
 .link-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: var(--spacing-20);
+    gap: var(--gap-sm);
 }
 
 .button-group, .link-group {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: var(--spacing-20);
+    gap: var(--gap-sm);
 }
 
 .button-primary{
@@ -75,7 +75,7 @@
 
 .link-primary {
     display: flex;
-    gap: var(--spacing-10);
+    gap: var(--gap-xs);
     color: var(--link-primary-text);
     font-weight: 400;
     font-size: 1.1rem;
@@ -102,12 +102,11 @@
 
 .link-secondary {
     display: flex;
-    gap: var(--spacing-10);
+    gap: var(--gap-sm);
     color: var(--link-secondary-text);
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.1rem;
-    letter-spacing: 1.5px;
     text-decoration: none;
     font-family: var(--heading-font-Family), sans-serif;
     text-transform: uppercase;
@@ -142,7 +141,7 @@ input:hover, input:active, input:focus, input:focus-visible {
 
     .button-group, .link-group {
         flex-direction: column;
-        gap: var(--spacing-10);
+        gap: var(--gap-sm);
     }
 
     .button-wrapper {
