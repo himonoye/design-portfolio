@@ -41,6 +41,7 @@
 .button-primary:hover {
     top: -2px;
     position: relative;
+    background: var(--brand-gradient-200);
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
@@ -83,7 +84,7 @@
 }
 
 .link-primary {
-    top: -2px;
+    top: 0px;
     position: relative;
     display: flex;
     gap: var(--gap-xs);
@@ -103,7 +104,8 @@
 }
 
 .link-primary:hover {
-    text-decoration: underline;
+    top: -2px;
+    position: relative;
     -webkit-transition: all .2s ease-in ;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
@@ -116,6 +118,8 @@
 }
 
 .link-secondary {
+    top: 0px;
+    position: relative;
     display: flex;
     gap: var(--gap-sm);
     color: var(--link-secondary-text);
@@ -134,11 +138,12 @@
 }
 
 .link-primary:hover {
-    text-decoration: underline;
-    -webkit-transition: all 1s ease-in ;
-    -moz-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    transition: all 1s ease-in;
+    top: -2px;
+    position: relative;
+    -webkit-transition: all .2s ease-in ;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
     cursor: pointer;
 }
 
