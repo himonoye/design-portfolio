@@ -345,7 +345,7 @@
             ]
         },
         {
-            "needPassword" : false,
+            "needPassword" : true,
             "projectName" : "Merrill Bank of America Financial Advisor Pages & Dashboard",
             "projectSkills": [
                 "Site Traffic Analytics",
