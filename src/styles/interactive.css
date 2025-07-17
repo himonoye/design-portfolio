@@ -18,47 +18,56 @@
 .button-group, .link-group {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: var(--gap-sm);
+    max-width: var(--content-max-width-narrow);
+    width: 100%;
 }
 
 .button-primary{
+    top: 0px;
+    position: relative;
     padding: 2px;
     color: var(--button-primary-text);
     background: var(--brand-gradient-300);
     border-radius: var(--button-border-radius);
-    -webkit-transition: all 1s ease-out ;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
 
 .button-primary:hover {
-    background: var(--brand-gradient-200);
-    -webkit-transition: all 1s ease-out ;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    top: -2px;
+    position: relative;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
     cursor: pointer;
 }
 
 .button-secondary{
+    top: 0px;
+    position: relative;
     padding: 2px;
     color: var(--button-secondary-text);
     background: var(--brand-gradient-300);
     border-radius: var(--button-border-radius);
-    -webkit-transition: all 1s ease-out ;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
 
 .button-secondary:hover {
-    background: var(--brand-gradient-200);
-    -webkit-transition: all 1s ease-in ;
-    -moz-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    transition: all 1s ease-in;
+    top: -2px;
+    position: relative;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
     cursor: pointer;
 }
 
@@ -74,6 +83,8 @@
 }
 
 .link-primary {
+    top: -2px;
+    position: relative;
     display: flex;
     gap: var(--gap-xs);
     color: var(--link-primary-text);
@@ -85,14 +96,18 @@
     font-family: var(--heading-font-Family), sans-serif;
     text-transform: uppercase;
     align-items: center;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
 
 .link-primary:hover {
     text-decoration: underline;
-    -webkit-transition: all 1s ease-in ;
-    -moz-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    transition: all 1s ease-in;
+    -webkit-transition: all .2s ease-in ;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
     cursor: pointer;
 }
 
@@ -107,10 +122,15 @@
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.1rem;
+    letter-spacing: .5px;
     text-decoration: none;
     font-family: var(--heading-font-Family), sans-serif;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    align-items: center;
+    -webkit-transition: all .2s ease-in ;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 .link-primary:hover {

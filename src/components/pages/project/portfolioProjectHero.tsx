@@ -23,17 +23,15 @@ export default function PortfolioProjectHero({pageTitle, pageDescription, projec
 					</div>
 					<div className="project-hero-overview-container">
 						<div className="project-hero-overview-heading-container">
-							<div className="heading-brow">My Role</div>
-							<div className="heading-flag">{projectRole}</div>
+							<div className="heading-label-left">My Role</div>
+							<div className="heading-label-right">{projectRole}</div>
 						</div>
 						<div className="project-hero-overview-heading-container">
-							<div className="heading-brow">Timeline</div>
-							<div className="heading-flag">{projectDuration}</div>
+							<div className="heading-label-left">Timeline</div>
+							<div className="heading-label-right">{projectDuration}</div>
 						</div>
 					</div>
-				</div>
-				<Image url={projectCoverImgUrl} needsOverlay={false}></Image>
-				{buttonGroup &&
+					{buttonGroup &&
 							<div className="button-group">
 									{buttonGroup.map((item:any,i)=>{
 											return(
@@ -42,6 +40,8 @@ export default function PortfolioProjectHero({pageTitle, pageDescription, projec
 									})}     
 							</div>
           }
+				</div>
+				<Image url={projectCoverImgUrl} needsOverlay={false}></Image>
 			</div>		
 	)
 }

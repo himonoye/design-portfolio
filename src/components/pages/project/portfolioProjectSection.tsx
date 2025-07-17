@@ -24,7 +24,7 @@ const InfoBlockDefault = ({blockHeading, blockDescription, blockBulletPoints, bl
 		<div className="project-info-block-default">
 			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
 			<div className="project-info-block-text">
-				{blockHeading && <div className="project-info-block-text-intro">
+				{(blockHeading || blockDescription) && <div className="project-info-block-text-intro">
 					{(blockHeading || blockNum) && <div className="project-info-block-text-heading">
 							{blockNum && <div className="circled-number">{blockNumCount+1}</div>}
 							{blockHeading && <div className="heading-flag">{blockHeading}</div>}
@@ -42,7 +42,7 @@ const InfoBlockCardsCols = ({blockHeading, blockDescription, blockBulletPoints, 
 		<div className="project-info-block-card-cols">
 			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
 			<div className="project-info-block-text">
-				{blockHeading && <div className="project-info-block-text-intro">
+				{(blockHeading || blockDescription) && <div className="project-info-block-text-intro">
 					{(blockHeading || blockNum) && <div className="project-info-block-text-heading">
 							{blockNum && <div className="circled-number">{blockNumCount+1}</div>}
 							{blockHeading && <div className="heading-flag">{blockHeading}</div>}
@@ -60,7 +60,7 @@ const InfoBlockCardsRows = ({blockHeading, blockDescription, blockBulletPoints, 
 		<div className="project-info-block-card-rows">
 			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
 			<div className="project-info-block-text">
-				{blockHeading && <div className="project-info-block-text-intro">
+				{(blockHeading || blockDescription) && <div className="project-info-block-text-intro">
 					{(blockHeading || blockNum) && <div className="project-info-block-text-heading">
 							{blockNum && <div className="circled-number">{blockNumCount+1}</div>}
 							{blockHeading && <div className="heading-flag">{blockHeading}</div>}
@@ -75,7 +75,7 @@ const InfoBlockCardsRows = ({blockHeading, blockDescription, blockBulletPoints, 
 
 export function ProjectInfoBlocks ({infoBlocks, blockStyle, blockNum}: projectSectionProps) {
 	switch(blockStyle) {
-		case 'CardCols': return (
+		case 'Card-Cols': return (
 			<div className="project-info-block-list-container-cols">
 					{infoBlocks.map((item:any, i:number)=>{
 							return (
@@ -93,7 +93,7 @@ export function ProjectInfoBlocks ({infoBlocks, blockStyle, blockNum}: projectSe
 					})}
 			</div>
 		)
-		case 'CardRows': return (
+		case 'Card-Rows': return (
 			<div className="project-info-block-list-container-rows">
 					{infoBlocks.map((item:any, i:number)=>{
 							return (

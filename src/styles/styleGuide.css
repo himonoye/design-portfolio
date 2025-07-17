@@ -148,7 +148,7 @@
     --resume-gutter-large: var(--spacing-60);
 
     /* border radius */
-    --button-border-radius: 50px;
+    --button-border-radius: var(--gap-l);
     --card-border-radius: 10px;
     --icon-border-radius: 50%;
 

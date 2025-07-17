@@ -38,7 +38,7 @@
             "url":"..",
             "title" : "My Work",
             "profileImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/profileImage.png",
-            "description" : "I’m a Product Designer who turns headaches into delight. With a background in front-end development and a belief that good design starts with conversations, I simplify complex workflows so tools support people, not the other way around. Currently, I craft CMS design solutions as a Senior UX/UI Designer @ Yext",
+            "description" : "I’m a UX Designer who turns headaches into delight. With a background in front-end development, graphic design, and a belief that good design starts with conversations, I simplify complex workflows so tools support people, not the other way around. Currently, I craft CMS design solutions as a Senior UX/UI Designer @ Yext",
             "buttonGroup":[
                 {
                     "buttonText": "Case Studies",
@@ -49,7 +49,7 @@
         "resume" : {
             "url":"resume",
             "title" : "My Experience",
-            "description" : "As a Product Designer, I turn headaches into delight. With a background in front-end development and a belief that good design starts with conversations, I simplify complex workflows so tools support people, not the other way around.",
+            "description" : "As a UX Designer, I turn headaches into delight. With a background in front-end development, graphic design, and a belief that good design starts with conversations, I simplify complex workflows so tools support people, not the other way around.",
             "buttonGroup":[
                 {
                     "buttonText" : "Download PDF",
@@ -71,10 +71,10 @@
             "projectName" : "Accor Hotel Digital Presence Dashboard",
             "projectSkills": [
                 "Informational Architecture",
-                "User Research",
-                "System Thinking"
+                "System Thinking",
+                "User Research"
             ],
-            "projectDescription" : "Help hoteliers of luxuery resorts manage their Hotels' Digital Presence via a custom data editing and analytics dashboard",
+            "projectDescription" : "Help hoteliers of luxury resorts manage their hotels' digital presence through a customized data editing and analytics dashboard.",
             "projectDuration" : "6 weeks",
             "projectRole" : "Lead Designer",
             "projectProblem" : "",
@@ -105,7 +105,7 @@
                 "infoBlocks": [
                     {
                         "blockBulletPoints":  [
-                            "The existing dashboard was built to launch quickly. The project team utilized out-of-the-box UI components without any enhancement it to meet Accor’s user needs.",
+                            "The existing dashboard was built to launch quickly. The project team utilized out-of-the-box UI components without any enhancement to meet Accor’s user needs.",
                             "Stakeholders voiced that part of the existing dashboard isn't as intuitive as it could be.",
                             "With the goal of improving clarity and increasing user engagement, the project team set out to build a new dashboard."
                         ]
@@ -118,7 +118,7 @@
                 "sectionDescription": "",
                 "sectionImgUrl":"",
                 "sectionStyle": "Cols",
-                "blockStyle": "CardCols",
+                "blockStyle": "Card-Cols",
                 "infoBlocks": [
                     {
                         "blockStyle": "",
@@ -152,24 +152,24 @@
             {
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-old-design.png",
                 "sectionStyle": "Cols",
-                "blockStyle": "CardRows",
+                "blockStyle": "Card-Rows",
                 "blockNum": true,
                 "infoBlocks": [
                     {
+                        "blockHeading": "One View Doesn't Fit All",
+                        "blockDescription": "In the older dashboard, all users, regardless of responsibilities shared the same view. However, not all metrics were equally important to different types of users."
+                    },
+                    {
                         "blockHeading": "Cluttered Navigation",
-                        "blockDescription": "Some hotel managers, especially those less familiar with technology, found the dashboard difficult to navigate. Their feedback revealed confusion about where to look and how to complete key actions."
+                        "blockDescription": "Some hotel managers, especially those less familiar with technology, found the dashboard difficult to navigate. Their feedback revealed confusion about where to look and what key actions to complete."
                     },
                     {
                         "blockHeading": "Scattered Filtering Functionality",
-                        "blockDescription": "The ability to filter the dashboard view was scattered across different modules. Each module had its own filtering dropdown (Hotel vs. country vs. brand), navigating the scope of data was extremely difficult."
+                        "blockDescription": "The ability to filter the dashboard view was scattered across different modules. Each module had its own filtering dropdown (hotel vs. country vs. brand), navigating the scope of data was extremely difficult."
                     },
                     {
                         "blockHeading": "Not All Fields Are Created Equal",
                         "blockDescription": "There are over hundreds of fields that positively impact a hotel’s ranking in search engines. A field can be as specific as whether a hotel has vending machines. Since some fields are more impactful than others (private beach vs. vending machines), users wanted to know which ones to prioritize."
-                    },
-                    {
-                        "blockHeading": "One View Doesn't Fit All",
-                        "blockDescription": "In the older dashboard, all users, regardless of responsibilities shared the same view. However, not all metrics were equally important to different types of users."
                     },
                     {
                         "blockHeading": "Lacking SEO Guidance",
@@ -184,14 +184,14 @@
             {
                 "browHeading" : "The Redesign: Improving Information Architecture", 
                 "sectionHeading" : "Restructure Metrics Grouping",
-                "sectionDescription": "For users to access the information they needed quickly, we explore alternative ways to group and filter metrics on the dashboard.",
+                "sectionDescription": "For users to access the information they needed quickly, we explored alternative ways to group and filter metrics on the dashboard.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-metric-table.png",
                 "sectionStyle": "Cols-Rev",
                 "infoBlocks": [
                     {
                         "blockBulletPoints": [
-                            "The types of metrics that are available vary at hotel, country, and brand level.",
-                            "I conducted whiteboarding session to explore different information architecture for displaying the data: grouping modules by hotel level or by metric type."
+                            "Through a quick logic table exercise, I was able to visualize how the types of available metrics vary across hotel, country, and brand levels.",
+                            "I conducted whiteboarding session to explore different information architecture for displaying the data: grouping modules by different levels or by metric type."
                         ]
                     }
                 ]
@@ -199,15 +199,16 @@
             {
                 "browHeading" : "The Redesign: Improving Information Architecture", 
                 "sectionHeading" : "Rework the Field Groupings",
-                "sectionDescription": "To help users skip some fields and find the desired ones more quickly, we reorganized the field grouping and introduced additional sub-categories to support clearer mental models.",
+                "sectionDescription": "To help users scan the fields and find the desired ones more quickly, we revamped the field grouping and introduced additional sub-categories to support more granular mental models.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-field-table.png",
                 "sectionStyle": "Cols",
                 "infoBlocks": [
                     {
                         "blockBulletPoints": [
                             "When I dove into reorganizing the listing field group, a card-sorting exercise immediately came to mind. However, to ask Hotel managers to take time out of their busy schedules and sort though hundreds of fields seemed unrealistic, so I settled on secondary research.",
-                            "I compared Accor’s corporate domain, other large hotel chains, and Google My Business listing views to identify ways that other chains categorized hotel and room services",
-                            "I researched field definitions to master industry terminology and created tooltips to help hoteliers better map each field to their hotels' amentities"
+                            "I compared Accor’s corporate domain, other large hotel chains, and Google My Business listing views to identify ways that other businesses categorized hotel amenities and services.",
+                            "I studied field definitions to master industry terms and crosschecked grouping logic with AI for additional validation.",
+                            "With the knowledge, I added tooltip and UX copies to help hoteliers better match each field to their hotels' amentities in the real world."
                         ]
                     }
                 ]
@@ -233,7 +234,7 @@
                 "sectionHeading" : "Add Impact Indicators for Fields",
                 "sectionDescription": "To help users know which fields will have the most impact on their hotel performance, we developed a visual system to communicate different impact levels. We explored three concepts and ultimately chose the second option for its clear messaging, best use of colors, and conciseness.",
                 "sectionStyle": "",
-                "blockStyle": "CardCols",
+                "blockStyle": "Card-Cols",
                 "blockNum": true,
                 "infoBlocks": [
                     {
@@ -263,7 +264,7 @@
                 "infoBlocks": [
                     {
                         "blockBulletPoints":  [
-                            "Color indicators were used to convey urgency.",
+                            "Color indicators were used for different completion rate ranges to convey urgency.",
                             "The tooltip is embeded alongside every occurrence of the completion rate metric to educate users at every opportunity."
                         ]
                     }
@@ -274,13 +275,13 @@
                 "sectionHeading" : "The Final Product",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-the-redesign.png",
                 "sectionStyle": "Cols-Rev",
-                "blockStyle": "CardRows",
+                "blockStyle": "Card-Rows",
                 "blockNum": true,
                 "infoBlocks": [
                     {
                         
                         "blockHeading": "Enhanced Metrics Groupings",
-                        "blockDescription": "Dedicated a module are created for each distinct type of metric. Filters are consolidated at the top of the dashboard. Users can customize their dashboard view using the filters based on their role and goals all at once."
+                        "blockDescription": "There are dedicated modules for each distinct type of metric. Filters are consolidated at the top of the dashboard. Users can customize their dashboard view using the filters based on their role and goals all at once."
                     },
                     {
                         "blockHeading": "Educational Tooltips",
@@ -292,7 +293,7 @@
                     },
                     {
                         "blockHeading": "Digestiable Field Groupings",
-                        "blockDescription": "Fields reorganized and meticulously grouped into sub-categories to help users quickly find what they need."
+                        "blockDescription": "Fields are reorganized and meticulously grouped into sub-categories to help users find the field are looking for more quickly."
                     },
                     {
                         "blockHeading": "Informative Impact Indicators",
@@ -303,15 +304,15 @@
             {
                 "browHeading" : "Positive Feedback",
                 "sectionHeading" : "The Impact",
-                "sectionDescription": "The initial phase of the project is complete, with encouraging feedback from end users highlighting its value.",
+                "sectionDescription": "The initial phase of the project is complete, with positive feedback from end users highlighting its value.",
                 "sectionImgUrl":"",
                 "sectionStyle":"",
-                "blockStyle":"CardCols", 
+                "blockStyle":"Card-Cols", 
                 "infoBlocks": [
                     {
                         "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-quote.png",
                         "blockImgNeedsOverlay": false,
-                        "blockHeading": "Putting aggregated data under the All tab is a very good idea and much more readable.",
+                        "blockHeading": "Putting aggregated data in one place is a very good idea and make it much more readable.",
                         "blockDescription": "— Laurance"
                     },
                     {
@@ -328,7 +329,7 @@
                 "sectionDescription": "Among the feedback, however, we also recieved request to further enhance the dashboard. These feedback will be addressed in the upcoming product iteractions.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-next-step.png",
                 "sectionStyle":"Cols",
-                "blockStyle":"CardRows", 
+                "blockStyle":"Card-Rows", 
                 "blockNum": true,
                 "infoBlocks": [
                     {
@@ -344,17 +345,17 @@
             ]
         },
         {
-            "needPassword" : false,
-            "projectName" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard",
+            "needPassword" : true,
+            "projectName" : "Merrill Bank of America Financial Advisor Pages & Dashboard",
             "projectSkills": [
                 "Site Traffic Analytics",
                 "Component Library",
                 "User Flow Mapping",
-                "Cross-functional Collaboration"
+                "User Research"
             ],
             "projectDuration" : "2022 - Present",
             "projectRole" : "Lead Designer",
-            "projectDescription" : "Revamp Merrill's advisor marketing pages while enhancing platform solution that enables advisors to efficiently manage the content on their pages.",
+            "projectDescription" : "Help Merrill's advisors market their services to prospects through landing pages and enhance platform solution that enables advisors to efficiently spin up new team site.",
             "projectProblem" : "",
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-cover.png",
             "projectPageUrl" : "merrill-finacial-advisor-page-redesign",
@@ -370,14 +371,14 @@
                 "browHeading" : "Overview",
                 "sectionHeading" : "Financial Advisor Pages",
                 "sectionDescription": "Merrill leverages the Yext platform to efficiently manage thousands of financial advisor listings and web pages.",
-                "sectionImgUrl":"",
-                "sectionStyle":"",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-the-product.png",
+                "sectionStyle":"Cols",
                 "blockStyle":"",
                 "infoBlocks": [
                     {
                         "blockBulletPoints":  [
-                            "Three distinct lines of business, each requiring tailored branding and specifications.",
-                            "The team is developing a series of page templates and a content management dashboard, including advisor, teams, and branch pages.",
+                            "There are three distinct lines of business. Each required tailored branding and specifications.",
+                            "We had developed a content management dashboard and was looking to build a set of landing page templates for advisor and advisor teams",
                             "This solution will showcase each advisor’s financial services while empowering them to effortlessly manage their website content."
                         ]
                     }
@@ -388,31 +389,40 @@
                 "sectionHeading" : "Who are the users?",
                 "sectionImgUrl":"",
                 "sectionStyle":"",
-                "blockStyle":"Cols",
+                "blockStyle":"Card-Cols",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Customers",
-                        "blockDescription": "who are browsing the sites for a perspective advisors or contacting their existing advisors"
+                        "blockHeading": "Prospects",
+                        "blockDescription": "Who are browsing the sites for a perspective advisors or contacting their existing advisors.",
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-user-1.png",
+                        "blockBulletPoints":  [
+                            "Looking for a trustworthy advisor to handle their assets",
+                            "Learning more about how an advisor or team can support their financial goals"
+                        ]
                     },
                     {
                         "blockHeading": "Advisors",
-                        "blockDescription": "who want to market themselves to prospective customers and manage the content on their personal or team sites."
+                        "blockDescription": "Who want to market themselves to prospective customers by managing the content on their personal or team sites.",
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-user-2.png",
+                        "blockBulletPoints":  [
+                            "Showcasing their services and capabilities",
+                            "Connecting with prospects through phone calls, emails, or contact form"
+                        ]
                     }
                 ]
             },
             {
                 "browHeading" : "Research", 
-                "sectionHeading" : "How are users currently interacting with the site, according to traffic data?",
+                "sectionHeading" : "How were prospects interacting with the site previously, according to traffic data?",
                 "sectionDescription": "",
-                "sectionImgUrl":"",
-                "sectionStyle":"",
-                "blockStyle":"Cols",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-analytics.png",
+                "sectionStyle":"Cols-Rev",
+                "blockStyle":"Card-Rows",
                 "blockNum":"true", 
                 "infoBlocks": [
                     {
                         "blockHeading": "Scroll Pattern",
                         "blockDescription": "Scroll analysis revealed that visitors don’t reach 25% of the advisor page, making above-the-fold content critical."
-            
                     },
                     {
                         "blockHeading": "Navigation Pattern",
@@ -421,85 +431,148 @@
                     },
                     {
                         "blockHeading": "Primary CTAs Engagement",
-                        "blockDescription": "'Contact Us' and 'Request Appointment' buttons are the most clicked CTAs, though both lead to similar forms that contain identical fields."
-            
-                    },
-                    {
-                        "blockHeading": "Missing Content",
-                        "blockDescription": "Perspectives are drawn to advisors with awards and accolades. These sites get more clicks and views of their website."
+                        "blockDescription": "Phone number and address are the most clicked CTAs. \"Contact Us\" and \"Request Appointment\" buttons are the second most clicked CTAs, though both lead to similar forms that contain identical fields."
                     }
                 ]
             },
             {
-                "browHeading" : "Research", 
-                "sectionHeading" : "UX issues we identified from the existing experience",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-2.png",
-                "sectionStyle":"Cols",
-                "blockStyle":"", 
+                "browHeading": "Research", 
+                "sectionHeading": "What were the UX issues we identified from the existing experience?",
+                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-old-design.png",
+                "sectionStyle": "Cols",
+                "blockStyle": "Card-Rows", 
+                "blockNum": true,
                 "infoBlocks": [
                     {
-                        "blockBulletPoints":  [
-                            "Users experienced a few seconds of a blank screen during their first visit. Google PageSpeed Insights confirmed high First Contentful Paint times on both desktop and mobile.",
-                            "It takes 8-10 scrolls to reach the bottom of the page. Several text-heavy sections  are making the page longer, contributing to low engagement at the bottom.",
-                            "Hero designs feature large images that push advisor names and addresses below the fold.",
-                            "Background images with overlaid text or additional images in multiple sections reduced readability and sometimes obscured advisors' headshots."
-                        ]
+                        "blockHeading": "Delayed Page Load",
+                        "blockDescription": "Users experienced a few seconds of a blank screen during their first visit. Google PageSpeed Insights confirmed high First Contentful Paint times on both desktop and mobile."
+                    },
+                    {
+                        "blockHeading": "Underutilized Hero Space",
+                        "blockDescription": "Hero designs featured large images that pushed advisor names and addresses below the fold."
+                    },
+                    {
+                        "blockHeading": "Content with Low Readability",
+                        "blockDescription": "Background images with overlaid text or additional images in multiple sections reduced readability and sometimes obscured advisors' headshots."
+                    },
+                    {
+                        "blockHeading": "Excessive Page Scroll",
+                        "blockDescription": "It took 8-10 scrolls to reach the bottom of the page. Several text-heavy sections were making the page longer, adding to the page length."
+            
                     }
                 ]
             },
             {
-                "browHeading" : "Research", 
-                "sectionHeading" : "Insights shared by Merrill’s Advisors",
+                "browHeading": "Research", 
+                "sectionHeading": "Insights shared by Merrill’s Advisors",
                 "sectionDescription": "",
                 "sectionImgUrl":"",
                 "sectionStyle":"",
-                "blockStyle":"Cols", 
+                "blockStyle":"Card-Cols",
                 "infoBlocks": [
                     {
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-quote.png",
                         "blockHeading": "Wants boilerplate and customizable content",
-                        "blockDescription": "Many advisors have busy schedules and prefer a mix of well-written boilerplate content and customizable sections on their pages"
+                        "blockDescription": "Many advisors had busy schedules and preferred a mix of well-written boilerplate content and customizable sections on their pages"
                     },
                     {
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-quote.png",
                         "blockHeading": "Requires multiple hero options",
-                        "blockDescription": "Team portraits can vary in size and aspect ratio, so advisors want several hero design options to accommodate these differences."
+                        "blockDescription": "Team portraits can vary in size and aspect ratio, so advisors wanted several hero design options to accommodate these differences."
                     },
                     {
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-quote.png",
                         "blockHeading": "Needs multiple ways to feature awards",
-                        "blockDescription": "Some accolades are awarded to individual advisors, while others are given to the entire team. Advisors want to showcase both types of recognition on their pages."
+                        "blockDescription": "Some accolades are awarded to individual advisors, while others are given to the entire team. Advisors wanted to showcase both types of recognition on their pages."
                     }
                 ]
             },
             {
                 "browHeading" : "The Design: Scannable", 
                 "sectionHeading" : "Shortern Page Length",
-                "sectionDescription": "Condensed content by uitilizing tabbed section and carousel on the page to reduce page length. ",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png",
+                "sectionDescription": "I condensed content by uitilizing tabbed section, expandable dropdowns and carousel on the page to reduce page length. ",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-tabbed-section.png",
                 "sectionStyle":"Cols",
-                "blockStyle":""
+                "blockStyle":"",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints":  [
+                            "A tabbed section was introduced to organize advisor-specific content such as their investment philosophy and approach into an digestible and interactive format.",
+                            "A collapsible dropdown was implemented to manage lengthy biography content and maintain a cleaner layout."
+                        ]
+                    }
+                ]
             },
             {
                 "browHeading" : "The Design: Measurable", 
                 "sectionHeading" : "Unified Primary CTA",
-                "sectionDescription": "Combined the “Contact Us” and “Request Appointment” calls-to-action into a single, prominent CTA to enhance user engagement.",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png",
+                "sectionDescription": "I combined the “Contact Us” and “Request Appointment” buttons into a single prominent calls-to-action to streamline prospects outreach.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-CTA-section.png",
                 "sectionStyle":"Cols-Rev",
-                "blockStyle":""
+                "blockStyle":"",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints":  [
+                            "The primary button was styled in a distinct color to standout among all interactive elements on the page.",
+                            "It was also added in the sticky banner to ensure its constant availability as users scroll."
+                        ]
+                    }
+                ]
             },
             {
                 "browHeading" : "The Design: Attractive", 
+                "sectionHeading" : "Multiple Hero Section Options",
+                "sectionDescription": "I crafted multiple hero section options for different usecases.",
+                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-hero.png",
+                "sectionStyle": "Cols",
+                "blockStyle": "",
+                "blockNum": true,
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Options 1: Full-Width Image vs. Contained Image Layout",
+                        "blockDescription": "Two layout options are provided. The full-width image layout gives visual prominence to the hero image, creating a bold first impression. The contained image layout puts less spotlight on the advisor image, allowing other content appear higher on the screen."
+                    },
+                    {
+                        "blockHeading": "Options 2: Dark Background vs. Light Background",
+                        "blockDescription": "Two color themes are available for the heros to align with different business line brandings. Merrill Wealth Management uses a darker theme, while Private Bank follows a lighter, more minimal visual identity."
+                    }
+                ]
+            },
+            {
+                "browHeading" : "The Design: Flexible", 
                 "sectionHeading" : "Customizable Award Sections",
-                "sectionDescription": "Updated the section showcasing advisors' accolades for better visibility.",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png",
-                "sectionStyle":"Cols",
-                "blockStyle":""
+                "sectionDescription": "I crafted a flexible section layout that can be customized to showcase advisors' accolades. It supports both individual and team awards",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-award-section.png",
+                "sectionStyle":"Cols-Rev",
+                "blockStyle":"",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints":  [
+                            "Up to 3 individuals can be featured in the section.",
+                            "Team award layout accommodates images of varying aspect ratios.",
+                            "Each individual can display up to 10 awards—3 shown by default, with the rest accessible via a dropdown.",
+                            "Each award can optionally include an award image for added visual interest."
+                        ]
+                    }
+                ]
             },
             {
                 "browHeading" : "The Design: Flexible", 
                 "sectionHeading" : "Reusable Components Across Different Templates",
-                "sectionDescription": "Curated reusable design components for different templates and breakpoints.",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-4.png",
-                "sectionStyle":"Cols-Rev",
-                "blockStyle":""
+                "sectionDescription": "I curated reusable design components that can be used for all templates and breakpoints.",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-other-sections.png",
+                "sectionStyle":"Cols",
+                "blockStyle":"",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints": [
+                            "We built a total of 6 templates across three lines of business.",
+                            "To increase UI and branding consistency across the templates and reduce redundant engineering work, multiple sections were designed as reusable components. These include the blog section, events section, and biography modal."
+                        ],
+                        "blockImgNeedsOverlay": false
+                
+                    }
+                ]
             },
             {
                 "browHeading" : "Financial Advisor Pages", 
@@ -507,79 +580,99 @@
                 "sectionDescription": "",
                 "sectionImgUrl":"",
                 "sectionStyle":"",
-                "blockStyle":"Cols", 
+                "blockStyle":"Card-Cols", 
                 "infoBlocks": [
                     {
-                        "blockHeading": "15000+",
-                        "blockDescription": "Our team successfully launched 15000+ advisors sites."
+                        "blockHeading": "15000+ Pages Launched",
+                        "blockDescription": "Our team successfully launched 15000+ advisors sites at scale in the span of 2 years."
                     },
                     {
-                        "blockHeading": "60%",
-                        "blockDescription": "Reduced page length by 60%, optimizing content through efficient UI patterns and minimizing scroll."
+                        "blockHeading": "2.5M Page Views",
+                        "blockDescription": "Between Janurary to June in 2025, the site attracted 2.5M page views."
                     },
                     {
-                        "blockHeading": "50%",
-                        "blockDescription": "Increased 'Contact Us' form completion rate by 50%"
+                        "blockHeading": "30% - 60% Redcued Page Scroll",
+                        "blockDescription": "Through the redesign, we achieved a 30% reduction in page length on desktop and 60% on mobile."
                     }
                 ]
             },
             {
                 "browHeading" : "Overview", 
-                "sectionHeading" : "Content Management Dashboard",
-                "sectionDescription": "The team wants to implement a site creation wizard, allowing advisors to easily create their own sites. Previously, this required contacting Yext to set up a new team site.",
+                "sectionHeading" : "Team Site Creation Flow on Content Management Dashboard",
+                "sectionDescription": "The client team requested to implement a site creation wizard, allowing advisors to easily create a new site without external help. Previously, this required contacting Yext Support. The wizard needs to seamlessly fit into the existing dashboard.",
                 "sectionImgUrl":"",
                 "sectionStyle":"Cols",
                 "blockStyle":""
             },
             {
-                "browHeading" : "Research", 
-                "sectionHeading" : "What's the desired site creation process and approval flow?",
-                "sectionDescription": "",
+                "browHeading" : "Overview",
+                "sectionHeading" : "Who are the users?",
                 "sectionImgUrl":"",
                 "sectionStyle":"",
-                "blockStyle":"Cols", 
+                "blockStyle":"Card-Cols",
                 "infoBlocks": [
                     {
-                        "blockHeading": "1. Search",
-                        "blockDescription": "To create a site, the team owner has to first find and add other advisor to create a new team."
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-advisor-1.png",
+                        "blockHeading": "Team Owners or Team Members",
+                        "blockDescription": "Advisors who are already in a team but are looking for new partners to form a new team and create a new site."
                     },
                     {
-                        "blockHeading": "2. Creation",
-                        "blockDescription": "They then need to provide profile information for that new team."
-                    },
-                    {
-                        "blockHeading": "2. Approval",
-                        "blockDescription": "After the team creation request is submitted, it goes through an approval process."
-                    },
-                    {
-                        "blockHeading": "4. Deletion",
-                        "blockDescription": "Once a team is created, advisors cannot delete the team. They need to contect Yext support team to make the request"
+                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-advisor-2.png",
+                        "blockHeading": "Individual Advisors",
+                        "blockDescription": "Advisors who has worked independently but is looking for partners to form a new team and spin up a new site."
                     }
                 ]
             },
             {
                 "browHeading" : "Research", 
-                "sectionHeading" : "Requirements to User Flow",
+                "sectionHeading" : "What was the desired work flow?",
                 "sectionDescription": "",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-5.png",
+                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-flow-chart.png",
+                "sectionStyle":"Cols",
+                "blockStyle":"Card-Rows",
+                "blockNum":"true",  
+                "infoBlocks": [
+                    {
+                        "blockHeading": "Advisor Search",
+                        "blockDescription": "To create a team, the team owner has to first find and add other advisor the team."
+                    },
+                    {
+                        "blockHeading": "Team Creation",
+                        "blockDescription": "They then need to provide profile information for that new team, including team name, team owner, and contact information."
+                    },
+                    {
+                        "blockHeading": "Request Approval",
+                        "blockDescription": "After the team creation request is submitted, it goes through an approval process. The approval might take a few days and during this time, advisors can not edit their new team's profile or website. Once the request is approved, a new team and website will be created."
+                    },
+                    {
+                        "blockHeading": "Team Deletion",
+                        "blockDescription": "Once a team and its website are created, advisors cannot delete the team themselves. They need to contact Yext support to make the request."
+                    }
+                ]
+            },
+            {
+                "browHeading" : "The Design", 
+                "sectionHeading" : "Step-by-Step Guidance",
+                "sectionDescription": "Each step of the workflow is separated into a different screen to reduce cognitive load and help users focus on one task at a time.",
+                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-create-team-flow.png",
                 "sectionStyle":"",
                 "blockStyle":""
             },
             {
                 "browHeading" : "The Design", 
-                "sectionHeading" : "High-Fidelity Prototypes",
-                "sectionDescription": "",
-                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-6.png",
-                "sectionStyle":"",
-                "blockStyle":"Cols"
-            },
-            {
-                "browHeading" : "Content Management Dashboard", 
-                "sectionHeading" : "The Impact",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "sectionStyle":"",
-                "blockStyle":"Cols"
+                "sectionHeading" : "Confirmation Before Submission",
+                "sectionDescription": "To reduce errors and support confident decision-making, we added checkpoints and made key actions reversible.",
+                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-create-team-flow-confirmation.png",
+                "sectionStyle":"Cols",
+                "blockStyle":"",
+                "infoBlocks": [
+                    {
+                        "blockBulletPoints": [
+                            "A confirmation screen was added before a team creation request is submitted",
+                            "Users will have the option to cancel the action if they want to go back and edit the new team's information."
+                        ]
+                    }
+                ]
             }
         ]
         }
@@ -822,7 +915,7 @@
                 "sectionHeading" : "",
                 "sectionDescription": "",
                 "sectionStyle": "Cols",
-                "blockStyle": "CardCols",
+                "blockStyle": "Card-Cols",
                 "infoBlocks": [
                     {
                         "blockHeading": "Collaboration with Client's Team",
@@ -877,7 +970,7 @@
                 "sectionDescription": "",
                 "sectionStyle": "",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Trane/trane-6.png",
-                "blockStyle": "CardCols",
+                "blockStyle": "Card-Cols",
                 "infoBlocks": [
                     {
                         "blockDescription": "In 2024, our enhanced search platform handled over 9.4 million searches."
