@@ -67,7 +67,7 @@
     },
     "projectData" : [
         {
-            "needPassword" : true,
+            "needPassword" : false,
             "projectName" : "Accor Hotel Digital Presence Dashboard",
             "projectSkills": [
                 "Informational Architecture",
