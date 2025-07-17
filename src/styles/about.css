@@ -44,7 +44,7 @@
 @media screen and (max-width: 1200px) {
 
     .gallery-container {
-        display: none;
+        flex-direction: column;
     }
 
     .gallery-container-mobile {
@@ -60,6 +60,7 @@
     }
 
     .img-gallery-img {
+        max-width: 100%;
         opacity: 1;
     }
 
