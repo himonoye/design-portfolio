@@ -30,7 +30,6 @@
     max-width: 1400px;
     background-color: var(--surface-secondary-background);
     color: var(--surface-secondary-text);
-
     overflow: hidden;
     border-radius: var(--card-border-radius);
     -webkit-transition: all .2s ease-out;
@@ -62,7 +61,7 @@
     flex-direction: column;
     padding: var(--container-padding-medium);
     gap: var(--gap-md);
-    width: 100%;
+    width: 50%;
 }
 
 .project-card-heading {
@@ -95,6 +94,11 @@
 @media screen and (max-width: 1200px){
     .project-card {
         width: 100%;
+        flex-direction: column;
+    }
+
+    .project-card-body {
+        width: auto;
     }
 
     .profileImage {

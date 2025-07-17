@@ -18,7 +18,7 @@
 /* Mobile, Tablet, Small Laptop*/
 @media screen and (max-width: 1200px) {
     .logo {
-        padding: var(--gap-sm);
+        padding: var(--gap-md);
         font-size: 2rem;
         line-height: 2.5rem;
     }

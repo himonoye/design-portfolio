@@ -172,7 +172,7 @@
     width: 16px;
     height: 16px;
     background-color: var(--surface-primary-background);
-    padding: var(--gap-xs);
+    padding: var(--gap-md);
     border-radius: var(--icon-border-radius);
 }
 
@@ -205,10 +205,11 @@
         z-index: 10000;
         align-items: center;
         justify-content: space-between;
+        min-height: 80px;
     }
 
     .header-link {
-        padding: var(--gap-sm) var(--gap-l) var(--gap-sm) var(--gap-sm);
+        padding: var(--gap-md) var(--gap-l) var(--gap-md) var(--gap-l);
         font-size: 1.5rem;
         line-height: 2rem;
         border-bottom: solid 1px var(--border-divider);
@@ -221,7 +222,7 @@
     .header-mobile-icon-container {
         display: flex;
         max-width: 24px;
-        padding: var(--gap-sm) var(--gap-sm);
+        padding: var(--gap-md);
     }
 
     .header-mobile-links-container{

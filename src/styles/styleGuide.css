@@ -96,6 +96,10 @@
     --surface-tertiary-text: var(--brand-grayscale-700);
     --surface-tertiary-heading: var(--brand-grayscale-700);
 
+    --surface-quaternary-background: var(--brand-grayscale-900);
+    --surface-quaternary-text: var(--brand-white);
+    --surface-quaternary-heading: var(--brand-white);
+
     /* Button colors */
     --button-primary-background: var(--brand-white);
     --button-primary-text: var(--brand-purple-300);
@@ -173,6 +177,10 @@
         --surface-tertiary-text: var(--brand-white);
         --surface-tertiary-heading: var(--brand-white);
 
+        --surface-quaternary-background: var(--brand-white);
+        --surface-quaternary-text: var(--brand-grayscale-900);
+        --surface-quaternary-heading: var(--brand-grayscale-900);
+
         /* Button colors */
         --button-primary-background: var(--brand-grayscale-900);
         --button-primary-text: var(--brand-white);
@@ -189,7 +197,7 @@
 
         /* border & divider */
         --border-divider: var(--brand-grayscale-700);
-        --border-divider-hover: var(--brand-grayscale-700);
+        --border-divider-hover: var(--brand-grayscale-600);
         --border-input: var(--brand-grayscale-400);
         --border-input-hover: var(--brand-grayscale-300);
     
@@ -198,7 +206,7 @@
     
         /* shadow */
         --container-shadow: 0px 0px 5px var(--brand-black);
-        --card-shadow: 0px 0px 2.5px 0px var(--brand-black);
+        --card-shadow: 0 5px 20px 0 var(--brand-black);
         --card-shadow-hover: 0px 5px 10px -2.5px var(--brand-black);
         --mobile-header-shadow: 5px 0px 5px 0px var(--brand-black);
     }
@@ -210,8 +218,9 @@
         --gutter-small: var(--spacing-15);
         --gutter-medium: var(--spacing-40);
 
-        --gap-xs: var(--spacing-5);
-        --gap-sm: var(--spacing-10);
+        --gap-xxs: var(--spacing-5);
+        --gap-xs: var(--spacing-10);
+        --gap-sm: var(--spacing-15);
         --gap-md: var(--spacing-20);
         --gap-l: var(--spacing-40);
         --gap-xl: var(--spacing-80);

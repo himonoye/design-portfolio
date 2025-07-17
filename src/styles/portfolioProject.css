@@ -176,6 +176,27 @@
 /* Mobile, Tablet, Small Laptop*/
 @media screen and (max-width: 1200px) {
 
+    .project-section-container-cols {
+        flex-direction: column;
+    }
+
+    .project-info-block-list-container-cols {
+        flex-direction: column;
+    }
+
+    .project-info-block-card-cols {
+        width: auto;
+    }
+
+    .project-section-container-cols > .image-wrapper {
+        min-width: 100%;
+    }
+
+    .project-hero-overview-container {
+        flex-wrap: wrap;
+        gap: var(--gap-sm);
+    }
+
     .project-hero-heading-container {
         padding: 0;
     }
