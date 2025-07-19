@@ -489,7 +489,7 @@
             },
             {
                 "browHeading" : "The Design: Scannable", 
-                "sectionHeading" : "Shortern Page Length",
+                "sectionHeading" : "Optimized Layouts to Shorten Page Length",
                 "sectionDescription": "I condensed content by uitilizing tabbed section, expandable dropdowns and carousel on the page to reduce page length. ",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-tabbed-section.png",
                 "sectionStyle":"Cols",
@@ -591,7 +591,7 @@
                         "blockDescription": "Between Janurary to June in 2025, the site attracted 2.5M page views."
                     },
                     {
-                        "blockHeading": "30% - 60% Redcued Page Scroll",
+                        "blockHeading": "30% - 60% Reduced Page Scroll",
                         "blockDescription": "Through the redesign, we achieved a 30% reduction in page length on desktop and 60% on mobile."
                     }
                 ]

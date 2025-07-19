@@ -318,3 +318,18 @@ button{
     height: 200px;
     bottom: 0;
 }
+
+p, div, img {
+  animation-name: loadMore;
+  animation-duration: .3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes loadMore {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

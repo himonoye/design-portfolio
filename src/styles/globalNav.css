@@ -37,7 +37,7 @@
 }
 
 .header-expandable-container {
-    width: 20vw;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,7 +63,7 @@
 }
 
 .header-links-container {
-    width: 15vw;
+    width: 350px;
     display: flex;
     flex-direction: column;
 }
@@ -128,7 +128,7 @@
 /* Footer */
 
 .footer-container {
-    width: 20vw;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
