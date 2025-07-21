@@ -133,7 +133,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: var(--surface-primary-background);
-    padding: var(--gap-md) var(--gap-xl);
+    padding: var(--gap-md) 0 var(--gap-xl) var(--gap-xl);
     gap: 2rem;
 }
 
@@ -173,8 +173,8 @@
 
 .social-media-wrapper {
     display: flex;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     background-color: var(--surface-primary-background);
     padding: var(--gap-sm);
     border-radius: var(--icon-border-radius);

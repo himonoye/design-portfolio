@@ -39,7 +39,7 @@ export default function App({pageData, resumeData}:appProps) {
     {
       //About
       path: "/about",
-      element: <About pageData={pageData.pageInfo.about} gallery={pageData.aboutGallery}/>
+      element: <About pageData={pageData.pageInfo.about} gallery={pageData.aboutGallery} socialMedia={pageData.footerData}/>
     },
   ]
 

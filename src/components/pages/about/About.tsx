@@ -4,9 +4,10 @@ import DefaultHero from '../general_sections/defaultHero';
 type aboutProps = {
     pageData: any;
     gallery: string[];
+    socialMedia: string[];
 }
 
-export default function About({pageData, gallery}:aboutProps) {
+export default function About({pageData, gallery, socialMedia}:aboutProps) {
     return (
         <div className="body-container">
             <DefaultHero 
@@ -16,6 +17,28 @@ export default function About({pageData, gallery}:aboutProps) {
                 scrollRef={pageData.scrollRef}
             ></DefaultHero>
             <div className="content-container">
+                <div className="social-media-container-light">
+                    {socialMedia.map((item:any, i:number)=>{
+                        return (
+                            <div key={i} className="social-media">
+                                <a className="social-media-wrapper" href={item.url} target="_blank" >
+                                    <img src={item.imgUrlDarkMode} alt={item.type + " Mingxin Ye"}></img>
+                                </a>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className="social-media-container-dark">
+                    {socialMedia.map((item:any, i:number)=>{
+                        return (
+                            <div key={i} className="social-media">
+                                <a className="social-media-wrapper" href={item.url} target="_blank">
+                                    <img src={item.imgUrlLightMode} alt={item.type + " Mingxin Ye"}></img>
+                                </a>
+                            </div>
+                        )
+                    })}
+                </div>
                 <div className="gallery-container">
                 {gallery.map((item, k)=>{
                         return (

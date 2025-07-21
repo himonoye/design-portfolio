@@ -28,7 +28,7 @@
 .button-primary{
     top: 0px;
     position: relative;
-    padding: 2px;
+    padding: 1px;
     color: var(--button-primary-text);
     background: var(--brand-gradient-300);
     border-radius: var(--button-border-radius);
@@ -52,7 +52,7 @@
 .button-secondary{
     top: 0px;
     position: relative;
-    padding: 2px;
+    padding: 1px;
     color: var(--button-secondary-text);
     background: var(--brand-gradient-300);
     border-radius: var(--button-border-radius);

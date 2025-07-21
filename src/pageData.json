@@ -21,10 +21,10 @@
             "imgUrlLightMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-LinkedIn-light.svg"
         },
         {
-            "type":"instagram",
-            "url":"https://www.instagram.com/mmingaling/",
-            "imgUrlDarkMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-Instagram-dark.svg",
-            "imgUrlLightMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-Instagram-light.svg"
+            "type":"medium",
+            "url":"https://medium.com/@mingxinye1128",
+            "imgUrlDarkMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-Medium-dark.svg",
+            "imgUrlLightMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-Medium-light.svg"
         },
         {
             "type":"email",
