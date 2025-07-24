@@ -9,10 +9,11 @@ type PortfolioProjectHeroProps = {
 	projectDuration: string;
 	projectRole: string;
 	projectCoverImgUrl: string;
+	projectCoverAltTxt: string;
 	buttonGroup: [];
 }
 
-export default function PortfolioProjectHero({pageTitle, pageDescription, projectDuration, projectRole, projectCoverImgUrl, buttonGroup}: PortfolioProjectHeroProps){
+export default function PortfolioProjectHero({pageTitle, pageDescription, projectDuration, projectRole, projectCoverImgUrl, projectCoverAltTxt, buttonGroup}: PortfolioProjectHeroProps){
 	return (
 		<div className="hero-container">
 				<Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
@@ -41,7 +42,7 @@ export default function PortfolioProjectHero({pageTitle, pageDescription, projec
 							</div>
           }
 				</div>
-				<Image url={projectCoverImgUrl} needsOverlay={false}></Image>
+				<Image url={projectCoverImgUrl} altTxt={projectCoverAltTxt} needsOverlay={false}></Image>
 			</div>		
 	)
 }

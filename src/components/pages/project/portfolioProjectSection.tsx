@@ -10,6 +10,7 @@ type infoBlockProps = {
 	blockNum: string;
 	blockNumCount: number;
 	blockImgUrl: string;
+	blockImgAltTxt: string;
 	blockImgNeedsOverlay: boolean;
 }
 
@@ -19,10 +20,10 @@ type projectSectionProps = {
 	blockNum: string;
 }
 
-const InfoBlockDefault = ({blockHeading, blockDescription, blockBulletPoints, blockNum, blockNumCount, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
+const InfoBlockDefault = ({blockHeading, blockDescription, blockBulletPoints, blockNum, blockNumCount, blockImgUrl, blockImgAltTxt, blockImgNeedsOverlay}: infoBlockProps) => {
 	return (
 		<div className="project-info-block-default">
-			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
+			{blockImgUrl && <Image url={blockImgUrl} altTxt={blockImgAltTxt} needsOverlay={blockImgNeedsOverlay}></Image>}
 			<div className="project-info-block-text">
 				{(blockHeading || blockDescription) && <div className="project-info-block-text-intro">
 					{(blockHeading || blockNum) && <div className="project-info-block-text-heading">
@@ -37,10 +38,10 @@ const InfoBlockDefault = ({blockHeading, blockDescription, blockBulletPoints, bl
 	)
 }
 
-const InfoBlockCardsCols = ({blockHeading, blockDescription, blockBulletPoints, blockNum, blockNumCount, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
+const InfoBlockCardsCols = ({blockHeading, blockDescription, blockBulletPoints, blockNum, blockNumCount, blockImgUrl, blockImgAltTxt, blockImgNeedsOverlay}: infoBlockProps) => {
 	return (
 		<div className="project-info-block-card-cols">
-			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
+			{blockImgUrl && <Image url={blockImgUrl} altTxt={blockImgAltTxt} needsOverlay={blockImgNeedsOverlay}></Image>}
 			<div className="project-info-block-text">
 				{(blockHeading || blockDescription) && <div className="project-info-block-text-intro">
 					{(blockHeading || blockNum) && <div className="project-info-block-text-heading">
@@ -55,10 +56,10 @@ const InfoBlockCardsCols = ({blockHeading, blockDescription, blockBulletPoints, 
 	)
 }
 
-const InfoBlockCardsRows = ({blockHeading, blockDescription, blockBulletPoints, blockNum, blockNumCount, blockImgUrl, blockImgNeedsOverlay}: infoBlockProps) => {
+const InfoBlockCardsRows = ({blockHeading, blockDescription, blockBulletPoints, blockNum, blockNumCount, blockImgUrl, blockImgAltTxt, blockImgNeedsOverlay}: infoBlockProps) => {
 	return (
 		<div className="project-info-block-card-rows">
-			{blockImgUrl && <Image url={blockImgUrl} needsOverlay={blockImgNeedsOverlay}></Image>}
+			{blockImgUrl && <Image url={blockImgUrl} altTxt={blockImgAltTxt} needsOverlay={blockImgNeedsOverlay}></Image>}
 			<div className="project-info-block-text">
 				{(blockHeading || blockDescription) && <div className="project-info-block-text-intro">
 					{(blockHeading || blockNum) && <div className="project-info-block-text-heading">
@@ -87,6 +88,7 @@ export function ProjectInfoBlocks ({infoBlocks, blockStyle, blockNum}: projectSe
 									blockNum={blockNum}
 									blockNumCount={i}
 									blockImgUrl={item.blockImgUrl}
+									blockImgAltTxt={item.blockImgAltTxt}
 									blockImgNeedsOverlay={item.blockImgNeedsOverlay}
 								></InfoBlockCardsCols>
 							);
@@ -105,6 +107,7 @@ export function ProjectInfoBlocks ({infoBlocks, blockStyle, blockNum}: projectSe
 									blockNum={blockNum}
 									blockNumCount={i}
 									blockImgUrl={item.blockImgUrl}
+									blockImgAltTxt={item.blockImgAltTxt}
 									blockImgNeedsOverlay={item.blockImgNeedsOverlay}
 								></InfoBlockCardsRows>
 							);
@@ -123,6 +126,7 @@ export function ProjectInfoBlocks ({infoBlocks, blockStyle, blockNum}: projectSe
 									blockNum={blockNum}
 									blockNumCount={i}
 									blockImgUrl={item.blockImgUrl}
+									blockImgAltTxt={item.blockImgAltTxt}
 									blockImgNeedsOverlay={item.blockImgNeedsOverlay}
 								></InfoBlockDefault>
 							);

@@ -5,15 +5,16 @@ import Button from '../../style_guide/button';
 
 type PortfolioHomeHeroProps = {
     profileImgUrl: string;
+    profileImgAltTxt: string;
     buttonGroup:[];
     pageDescription: string;
     refPointer?: React.MutableRefObject<HTMLInputElement>
 };
 
-export default function PortfolioHomeHero ({profileImgUrl, buttonGroup, pageDescription, refPointer}:PortfolioHomeHeroProps) {
+export default function PortfolioHomeHero ({profileImgUrl, profileImgAltTxt, buttonGroup, pageDescription, refPointer}:PortfolioHomeHeroProps) {
     return (
         <div className="hero-container">
-            <img className="profileImage" src={profileImgUrl}></img>
+            <img className="profileImage" src={profileImgUrl} alt={profileImgAltTxt}></img>
             <div className="hero-intro-container">
                 <div className="heading-headline">
                     <span id="hello">Hello, </span>

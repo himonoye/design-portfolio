@@ -8,13 +8,14 @@ type ProjectCardProps = {
     projectPageUrl: string;
     projectDescription: string;
     projectCoverImgUrl: string;
+    projectCoverAltTxt: string;
     projectSkills: string[];
 };
 
-export default function ProjectCard({projectName, projectSkills, projectDescription, projectPageUrl, projectCoverImgUrl}:ProjectCardProps){
+export default function ProjectCard({projectName, projectSkills, projectDescription, projectPageUrl, projectCoverImgUrl, projectCoverAltTxt}:ProjectCardProps){
     return (
         <NavLink to={projectPageUrl} className="project-card">
-            <Image url={projectCoverImgUrl}></Image>
+            <Image url={projectCoverImgUrl} altTxt={projectCoverAltTxt} needsOverlay={false}></Image>
             <div className="project-card-body">
                 <div className="project-card-heading">
                     <div className="heading-sub">{projectName}</div>

@@ -38,6 +38,7 @@
             "url":"..",
             "title" : "My Work",
             "profileImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/profileImage.png",
+            "profileImgAltTxt":"Profile headshot of Ming Ye",
             "description" : "I’m a UX Designer who turns headaches into delight. With a background in front-end development, graphic design, and a belief that good design starts with conversations, I simplify complex workflows so tools support people, not the other way around. Currently, I craft CMS design solutions as a Senior UX/UI Designer @ Yext",
             "buttonGroup":[
                 {
@@ -79,6 +80,7 @@
             "projectRole" : "Lead Designer",
             "projectProblem" : "",
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-cover.png",
+            "projectCoverAltTxt":"Project Cover of Accor Hotel Digital Presence Dashboard",
             "projectPageUrl" : "accor-digital-presence-dashboard",
             "projectContent": [
             {
@@ -86,6 +88,7 @@
                 "sectionHeading" : "What was the product?",
                 "sectionDescription": "Accor is a hospitality group with over 45 brands and 5,600 hotels.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-the-product.png",
+                "sectionImgAltTxt":"Image of Accor hotel business overview",
                 "sectionStyle": "Cols",
                 "infoBlocks": [
                     {
@@ -101,6 +104,7 @@
                 "browHeading" : "Overview", 
                 "sectionHeading" : "What was the goal?",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-the-goal.png",
+                "sectionImgAltTxt":"Image of project goal",
                 "sectionStyle": "Cols-Rev",
                 "infoBlocks": [
                     {
@@ -115,8 +119,6 @@
             {
                 "browHeading" : "Overview", 
                 "sectionHeading" : "Who are our users?",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
                 "sectionStyle": "Cols",
                 "blockStyle": "Card-Cols",
                 "infoBlocks": [
@@ -129,6 +131,7 @@
                             "Oversees the hotel restaurants and spas and want to manage the listings of these additional amenities."
                         ],
                         "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-user-manager.png",
+                        "blockImgAltTxt":"Icon of hotel manager",
                         "blockImgNeedsOverlay": false
                     },
                     {
@@ -140,6 +143,7 @@
                             "Cares about the performance of individual hotels."
                         ],
                         "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-user-regional.png",
+                        "blockImgAltTxt":"Icon of regional manager",
                         "blockImgNeedsOverlay": false
                     }
                 ]
@@ -151,6 +155,7 @@
             },
             {
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-old-design.png",
+                "sectionImgAltTxt":"Image of Accor's old dashboard design",
                 "sectionStyle": "Cols",
                 "blockStyle": "Card-Rows",
                 "blockNum": true,
@@ -186,6 +191,7 @@
                 "sectionHeading" : "Restructure Metrics Grouping",
                 "sectionDescription": "For users to access the information they needed quickly, we explored alternative ways to group and filter metrics on the dashboard.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-metric-table.png",
+                "sectionImgAltTxt":"Image of Accor metrics grouping table",
                 "sectionStyle": "Cols-Rev",
                 "infoBlocks": [
                     {
@@ -201,6 +207,7 @@
                 "sectionHeading" : "Rework the Field Groupings",
                 "sectionDescription": "To help users scan the fields and find the desired ones more quickly, we revamped the field grouping and introduced additional sub-categories to support more granular mental models.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-field-table.png",
+                "sectionImgAltTxt":"Image of Accor dashboard's fields grouping excel sheet",
                 "sectionStyle": "Cols",
                 "infoBlocks": [
                     {
@@ -218,8 +225,8 @@
                 "sectionHeading" : "Add “Next Step” Module",
                 "sectionDescription": "To promote further actions by the hotel managers to improve hotel's digital performance, we added a net-new \"Next Step\" module.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-nextstep-table.png",
+                "sectionImgAltTxt":"Image of Accor dashboard's Next Step table",
                 "sectionStyle": "Cols-Rev",
-                "blockStyle": "",
                 "infoBlocks": [
                     {
                         "blockBulletPoints":  [
@@ -233,24 +240,26 @@
                 "browHeading" : "The Redesign: Educating the Users", 
                 "sectionHeading" : "Add Impact Indicators for Fields",
                 "sectionDescription": "To help users know which fields will have the most impact on their hotel performance, we developed a visual system to communicate different impact levels. We explored three concepts and ultimately chose the second option for its clear messaging, best use of colors, and conciseness.",
-                "sectionStyle": "",
                 "blockStyle": "Card-Cols",
                 "blockNum": true,
                 "infoBlocks": [
                     {
                         "blockHeading": "Number with Text Labels",
                         "blockDescription": "The option is straightforward but doesn't visually distinguish the levels from each other.",
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-impact-level-1.png"
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-impact-level-1.png",
+                        "blockImgAltTxt":"Image of impact indicator in the style of number with text labels"
                     },
                     {
                         "blockHeading": "Color-coded Text Labels",
                         "blockDescription": "We picked this option for its clear messaging, best use of colors, and conciseness.",
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-impact-level-2.png"
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-impact-level-2.png",
+                        "blockImgAltTxt":"Image of impact indicator in the style of color-coded text labels"
                     },
                     {
                         "blockHeading": "Dots with Text Labels",
                         "blockDescription": "Dots alone don’t convey enough meaning, but adding text labels introduces visual clutter.",
-                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-impact-level-3.png"
+                        "blockImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-impact-level-3.png",
+                        "blockImgAltTxt":"Image of impact indicator in the style of dots with text labels"
                     }
                 ]
             },
@@ -259,6 +268,7 @@
                 "sectionHeading" : "Add Completion Rate Tooltips",
                 "sectionDescription": "To help hoteliers better understand how their completion rate, we added a tooltip to establish benchmarks for hotel managers.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-completion-rate.png",
+                "sectionImgAltTxt":"Image of Accor's completion rate design",
                 "sectionStyle": "Cols",
                 "blockStyle": "",
                 "infoBlocks": [
@@ -274,6 +284,7 @@
                 "browHeading" : "The Redesign", 
                 "sectionHeading" : "The Final Product",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-the-redesign.png",
+                "sectionImgAltTxt":"Image of Accor dashboard's redesign",
                 "sectionStyle": "Cols-Rev",
                 "blockStyle": "Card-Rows",
                 "blockNum": true,
@@ -305,8 +316,6 @@
                 "browHeading" : "Positive Feedback",
                 "sectionHeading" : "The Impact",
                 "sectionDescription": "The initial phase of the project is complete, with positive feedback from end users highlighting its value.",
-                "sectionImgUrl":"",
-                "sectionStyle":"",
                 "blockStyle":"Card-Cols", 
                 "infoBlocks": [
                     {
@@ -328,6 +337,7 @@
                 "sectionHeading" : "Future Enhancement",
                 "sectionDescription": "Among the feedback, however, we also recieved request to further enhance the dashboard. These feedback will be addressed in the upcoming product iteractions.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Accor/accor-next-step.png",
+                "sectionImgAltTxt":"Image of Accor project's next step",
                 "sectionStyle":"Cols",
                 "blockStyle":"Card-Rows", 
                 "blockNum": true,
@@ -358,6 +368,7 @@
             "projectDescription" : "Help Merrill's advisors market their services to prospects through landing pages and enhance platform solution that enables advisors to efficiently spin up new team site.",
             "projectProblem" : "",
             "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-cover.png",
+            "projectCoverAltTxt":"Project Cover of Merrill Bank of America Financial Advisor Pages & Dashboard",
             "projectPageUrl" : "merrill-finacial-advisor-page-redesign",
             "buttonGroup":[
                 {
@@ -372,6 +383,7 @@
                 "sectionHeading" : "Financial Advisor Pages",
                 "sectionDescription": "Merrill leverages the Yext platform to efficiently manage thousands of financial advisor listings and web pages.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-the-product.png",
+                "sectionImgAltTxt":"Image of existing Merrill's digital products",
                 "sectionStyle":"Cols",
                 "blockStyle":"",
                 "infoBlocks": [
@@ -387,14 +399,13 @@
             {
                 "browHeading" : "Overview",
                 "sectionHeading" : "Who are the users?",
-                "sectionImgUrl":"",
-                "sectionStyle":"",
                 "blockStyle":"Card-Cols",
                 "infoBlocks": [
                     {
-                        "blockHeading": "Prospects",
+                        "blockHeading": "Prospective Customers",
                         "blockDescription": "Who are browsing the sites for a perspective advisors or contacting their existing advisors.",
                         "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-user-1.png",
+                        "blockImgAltTxt":"Icon of prospective customer",
                         "blockBulletPoints":  [
                             "Looking for a trustworthy advisor to handle their assets",
                             "Learning more about how an advisor or team can support their financial goals"
@@ -402,6 +413,7 @@
                     },
                     {
                         "blockHeading": "Advisors",
+                        "blockImgAltTxt":"Icon of advisor",
                         "blockDescription": "Who want to market themselves to prospective customers by managing the content on their personal or team sites.",
                         "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-user-2.png",
                         "blockBulletPoints":  [
@@ -416,6 +428,7 @@
                 "sectionHeading" : "How were prospects interacting with the site previously, according to traffic data?",
                 "sectionDescription": "",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-analytics.png",
+                "sectionImgAltTxt":"Image of existing Merrill page's previous analytics",
                 "sectionStyle":"Cols-Rev",
                 "blockStyle":"Card-Rows",
                 "blockNum":"true", 
@@ -439,6 +452,7 @@
                 "browHeading": "Research", 
                 "sectionHeading": "What were the UX issues we identified from the existing experience?",
                 "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-old-design.png",
+                "sectionImgAltTxt":"Image of Merrill's old advisor site design",
                 "sectionStyle": "Cols",
                 "blockStyle": "Card-Rows", 
                 "blockNum": true,
@@ -465,9 +479,6 @@
             {
                 "browHeading": "Research", 
                 "sectionHeading": "Insights shared by Merrill’s Advisors",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "sectionStyle":"",
                 "blockStyle":"Card-Cols",
                 "infoBlocks": [
                     {
@@ -492,6 +503,7 @@
                 "sectionHeading" : "Optimized Layouts to Shorten Page Length",
                 "sectionDescription": "I condensed content by uitilizing tabbed section, expandable dropdowns and carousel on the page to reduce page length. ",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-tabbed-section.png",
+                "sectionImgAltTxt":"Image of condensed sections on Merrill advisor site's redesign",
                 "sectionStyle":"Cols",
                 "blockStyle":"",
                 "infoBlocks": [
@@ -508,6 +520,7 @@
                 "sectionHeading" : "Unified Primary CTA",
                 "sectionDescription": "I combined the “Contact Us” and “Request Appointment” buttons into a single prominent calls-to-action to streamline prospects outreach.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-CTA-section.png",
+                "sectionImgAltTxt":"Image of above-the-fold section on Merrill advisor site's redesign",
                 "sectionStyle":"Cols-Rev",
                 "blockStyle":"",
                 "infoBlocks": [
@@ -524,6 +537,7 @@
                 "sectionHeading" : "Multiple Hero Section Options",
                 "sectionDescription": "I crafted multiple hero section options for different usecases.",
                 "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-hero.png",
+                "sectionImgAltTxt":"Image of hero sections on Merrill advisor site's redesign",
                 "sectionStyle": "Cols",
                 "blockStyle": "",
                 "blockNum": true,
@@ -543,6 +557,7 @@
                 "sectionHeading" : "Customizable Award Sections",
                 "sectionDescription": "I crafted a flexible section layout that can be customized to showcase advisors' accolades. It supports both individual and team awards",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-award-section.png",
+                "sectionImgAltTxt":"Image of award sections on Merrill advisor site's redesign",
                 "sectionStyle":"Cols-Rev",
                 "blockStyle":"",
                 "infoBlocks": [
@@ -561,6 +576,7 @@
                 "sectionHeading" : "Reusable Components Across Different Templates",
                 "sectionDescription": "I curated reusable design components that can be used for all templates and breakpoints.",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-other-sections.png",
+                "sectionImgAltTxt":"Image of other sections on Merrill advisor site's redesign",
                 "sectionStyle":"Cols",
                 "blockStyle":"",
                 "infoBlocks": [
@@ -577,9 +593,6 @@
             {
                 "browHeading" : "Financial Advisor Pages", 
                 "sectionHeading" : "The Impact",
-                "sectionDescription": "",
-                "sectionImgUrl":"",
-                "sectionStyle":"",
                 "blockStyle":"Card-Cols", 
                 "infoBlocks": [
                     {
@@ -600,24 +613,23 @@
                 "browHeading" : "Overview", 
                 "sectionHeading" : "Team Site Creation Flow on Content Management Dashboard",
                 "sectionDescription": "The client team requested to implement a site creation wizard, allowing advisors to easily create a new site without external help. Previously, this required contacting Yext Support. The wizard needs to seamlessly fit into the existing dashboard.",
-                "sectionImgUrl":"",
                 "sectionStyle":"Cols",
                 "blockStyle":""
             },
             {
                 "browHeading" : "Overview",
                 "sectionHeading" : "Who are the users?",
-                "sectionImgUrl":"",
-                "sectionStyle":"",
                 "blockStyle":"Card-Cols",
                 "infoBlocks": [
                     {
                         "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-advisor-1.png",
+                        "blockImgAltTxt":"Icon of team owners or team members",
                         "blockHeading": "Team Owners or Team Members",
                         "blockDescription": "Advisors who are already in a team but are looking for new partners to form a new team and create a new site."
                     },
                     {
                         "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-advisor-2.png",
+                        "blockImgAltTxt":"Icon of individual advisor",
                         "blockHeading": "Individual Advisors",
                         "blockDescription": "Advisors who has worked independently but is looking for partners to form a new team and spin up a new site."
                     }
@@ -628,6 +640,7 @@
                 "sectionHeading" : "What was the desired work flow?",
                 "sectionDescription": "",
                 "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-flow-chart.png",
+                "sectionImgAltTxt":"Flow chart of website creation flow",
                 "sectionStyle":"Cols",
                 "blockStyle":"Card-Rows",
                 "blockNum":"true",  
@@ -655,6 +668,7 @@
                 "sectionHeading" : "Step-by-Step Guidance",
                 "sectionDescription": "Each step of the workflow is separated into a different screen to reduce cognitive load and help users focus on one task at a time.",
                 "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-create-team-flow.png",
+                "sectionImgAltTxt":"Screen of team creation flow",
                 "sectionStyle":"",
                 "blockStyle":""
             },
@@ -663,6 +677,7 @@
                 "sectionHeading" : "Confirmation Before Submission",
                 "sectionDescription": "To reduce errors and support confident decision-making, we added checkpoints and made key actions reversible.",
                 "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-create-team-flow-confirmation.png",
+                "sectionImgAltTxt":"Screen of team creation confirmation",
                 "sectionStyle":"Cols",
                 "blockStyle":"",
                 "infoBlocks": [

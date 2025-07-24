@@ -36,12 +36,12 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 																									blockNum={item.blockNum}>
 																								</ProjectInfoBlocks>}
 											</div>
-										{item.sectionImgUrl && <Image url={item.sectionImgUrl} needsOverlay={false}></Image>}
+										{item.sectionImgUrl && <Image url={item.sectionImgUrl} altTxt={item.sectionImgAltTxt} needsOverlay={false}></Image>}
 									</div>
 								);
 								case 'Cols-Rev': return (
 									<div className="project-section-container-cols">
-										{item.sectionImgUrl && <Image url={item.sectionImgUrl} needsOverlay={false}></Image>}
+										{item.sectionImgUrl && <Image url={item.sectionImgUrl} altTxt={item.sectionImgAltTxt} needsOverlay={false}></Image>}
 										<div className="project-section-content-container">
 											{item.sectionHeading && <div className="project-section-heading-container">
 												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
@@ -72,7 +72,7 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 																									blockNum={item.blockNum}>
 																								</ProjectInfoBlocks>}
 											</div>
-										{item.sectionImgUrl && <Image url={item.sectionImgUrl} needsOverlay={false}></Image>}
+										{item.sectionImgUrl && <Image url={item.sectionImgUrl} altTxt={item.sectionImgAltTxt} needsOverlay={false}></Image>}
 									</div>
 								);
 							}
@@ -104,6 +104,7 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 					projectDuration={projectData.projectDuration}
 					projectRole={projectData.projectRole}
 					projectCoverImgUrl={projectData.projectCoverImgUrl}
+					projectCoverAltTxt={projectData.projectCoverAltTxt}
 					buttonGroup={projectData.buttonGroup}
 			></PortfolioProjectHero>
 
