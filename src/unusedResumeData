@@ -6,7 +6,7 @@
             "year" : "May 2023 - Present", 
             "jobSummary": [
                 "Drove research and design strategy for clients, including Accor Hotels, Merrill Lynch Bank of America, and Heartland Dental",
-                "Worked cross-functionally with product and engineering partners to define vision and deliver user-centered solutions for a new site builder product.",
+                "Worked cross-functionally with product and engineering partners to define vision, prioritize opportunities, and deliver user-centered solutions for a new site builder product.",
                 "Partnered with engineering partners to develop a Figma plugin to improve existing design workflow.",
                 "Assisted the design manager in scoping and maintaining weekly scrum",
                 "Interviewed designer candidates and onboarded new hires"
@@ -26,9 +26,9 @@
             "companyName" : "Greystar", 
             "year" : "Feb. 2017 - Nov 2018", 
             "jobSummary": [
-                "Conducted property tours and guided prospective residents through the leasing process from initial contact to move-in.",
+                "Conducted property tours, responded to inquiries, and guided prospective residents through the leasing process from initial contact to move-in.",
                 "Met monthly leasing goals through effective sales techniques and follow-ups",
-                "Provided customer service by addressing resident questions and concerns"
+                "Provided excellent customer service by addressing residents' questions and concerns"
             ]
         }
     ],
@@ -80,13 +80,24 @@
             ]
         },
         {
-            "projectTitle" : "Accor Hotel Digital Presence Dashboard", 
+            "projectTitle" : "Trane Supply Products & Parts Search Site", 
             "companyName" : "Yext", 
-            "year" : "2025", 
+            "year" : "2023", 
+            "projectSummary": [
+                "Developed userflow for user stories and built high-fidelity designs for over 10 product features",
+                "Collaborated with the client team and engineers to develop technical solutions",
+                "Worked with client UX researchers to conduct usability testing",
+                "Facilitated design ideation sessions"
+            ]
+        },
+        {
+            "projectTitle" : "Heartland Dental Office Microsites", 
+            "companyName" : "Yext", 
+            "year" : "2023 - 2024", 
             "projectSummary": [
                 "Redesigned Accor’s Yext-powered dashboard for 5,600+ hotels, creating role-specific views and streamlined navigation that improved clarity and engagement.",
-                "Led research and heuristic audit to uncover usability gaps and restructured information architecture, filters, and field groupings to surface key data.",
-                "Introduced impact indicators and “Next Step” modules to guide hoteliers toward high-value actions, earning strong positive feedback from end users."
+                "Led research and heuristic audit to uncover usability gaps and restructured information architecture, filters, and field groupings for faster access to key data.",
+                "Introduced impact indicators and “Next Step” modules to guide hoteliers toward high-value actions, earning strong positive feedback from users."
             ]
         }
     ]

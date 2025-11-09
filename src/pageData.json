@@ -38,19 +38,24 @@
             "url":"..",
             "title" : "My Work",
             "profileImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/profileImage.png",
-            "profileImgAltTxt":"Profile headshot of Ming Ye",
-            "description" : "I’m a UX Designer who turns headaches into delight. With a background in front-end development, graphic design, and a belief that good design starts with conversations, I simplify complex workflows so tools support people, not the other way around. Currently, I craft CMS design solutions as a Senior UX/UI Designer @ Yext",
+            "profileImgAltTxt":"Profile headshot of Mingxin Ye",
+            "description" : "I’m Ming, a Product Designer with a background in front-end development and a belief that every successful design starts with conversations. I craft systems that help teams move faster and innovate with confidence. Currently, I build digital solutions as a Senior UX/UI Designer @ Yext",
             "buttonGroup":[
                 {
                     "buttonText": "Case Studies",
                     "buttonType" : "scrollTo"
+                },
+                {
+                    "buttonText": "Resume",
+                    "buttonType" : "navLink",
+                    "buttonUrl" :"resume"
                 }
             ]
         },
         "resume" : {
             "url":"resume",
             "title" : "My Experience",
-            "description" : "As a UX Designer, I turn headaches into delight. With a background in front-end development, graphic design, and a belief that good design starts with conversations, I simplify complex workflows so tools support people, not the other way around.",
+            "description" : "I’m Ming, a Product Designer with a background in front-end development and a belief that every successful design starts with conversations. I craft systems that help teams move faster and innovate with confidence. Currently, I build digital solutions as a Senior UX/UI Designer @ Yext",
             "buttonGroup":[
                 {
                     "buttonText" : "Download PDF",
