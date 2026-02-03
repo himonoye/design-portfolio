@@ -18,7 +18,7 @@ export default function PortfolioHomeHero ({profileImgUrl, profileImgAltTxt, but
             <div className="hero-intro-container">
                 <div className="heading-headline">
                     <span id="hello">Hello, </span>
-                    <span id="name">I'm Max Ye!</span>
+                    <span id="name">I'm Ming Ye!</span>
                 </div>
                 <p className="body-large">{pageDescription}</p>
             </div>
