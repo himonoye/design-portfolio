@@ -1,0 +1,22 @@
+
+{
+    "browHeading" : "User Feedback", 
+    "sectionHeading" : "10/10 Would Recommend",
+    "sectionDescription": "Testing with 5 designers and project managers revealed strong enthusiasm for the tool.",
+    "blockStyle": "Card-Cols",
+    "blockNum": true,
+    "infoBlocks": [
+        {
+            "blockHeading": "Time-saving",
+            "blockDescription": "The tool reduced manual documentation time by 4 hours and standardized metadata definitions across projects."
+        },
+        {
+            "blockHeading": "Consistency",
+            "blockDescription": "This also created a shared source of truth between design, content, and engineering before implementation."
+        },
+        {
+            "blockHeading": "Transferability",
+            "blockDescription": "The output mirrors CMS field structures, enabling faster and more predictable handoff to engineering."
+        }
+    ]
+}

@@ -305,10 +305,24 @@ button{
     padding-inline: 0px;
 }
 
-.image-wrapper {
+.image-wrapper{
     position: relative;
+    border-radius: var(--card-border-radius);
     width: 100%;
     overflow: hidden;
+}
+
+.image-wrapper > img {
+    border-radius: var(--card-border-radius);
+}
+
+.video-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-wrapper > video {
+    border-radius: var(--card-border-radius);
 }
 
 .overlay {

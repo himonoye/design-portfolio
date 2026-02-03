@@ -4,6 +4,7 @@ import PortfolioProjectHero from './portfolioProjectHero';
 import {ProjectInfoBlocks} from './portfolioProjectSection';
 import PasscodeForm from '../passcode_form/passcodeForm';
 import Image from '../../style_guide/image';
+import Video from '../../style_guide/video';
 
 type showPortfolioProjectProps = {
 	needPassword: boolean;
@@ -37,11 +38,13 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 																								</ProjectInfoBlocks>}
 											</div>
 										{item.sectionImgUrl && <Image url={item.sectionImgUrl} altTxt={item.sectionImgAltTxt} needsOverlay={false}></Image>}
+										{item.sectionVideoUrl && <Video url={item.sectionVideoUrl}></Video>}
 									</div>
 								);
 								case 'Cols-Rev': return (
 									<div className="project-section-container-cols">
 										{item.sectionImgUrl && <Image url={item.sectionImgUrl} altTxt={item.sectionImgAltTxt} needsOverlay={false}></Image>}
+										{item.sectionVideoUrl && <Video url={item.sectionVideoUrl}></Video>}
 										<div className="project-section-content-container">
 											{item.sectionHeading && <div className="project-section-heading-container">
 												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
@@ -73,6 +76,7 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 																								</ProjectInfoBlocks>}
 											</div>
 										{item.sectionImgUrl && <Image url={item.sectionImgUrl} altTxt={item.sectionImgAltTxt} needsOverlay={false}></Image>}
+										{item.sectionVideoUrl && <Video url={item.sectionVideoUrl}></Video>}
 									</div>
 								);
 							}
