@@ -7,8 +7,8 @@
             "jobSummary": [
                 "Drove research and design strategy for clients, including Accor Hotels, Merrill Lynch Bank of America, and Heartland Dental",
                 "Worked cross-functionally with product and engineering partners to define vision and deliver user-centered solutions for a new site builder product.",
-                "Partnered with engineering partners to develop a Figma plugin to improve existing design workflow.",
-                "Assisted the design manager in scoping and maintaining weekly scrum",
+                "Partnered with engineering partners to develop Figma plugins to improve existing internal workflow.",
+                "Assisted design manager in scoping and maintaining weekly scrum",
                 "Interviewed designer candidates and onboarded new hires"
             ]
         },
@@ -69,14 +69,13 @@
     ],
     "projectExperience": [
         {
-            "projectTitle" : "Merrill Bank of America Financial Advisor Pages Redesign & Dashboard", 
+            "projectTitle" : "Figma Tool for Content and Metadata Annotations & Extraction", 
             "companyName" : "Yext", 
-            "year" : "2022 - 2023", 
+            "year" : "2025 - 2026", 
             "projectSummary": [
-                "Analyzed website traffic data to identify user patterns and optimize design decisions",
-                "Developed a scalable component library adaptable for multiple brands",
-                "Designed high-fidelity page templates for 3 distinct lines of business",
-                "Improved upon an existing custom dashboard solution for efficient site content management"
+                "Identified user pain points by analyzing existing workflows and iterating on an MVP through continuous testing with users",
+                "Designed and built a Figma-based tool to automate design content scanning and metadata definition",
+                "Reduced manual annotation and spreadsheet creation through automation, progressive rendering, and real-time status feedback"
             ]
         },
         {
