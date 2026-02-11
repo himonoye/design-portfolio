@@ -20,33 +20,26 @@ export default function App({pageData, resumeData}:appProps) {
   //Contsurct children routes
   let childrenRoutes = [
     {
-      //Error
-      path: "*",
-      index: true, 
-      element: <ErrorPage/>,
-    },
-    {
       //Home
-      path: "/",
-      index: true, 
+      index: true,
       element: <PortfolioHome pageData={pageData.pageInfo.portfolio} projectData={pageData.projectData}/>
     },
     {
       //Resume
-      path: "/resume",
+      path: "resume",
       element: <Resume pageData={pageData.pageInfo.resume} resumeData={resumeData}/>,
     },
     {
       //About
-      path: "/about",
+      path: "about",
       element: <About pageData={pageData.pageInfo.about} gallery={pageData.aboutGallery} socialMedia={pageData.footerData}/>
-    },
+    }
   ]
 
   pageData.projectData.map((project:any, i:number, projectData:any)=>{
       childrenRoutes.push(
         {
-          path: "/"+project.projectPageUrl,
+          path: project.projectPageUrl,
           element: <ShowPortfolioProject
                     needPassword={projectData[i].needPassword}
                     showPortfolio={showPortfolio}
@@ -58,13 +51,18 @@ export default function App({pageData, resumeData}:appProps) {
       )
   })
 
+  childrenRoutes.push({
+    path: "*",
+    element: <ErrorPage/>
+  });
+
   //Set up React router for the pages
   const router = createBrowserRouter([
     {
-      errorElement: <ErrorPage/>,
       path: "/",
       element: <Layout headerData={pageData.headerData} footerData={pageData.footerData}/>,
-      children: childrenRoutes
+      children: childrenRoutes,
+      errorElement: <ErrorPage/>
     },
   ]);
 

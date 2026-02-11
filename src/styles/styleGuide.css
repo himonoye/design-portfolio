@@ -15,8 +15,8 @@
     /* brand colors*/
     --brand-purple-100: #ebe0e8;
     --brand-purple-200: #d2c5d3;
-    --brand-purple-300: #7e5172;
-    --brand-purple-400: #573848;
+    --brand-purple-300: #807066;
+    --brand-purple-400: #371527;
     --brand-green-100: #e6eedd;
     --brand-green-200: #617246;
     --brand-green-300: #314021;
@@ -307,7 +307,6 @@ button{
 
 .image-wrapper{
     position: relative;
-    border-radius: var(--card-border-radius);
     width: 100%;
     overflow: hidden;
 }

@@ -1,2 +1,8 @@
 User-agent: Googlebot
 Disallow: /*.json$
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /

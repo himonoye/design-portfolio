@@ -19,9 +19,9 @@
     align-items: center;
 }
 
-/* .project-card > .image-wrapper {
-    background-color: var(--surface-tertiary-background);
-} */
+.project-card > .image-wrapper > img{
+    border-radius: 0;
+}
 
 .project-card {
     display: flex;

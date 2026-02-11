@@ -15,6 +15,7 @@ export default function PortfolioHome({pageData, projectData}:PortfolioHomeProps
                 profileImgUrl={pageData.profileImgUrl}
                 profileImgAltTxt={pageData.profileImgAltTxt}
                 buttonGroup={pageData.buttonGroup}
+                pageTitle={pageData.pageTitle}
                 pageDescription={pageData.description}
                 refPointer={portfolioRef}
             ></PortfolioHomeHero>

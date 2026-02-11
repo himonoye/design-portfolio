@@ -7,18 +7,19 @@ type PortfolioHomeHeroProps = {
     profileImgUrl: string;
     profileImgAltTxt: string;
     buttonGroup:[];
+    pageTitle: string;
     pageDescription: string;
     refPointer?: React.MutableRefObject<HTMLInputElement>
 };
 
-export default function PortfolioHomeHero ({profileImgUrl, profileImgAltTxt, buttonGroup, pageDescription, refPointer}:PortfolioHomeHeroProps) {
+export default function PortfolioHomeHero ({profileImgUrl, profileImgAltTxt, buttonGroup, pageTitle, pageDescription, refPointer}:PortfolioHomeHeroProps) {
     return (
         <div className="hero-container">
             <img className="profileImage" src={profileImgUrl} alt={profileImgAltTxt}></img>
             <div className="hero-intro-container">
                 <div className="heading-headline">
-                    <span id="hello">Hello, </span>
-                    <span id="name">I'm Ming Ye!</span>
+                    <div id="name">Ming Ye,</div>
+                    <div id="hello"> {pageTitle}</div>
                 </div>
                 <p className="body-large">{pageDescription}</p>
             </div>

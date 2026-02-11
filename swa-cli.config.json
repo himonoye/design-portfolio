@@ -4,7 +4,7 @@
     "design-portfolio": {
       "appLocation": ".",
       "apiLocation": "http://localhost:7071",
-      "outputLocation": "build",
+      "outputLocation": "dist",
       "apiLanguage": "node",
       "apiVersion": "16",
       "appBuildCommand": "npm run build",

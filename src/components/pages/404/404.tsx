@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import { useRouteError } from 'react-router-dom'
 
 export default function ErrorPage() {
   const error: unknown = useRouteError();
 
-  console.error(error);
+  useEffect(() => {
+    document.title = "404 - Page Not Found";
+  }, []);
+
+  if (error) {
+    console.error(error);
+  }
   
   return (  
       <div className="body-container">

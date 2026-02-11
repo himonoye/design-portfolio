@@ -1,15 +1,16 @@
 import React from 'react';
 
-type videoProps = {
-    url: string;
-}
+export type VideoProps = {
+  url: string;
+  poster?: string;
+};
 
-export default function Video({url}:videoProps){
-    return (
-        <div className="video-wrapper">
-            <video width="100%" height="" autoPlay muted loop>
-                <source src={url} type="video/mp4"></source>
-            </video>
-        </div>
-    )
+export default function Video({ url, poster }: VideoProps) {
+  return (
+    <div className="video-wrapper">
+      <video width="100%" autoPlay muted loop poster={poster} preload="none">
+        <source src={url} type="video/mp4" />
+      </video>
+    </div>
+  );
 }

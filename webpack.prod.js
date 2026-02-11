@@ -8,6 +8,7 @@ module.exports = {
     devtool: 'source-map',
     stats: 'verbose',
     output: {
+        publicPath: '/',
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
@@ -22,6 +23,13 @@ module.exports = {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"]
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                generator: {
+                filename: 'fonts/[name][ext]'
+                }
+            }
         ],
     },
     resolve: {
@@ -36,8 +44,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./index.html",
-            filename: "./index.html",
+            template: "./src/index.html",
+            filename: "index.html",
             favicon: "./src/assets/favicon.svg"
         }),
     ]

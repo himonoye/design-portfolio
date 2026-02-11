@@ -39,7 +39,8 @@
             "title" : "My Work",
             "profileImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/profileImage.png",
             "profileImgAltTxt":"Profile headshot of Ming Ye",
-            "description" : "I’m Ming Ye, a Product Designer with a background in front-end development and a belief that every successful design starts with conversations. I craft systems that help teams move faster and innovate with confidence. Currently, I build digital solutions as a Senior UX/UI Designer @ Yext",
+            "pageTitle" : "Senior UX/UI Designer",
+            "description" : "I’m Ming Ye, a senior UX/UI/Product Designer with a background in front-end development and a belief that every successful design starts with conversations. I craft systems that help teams move faster and innovate with confidence. Currently, I build digital solutions as a Senior UX/UI Designer @ Yext",
             "buttonGroup":[
                 {
                     "buttonText": "Case Studies",
@@ -55,7 +56,7 @@
         "resume" : {
             "url":"resume",
             "title" : "My Experience",
-            "description" : "I’m Ming Ye, a Product Designer with a background in front-end development and a belief that every successful design starts with conversations. I craft systems that help teams move faster and innovate with confidence. Currently, I build digital solutions as a Senior UX/UI Designer @ Yext",
+            "description" : "I’m Ming Ye, a senior UX/UI/Product Designer with a background in front-end development and a belief that every successful design starts with conversations. I craft systems that help teams move faster and innovate with confidence. Currently, I build digital solutions as a Senior UX/UI Designer @ Yext",
             "buttonGroup":[
                 {
                     "buttonText" : "Download PDF",
@@ -519,7 +520,7 @@
             ]
         },
         {
-            "needPassword" : true,
+            "needPassword" : false,
             "projectName" : "Merrill Bank of America Financial Advisor Pages & Dashboard",
             "projectSkills": [
                 "Site Traffic Analytics",
