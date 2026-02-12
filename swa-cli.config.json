@@ -3,7 +3,7 @@
   "configurations": {
     "design-portfolio": {
       "appLocation": ".",
-      "apiLocation": "api",
+      "apiLocation": "",
       "outputLocation": ".next",
       "apiLanguage": "node",
       "apiVersion": "16",
