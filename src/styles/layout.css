@@ -31,6 +31,14 @@
     align-items: center;
 }
 
+.hero-intro-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
+    align-items: center;
+    max-width: var(--content-max-width-narrow);
+}
+
 .content-container {
     display: flex;
     flex-direction: column;

@@ -1,5 +1,8 @@
+'use client'
+
 import React, { useState }  from 'react';
-import { NavLink } from "react-router-dom";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import ThreeDots from '../../icons/threeDots';
 import {Menu, Close, ArrowLongRight, ArrowLongLeft} from '../../icons/utilityIcons';
 import Logo from '../../icons/logo';
@@ -10,38 +13,42 @@ type headerLinkProps = {
 }
 
 type footerProps = {
-    footerData:[];
+    footerData: any;
 }
 
 type mobileMenuProps = {
-    headerData:[];
-    footerData:[];
+    headerData:{ linkText: string; url: string; }[];
+    footerData: any;
 }
 
 type globalNavProps = {
-    headerData:[];
-    footerData:[];
+    headerData:{ linkText: string; url: string; }[];
+    footerData: any;
 }
 
 type globalMobileNavProps = {
-    headerData:[];
-    footerData:[];
+    headerData:{ linkText: string; url: string; }[];
+    footerData: any;
 }
 
 const HeaderLink = ({linkText, url}:headerLinkProps)  => {
+    const pathname = usePathname();
+    const isActive = pathname === url || (url !== '/' && pathname.startsWith(url));
+    
     return (
-        <NavLink to={url} className="header-link">
-             <ThreeDots className="three-dots-vertical"/>
+        <Link href={url} className={isActive ? "header-link active" : "header-link"}>
+            {/* <ThreeDots className="three-dots-vertical"/> */}
             {linkText}
-        </NavLink>
+        </Link>
     )
 }
 
 const Footer = ({footerData}:footerProps) => {
-    return (
+        console.log('footer item:', footerData)
+        return (
         <div className="footer-container">
             <div className="social-media-container-light">
-                {footerData.map((item:any, i:number)=>{
+                {footerData.socials.map((item:any, i:number)=>{
                     return (
                         <div key={i} className="social-media">
                             <a className="social-media-wrapper" href={item.url} target="_blank" >
@@ -52,7 +59,7 @@ const Footer = ({footerData}:footerProps) => {
                 })}
             </div>
             <div className="social-media-container-dark">
-                {footerData.map((item:any, i:number)=>{
+                {footerData.socials.map((item:any, i:number)=>{
                     return (
                         <div key={i} className="social-media">
                             <a className="social-media-wrapper" href={item.url} target="_blank">
@@ -63,7 +70,7 @@ const Footer = ({footerData}:footerProps) => {
                 })}
             </div>
             <div className="body-smallest">
-                ©2026 Built with Azure & React
+                {footerData.copyRightText}
             </div>
         </div>
     )
@@ -114,7 +121,6 @@ const GlobalNav = ({headerData, footerData}:globalNavProps) => {
                         return <HeaderLink key={i} url={item.url} linkText={item.linkText}></HeaderLink>
                     })}
                 </div>
-                <Footer footerData={footerData}></Footer>
             </div>
             <div className="header-expandable-icon" onClick={()=>{setHeaderOpen(!HeaderOpen)}}>
                 {HeaderOpen?<ExpandableClosed></ExpandableClosed>:<ExpandableOpened></ExpandableOpened>}
@@ -137,6 +143,7 @@ const GlobalMobileNav = ({headerData, footerData}:globalMobileNavProps) => {
 }
 
 export {
+    Footer,
     GlobalNav,
     GlobalMobileNav
 }

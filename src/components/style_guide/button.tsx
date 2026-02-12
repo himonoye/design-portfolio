@@ -1,20 +1,20 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import Link from 'next/link';
 
 export type buttonProps = {
     buttonText: string;
     style: "button-primary" | "button-secondary"
     buttonType: "scrollTo" | "navLink" | "externalLink" | "print" | "other";
     url?: string;
-    refPointer?: React.MutableRefObject<HTMLInputElement>;
+    scrollTo?: string;
     onClick?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-export default function Button({buttonText, style, url, buttonType, refPointer, onClick}: buttonProps) {
+export default function Button({buttonText, style, url, buttonType, scrollTo, onClick}: buttonProps) {
 
-    if (buttonType == "scrollTo" && refPointer) {
+    if (buttonType == "scrollTo" && scrollTo) {
         return (
-            <div className="button-wrapper" onClick={() => refPointer.current.scrollIntoView({behavior: 'smooth',
+            <div className="button-wrapper" onClick={() => document.getElementById(scrollTo)?.scrollIntoView({behavior: 'smooth',
             block: 'start',
             inline: 'nearest'})}>
                     <div className={style}>
@@ -26,13 +26,13 @@ export default function Button({buttonText, style, url, buttonType, refPointer, 
         )
     } else if ((buttonType == "navLink") && url){
         return (
-            <NavLink to={url} className="button-wrapper">
+            <Link href={url} className="button-wrapper">
                     <div className={style}>
                         <div className="button-text-wrapper">
                             {buttonText}
                         </div>
                     </div>
-            </NavLink>
+            </Link>
         )
     } else if ((buttonType == "externalLink") && url){
         return (

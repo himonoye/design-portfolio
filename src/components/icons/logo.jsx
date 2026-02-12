@@ -1,14 +1,14 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import Link from 'next/link';
 
 export default function Logo(){
     return (
-        <NavLink to=".." >
+        <Link href="/" >
             <div className="logo">
                 M
             <div className="logo-divider"></div>
                 Y
             </div>
-         </NavLink>
+         </Link>
     )
 }

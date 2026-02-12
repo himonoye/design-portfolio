@@ -1,18 +1,18 @@
 import React from 'react';
 import Button from '../../style_guide/button';
-import Link from '../../style_guide/link';
+import LinkComponent from '../../style_guide/link';
 
 type DefaultHeroProps = {
     pageTitle: string;
     pageDescription: string;
-    scrollRef: any;
+    scrollTo: string;
     buttonGroup: [];
 };
 
-export default function DefaultHero ({pageTitle, pageDescription, buttonGroup}:DefaultHeroProps) {
+export default function DefaultHero ({pageTitle, pageDescription, scrollTo, buttonGroup}:DefaultHeroProps) {
     return (
         <div className="hero-container">
-            <Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
+            <LinkComponent linkText="Back to Home" style="link-primary" url="/" hasLeftIcon={true} hasRightIcon={false}/>
             <div className="hero-intro-container">
                 <div className="heading-lead">{pageTitle}</div>
                 <p className="body-large">{pageDescription}</p>
@@ -21,7 +21,7 @@ export default function DefaultHero ({pageTitle, pageDescription, buttonGroup}:D
                     <div className="button-group">
                         {buttonGroup.map((item:any,i)=>{
                             return(
-                                <Button key = {i} style="button-primary" buttonText={item.buttonText} buttonType={item.buttonType} url={item.buttonUrl} refPointer={item.scrollTo}/>
+                                <Button key = {i} style="button-primary" buttonText={item.buttonText} buttonType={item.buttonType} url={item.buttonUrl} scrollTo={item.scrollTo}/>
                             )
                         })}     
                     </div>

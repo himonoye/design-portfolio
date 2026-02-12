@@ -1,5 +1,4 @@
-import React from 'react';
-import Link from '../../style_guide/link';
+import LinkComponent from '../../style_guide/link';
 import PortfolioProjectHero from './portfolioProjectHero';
 import {ProjectInfoBlocks} from './portfolioProjectSection';
 import PasscodeForm from '../passcode_form/passcodeForm';
@@ -20,10 +19,10 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 	function PortfolioProjectBody() {
 		return (
 			<div className="content-container">
-					{projectData.projectContent.map((item:any,i:number)=>{
+					{projectData.projectContent.map((item:any, i:number)=>{
 							switch(item.sectionStyle) {
 								case 'Cols': return (
-									<div className="project-section-container-cols">
+									<div className="project-section-container-cols" key = {i}>
 										<div className="project-section-content-container">
 											{item.sectionHeading && <div className="project-section-heading-container">
 												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
@@ -42,7 +41,7 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 									</div>
 								);
 								case 'Cols-Rev': return (
-									<div className="project-section-container-cols">
+									<div className="project-section-container-cols" key = {i}>
 										{item.sectionImgUrl && <Image url={item.sectionImgUrl} altTxt={item.sectionImgAltTxt} needsOverlay={false}></Image>}
 										{item.sectionVideoUrl && <Video url={item.sectionVideoUrl}></Video>}
 										<div className="project-section-content-container">
@@ -61,7 +60,7 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 									</div>
 								);
 								default: return(
-									<div className="project-section-container-rows">
+									<div className="project-section-container-rows" key = {i}>
 										<div className="project-section-content-container">
 											{item.sectionHeading && <div className="project-section-heading-container">
 												{item.browHeading && <div className="heading-brow">{item.browHeading}</div>}
@@ -117,13 +116,13 @@ export default function ShowPortfolioProject({needPassword, showPortfolio, setSh
 			<div className="bottom-container">
 					{prevProjectData && 
 						<div className="project-navigation-prev">
-							<Link linkText={"Previous"} style="link-primary" url={"../" + prevProjectData.projectPageUrl} hasLeftIcon={true} hasRightIcon={false}/>
+					<LinkComponent linkText={"Previous"} style="link-primary" url={"/" + prevProjectData.projectPageUrl} hasLeftIcon={true} hasRightIcon={false}/>
 							<div className="body-large">{prevProjectData.projectName}</div>
 						</div>
 					}
 					{nextProjectData && 
 						<div className="project-navigation-next">
-							<Link linkText={"Next"} style="link-primary" url={"../" + nextProjectData.projectPageUrl} hasLeftIcon={false} hasRightIcon={true}/>
+					<LinkComponent linkText={"Next"} style="link-primary" url={"/" + nextProjectData.projectPageUrl} hasLeftIcon={false} hasRightIcon={true}/>
 							<div className="body-large">{nextProjectData.projectName}</div>
 						</div>
 					}

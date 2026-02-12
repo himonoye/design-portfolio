@@ -8,26 +8,25 @@ type PortfolioHomeHeroProps = {
     profileImgAltTxt: string;
     buttonGroup:[];
     pageTitle: string;
+    pageSubtitle: string;
     pageDescription: string;
-    refPointer?: React.MutableRefObject<HTMLInputElement>
+    scrollTo?: string;
 };
 
-export default function PortfolioHomeHero ({profileImgUrl, profileImgAltTxt, buttonGroup, pageTitle, pageDescription, refPointer}:PortfolioHomeHeroProps) {
+export default function PortfolioHomeHero ({profileImgUrl, profileImgAltTxt, buttonGroup, pageTitle, pageSubtitle, pageDescription}:PortfolioHomeHeroProps) {
     return (
         <div className="hero-container">
-            <img className="profileImage" src={profileImgUrl} alt={profileImgAltTxt}></img>
-            <div className="hero-intro-container">
-                <div className="heading-headline">
-                    <div id="name">Ming Ye,</div>
-                    <div id="hello"> {pageTitle}</div>
-                </div>
-                <p className="body-large">{pageDescription}</p>
+            {/* <img className="profileImage" src={profileImgUrl} alt={profileImgAltTxt}></img> */}
+            <div className="home-hero-intro-container">
+                <div className="heading-sub">{pageTitle}</div>
+                <div className="heading-headline" >{pageSubtitle}</div>
+                <div className="body-large">{pageDescription}</div>
             </div>
             {buttonGroup &&
                     <div className="button-group">
                         {buttonGroup.map((item:any,i)=>{
                             return(
-                                <Button key = {i} style="button-primary" buttonText={item.buttonText} buttonType={item.buttonType} url={item.buttonUrl} refPointer={refPointer}/>
+                                <Button key = {i} style="button-primary" buttonText={item.buttonText} buttonType={item.buttonType} url={item.buttonUrl} scrollTo={item.scrollTo}/>
                             )
                         })}     
                     </div>

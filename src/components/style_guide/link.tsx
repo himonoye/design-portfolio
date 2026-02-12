@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
 import { ArrowLeft, ArrowRight } from '../icons/utilityIcons';
 
 type linkProps = {
@@ -10,14 +10,14 @@ type linkProps = {
     hasLeftIcon: boolean;
 }
 
-export default function Link({linkText, style, url, hasRightIcon, hasLeftIcon}:linkProps) {
+export default function LinkComponent({linkText, style, url, hasRightIcon, hasLeftIcon}:linkProps) {
     return (
-        <NavLink to={url} className="link-wrapper">
+        <Link href={url ?? "#"} className="link-wrapper">
                 <div className={style}>
                     {hasLeftIcon?<ArrowLeft/>:""}
                     {linkText?linkText:""}
                     {hasRightIcon?<ArrowRight/>:""}
                 </div>
-        </NavLink>
+        </Link>
     )
 }

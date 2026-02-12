@@ -1,30 +1,21 @@
 .heading-headline {
     font-family: var(--headline-font-Family), serif;
-    font-size: 4.5rem;
-    line-height: 5.5rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
     letter-spacing: 2.5px;
     font-weight: 400;
     color: var(--motif-primary);
     text-align: center;
 }
 
-.heading-headline > #hello {
-    color: var(--surface-primary-heading);
-    font-size: 3.5rem;
-}
-
-.heading-headline > #name {
-    color: inherit;
-}
-
 .heading-lead {
     font-family: var(--headline-font-Family), sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
     letter-spacing: 2.5px;
     font-weight: 400;
     color: var(--surface-primary-heading);
-    
+    text-align: center;
 }
 
 .heading-head {
@@ -34,7 +25,6 @@
     letter-spacing: 1.5px;
     font-weight: 400;
     color: var(--surface-primary-subheading);
-    
 }
 
 
@@ -48,15 +38,14 @@
     
 }
 
-
 .heading-flag {
     font-family: var(--base-font-Family), sans-serif;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-weight: 400;
     letter-spacing: .5px;
-    color: var(--surface-primary-subheading);
-    max-width: var(--content-max-width);
+    color: var(--surface-primary-heading);
+    max-width: var(--content-max-width-narrow);
 }
 
 .heading-brow {
@@ -66,7 +55,6 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--surface-secondary-subheading);
-    
 }
 
 .heading-label-left{
@@ -106,7 +94,6 @@
     line-height: 2.0rem;
     letter-spacing: .4px;
     font-weight: 300;
-    
 }
 
 
@@ -194,15 +181,14 @@
 @media screen and (max-width: 1200px) {
 
     .heading-headline{
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 3rem;
+        line-height: 4rem;
     }
 
     .heading-lead {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         line-height: 3rem;
     }
-    
 
     .heading-head {
         font-size: 2rem;

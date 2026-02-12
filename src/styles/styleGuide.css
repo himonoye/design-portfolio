@@ -13,19 +13,13 @@
 
 :root {
     /* brand colors*/
-    --brand-purple-100: #ebe0e8;
-    --brand-purple-200: #d2c5d3;
-    --brand-purple-300: #807066;
-    --brand-purple-400: #371527;
-    --brand-green-100: #e6eedd;
-    --brand-green-200: #617246;
-    --brand-green-300: #314021;
+    --brand-beige-50: rgb(194, 187, 176, 0.2);
     --brand-beige-100: #f9f8f6;
-    --brand-beige-200: #ebe9e6;
-    --brand-beige-300: #c2bbb0;
-    --brand-gradient-100: linear-gradient(45deg, var(--brand-green-100) 0%, var(--brand-purple-100) 25%, var(--brand-beige-100) 50%, var(--brand-purple-100) 75%, var(--brand-green-100) 100%);
-    --brand-gradient-200: linear-gradient(45deg, var(--brand-green-200) 0%, var(--brand-purple-200) 25%, var(--brand-beige-200) 50%, var(--brand-purple-200) 75%, var(--brand-green-200) 100%);
-    --brand-gradient-300: linear-gradient(45deg, var(--brand-green-300) 0%, var(--brand-purple-300) 25%, var(--brand-beige-300) 50%, var(--brand-purple-300) 75%, var(--brand-green-300) 100%);
+    --brand-beige-200: rgb(194, 187, 176);
+    --brand-beige-300: #806f66;
+    --brand-beige-400: rgb(84, 71, 63);
+    --brand-gradient-300: linear-gradient(45deg, var(--brand-beige-300) 0%, var(--brand-beige-200) 25%, var(--brand-beige-100) 50%, var(--brand-beige-200) 75%, var(--brand-beige-300) 100%);
+    --brand-gradient-200: linear-gradient(90deg, var(--brand-beige-50) 0%, var(--brand-beige-100) 25%, var(--brand-beige-200) 75%, var(--brand-beige-300) 100%);
    
     /* grayscale colors*/
     --brand-grayscale-900: #212121;
@@ -73,41 +67,41 @@
     color: var(--surface-primary-text);
 
     /* content */
-    --content-max-width-narrow: 800px;
+    --content-max-width-narrow: 900px;
     --content-max-width-wide: 1260px;
 
     /* motif */
-    --motif-primary: var(--brand-purple-300);
-    --motif-secondary: var(--brand-green-200);
-    --motif-tertiary: var(--brand-purple-200);
+    --motif-primary: var(--brand-beige-300);
+    --motif-secondary: var(--brand-beige-200);
+    --motif-tertiary: var(--brand-beige-200);
 
     /* Semantic colors */
     --surface-primary-background: var(--brand-white);
     --surface-primary-text: var(--brand-grayscale-700);
     --surface-primary-heading: var(--brand-grayscale-700);
     --surface-primary-subheading: var(--brand-green-300);
-    --surface-primary-link: var(--brand-purple-300);
+    --surface-primary-link: var(--brand-beige-400);
     
     --surface-secondary-background: var(--brand-beige-100);
     --surface-secondary-text: var(--brand-grayscale-700);
-    --surface-secondary-heading: var(--brand-purple-300);
+    --surface-secondary-heading: var(--brand-beige-400);
 
-    --surface-tertiary-background: var(--brand-beige-200);
+    --surface-tertiary-background: var(--brand-beige-100);
     --surface-tertiary-text: var(--brand-grayscale-700);
     --surface-tertiary-heading: var(--brand-grayscale-700);
 
-    --surface-quaternary-background: var(--brand-grayscale-900);
+    --surface-quaternary-background: var(--brand-beige-400);
     --surface-quaternary-text: var(--brand-white);
     --surface-quaternary-heading: var(--brand-white);
 
     /* Button colors */
     --button-primary-background: var(--brand-white);
-    --button-primary-text: var(--brand-purple-300);
+    --button-primary-text: var(--brand-beige-300);
 
     --button-secondary-background: var(--brand-white);
     --button-secondary-text: var(--brand-green-300);
 
-    --link-primary-text: var(--brand-purple-300);
+    --link-primary-text: var(--brand-beige-400);
     --link-secondary-text: var(--brand-green-300);
 
     /* Notification Banner */
@@ -157,10 +151,14 @@
     --icon-border-radius: 50%;
 
     @media (prefers-color-scheme: dark) {
+
+        /* brand colors*/
+        --brand-beige-50: rgb(0, 0, 0, 0.2);
+    
         /* motif */
         --motif-primary: var(--brand-beige-100);
-        --motif-secondary: var(--brand-green-100);
-        --motif-tertiary: var(--brand-purple-100);
+        --motif-secondary: var(--brand-beige-100);
+        --motif-tertiary: var(--brand-beige-100);
     
         /* Semantic colors */
         --surface-primary-background: var(--brand-grayscale-900);
@@ -210,6 +208,7 @@
         --card-shadow-hover: 0px 5px 10px -2.5px var(--brand-black);
         --mobile-header-shadow: 5px 0px 5px 0px var(--brand-black);
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -249,13 +248,13 @@
 
 @font-face {
     font-family: 'Jost';
-    src: url('/src/assets/fonts/Jost-VariableFont_wght.ttf');
+    src: url('/fonts/Jost-VariableFont_wght.ttf');
     font-weight: 300 400 600;
 }
 
 @font-face {
     font-family: 'Italiana';
-    src: url('/src/assets/fonts/Italiana-Regular.ttf');
+    src: url('/fonts/Italiana-Regular.ttf');
 }
 
 html {
@@ -336,6 +335,64 @@ p, div, img {
   animation-name: loadMore;
   animation-duration: .3s;
   animation-timing-function: ease-out;
+}
+
+/* Animations */
+@keyframes pop-in {
+    0% {
+        scale: 1;
+        box-shadow: 0 0 1px 0px var(--brand-beige-50);
+    }
+    50% {
+        scale: 1.05;
+        box-shadow: 0 0 1px 6px var(--brand-beige-50);
+    }
+    100% {
+        scale: 1.03;
+        box-shadow: 0 0 1px 5px var(--brand-beige-50);
+    }
+}
+
+@keyframes pop-out {
+    0% {
+        scale: 1.03;
+        box-shadow: 0 0 1px 5px var(--brand-beige-50);
+    }
+
+    100% {
+        scale: 1;
+        box-shadow: 0 0 1px 0px var(--brand-beige-50);
+    }
+}
+
+@keyframes card-pop-in {
+    0% {
+        scale: 1;
+        box-shadow: 0 0 1px 0px var(--brand-beige-50);
+    }
+
+    50% {
+        scale: 1.01;
+        box-shadow: 0 0 1px 2px var(--brand-beige-50);
+    }
+
+    100% {
+        scale: 1.01;
+        box-shadow: 0 0 1px 0px var(--brand-beige-50);
+    }
+
+}
+
+@keyframes card-pop-out {
+    0% {
+        scale: 1.01;
+        box-shadow: 0 0 1px 0px var(--brand-beige-50);
+    }
+
+    100% {
+        scale: 1;
+        box-shadow: 0 0 1px 0px var(--brand-beige-50);
+    }
 }
 
 @keyframes loadMore {

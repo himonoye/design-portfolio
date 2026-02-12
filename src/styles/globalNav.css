@@ -88,10 +88,10 @@
     width: 5px;
     opacity: 0;
     gap: 0px;
-    -webkit-transition: 300ms ease-out ;
-    -moz-transition: 300ms ease-out;
-    -o-transition: 300ms ease-out;
-    transition: 300ms ease-out;
+    -webkit-transition: 300ms cubic-bezier(.4,2,.6,1) ;
+    -moz-transition: 300ms cubic-bezier(.4,2,.6,1) ;
+    -o-transition: 300ms cubic-bezier(.4,2,.6,1) ;
+    transition: 300ms cubic-bezier(.4,2,.6,1) ;
 }
 
 .header-link:hover {
@@ -101,10 +101,10 @@
 .header-link.active > .three-dots-vertical, .header-link:hover > .three-dots-vertical{
     opacity: 1;
     gap: 4px;
-    -webkit-transition: 300ms ease-in;
-    -moz-transition: 300ms ease-in;
-    -o-transition: 300ms ease-in;
-    transition: 300ms ease-in;
+    -webkit-transition: 300ms cubic-bezier(.4,2,.6,1) ;
+    -moz-transition: 300ms cubic-bezier(.4,2,.6,1) ;
+    -o-transition: 300ms cubic-bezier(.4,2,.6,1) ;
+    transition: 300ms cubic-bezier(.4,2,.6,1) ;
 }
 
 .header-link.active > .three-dots-vertical > .dot-1, .header-link:hover > .three-dots-vertical > .dot-1 {
@@ -128,12 +128,12 @@
 /* Footer */
 
 .footer-container {
-    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: var(--surface-primary-background);
-    padding: var(--gap-md) 0 var(--gap-xl) var(--gap-xl);
+    padding: var(--gap-xl);
     gap: 2rem;
 }
 
@@ -148,26 +148,17 @@
 }
 
 .social-media{
-    top: 0px;
     position: relative;
     padding: 1px;
     color: var(--button-primary-text);
     background: var(--brand-gradient-300);
     border-radius: var(--icon-border-radius);
-    -webkit-transition: All .2s ease-out ;
-    -moz-transition:  All .2s ease-out ;
-    -o-transition:  All .2s ease-out ;
-    transition:  All .2s ease-out ;
+    animation: pop-out .5s cubic-bezier(.4,2,.6,1) forwards;
 }
 
 .social-media:hover {
-    top: -2px;
     position: relative;
-    background: var(--brand-gradient-200);
-    -webkit-transition:  All .2s ease-out ;
-    -moz-transition:  All .2s ease-out ;
-    -o-transition:  All .2s ease-out ;
-    transition:  All .2s ease-out ;
+    animation: pop-in .5s cubic-bezier(.4,2,.6,1) forwards;
     cursor: pointer;
 }
 

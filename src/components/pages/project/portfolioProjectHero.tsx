@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from '../../style_guide/link';
+import LinkComponent from '../../style_guide/link';
 import Image from '../../style_guide/image';
 import Button from '../../style_guide/button';
 
@@ -16,7 +16,7 @@ type PortfolioProjectHeroProps = {
 export default function PortfolioProjectHero({pageTitle, pageDescription, projectDuration, projectRole, projectCoverImgUrl, projectCoverAltTxt, buttonGroup}: PortfolioProjectHeroProps){
 	return (
 		<div className="hero-container">
-				<Link linkText="Back to Home" style="link-primary" url=".." hasLeftIcon={true} hasRightIcon={false}/>
+				<LinkComponent linkText="Back to Home" style="link-primary" url="/" hasLeftIcon={true} hasRightIcon={false}/>
 				<div className="project-hero-container">
 					<div className="project-hero-heading-container">
 						<div className="heading-brow">{pageTitle}</div>

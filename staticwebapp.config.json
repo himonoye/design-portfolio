@@ -1,5 +1,4 @@
 {
-  "navigationFallback": {
-    "rewrite": "/index.html"
-  }
+  "$schema": "https://aka.ms/azure/static-web-apps/schema",
+  "routes": []
 }

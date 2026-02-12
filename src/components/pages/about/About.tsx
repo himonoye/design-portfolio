@@ -4,7 +4,7 @@ import DefaultHero from '../general_sections/defaultHero';
 type aboutProps = {
     pageData: any;
     gallery: string[];
-    socialMedia: string[];
+    socialMedia: {type: string; url: string; imgUrlDarkMode: string; imgUrlLightMode: string;}[];
 }
 
 export default function About({pageData, gallery, socialMedia}:aboutProps) {
@@ -14,7 +14,7 @@ export default function About({pageData, gallery, socialMedia}:aboutProps) {
                 pageTitle={pageData.title}
                 pageDescription={pageData.description}
                 buttonGroup={pageData.buttonGroup}
-                scrollRef={pageData.scrollRef}
+                scrollTo={pageData.scrollTo}
             ></DefaultHero>
             <div className="content-container">
                 <div className="social-media-container-light">

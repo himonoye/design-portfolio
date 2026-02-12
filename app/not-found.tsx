@@ -1,17 +1,15 @@
-import React, { useEffect }  from 'react';
-import { useRouteError } from 'react-router-dom'
+import { Metadata } from 'next/dist/lib/metadata/types/metadata-interface';
+import React from 'react';
+
+
+export const metadata: Metadata = {
+  title: '404 - Page Not Found',
+  description: 'The page you are looking for does not exist. Please check the URL or return to the homepage.',
+  authors: [{ name: 'Ming Ye' }],
+}
 
 export default function ErrorPage() {
-  const error: unknown = useRouteError();
 
-  useEffect(() => {
-    document.title = "404 - Page Not Found";
-  }, []);
-
-  if (error) {
-    console.error(error);
-  }
-  
   return (  
       <div className="body-container">
         <div className="project-hero-container">

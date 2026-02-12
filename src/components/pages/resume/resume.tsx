@@ -9,17 +9,16 @@ type resumeProps = {
 }
 
 export default function Resume({pageData, resumeData}:resumeProps) {
-    const resumeRef = useRef();
     return (
         <div className="body-container">
             <DefaultHero 
                 pageTitle={pageData.title}
                 pageDescription={pageData.description}
                 buttonGroup={pageData.buttonGroup}
-                scrollRef={resumeRef}
+                scrollTo="resume-content"
             ></DefaultHero>
 
-            <div className="content-container" ref={resumeRef}>
+            <div id = "resume-content" className="content-container">
                 <ResumePDF resumeData={resumeData}></ResumePDF>
             </div>
         </div>

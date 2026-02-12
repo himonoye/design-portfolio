@@ -6,14 +6,16 @@
         },
         {
             "linkText":"Resume",
-            "url":"resume"
+            "url":"/resume"
         },
         {
             "linkText":"About Me",
-            "url":"about"
+            "url":"/about"
         }
     ],
-    "footerData" : [
+    "footerData" : {
+        "copyRightText": "Ming Ye ©2026 Built with Azure & React",
+        "socials" : [
         {
             "type":"linkedIn",
             "url":"https://www.linkedin.com/in/mingxinye",
@@ -31,37 +33,44 @@
             "url":"mailto:mingxinye1128@gmail.com",
             "imgUrlDarkMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-email-dark.svg",
             "imgUrlLightMode": "https://portfoliocontent.blob.core.windows.net/portolioimages/social-email-light.svg"
-        }
-    ],
+        }]
+    },
     "pageInfo" : {
         "portfolio" : {
             "url":"..",
             "title" : "My Work",
             "profileImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/profileImage.png",
             "profileImgAltTxt":"Profile headshot of Ming Ye",
-            "pageTitle" : "Senior UX/UI Designer",
-            "description" : "I’m Ming Ye, a senior UX/UI/Product Designer with a background in front-end development and a belief that every successful design starts with conversations. I craft systems that help teams move faster and innovate with confidence. Currently, I build digital solutions as a Senior UX/UI Designer @ Yext",
+            "pageTitle" : "Ming Ye, Senior Product Designer",
+            "pageSubtitle" : "Building solutions for complex workflows that scale across teams and customers.",
+            "description" : "I'm currently helping businesses manage their digital presence @ Yext.",
             "buttonGroup":[
                 {
                     "buttonText": "Case Studies",
-                    "buttonType" : "scrollTo"
+                    "buttonType" : "scrollTo",
+                    "scrollTo" : "case-studies"
                 },
                 {
                     "buttonText": "Resume",
                     "buttonType" : "navLink",
                     "buttonUrl" :"resume"
+                },
+                {
+                    "buttonText": "About Me",
+                    "buttonType" : "navLink",
+                    "buttonUrl" :"about"
                 }
             ]
         },
         "resume" : {
             "url":"resume",
             "title" : "My Experience",
-            "description" : "I’m Ming Ye, a senior UX/UI/Product Designer with a background in front-end development and a belief that every successful design starts with conversations. I craft systems that help teams move faster and innovate with confidence. Currently, I build digital solutions as a Senior UX/UI Designer @ Yext",
+            "description" : "Hi, I’m Ming Ye. A senior UX/UI/Product Designer with a strong background in complex workflow and front-end development. I believe designers are the dot-connectors of the world. We unify not just digital experiences, but also the people behind them to focus on the most impactful outcomes. Currently, I build digital solutions @ Yext to help buisnesses manage their online presence.",
             "buttonGroup":[
                 {
                     "buttonText" : "Download PDF",
                     "buttonType" : "externalLink",
-                    "buttonUrl" : "https://portfoliocontent.blob.core.windows.net/resume/MingYe-Resume.pdf"
+                    "buttonUrl" : "https://portfoliocontent.blob.core.windows.net/resume/MingYe-Resume-2026.pdf"
                 }
             ]
 
@@ -69,7 +78,7 @@
         "about" : {
             "url":"about",
             "title" : "Let's connect!",
-            "description" : "Hi, I’m Ming. I believe designers are the dot-connectors of the world. We unify not just digital experiences, but also the people behind them to focus on real user needs. Outside of work, I'm currently learning to do jump tricks on my snowboard and conquering more V4's at the climbing gym. Whether you are a fellow tech ethusiast or recruiter, I'd love to connect and explore how we might collaborate!"
+            "description" : "Hi, I’m Ming Ye. A senior UX/UI/Product Designer with a strong background in strategic thinking and front-end development. I believe designers are the dot-connectors of the world. We unify not just digital experiences, but also the people behind them to focus on the most impactful outcomes. Currently, I build digital solutions @ Yext. Outside of work, I'm currently learning to do jumping tricks on my snowboard and conquering more V4's at the climbing gym. Whether you are a fellow tech enthusiast or recruiter, I'd love to connect and explore how we might collaborate!"
         }
     },
     "projectData" : [
