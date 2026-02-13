@@ -81,14 +81,14 @@
             ]
         },
         {
-            "projectTitle" : "Enterprise Content & Site Management Platform", 
+            "projectTitle" : "Enterprise Content & Site Building Platform", 
             "companyName" : "Yext", 
             "year" : "2026", 
             "projectSummary": [
                 "Defined the architecture of reusable component library",
                 "Led the design of configurable prop system, enabling scalable template development and shortening time-to-launch by 20 weeks.",
-                "Architected flexible, customization frameworks that balanced branding consistency with engineering efficiency.",
-                "Embedded WCAG-AA accessibility into page generation workflowss, ensuring compliance for enterprise clients.",
+                "Designed flexible and customizable frameworks that balanced branding consistency with engineering efficiency.",
+                "Embedded WCAG-AA accessibility into page generation workflows, ensuring compliance for enterprise clients.",
                 "Influenced product roadmap prioritization and strategy."
             ]
         }
