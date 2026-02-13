@@ -7,7 +7,7 @@
 .home-hero-intro-container {
     display: flex;
     flex-direction: column;
-    padding: var(--container-padding-medium);
+    padding: var(--container-padding-medium) 0;
     padding-bottom: 0;
     gap: var(--gap-sm);
     align-items: center;
@@ -116,6 +116,18 @@
 }
 
 @media screen and (max-width: 768px){
+
+    .home-hero-intro-container {
+        padding: var(--container-padding-small) 0;
+    }
+
+    .home-hero-intro-container > .heading-sub {
+        text-align: center;
+    }
+
+    .home-hero-intro-container > .body-large {
+        text-align: center;
+    }
 
     .hero-heading-container > .body-large{
         text-align: left;
