@@ -782,86 +782,28 @@
                         "blockDescription": "Through the redesign, we achieved a 30% reduction in page length on desktop and 60% on mobile."
                     }
                 ]
-            },
+            }
+        ]
+        },
+        {
+            "needPassword" : false,
+            "projectName" : "Enterprise Content & Site Building Platform",
+            "projectSkills": [
+                "Interaction Design",
+                "Component Library",
+                "Accessibility"
+            ],
+            "projectDuration" : "2025 - Present",
+            "projectRole" : "Product Designer",
+            "projectDescription" : "Enabling non-technical users to create scalable templates and shortening time-to-launch by 20 weeks.",
+            "projectProblem" : "",
+            "projectCoverImgUrl" : "https://portfoliocontent.blob.core.windows.net/portolioimages/PagesBuilder/pages-builder-cover.png",
+            "projectCoverAltTxt":"",
+            "projectPageUrl" : "enterprise-content-site-building-platform",
+            "projectContent": [
             {
-                "browHeading" : "Overview", 
-                "sectionHeading" : "Team Site Creation Flow on Content Management Dashboard",
-                "sectionDescription": "The client team requested to implement a site creation wizard, allowing advisors to easily create a new site without external help. Previously, this required contacting Yext Support. The wizard needs to seamlessly fit into the existing dashboard.",
-                "sectionStyle":"Cols",
-                "blockStyle":""
-            },
-            {
-                "browHeading" : "Overview",
-                "sectionHeading" : "Who are the users?",
-                "blockStyle":"Card-Cols",
-                "infoBlocks": [
-                    {
-                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-advisor-1.png",
-                        "blockImgAltTxt":"Icon of team owners or team members",
-                        "blockHeading": "Team Owners or Team Members",
-                        "blockDescription": "Advisors who are already in a team but are looking for new partners to form a new team and create a new site."
-                    },
-                    {
-                        "blockImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-advisor-2.png",
-                        "blockImgAltTxt":"Icon of individual advisor",
-                        "blockHeading": "Individual Advisors",
-                        "blockDescription": "Advisors who has worked independently but is looking for partners to form a new team and spin up a new site."
-                    }
-                ]
-            },
-            {
-                "browHeading" : "Research", 
-                "sectionHeading" : "What was the desired work flow?",
-                "sectionDescription": "",
-                "sectionImgUrl":"https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-flow-chart.png",
-                "sectionImgAltTxt":"Flow chart of website creation flow",
-                "sectionStyle":"Cols",
-                "blockStyle":"Card-Rows",
-                "blockNum":"true",  
-                "infoBlocks": [
-                    {
-                        "blockHeading": "Advisor Search",
-                        "blockDescription": "To create a team, the team owner has to first find and add other advisor the team."
-                    },
-                    {
-                        "blockHeading": "Team Creation",
-                        "blockDescription": "They then need to provide profile information for that new team, including team name, team owner, and contact information."
-                    },
-                    {
-                        "blockHeading": "Request Approval",
-                        "blockDescription": "After the team creation request is submitted, it goes through an approval process. The approval might take a few days and during this time, advisors can not edit their new team's profile or website. Once the request is approved, a new team and website will be created."
-                    },
-                    {
-                        "blockHeading": "Team Deletion",
-                        "blockDescription": "Once a team and its website are created, advisors cannot delete the team themselves. They need to contact Yext support to make the request."
-                    }
-                ]
-            },
-            {
-                "browHeading" : "The Design", 
-                "sectionHeading" : "Step-by-Step Guidance",
-                "sectionDescription": "Each step of the workflow is separated into a different screen to reduce cognitive load and help users focus on one task at a time.",
-                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-create-team-flow.png",
-                "sectionImgAltTxt":"Screen of team creation flow",
-                "sectionStyle":"",
-                "blockStyle":""
-            },
-            {
-                "browHeading" : "The Design", 
-                "sectionHeading" : "Confirmation Before Submission",
-                "sectionDescription": "To reduce errors and support confident decision-making, we added checkpoints and made key actions reversible.",
-                "sectionImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/Merrill/merrill-create-team-flow-confirmation.png",
-                "sectionImgAltTxt":"Screen of team creation confirmation",
-                "sectionStyle":"Cols",
-                "blockStyle":"",
-                "infoBlocks": [
-                    {
-                        "blockBulletPoints": [
-                            "A confirmation screen was added before a team creation request is submitted",
-                            "Users will have the option to cancel the action if they want to go back and edit the new team's information."
-                        ]
-                    }
-                ]
+                "browHeading" : "In Construction",
+                "sectionHeading" : "This project is coming soon..."
             }
         ]
         }
