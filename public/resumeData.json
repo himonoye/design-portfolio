@@ -1,15 +1,17 @@
 {
+    "name" : "Ming Ye",
+    "title" : "Product Designer",
+    "statement" : "I build solutions for complex workflows that drive measurable impact.",
     "workExperience": [
         {
             "jobTitle" : "Senior UX / UI Designer", 
             "companyName" : "Yext", 
             "year" : "May 2023 - Present", 
             "jobSummary": [
-                "Drove research and design strategy for clients, including Accor Hotels, Merrill Lynch Bank of America, and Heartland Dental",
-                "Worked cross-functionally with product and engineering partners to define vision and deliver user-centered solutions for a new site builder product.",
-                "Partnered with engineering partners to develop Figma plugins to improve existing internal workflow.",
-                "Assisted design manager in scoping and maintaining weekly scrum",
-                "Interviewed designer candidates and onboarded new hires"
+                "Led the design of the reusable component library and configurable prop system for an enterprise site builder, shortening time-to-launch by 20 weeks.",
+                "Led end-to-end design of enterprise CMS solutions for global brands such as RBC, Accor, Heartland Dental.",
+                "Drove research initiatives including heuristic audits, usage analytics, and workflow mapping to inform design decisions.",
+                "Designed and implemented workflow automation via a custom Figma plugin, reducing manual work by 3+ hours per project across a team of four designers."
             ]
         },
         {
@@ -17,8 +19,8 @@
             "companyName" : "Yext", 
             "year" : "Aug. 2019 - May 2023", 
             "jobSummary": [
-                "Partnered cross-functionally with client stakeholders, project managers, and software engineers to align design execution with complex business and technical",
-                "Completed the Engineering Team onboarding to better integrate design within development workflows"
+                "Led design execution for clients with complex business requirements.",
+                "Completed Engineering onboarding to bridge across-team collaborations"
             ]
         },
         {
@@ -27,7 +29,7 @@
             "year" : "Feb. 2017 - Nov 2018", 
             "jobSummary": [
                 "Conducted property tours and guided prospective residents through the leasing process from initial contact to move-in.",
-                "Met monthly leasing goals through effective sales techniques and follow-ups",
+                "Achieved leasing goals by applying effective sales strategies.",
                 "Provided customer service by addressing resident questions and concerns"
             ]
         }
@@ -41,7 +43,7 @@
             "sectionDetails" : [
             {
                 "entryTitle" : "Design",
-                "entryDetails" : "Figma, Sketch, User Research, User Testing, Prototyping, Adobe Creative Cloud"
+                "entryDetails" : "Figma, System Thinking, Prototyping, Accessibility, User Research, User Testing"
             },
             {
                 "entryTitle" : "Programming",
@@ -51,12 +53,12 @@
         {   "sectionTitle" : "Certifications",
             "sectionDetails" : [
             {
-                "entryTitle" : "Nano Degree in Front End Web Developer",
-                "entryDetails" : "Udacity Nanodegree Program"
-            },
-            {
                 "entryTitle" : "Principles of User Experience Research & Testing",
                 "entryDetails" : "RIVA Training Institute"
+            },
+            {
+                "entryTitle" : "Nano Degree in Front End Web Developer",
+                "entryDetails" : "Udacity Nanodegree Program"
             }
         ]},
         {   "sectionTitle" : "Education",
@@ -73,19 +75,21 @@
             "companyName" : "Yext", 
             "year" : "2025 - 2026", 
             "projectSummary": [
-                "Identified user pain points by analyzing existing workflows and iterating on an MVP through continuous testing with users",
-                "Designed and built a Figma-based tool to automate design content scanning and metadata definition",
-                "Reduced manual annotation and spreadsheet creation through automation, progressive rendering, and real-time status feedback"
+                "Designed and built a Figma plugin to automate design content scanning and metadata definition.",
+                "Identified user pain points by analyzing existing workflows and refining the MVP through billable projects.",
+                "Reduced manual annotation and spreadsheet creation by 3 hours per project across a team of four designers."
             ]
         },
         {
-            "projectTitle" : "Accor Hotel Digital Presence Dashboard", 
+            "projectTitle" : "Enterprise Content & Site Management Platform", 
             "companyName" : "Yext", 
-            "year" : "2025", 
+            "year" : "2026", 
             "projectSummary": [
-                "Redesigned Accor’s Yext-powered dashboard for 5,600+ hotels, creating role-specific views and streamlined navigation that improved clarity and engagement.",
-                "Led research and heuristic audit to uncover usability gaps and restructured information architecture, filters, and field groupings to surface key data.",
-                "Introduced impact indicators and “Next Step” modules to guide hoteliers toward high-value actions, earning strong positive feedback from end users."
+                "Defined the architecture of reusable component library",
+                "Led the design of configurable prop system, enabling scalable template development and shortening time-to-launch by 20 weeks.",
+                "Architected flexible, customization frameworks that balanced branding consistency with engineering efficiency.",
+                "Embedded WCAG-AA accessibility into page generation workflowss, ensuring compliance for enterprise clients.",
+                "Influenced product roadmap prioritization and strategy."
             ]
         }
     ]

@@ -1,7 +1,7 @@
 {
     "headerData" : [
         {
-            "linkText":"Work",
+            "linkText":"Case Studies",
             "url":".."
         },
         {
@@ -14,7 +14,7 @@
         }
     ],
     "footerData" : {
-        "copyRightText": "Ming Ye © 2026 Designed & Built with Azure, React & Next.js",
+        "copyRightText": "Ming Ye © 2026",
         "socials" : [
         {
             "type":"linkedIn",
@@ -41,7 +41,7 @@
             "title" : "My Work",
             "profileImgUrl": "https://portfoliocontent.blob.core.windows.net/portolioimages/profileImage.png",
             "profileImgAltTxt":"Profile headshot of Ming Ye",
-            "pageTitle" : "Ming Ye, Senior Product Designer",
+            "pageTitle" : "Ming Ye, Product Designer",
             "pageSubtitle" : "Building solutions for complex workflows that drive measurable impact.",
             "description" : "Currently helping businesses manage their digital presence @ Yext.",
             "buttonGroup":[
@@ -243,7 +243,7 @@
         },
                 {
             "needPassword" : false,
-            "projectName" : "Accor Hotel Digital Presence Dashboard",
+            "projectName" : "",
             "projectSkills": [
                 "Informational Architecture",
                 "System Thinking",

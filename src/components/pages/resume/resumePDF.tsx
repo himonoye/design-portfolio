@@ -105,10 +105,11 @@ export default function ResumePDF({resumeData}:resumePDFProps) {
             <div className="resume-top-container">
                 <div className="resume-left-container">
                     <div className="resume-intro-container">
-                        <LogoBox/>
+                        {/* <LogoBox/> */}
                         <div className="resume-intro-heading-container">
-                            <div className="resume-lead">Ming Ye</div>
-                            <div className="resume-head">UX Designer / Product Designer</div>
+                            <div className="resume-lead">{resumeData.name}</div>
+                            <div className="resume-head">{resumeData.title}</div>
+                            <div className="resume-brow">{resumeData.statement}</div>
                         </div>
                     </div>
                     <div className="resume-experiences-container">
