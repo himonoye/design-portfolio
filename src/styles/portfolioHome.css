@@ -99,6 +99,20 @@
 }
 
 @media screen and (max-width: 1200px){
+
+    .project-card-wrapper {
+        display: flex;
+        padding: 1px;
+        background: var(--brand-gradient-200);
+        animation: card-pop-out .5s cubic-bezier(.4,2,.6,1) forwards;
+    }
+
+    .project-card-wrapper:hover {
+        position: relative;
+        cursor: pointer;
+        animation: card-pop-in .5s cubic-bezier(.4,2,.6,1) forwards;
+    }
+
     .project-card {
         width: 100%;
         flex-direction: column;
