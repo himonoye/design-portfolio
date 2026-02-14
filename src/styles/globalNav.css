@@ -216,6 +216,7 @@
 
     .header-mobile-icon-container {
         display: flex;
+        width: 80%;
         max-width: 24px;
         padding: var(--gap-md);
     }
@@ -234,14 +235,14 @@
         margin: var(--gap-xl) 0 0 0;
     }
 
-    .header-mobile-links {
+    .header-mobile-links-container > .header-mobile-links {
         height: 100%;
         width: 80%;
         background-color: var(--surface-primary-background);
         border-top: solid 1px var(--border-divider);
     }
     
-    .footer-container {
+    .header-mobile-links-container > .footer-container {
         width: 80%;
         align-items: center;
         padding: var(--gap-md) 0;

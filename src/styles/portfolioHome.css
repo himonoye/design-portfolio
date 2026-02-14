@@ -103,7 +103,7 @@
     .project-card-wrapper {
         display: flex;
         padding: 1px;
-        background: var(--brand-gradient-200);
+        background: var(--brand-gradient-200-rotate-45);
         animation: card-pop-out .5s cubic-bezier(.4,2,.6,1) forwards;
     }
 

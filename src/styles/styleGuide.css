@@ -20,7 +20,7 @@
     --brand-beige-400: rgb(84, 71, 63);
     --brand-gradient-300: linear-gradient(45deg, var(--brand-beige-300) 0%, var(--brand-beige-200) 25%, var(--brand-beige-100) 50%, var(--brand-beige-200) 75%, var(--brand-beige-300) 100%);
     --brand-gradient-200: linear-gradient(90deg, var(--brand-beige-50) 0%, var(--brand-beige-100) 25%, var(--brand-beige-200) 75%, var(--brand-beige-300) 100%);
-    --brand-gradient-200-rotate-45: linear-gradient(45deg, var(--brand-beige-50) 0%, var(--brand-beige-100) 25%, var(--brand-beige-200) 75%, var(--brand-beige-300) 100%);
+    --brand-gradient-200-rotate-45: linear-gradient(160deg, var(--brand-beige-50) 0%, var(--brand-beige-100) 25%, var(--brand-beige-200) 75%, var(--brand-beige-300) 100%);
    
     /* grayscale colors*/
     --brand-grayscale-900: #212121;
