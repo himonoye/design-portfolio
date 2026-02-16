@@ -150,7 +150,7 @@
 .content-container li {
     list-style-type: none;
     padding: 0 0 0 var(--gap-md);
-    border-left: 5px solid var(--border-divider);
+    border-left: 2px solid var(--border-divider);
     font-weight: 400;
     max-width: 800px;
 }

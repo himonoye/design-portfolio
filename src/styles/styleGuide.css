@@ -144,7 +144,7 @@
     --resume-gutter-smallest: var(--spacing-5);
     --resume-gutter-small: var(--spacing-10);
     --resume-gutter-medium: var(--spacing-20);
-    --resume-gutter-large: var(--spacing-60);
+    --resume-gutter-large: var(--spacing-40);
 
     /* border radius */
     --button-border-radius: var(--gap-l);
@@ -214,6 +214,10 @@
 
 @media screen and (max-width: 768px) {
     :root {
+
+        --base-font-size: 14px;
+        --base-font-height: 28px;
+
         --gutter: var(--spacing-30);
         --gutter-small: var(--spacing-15);
         --gutter-medium: var(--spacing-40);
@@ -239,6 +243,9 @@
 
 @media print {
     :root {
+        /* fonts */
+        --base-font-size: 10px;
+        --base-font-height: 15px;
         --resume-font-Family: "Arial";
         --resume-gutter-smallest: var(--spacing-5);
         --resume-gutter-small: var(--spacing-10);
@@ -263,6 +270,7 @@ html {
 }
 
 body {
+    background-color: var(--surface-primary-background);
     margin: 0;
     padding: 0;
 }

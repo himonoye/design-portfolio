@@ -17,16 +17,16 @@
         {
             "jobTitle" : "UX / UI Designer", 
             "companyName" : "Yext", 
-            "year" : "Aug. 2019 - May 2023", 
+            "year" : "August 2019 - May 2023", 
             "jobSummary": [
                 "Led design execution for clients with complex business requirements.",
-                "Completed Engineering onboarding to bridge across-team collaborations"
+                "Completed Engineering onboarding to bridge cross-team collaborations"
             ]
         },
         {
             "jobTitle" : "Community Assistant / Leasing Consultant", 
             "companyName" : "Greystar", 
-            "year" : "Feb. 2017 - Nov 2018", 
+            "year" : "February 2017 - November 2018", 
             "jobSummary": [
                 "Conducted property tours and guided prospective residents through the leasing process from initial contact to move-in.",
                 "Achieved leasing goals by applying effective sales strategies.",
@@ -34,10 +34,24 @@
             ]
         }
     ],
-    "contact" : {
-        "email" : "mingxinye1128@gmail.com",
-        "Website" : "mingxinye.com"
-    },
+    "contact" : [
+        {
+                "entryTitle" : "Email",
+                "entryDetails" : "mingxinye1128@gmail.com"
+        },
+        {
+                "entryTitle" : "Website",
+                "entryDetails" : "mingxinye.com"
+        },
+        {
+                "entryTitle" : "Phone",
+                "entryDetails" : "720-785-4667"
+        },
+        {
+                "entryTitle" : "Location",
+                "entryDetails" : "Rockville, MD"
+        }
+    ],
     "profileSummary" : [
         {   "sectionTitle" : "Skills",
             "sectionDetails" : [
@@ -50,7 +64,7 @@
                 "entryDetails" : "React, HTML5, CSS, JavaScript, Cursor, GitHub Copilot"
             }
         ]},
-        {   "sectionTitle" : "Certifications",
+        {   "sectionTitle" : "Education & Certifications",
             "sectionDetails" : [
             {
                 "entryTitle" : "Principles of User Experience Research & Testing",
@@ -59,13 +73,10 @@
             {
                 "entryTitle" : "Nano Degree in Front End Web Developer",
                 "entryDetails" : "Udacity Nanodegree Program"
-            }
-        ]},
-        {   "sectionTitle" : "Education",
-            "sectionDetails" : [
+            },
             {
                 "entryTitle" : "B.S. Computer Science & B.A. Graphic Design",
-                "entryDetails" : "University of Maryland, College Park 2019"
+                "entryDetails" : "University of Maryland, College Park"
             }
         ]}
     ],
@@ -85,9 +96,8 @@
             "companyName" : "Yext", 
             "year" : "2026", 
             "projectSummary": [
-                "Defined the architecture of reusable component library",
+                "Defined the architecture of a reusable component library and customizable framework that balanced branding consistency with engineering efficiency.",
                 "Led the design of configurable prop system, enabling scalable template development and shortening time-to-launch by 20 weeks.",
-                "Designed flexible and customizable frameworks that balanced branding consistency with engineering efficiency.",
                 "Embedded WCAG-AA accessibility into page generation workflows, ensuring compliance for enterprise clients.",
                 "Influenced product roadmap prioritization and strategy."
             ]

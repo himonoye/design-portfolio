@@ -3,7 +3,7 @@ import '../src/styles/styleGuide.css'
 
 export const metadata: Metadata = {
   title: 'Ming Ye',
-  description: 'A portfolio website that is built and managed entirely by me to showcase my design work',
+  description: 'Product Designer - Building solutions for complex workflows that drive measurable impact.',
   keywords: 'UX/UI Design, Product Design, Front End Designer, Case Studies',
   authors: [{ name: 'Ming Ye' }],
   openGraph: {
